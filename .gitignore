@@ -12,6 +12,7 @@ data/processed/*.csv
 
 # Generated readable datasets
 data/readable/*.csv
+data/readable/*.txt
 !data/readable/.gitkeep
 
 # Python
