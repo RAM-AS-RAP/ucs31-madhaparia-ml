@@ -8,7 +8,13 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "fever",
+        "high temperature",
+        "temperature",
+        "hot body",
+        "feeling feverish"
+      ],
       "sw": []
     }
   },
@@ -21,7 +27,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "chills",
+        "shivering",
+        "shivers",
+        "feeling cold and shaking"
+      ],
       "sw": []
     }
   },
@@ -34,7 +45,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "cough",
+        "coughing",
+        "i am coughing",
+        "persistent cough"
+      ],
       "sw": []
     }
   },
@@ -47,7 +63,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "intense coughing fits",
+        "severe coughing fits",
+        "coughing attacks",
+        "cannot stop coughing"
+      ],
       "sw": []
     }
   },
@@ -60,7 +81,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "vomiting after coughing",
+        "vomit after coughing",
+        "throwing up after coughing"
+      ],
       "sw": []
     }
   },
@@ -73,7 +98,14 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "phlegm",
+        "mucus",
+        "productive cough",
+        "wet cough",
+        "coughing up phlegm",
+        "coughing up mucus"
+      ],
       "sw": []
     }
   },
@@ -86,7 +118,12 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "coughing up blood",
+        "blood in cough",
+        "blood in phlegm",
+        "bloody sputum"
+      ],
       "sw": []
     }
   },
@@ -99,7 +136,14 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "shortness of breath",
+        "breathless",
+        "difficulty breathing",
+        "hard to breathe",
+        "cannot breathe",
+        "can't breathe"
+      ],
       "sw": []
     }
   },
@@ -112,7 +156,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "waking up breathless",
+        "breathless at night",
+        "choking at night",
+        "waking up choking"
+      ],
       "sw": []
     }
   },
@@ -125,7 +174,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "wheezing",
+        "wheeze",
+        "tight chest",
+        "whistling when breathing"
+      ],
       "sw": []
     }
   },
@@ -138,7 +192,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "wheezing after coughing",
+        "wheeze after coughing",
+        "noisy breathing after coughing"
+      ],
       "sw": []
     }
   },
@@ -151,7 +209,11 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "stridor",
+        "high pitched breathing sound",
+        "high pitched sound when breathing in"
+      ],
       "sw": []
     }
   },
@@ -164,7 +226,11 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "drooling",
+        "too much saliva",
+        "more saliva than usual"
+      ],
       "sw": []
     }
   },
@@ -177,7 +243,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "difficulty swallowing",
+        "hard to swallow",
+        "trouble swallowing",
+        "cannot swallow"
+      ],
       "sw": []
     }
   },
@@ -190,7 +261,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "sore throat",
+        "throat pain",
+        "painful throat",
+        "throat hurts"
+      ],
       "sw": []
     }
   },
@@ -203,7 +279,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "hoarse voice",
+        "changed voice",
+        "lost my voice",
+        "rough voice"
+      ],
       "sw": []
     }
   },
@@ -216,7 +297,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "runny nose",
+        "blocked nose",
+        "stuffy nose",
+        "nasal congestion"
+      ],
       "sw": []
     }
   },
@@ -229,7 +315,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "green nasal discharge",
+        "yellow nasal discharge",
+        "green mucus from nose",
+        "yellow mucus from nose"
+      ],
       "sw": []
     }
   },
@@ -242,7 +333,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "loss of smell",
+        "cannot smell",
+        "can't smell",
+        "lost sense of smell"
+      ],
       "sw": []
     }
   },
@@ -255,7 +351,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "itchy nose",
+        "itchy throat",
+        "itchy nose or throat"
+      ],
       "sw": []
     }
   },
@@ -268,7 +368,10 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "itchy eyes",
+        "eyes are itchy"
+      ],
       "sw": []
     }
   },
@@ -282,7 +385,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "headache",
+        "head pain",
+        "my head hurts"
+      ],
       "sw": []
     }
   },
@@ -296,7 +403,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "chest pain",
+        "chest hurts",
+        "pain in chest"
+      ],
       "sw": []
     }
   },
@@ -309,7 +420,11 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "chest pain at rest",
+        "chest hurts while resting",
+        "chest pain even when resting"
+      ],
       "sw": []
     }
   },
@@ -322,7 +437,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "pain when breathing deeply",
+        "pain on deep breath",
+        "chest pain when taking a deep breath"
+      ],
       "sw": []
     }
   },
@@ -335,7 +454,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "worse when lying down",
+        "better when sitting up",
+        "breathing worse lying down"
+      ],
       "sw": []
     }
   },
@@ -348,7 +471,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "worse with exercise",
+        "worse with exertion",
+        "symptoms worse when active",
+        "better with rest"
+      ],
       "sw": []
     }
   },
@@ -361,7 +489,13 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "tired",
+        "tiredness",
+        "fatigue",
+        "feeling tired",
+        "constant tiredness"
+      ],
       "sw": []
     }
   },
@@ -374,7 +508,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "too tired for normal activities",
+        "too tired to do usual activities",
+        "exhausted doing normal activities"
+      ],
       "sw": []
     }
   },
@@ -387,7 +525,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "muscle aches",
+        "muscle pain",
+        "aching muscles",
+        "body aches"
+      ],
       "sw": []
     }
   },
@@ -400,7 +543,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "heavy sweating",
+        "sweating a lot",
+        "night sweats",
+        "excessive sweating"
+      ],
       "sw": []
     }
   },
@@ -413,7 +561,12 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "loss of appetite",
+        "no appetite",
+        "not hungry",
+        "don't feel like eating"
+      ],
       "sw": []
     }
   },
@@ -426,7 +579,11 @@
     "kind": "symptom",
     "is_red_flag": false,
     "aliases": {
-      "en": [],
+      "en": [
+        "weight loss",
+        "unintended weight loss",
+        "losing weight without trying"
+      ],
       "sw": []
     }
   },
@@ -437,7 +594,11 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "blue lips",
+        "blue face",
+        "lips turning blue"
+      ],
       "sw": []
     }
   },
@@ -448,7 +609,11 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "confusion",
+        "feeling confused",
+        "disoriented"
+      ],
       "sw": []
     }
   },
@@ -459,7 +624,12 @@
     "kind": "symptom",
     "is_red_flag": true,
     "aliases": {
-      "en": [],
+      "en": [
+        "fainting",
+        "fainted",
+        "passed out",
+        "passing out"
+      ],
       "sw": []
     }
   }

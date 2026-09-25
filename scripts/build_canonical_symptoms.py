@@ -24,6 +24,12 @@ FEATURE_CATALOG_PATH = (
     / "feature_catalog.json"
 )
 
+ENGLISH_ALIASES_PATH = (
+    PROJECT_ROOT
+    / "nlp"
+    / "english_aliases.json"
+)
+
 OUTPUT_PATH = (
     PROJECT_ROOT
     / "nlp"
@@ -337,25 +343,103 @@ def validate_features(
         )
 
 
-def add_alias_placeholders(entries):
-    """
-    English and Swahili aliases will be added in Issues #13 and #14.
-    """
+def validate_english_aliases(
+    entries,
+    english_aliases,
+):
+    canonical_codes = {
+        entry["code"]
+        for entry in entries
+    }
 
+    alias_codes = set(
+        english_aliases.keys()
+    )
+
+    missing = (
+        canonical_codes
+        - alias_codes
+    )
+
+    unknown = (
+        alias_codes
+        - canonical_codes
+    )
+
+    if missing:
+        raise ValueError(
+            "Missing English aliases for: "
+            f"{sorted(missing)}"
+        )
+
+    if unknown:
+        raise ValueError(
+            "English aliases contain unknown "
+            f"canonical codes: {sorted(unknown)}"
+        )
+
+    seen_aliases = {}
+
+    for code, aliases in (
+        english_aliases.items()
+    ):
+        if not aliases:
+            raise ValueError(
+                f"No English aliases supplied "
+                f"for {code}"
+            )
+
+        for alias in aliases:
+            normalized = (
+                alias
+                .strip()
+                .lower()
+            )
+
+            if not normalized:
+                raise ValueError(
+                    f"Empty alias found for {code}"
+                )
+
+            if normalized in seen_aliases:
+                previous_code = (
+                    seen_aliases[
+                        normalized
+                    ]
+                )
+
+                if previous_code != code:
+                    raise ValueError(
+                        "English alias used by "
+                        "multiple symptoms: "
+                        f"{alias!r} -> "
+                        f"{previous_code}, {code}"
+                    )
+
+            seen_aliases[
+                normalized
+            ] = code
+
+
+def add_aliases(
+    entries,
+    english_aliases,
+):
     output = []
 
     for entry in entries:
         item = entry.copy()
 
         item["aliases"] = {
-            "en": [],
+            "en": english_aliases[
+                entry["code"]
+            ],
             "sw": [],
         }
 
         output.append(item)
 
     return output
-
 
 def main():
     if not FEATURE_CATALOG_PATH.exists():
@@ -366,6 +450,15 @@ def main():
 
     feature_catalog = load_json(
         FEATURE_CATALOG_PATH
+    )
+
+    english_aliases = load_json(
+        ENGLISH_ALIASES_PATH
+    )
+    
+    validate_english_aliases(
+        CANONICAL_SYMPTOMS,
+        english_aliases,
     )
 
     active_features = {
@@ -385,9 +478,15 @@ def main():
         active_features,
     )
 
+    validate_english_aliases(
+        CANONICAL_SYMPTOMS,
+        english_aliases,
+    )
+
     canonical_symptoms = (
-        add_alias_placeholders(
-            CANONICAL_SYMPTOMS
+        add_aliases(
+            CANONICAL_SYMPTOMS,
+            english_aliases,
         )
     )
 
@@ -454,6 +553,16 @@ def main():
 
     print(
         "Invalid model features: 0"
+    )
+
+    english_alias_count = sum(
+        len(entry["aliases"]["en"])
+        for entry in canonical_symptoms
+    )
+
+    print(
+        "English aliases:",
+        english_alias_count
     )
 
     print()
