@@ -1,0 +1,66 @@
+{
+  "fever": [
+    "homa",
+    "joto mwilini"
+  ],
+  "chills": [
+    "baridi",
+    "kutetemeka"
+  ],
+  "cough": [
+    "kikohozi",
+    "kukohoa"
+  ],
+  "productive_cough": [
+    "makohozi"
+  ],
+  "coughing_blood": [
+    "kukohoa damu"
+  ],
+  "shortness_of_breath": [
+    "kushindwa kupumua",
+    "kupumua kwa shida"
+  ],
+  "wheezing": [
+    "kifua kubana"
+  ],
+  "sore_throat": [
+    "koo kuuma",
+    "kidonda cha koo"
+  ],
+  "hoarse_voice": [
+    "sauti imekauka",
+    "sauti imekwaruza"
+  ],
+  "runny_blocked_nose": [
+    "mafua",
+    "homa ya mafua"
+  ],
+  "headache": [
+    "kichwa kuuma",
+    "kuumwa na kichwa",
+    "maumivu ya kichwa"
+  ],
+  "chest_pain": [
+    "kifua kuuma",
+    "maumivu ya kifua"
+  ],
+  "tiredness": [
+    "uchovu",
+    "kuchoka"
+  ],
+  "weight_loss": [
+    "kupungua uzito"
+  ],
+  "loss_of_appetite": [
+    "kukosa hamu ya kula"
+  ],
+  "heavy_sweating": [
+    "kutokwa jasho",
+    "jasho usiku"
+  ],
+  "blue_lips": [
+    "midomo kuwa bluu"
+  ]
+}
+
