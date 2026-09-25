@@ -28,6 +28,12 @@ SWAHILI_ALIASES_PATH = (
     / "swahili_aliases.json"
 )
 
+CANONICAL_SYMPTOMS_PATH = (
+    PROJECT_ROOT
+    / "nlp"
+    / "canonical_symptoms.json"
+)
+
 FUZZY_THRESHOLD = 90
 SUGGESTION_THRESHOLD = 70
 
@@ -531,6 +537,106 @@ def suggest_symptoms(
         )
 
     return suggestions
+
+def build_confirmation_output(text):
+    """
+    Build the structured output that can be sent to the
+    frontend for symptom review and confirmation.
+    """
+
+    matches = find_symptoms(
+        text
+    )
+
+    alias_index = build_alias_index()
+
+    unmatched_phrases = (
+        find_unmatched_text(
+            text,
+            matches,
+        )
+    )
+
+    suggestions = (
+        suggest_symptoms(
+            unmatched_phrases,
+            alias_index,
+        )
+    )
+
+    canonical_symptoms = load_json(
+        CANONICAL_SYMPTOMS_PATH
+    )
+
+    canonical_index = {
+        entry["code"]: entry
+        for entry in canonical_symptoms
+    }
+
+    recognised_symptoms = []
+
+    for match in matches:
+        code = match["code"]
+
+        if code not in canonical_index:
+            raise KeyError(
+                f"Canonical symptom not found: "
+                f"{code}"
+            )
+
+        symptom = canonical_index[
+            code
+        ]
+
+        recognised_symptoms.append(
+            {
+                "code": code,
+                "display_name": symptom[
+                    "display_name"
+                ],
+                "features": symptom[
+                    "features"
+                ],
+                "kind": symptom[
+                    "kind"
+                ],
+                "is_red_flag": symptom[
+                    "is_red_flag"
+                ],
+                "matched_text": match[
+                    "matched_alias"
+                ],
+                "language": match[
+                    "language"
+                ],
+                "match_type": match[
+                    "match_type"
+                ],
+                "match_score": match[
+                    "score"
+                ],
+                "confirmed": False,
+            }
+        )
+
+    has_red_flag = any(
+        symptom["is_red_flag"]
+        for symptom
+        in recognised_symptoms
+    )
+
+    return {
+        "input_text": text,
+        "recognised_symptoms": (
+            recognised_symptoms
+        ),
+        "unmatched_wording": suggestions,
+        "has_red_flag": has_red_flag,
+        "requires_confirmation": (
+            bool(recognised_symptoms)
+            or bool(suggestions)
+        ),
+    }
 
 def main():
     if len(sys.argv) < 2:
