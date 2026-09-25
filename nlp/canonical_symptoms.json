@@ -15,7 +15,10 @@
         "hot body",
         "feeling feverish"
       ],
-      "sw": []
+      "sw": [
+        "homa",
+        "joto mwilini"
+      ]
     }
   },
   {
@@ -33,7 +36,10 @@
         "shivers",
         "feeling cold and shaking"
       ],
-      "sw": []
+      "sw": [
+        "baridi",
+        "kutetemeka"
+      ]
     }
   },
   {
@@ -51,7 +57,10 @@
         "i am coughing",
         "persistent cough"
       ],
-      "sw": []
+      "sw": [
+        "kikohozi",
+        "kukohoa"
+      ]
     }
   },
   {
@@ -106,7 +115,9 @@
         "coughing up phlegm",
         "coughing up mucus"
       ],
-      "sw": []
+      "sw": [
+        "makohozi"
+      ]
     }
   },
   {
@@ -124,7 +135,9 @@
         "blood in phlegm",
         "bloody sputum"
       ],
-      "sw": []
+      "sw": [
+        "kukohoa damu"
+      ]
     }
   },
   {
@@ -144,7 +157,10 @@
         "cannot breathe",
         "can't breathe"
       ],
-      "sw": []
+      "sw": [
+        "kushindwa kupumua",
+        "kupumua kwa shida"
+      ]
     }
   },
   {
@@ -180,7 +196,9 @@
         "tight chest",
         "whistling when breathing"
       ],
-      "sw": []
+      "sw": [
+        "kifua kubana"
+      ]
     }
   },
   {
@@ -267,7 +285,10 @@
         "painful throat",
         "throat hurts"
       ],
-      "sw": []
+      "sw": [
+        "koo kuuma",
+        "kidonda cha koo"
+      ]
     }
   },
   {
@@ -285,7 +306,10 @@
         "lost my voice",
         "rough voice"
       ],
-      "sw": []
+      "sw": [
+        "sauti imekauka",
+        "sauti imekwaruza"
+      ]
     }
   },
   {
@@ -303,7 +327,10 @@
         "stuffy nose",
         "nasal congestion"
       ],
-      "sw": []
+      "sw": [
+        "mafua",
+        "homa ya mafua"
+      ]
     }
   },
   {
@@ -390,7 +417,11 @@
         "head pain",
         "my head hurts"
       ],
-      "sw": []
+      "sw": [
+        "kichwa kuuma",
+        "kuumwa na kichwa",
+        "maumivu ya kichwa"
+      ]
     }
   },
   {
@@ -408,7 +439,10 @@
         "chest hurts",
         "pain in chest"
       ],
-      "sw": []
+      "sw": [
+        "kifua kuuma",
+        "maumivu ya kifua"
+      ]
     }
   },
   {
@@ -496,7 +530,10 @@
         "feeling tired",
         "constant tiredness"
       ],
-      "sw": []
+      "sw": [
+        "uchovu",
+        "kuchoka"
+      ]
     }
   },
   {
@@ -549,7 +586,10 @@
         "night sweats",
         "excessive sweating"
       ],
-      "sw": []
+      "sw": [
+        "kutokwa jasho",
+        "jasho usiku"
+      ]
     }
   },
   {
@@ -567,7 +607,9 @@
         "not hungry",
         "don't feel like eating"
       ],
-      "sw": []
+      "sw": [
+        "kukosa hamu ya kula"
+      ]
     }
   },
   {
@@ -584,7 +626,9 @@
         "unintended weight loss",
         "losing weight without trying"
       ],
-      "sw": []
+      "sw": [
+        "kupungua uzito"
+      ]
     }
   },
   {
@@ -599,7 +643,9 @@
         "blue face",
         "lips turning blue"
       ],
-      "sw": []
+      "sw": [
+        "midomo kuwa bluu"
+      ]
     }
   },
   {

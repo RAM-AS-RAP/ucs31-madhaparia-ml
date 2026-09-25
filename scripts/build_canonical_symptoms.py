@@ -30,6 +30,12 @@ ENGLISH_ALIASES_PATH = (
     / "english_aliases.json"
 )
 
+SWAHILI_ALIASES_PATH = (
+    PROJECT_ROOT
+    / "nlp"
+    / "swahili_aliases.json"
+)
+
 OUTPUT_PATH = (
     PROJECT_ROOT
     / "nlp"
@@ -420,10 +426,77 @@ def validate_english_aliases(
                 normalized
             ] = code
 
+def validate_swahili_aliases(
+    entries,
+    swahili_aliases,
+):
+    canonical_codes = {
+        entry["code"]
+        for entry in entries
+    }
+
+    alias_codes = set(
+        swahili_aliases.keys()
+    )
+
+    unknown = (
+        alias_codes
+        - canonical_codes
+    )
+
+    if unknown:
+        raise ValueError(
+            "Swahili aliases contain unknown "
+            f"canonical codes: {sorted(unknown)}"
+        )
+
+    seen_aliases = {}
+
+    for code, aliases in (
+        swahili_aliases.items()
+    ):
+        if not aliases:
+            raise ValueError(
+                f"No Swahili aliases supplied "
+                f"for {code}"
+            )
+
+        for alias in aliases:
+            normalized = (
+                alias
+                .strip()
+                .lower()
+            )
+
+            if not normalized:
+                raise ValueError(
+                    f"Empty Swahili alias found "
+                    f"for {code}"
+                )
+
+            if normalized in seen_aliases:
+                previous_code = (
+                    seen_aliases[
+                        normalized
+                    ]
+                )
+
+                if previous_code != code:
+                    raise ValueError(
+                        "Swahili alias used by "
+                        "multiple symptoms: "
+                        f"{alias!r} -> "
+                        f"{previous_code}, {code}"
+                    )
+
+            seen_aliases[
+                normalized
+            ] = code
 
 def add_aliases(
     entries,
     english_aliases,
+    swahili_aliases,
 ):
     output = []
 
@@ -434,7 +507,10 @@ def add_aliases(
             "en": english_aliases[
                 entry["code"]
             ],
-            "sw": [],
+            "sw": swahili_aliases.get(
+                entry["code"],
+                [],
+            ),
         }
 
         output.append(item)
@@ -455,10 +531,19 @@ def main():
     english_aliases = load_json(
         ENGLISH_ALIASES_PATH
     )
+
+    swahili_aliases = load_json(
+        SWAHILI_ALIASES_PATH
+    )
     
     validate_english_aliases(
         CANONICAL_SYMPTOMS,
         english_aliases,
+    )
+
+    validate_swahili_aliases(
+        CANONICAL_SYMPTOMS,
+        swahili_aliases,
     )
 
     active_features = {
@@ -487,6 +572,7 @@ def main():
         add_aliases(
             CANONICAL_SYMPTOMS,
             english_aliases,
+            swahili_aliases,
         )
     )
 
@@ -563,6 +649,16 @@ def main():
     print(
         "English aliases:",
         english_alias_count
+    )
+
+    swahili_alias_count = sum(
+        len(entry["aliases"]["sw"])
+        for entry in canonical_symptoms
+    )
+
+    print(
+        "Swahili aliases:",
+        swahili_alias_count
     )
 
     print()
