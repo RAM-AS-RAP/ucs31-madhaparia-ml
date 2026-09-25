@@ -11,7 +11,7 @@ import re
 import sys
 from pathlib import Path
 
-from rapidfuzz import fuzz
+from rapidfuzz import fuzz, process
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -28,7 +28,38 @@ SWAHILI_ALIASES_PATH = (
     / "swahili_aliases.json"
 )
 
-FUZZY_THRESHOLD = 82
+FUZZY_THRESHOLD = 90
+SUGGESTION_THRESHOLD = 70
+
+FILLER_WORDS = {
+    "i",
+    "im",
+    "i'm",
+    "have",
+    "has",
+    "having",
+    "a",
+    "an",
+    "the",
+    "and",
+    "but",
+    "or",
+    "my",
+    "me",
+    "am",
+    "is",
+    "are",
+    "feel",
+    "feeling",
+    "with",
+    "also",
+    "nina",
+    "niko",
+    "na",
+    "lakini",
+    "kuwa",
+    "sana",
+}
 
 def load_json(path):
     with open(
@@ -346,14 +377,167 @@ def find_symptoms(text):
 
     return matches
 
+def find_unmatched_text(
+    text,
+    matches,
+):
+    """
+    Return meaningful words or phrases that were not
+    recognised as supported symptoms.
+    """
+
+    remaining_text = normalize_text(
+        text
+    )
+
+    # Remove phrases that were already recognised.
+    for match in matches:
+        matched_alias = match[
+            "matched_alias"
+        ]
+
+        pattern = (
+            r"(?<!\w)"
+            + re.escape(
+                matched_alias
+            )
+            + r"(?!\w)"
+        )
+
+        remaining_text = re.sub(
+            pattern,
+            " ",
+            remaining_text,
+        )
+
+    # Treat common English/Swahili connectors as separators.
+    remaining_text = re.sub(
+        r"\b(and|but|or|na|lakini)\b",
+        ",",
+        remaining_text,
+    )
+
+    segments = re.split(
+        r"[,;.!?]+",
+        remaining_text,
+    )
+
+    unmatched = []
+
+    for segment in segments:
+        words = re.findall(
+            r"\b[\w']+\b",
+            segment,
+        )
+
+        meaningful_words = [
+            word
+            for word in words
+            if word not in FILLER_WORDS
+        ]
+
+        if not meaningful_words:
+            continue
+
+        phrase = " ".join(
+            meaningful_words
+        )
+
+        if phrase not in unmatched:
+            unmatched.append(
+                phrase
+            )
+
+    return unmatched
+
+def suggest_symptoms(
+    unmatched_phrases,
+    alias_index,
+    limit=3,
+):
+    """
+    Suggest supported symptoms for unmatched wording.
+
+    Suggestions are for user review only and are not
+    automatically treated as confirmed symptoms.
+    """
+
+    suggestions = []
+
+    alias_lookup = {
+        item["alias"]: item
+        for item in alias_index
+    }
+
+    alias_choices = list(
+        alias_lookup.keys()
+    )
+
+    for phrase in unmatched_phrases:
+        results = process.extract(
+            phrase,
+            alias_choices,
+            scorer=fuzz.ratio,
+            limit=limit,
+        )
+
+        phrase_suggestions = []
+
+        seen_codes = set()
+
+        for (
+            alias,
+            score,
+            _,
+        ) in results:
+
+            if score < SUGGESTION_THRESHOLD:
+                continue
+
+            item = alias_lookup[
+                alias
+            ]
+
+            code = item["code"]
+
+            if code in seen_codes:
+                continue
+
+            phrase_suggestions.append(
+                {
+                    "code": code,
+                    "suggested_alias": alias,
+                    "language": item[
+                        "language"
+                    ],
+                    "score": round(
+                        score,
+                        1,
+                    ),
+                }
+            )
+
+            seen_codes.add(
+                code
+            )
+
+        suggestions.append(
+            {
+                "unmatched_text": phrase,
+                "suggestions": (
+                    phrase_suggestions
+                ),
+            }
+        )
+
+    return suggestions
+
 def main():
     if len(sys.argv) < 2:
-        print(
-            "Usage:"
-        )
+        print("Usage:")
         print(
             'python nlp/symptom_mapper.py '
-            '"I have fever na kikohozi"'
+            '"I have fever and a sore throat"'
         )
         return
 
@@ -363,6 +547,22 @@ def main():
 
     matches = find_symptoms(
         text
+    )
+
+    alias_index = build_alias_index()
+
+    unmatched_phrases = (
+        find_unmatched_text(
+            text,
+            matches,
+        )
+    )
+
+    suggestions = (
+        suggest_symptoms(
+            unmatched_phrases,
+            alias_index,
+        )
     )
 
     print()
@@ -376,21 +576,67 @@ def main():
         "Recognised symptoms:"
     )
 
-    if not matches:
+    if matches:
+        for match in matches:
+            print(
+                "-",
+                match["code"],
+                "|",
+                match["matched_alias"],
+                "|",
+                match["language"],
+                "|",
+                match["match_type"],
+                "|",
+                match["score"],
+            )
+    else:
         print(
             "No supported symptoms found."
         )
-        return
 
-    for match in matches:
+    print()
+    print(
+        "Unmatched wording:"
+    )
+
+    if not suggestions:
+        print(
+            "None."
+        )
+
+    for item in suggestions:
         print(
             "-",
-            match["code"],
-            "|",
-            match["matched_alias"],
-            "|",
-            match["language"],
+            item["unmatched_text"],
         )
+
+        if not item["suggestions"]:
+            print(
+                "  No close supported "
+                "symptom suggestion."
+            )
+            continue
+
+        print(
+            "  Suggestions:"
+        )
+
+        for suggestion in (
+            item["suggestions"]
+        ):
+            print(
+                "  -",
+                suggestion["code"],
+                "|",
+                suggestion[
+                    "suggested_alias"
+                ],
+                "|",
+                suggestion["language"],
+                "|",
+                suggestion["score"],
+            )
 
 
 if __name__ == "__main__":
