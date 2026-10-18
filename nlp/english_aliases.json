@@ -42,7 +42,8 @@
     "coughing up blood",
     "blood in cough",
     "blood in phlegm",
-    "bloody sputum"
+    "bloody sputum",
+    "blood in my sputum"
   ],
   "shortness_of_breath": [
     "shortness of breath",
@@ -50,7 +51,9 @@
     "difficulty breathing",
     "hard to breathe",
     "cannot breathe",
-    "can't breathe"
+    "can't breathe",
+    "struggling to breathe",
+    "can't catch my breath"
   ],
   "night_breathlessness": [
     "waking up breathless",
@@ -188,7 +191,8 @@
   "weight_loss": [
     "weight loss",
     "unintended weight loss",
-    "losing weight without trying"
+    "losing weight without trying",
+    "losing weight"
   ],
   "blue_lips": [
     "blue lips",
