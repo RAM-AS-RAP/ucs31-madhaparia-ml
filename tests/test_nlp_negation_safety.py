@@ -82,38 +82,52 @@ class TestNLPNegationSafety(unittest.TestCase):
         self.assertTrue(red_flag)
 
 
+
     def test_sneezing_not_confused_with_wheezing(self):
         result = build_confirmation_output(
             "I have a runny nose, sneezing and a mild cough"
         )
 
-        codes = {
-            symptom["code"]
-            for symptom in result["recognised_symptoms"]
+        symptoms = {
+            item["code"]: item
+            for item in result["recognised_symptoms"]
         }
 
-        self.assertIn("runny_blocked_nose", codes)
-        self.assertIn("cough", codes)
-        self.assertNotIn("wheezing", codes)
+        self.assertIn("runny_blocked_nose", symptoms)
+        self.assertIn("cough", symptoms)
+        self.assertIn("sneezing", symptoms)
 
-        sneezing = next(
-            (
-                item
-                for item in result["unmatched_wording"]
-                if item["unmatched_text"] == "sneezing"
-            ),
-            None
+        self.assertEqual(
+            symptoms["sneezing"]["status"],
+            "present"
         )
 
-        self.assertIsNotNone(sneezing)
-        self.assertFalse(
-            any(
-                suggestion["code"] == "wheezing"
-                for suggestion in sneezing["suggestions"]
-            )
-        )
+        self.assertNotIn("wheezing", symptoms)
 
 
+    def test_sneezing_english_swahili_negation(self):
+        cases = {
+            "I am sneezing": "present",
+            "I am not sneezing": "absent",
+            "Napiga chafya": "present",
+            "Sina chafya": "absent",
+            "Sipigi chafya": "absent",
+        }
+
+        for sentence, expected in cases.items():
+            with self.subTest(sentence=sentence):
+                result = build_confirmation_output(sentence)
+
+                statuses = {
+                    item["code"]: item["status"]
+                    for item in result["recognised_symptoms"]
+                }
+
+                self.assertEqual(
+                    statuses.get("sneezing"),
+                    expected
+                )
+                self.assertFalse(result["has_red_flag"])
 
 
 if __name__ == "__main__":

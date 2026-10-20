@@ -210,5 +210,6 @@
     "fainted",
     "passed out",
     "passing out"
-  ]
+  ],
+  "sneezing": ["sneezing", "sneeze", "frequent sneezing"]
 }
