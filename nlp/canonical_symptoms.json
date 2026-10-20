@@ -680,5 +680,24 @@
       ],
       "sw": []
     }
+  },
+  {
+    "code": "sneezing",
+    "display_name": "Sneezing",
+    "features": [],
+    "kind": "symptom",
+    "is_red_flag": false,
+    "aliases": {
+      "en": [
+        "sneezing",
+        "sneeze",
+        "frequent sneezing"
+      ],
+      "sw": [
+        "kupiga chafya",
+        "napiga chafya",
+        "chafya"
+      ]
+    }
   }
 ]

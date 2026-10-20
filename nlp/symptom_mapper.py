@@ -667,8 +667,7 @@ def infer_symptom_status(text, matched_alias):
         )
 
         negations = list(re.finditer(
-            r"\b(?:no|not|never|without|don'?t|doesn'?t|didn'?t|sina|hana|hakuna)\b",
-            clause
+            r"\b(?:no|not|never|without|don'?t|doesn'?t|didn'?t|sina|hana|hakuna|sipigi)\b",            clause
         ))
 
         if uncertain:
