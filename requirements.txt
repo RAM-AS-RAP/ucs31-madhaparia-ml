@@ -8,3 +8,4 @@ ipykernel
 rapidfuzz
 shap
 xgboost
+pytest

@@ -576,7 +576,7 @@ tests/test_symptom_mapper.py
 Run the full test suite with:
 
 ```powershell
-python -m unittest discover -s tests -p "test_*.py" -v
+python -m pytest tests -v
 ```
 
 The current suite contains 12 automated tests covering:
@@ -724,7 +724,7 @@ python .\nlp\symptom_mapper.py "I have fever na kikohozi"
 Run the automated tests:
 
 ```powershell
-python -m unittest discover -s tests -p "test_*.py" -v
+python -m pytest tests -v
 ```
 
 ## Recommended Workflow
