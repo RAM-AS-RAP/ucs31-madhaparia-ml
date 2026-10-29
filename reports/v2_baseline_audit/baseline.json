@@ -1,0 +1,2118 @@
+{
+  "audit_version": 1,
+  "created_at_utc": "2026-10-29T06:55:32.460469+00:00",
+  "git_commit": "1addf3abe7d8db7daeae26a9d78f90bf86d49c11",
+  "source_sha256": {
+    "models/rf_v2_23class_prototype.joblib": "cab5ef5cd88e704b2dd515e3cddeaa872633b1b20532843aa13174e6549131e8",
+    "models/v2_feature_schema.json": "cf021c7cb03620a1758e51fc9824f9798608358b86871040e13b5e68204914bc",
+    "nlp/canonical_symptoms.json": "8080a62fab2afe9cd2ebe36aa1424ccb4050f79e7e911583369652e790ae178a",
+    "inference/backend_adapter.py": "dff5b17d8972b15d693719fd46bd3e6011cf067d2b767e5bd90b73bc8942ca14",
+    "inference/v2_predictor.py": "f1a2732f5ec88e6ddb0ca2026168192c3372f10bba2e5719eb86d05bb86a5ac5",
+    "inference/prediction_confidence.py": "7969f45b0d6c997bed5947862a4e36d009e9d2c94ba1d6b6b8d60ba5116d9887",
+    "scripts/v2_feature_encoder.py": "97d8f14d6a5c3c0ebd388c31ae1846d3929b7c637e7e79118c20980de3c99baf",
+    "scripts/audit_v2_baseline.py": "ee26c9aad33131c0ea0299feb907f8da2fb8926e8f51d5f8a515f8a7740511c2"
+  },
+  "python_version": "3.11.9",
+  "package_versions": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "joblib": "1.6.0"
+  },
+  "model_type": "RandomForestClassifier",
+  "feature_count": 66,
+  "class_count": 23,
+  "schema": {
+    "version": "V2",
+    "symptom_features": [
+      "E_103",
+      "E_112",
+      "E_14",
+      "E_144",
+      "E_161",
+      "E_162",
+      "E_166",
+      "E_169",
+      "E_170",
+      "E_181",
+      "E_182",
+      "E_190",
+      "E_194",
+      "E_201",
+      "E_203",
+      "E_212",
+      "E_214",
+      "E_217",
+      "E_218",
+      "E_220",
+      "E_45",
+      "E_50",
+      "E_53",
+      "E_65",
+      "E_66",
+      "E_67",
+      "E_77",
+      "E_88",
+      "E_89",
+      "E_91",
+      "E_94",
+      "E_97"
+    ],
+    "feature_names": [
+      "AGE",
+      "SEX_M",
+      "E_103__present",
+      "E_112__present",
+      "E_14__present",
+      "E_144__present",
+      "E_161__present",
+      "E_162__present",
+      "E_166__present",
+      "E_169__present",
+      "E_170__present",
+      "E_181__present",
+      "E_182__present",
+      "E_190__present",
+      "E_194__present",
+      "E_201__present",
+      "E_203__present",
+      "E_212__present",
+      "E_214__present",
+      "E_217__present",
+      "E_218__present",
+      "E_220__present",
+      "E_45__present",
+      "E_50__present",
+      "E_53__present",
+      "E_65__present",
+      "E_66__present",
+      "E_67__present",
+      "E_77__present",
+      "E_88__present",
+      "E_89__present",
+      "E_91__present",
+      "E_94__present",
+      "E_97__present",
+      "E_103__absent",
+      "E_112__absent",
+      "E_14__absent",
+      "E_144__absent",
+      "E_161__absent",
+      "E_162__absent",
+      "E_166__absent",
+      "E_169__absent",
+      "E_170__absent",
+      "E_181__absent",
+      "E_182__absent",
+      "E_190__absent",
+      "E_194__absent",
+      "E_201__absent",
+      "E_203__absent",
+      "E_212__absent",
+      "E_214__absent",
+      "E_217__absent",
+      "E_218__absent",
+      "E_220__absent",
+      "E_45__absent",
+      "E_50__absent",
+      "E_53__absent",
+      "E_65__absent",
+      "E_66__absent",
+      "E_67__absent",
+      "E_77__absent",
+      "E_88__absent",
+      "E_89__absent",
+      "E_91__absent",
+      "E_94__absent",
+      "E_97__absent"
+    ],
+    "feature_count": 66,
+    "negative_evidence_training_supported": false
+  },
+  "limitations": [
+    "Cases are unlabelled behaviour probes, not accuracy tests.",
+    "Canonical symptoms are supplied manually; NLP is not tested.",
+    "Unsupported features are recorded and excluded explicitly.",
+    "Scores are uncalibrated model outputs.",
+    "Skip statuses are audit decisions, not new model behaviour."
+  ],
+  "cases": [
+    {
+      "case_id": "tiredness_headache",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "tiredness",
+        "headache"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "tiredness",
+          "display_name": "Constant tiredness",
+          "features": [
+            "E_89"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "tired",
+              "tiredness",
+              "fatigue",
+              "feeling tired",
+              "constant tiredness"
+            ],
+            "sw": [
+              "uchovu",
+              "kuchoka"
+            ]
+          }
+        },
+        {
+          "code": "headache",
+          "display_name": "Headache",
+          "features": [
+            "E_53",
+            "E_55_@_V_89"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "headache",
+              "head pain",
+              "my head hurts"
+            ],
+            "sw": [
+              "kichwa kuuma",
+              "kuumwa na kichwa",
+              "maumivu ya kichwa"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_53",
+        "E_55_@_V_89",
+        "E_89"
+      ],
+      "retained_v2_features": [
+        "E_53",
+        "E_89"
+      ],
+      "dropped_features": [
+        "E_55_@_V_89"
+      ],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 0.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 1.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 1.0,
+        "E_91__present": 0.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "Pulmonary neoplasm",
+        "confidence_score": 0.3361,
+        "second_condition": "COVID-19",
+        "second_score": 0.1211,
+        "score_margin": 0.215,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.33607235635492433,
+          "model_score_percent": 33.60723563549243
+        },
+        {
+          "rank": 2,
+          "condition": "COVID-19",
+          "model_score": 0.12105257283829154,
+          "model_score_percent": 12.105257283829154
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.08806048024128271,
+          "model_score_percent": 8.806048024128271
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0662605788859968,
+          "model_score_percent": 6.62605788859968
+        },
+        {
+          "rank": 5,
+          "condition": "URTI",
+          "model_score": 0.04957218953275581,
+          "model_score_percent": 4.95721895327558
+        },
+        {
+          "rank": 6,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.04725160728591804,
+          "model_score_percent": 4.7251607285918045
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04462082850020121,
+          "model_score_percent": 4.462082850020121
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.03697354159698125,
+          "model_score_percent": 3.6973541596981248
+        },
+        {
+          "rank": 9,
+          "condition": "Influenza",
+          "model_score": 0.036792647439208584,
+          "model_score_percent": 3.6792647439208586
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.032415289802800534,
+          "model_score_percent": 3.2415289802800533
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.02742010154285599,
+          "model_score_percent": 2.742010154285599
+        },
+        {
+          "rank": 12,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02722831222555723,
+          "model_score_percent": 2.722831222555723
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02583398999285272,
+          "model_score_percent": 2.5833989992852717
+        },
+        {
+          "rank": 14,
+          "condition": "Tuberculosis",
+          "model_score": 0.012782307714478741,
+          "model_score_percent": 1.2782307714478742
+        },
+        {
+          "rank": 15,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.009936359034466248,
+          "model_score_percent": 0.9936359034466248
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.008335322230027965,
+          "model_score_percent": 0.8335322230027965
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.00793721158683723,
+          "model_score_percent": 0.793721158683723
+        },
+        {
+          "rank": 18,
+          "condition": "Croup",
+          "model_score": 0.007649166364285017,
+          "model_score_percent": 0.7649166364285017
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.004535588814945604,
+          "model_score_percent": 0.4535588814945604
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.0038503173760100237,
+          "model_score_percent": 0.38503173760100234
+        },
+        {
+          "rank": 21,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0022648626308745573,
+          "model_score_percent": 0.22648626308745573
+        },
+        {
+          "rank": 22,
+          "condition": "Larygospasm",
+          "model_score": 0.0018755622502562815,
+          "model_score_percent": 0.18755622502562816
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.001278805758191559,
+          "model_score_percent": 0.1278805758191559
+        }
+      ]
+    },
+    {
+      "case_id": "fever_cough",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "fever",
+        "cough"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "fever",
+          "display_name": "Fever",
+          "features": [
+            "E_91"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "fever",
+              "high temperature",
+              "temperature",
+              "hot body",
+              "feeling feverish"
+            ],
+            "sw": [
+              "homa",
+              "joto mwilini"
+            ]
+          }
+        },
+        {
+          "code": "cough",
+          "display_name": "Cough",
+          "features": [
+            "E_201"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "cough",
+              "coughing",
+              "i am coughing",
+              "persistent cough",
+              "coff"
+            ],
+            "sw": [
+              "kikohozi",
+              "kukohoa"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_201",
+        "E_91"
+      ],
+      "retained_v2_features": [
+        "E_201",
+        "E_91"
+      ],
+      "dropped_features": [],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 1.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 0.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 0.0,
+        "E_91__present": 1.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "Tuberculosis",
+        "confidence_score": 0.1645,
+        "second_condition": "Viral pharyngitis",
+        "second_score": 0.0908,
+        "score_margin": 0.0737,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score",
+          "close_alternative"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.16454418809169866,
+          "model_score_percent": 16.454418809169866
+        },
+        {
+          "rank": 2,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.0907963900552535,
+          "model_score_percent": 9.07963900552535
+        },
+        {
+          "rank": 3,
+          "condition": "Influenza",
+          "model_score": 0.07478747539832056,
+          "model_score_percent": 7.478747539832057
+        },
+        {
+          "rank": 4,
+          "condition": "URTI",
+          "model_score": 0.07378501464342681,
+          "model_score_percent": 7.378501464342681
+        },
+        {
+          "rank": 5,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0734770881259611,
+          "model_score_percent": 7.34770881259611
+        },
+        {
+          "rank": 6,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.05375450027589063,
+          "model_score_percent": 5.375450027589063
+        },
+        {
+          "rank": 7,
+          "condition": "Bronchiectasis",
+          "model_score": 0.05120797262138302,
+          "model_score_percent": 5.120797262138302
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.048209643918380084,
+          "model_score_percent": 4.820964391838008
+        },
+        {
+          "rank": 9,
+          "condition": "Pneumonia",
+          "model_score": 0.04707005643587233,
+          "model_score_percent": 4.707005643587233
+        },
+        {
+          "rank": 10,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.04496933833959203,
+          "model_score_percent": 4.496933833959203
+        },
+        {
+          "rank": 11,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.040036357979590265,
+          "model_score_percent": 4.003635797959026
+        },
+        {
+          "rank": 12,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.03628139582323663,
+          "model_score_percent": 3.628139582323663
+        },
+        {
+          "rank": 13,
+          "condition": "Croup",
+          "model_score": 0.028718232632536998,
+          "model_score_percent": 2.8718232632536997
+        },
+        {
+          "rank": 14,
+          "condition": "COVID-19",
+          "model_score": 0.027405379633177147,
+          "model_score_percent": 2.7405379633177147
+        },
+        {
+          "rank": 15,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.02737080858415373,
+          "model_score_percent": 2.7370808584153727
+        },
+        {
+          "rank": 16,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.02476128224213386,
+          "model_score_percent": 2.476128224213386
+        },
+        {
+          "rank": 17,
+          "condition": "Epiglottitis",
+          "model_score": 0.022512600679343724,
+          "model_score_percent": 2.2512600679343726
+        },
+        {
+          "rank": 18,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.01804901901279846,
+          "model_score_percent": 1.804901901279846
+        },
+        {
+          "rank": 19,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.01588012541490192,
+          "model_score_percent": 1.588012541490192
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.012225583021531494,
+          "model_score_percent": 1.2225583021531494
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.009589331217471716,
+          "model_score_percent": 0.9589331217471716
+        },
+        {
+          "rank": 22,
+          "condition": "Bronchiolitis",
+          "model_score": 0.007886330097993563,
+          "model_score_percent": 0.7886330097993564
+        },
+        {
+          "rank": 23,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.006681885755351691,
+          "model_score_percent": 0.6681885755351691
+        }
+      ]
+    },
+    {
+      "case_id": "tiredness_chest_pain",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "tiredness",
+        "chest_pain"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "tiredness",
+          "display_name": "Constant tiredness",
+          "features": [
+            "E_89"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "tired",
+              "tiredness",
+              "fatigue",
+              "feeling tired",
+              "constant tiredness"
+            ],
+            "sw": [
+              "uchovu",
+              "kuchoka"
+            ]
+          }
+        },
+        {
+          "code": "chest_pain",
+          "display_name": "Chest pain",
+          "features": [
+            "E_53",
+            "E_55_@_V_101"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "chest pain",
+              "chest hurts",
+              "pain in chest"
+            ],
+            "sw": [
+              "kifua kuuma",
+              "maumivu ya kifua"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_53",
+        "E_55_@_V_101",
+        "E_89"
+      ],
+      "retained_v2_features": [
+        "E_53",
+        "E_89"
+      ],
+      "dropped_features": [
+        "E_55_@_V_101"
+      ],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 0.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 1.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 1.0,
+        "E_91__present": 0.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "Pulmonary neoplasm",
+        "confidence_score": 0.3361,
+        "second_condition": "COVID-19",
+        "second_score": 0.1211,
+        "score_margin": 0.215,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.33607235635492444,
+          "model_score_percent": 33.607235635492444
+        },
+        {
+          "rank": 2,
+          "condition": "COVID-19",
+          "model_score": 0.12105257283829154,
+          "model_score_percent": 12.105257283829154
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.08806048024128271,
+          "model_score_percent": 8.806048024128271
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0662605788859968,
+          "model_score_percent": 6.62605788859968
+        },
+        {
+          "rank": 5,
+          "condition": "URTI",
+          "model_score": 0.04957218953275581,
+          "model_score_percent": 4.95721895327558
+        },
+        {
+          "rank": 6,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.04725160728591804,
+          "model_score_percent": 4.7251607285918045
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04462082850020121,
+          "model_score_percent": 4.462082850020121
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.03697354159698125,
+          "model_score_percent": 3.6973541596981248
+        },
+        {
+          "rank": 9,
+          "condition": "Influenza",
+          "model_score": 0.036792647439208584,
+          "model_score_percent": 3.6792647439208586
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.032415289802800534,
+          "model_score_percent": 3.2415289802800533
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.027420101542855985,
+          "model_score_percent": 2.7420101542855986
+        },
+        {
+          "rank": 12,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02722831222555723,
+          "model_score_percent": 2.722831222555723
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02583398999285272,
+          "model_score_percent": 2.5833989992852717
+        },
+        {
+          "rank": 14,
+          "condition": "Tuberculosis",
+          "model_score": 0.012782307714478741,
+          "model_score_percent": 1.2782307714478742
+        },
+        {
+          "rank": 15,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.009936359034466248,
+          "model_score_percent": 0.9936359034466248
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.008335322230027965,
+          "model_score_percent": 0.8335322230027965
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.00793721158683723,
+          "model_score_percent": 0.793721158683723
+        },
+        {
+          "rank": 18,
+          "condition": "Croup",
+          "model_score": 0.007649166364285018,
+          "model_score_percent": 0.7649166364285018
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.004535588814945604,
+          "model_score_percent": 0.4535588814945604
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.0038503173760100237,
+          "model_score_percent": 0.38503173760100234
+        },
+        {
+          "rank": 21,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0022648626308745578,
+          "model_score_percent": 0.22648626308745579
+        },
+        {
+          "rank": 22,
+          "condition": "Larygospasm",
+          "model_score": 0.0018755622502562815,
+          "model_score_percent": 0.18755622502562816
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.001278805758191559,
+          "model_score_percent": 0.1278805758191559
+        }
+      ]
+    },
+    {
+      "case_id": "tiredness_only",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "tiredness"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "tiredness",
+          "display_name": "Constant tiredness",
+          "features": [
+            "E_89"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "tired",
+              "tiredness",
+              "fatigue",
+              "feeling tired",
+              "constant tiredness"
+            ],
+            "sw": [
+              "uchovu",
+              "kuchoka"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_89"
+      ],
+      "retained_v2_features": [
+        "E_89"
+      ],
+      "dropped_features": [],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 0.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 0.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 1.0,
+        "E_91__present": 0.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "COVID-19",
+        "confidence_score": 0.2848,
+        "second_condition": "Pulmonary neoplasm",
+        "second_score": 0.1563,
+        "score_margin": 0.1286,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "COVID-19",
+          "model_score": 0.2848491532451579,
+          "model_score_percent": 28.484915324515793
+        },
+        {
+          "rank": 2,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.1562834211054759,
+          "model_score_percent": 15.62834211054759
+        },
+        {
+          "rank": 3,
+          "condition": "Influenza",
+          "model_score": 0.04363338791097884,
+          "model_score_percent": 4.363338791097884
+        },
+        {
+          "rank": 4,
+          "condition": "Tuberculosis",
+          "model_score": 0.04187240620780366,
+          "model_score_percent": 4.187240620780366
+        },
+        {
+          "rank": 5,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.041839299781187,
+          "model_score_percent": 4.1839299781187
+        },
+        {
+          "rank": 6,
+          "condition": "URTI",
+          "model_score": 0.03913770277101856,
+          "model_score_percent": 3.9137702771018557
+        },
+        {
+          "rank": 7,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.03749931189797413,
+          "model_score_percent": 3.7499311897974135
+        },
+        {
+          "rank": 8,
+          "condition": "Larygospasm",
+          "model_score": 0.031751684187201715,
+          "model_score_percent": 3.1751684187201716
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.03156145935835407,
+          "model_score_percent": 3.156145935835407
+        },
+        {
+          "rank": 10,
+          "condition": "Bronchiectasis",
+          "model_score": 0.03141087092667449,
+          "model_score_percent": 3.1410870926674486
+        },
+        {
+          "rank": 11,
+          "condition": "Acute laryngitis",
+          "model_score": 0.02829910091627888,
+          "model_score_percent": 2.829910091627888
+        },
+        {
+          "rank": 12,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.026550865794095366,
+          "model_score_percent": 2.6550865794095366
+        },
+        {
+          "rank": 13,
+          "condition": "Pneumonia",
+          "model_score": 0.025995383300694275,
+          "model_score_percent": 2.5995383300694277
+        },
+        {
+          "rank": 14,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.02498359275278255,
+          "model_score_percent": 2.498359275278255
+        },
+        {
+          "rank": 15,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.0234414056322407,
+          "model_score_percent": 2.34414056322407
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchitis",
+          "model_score": 0.021669782046296288,
+          "model_score_percent": 2.1669782046296286
+        },
+        {
+          "rank": 17,
+          "condition": "Croup",
+          "model_score": 0.021498080775694907,
+          "model_score_percent": 2.1498080775694905
+        },
+        {
+          "rank": 18,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.02043073003715803,
+          "model_score_percent": 2.043073003715803
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.020352238814839593,
+          "model_score_percent": 2.0352238814839594
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.017771459505000288,
+          "model_score_percent": 1.7771459505000289
+        },
+        {
+          "rank": 21,
+          "condition": "Epiglottitis",
+          "model_score": 0.016451418109805875,
+          "model_score_percent": 1.6451418109805875
+        },
+        {
+          "rank": 22,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.009368402682527739,
+          "model_score_percent": 0.9368402682527739
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.0033488422407591785,
+          "model_score_percent": 0.33488422407591784
+        }
+      ]
+    },
+    {
+      "case_id": "headache_only",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "headache"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "headache",
+          "display_name": "Headache",
+          "features": [
+            "E_53",
+            "E_55_@_V_89"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "headache",
+              "head pain",
+              "my head hurts"
+            ],
+            "sw": [
+              "kichwa kuuma",
+              "kuumwa na kichwa",
+              "maumivu ya kichwa"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_53",
+        "E_55_@_V_89"
+      ],
+      "retained_v2_features": [
+        "E_53"
+      ],
+      "dropped_features": [
+        "E_55_@_V_89"
+      ],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 0.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 1.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 0.0,
+        "E_91__present": 0.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "Viral pharyngitis",
+        "confidence_score": 0.1614,
+        "second_condition": "Acute laryngitis",
+        "second_score": 0.1161,
+        "score_margin": 0.0452,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score",
+          "close_alternative"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.16137179660256012,
+          "model_score_percent": 16.137179660256013
+        },
+        {
+          "rank": 2,
+          "condition": "Acute laryngitis",
+          "model_score": 0.11614992265064367,
+          "model_score_percent": 11.614992265064366
+        },
+        {
+          "rank": 3,
+          "condition": "URTI",
+          "model_score": 0.0856985305470224,
+          "model_score_percent": 8.56985305470224
+        },
+        {
+          "rank": 4,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.08237129044322486,
+          "model_score_percent": 8.237129044322486
+        },
+        {
+          "rank": 5,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.07801320462513285,
+          "model_score_percent": 7.801320462513285
+        },
+        {
+          "rank": 6,
+          "condition": "Bronchitis",
+          "model_score": 0.06569339360017958,
+          "model_score_percent": 6.569339360017958
+        },
+        {
+          "rank": 7,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.06472542551486755,
+          "model_score_percent": 6.472542551486756
+        },
+        {
+          "rank": 8,
+          "condition": "Influenza",
+          "model_score": 0.06427697027575832,
+          "model_score_percent": 6.4276970275758325
+        },
+        {
+          "rank": 9,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.05046953865694423,
+          "model_score_percent": 5.046953865694423
+        },
+        {
+          "rank": 10,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.049224819238460685,
+          "model_score_percent": 4.922481923846068
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.04904797527518912,
+          "model_score_percent": 4.904797527518912
+        },
+        {
+          "rank": 12,
+          "condition": "Epiglottitis",
+          "model_score": 0.044371618914928475,
+          "model_score_percent": 4.437161891492847
+        },
+        {
+          "rank": 13,
+          "condition": "Tuberculosis",
+          "model_score": 0.01798275213463644,
+          "model_score_percent": 1.798275213463644
+        },
+        {
+          "rank": 14,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.01473346509941861,
+          "model_score_percent": 1.473346509941861
+        },
+        {
+          "rank": 15,
+          "condition": "Bronchiectasis",
+          "model_score": 0.011363545062140773,
+          "model_score_percent": 1.1363545062140772
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.010003199809269791,
+          "model_score_percent": 1.0003199809269792
+        },
+        {
+          "rank": 17,
+          "condition": "Croup",
+          "model_score": 0.009280903660136255,
+          "model_score_percent": 0.9280903660136255
+        },
+        {
+          "rank": 18,
+          "condition": "Whooping cough",
+          "model_score": 0.00584446138841991,
+          "model_score_percent": 0.584446138841991
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.005685768559745739,
+          "model_score_percent": 0.568576855974574
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.004497681662710529,
+          "model_score_percent": 0.44976816627105287
+        },
+        {
+          "rank": 21,
+          "condition": "COVID-19",
+          "model_score": 0.004336350360493478,
+          "model_score_percent": 0.43363503604934783
+        },
+        {
+          "rank": 22,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0033232969421839163,
+          "model_score_percent": 0.33232969421839165
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.0015340889759327089,
+          "model_score_percent": 0.1534088975932709
+        }
+      ]
+    },
+    {
+      "case_id": "fever_only",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "fever"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "fever",
+          "display_name": "Fever",
+          "features": [
+            "E_91"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "fever",
+              "high temperature",
+              "temperature",
+              "hot body",
+              "feeling feverish"
+            ],
+            "sw": [
+              "homa",
+              "joto mwilini"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_91"
+      ],
+      "retained_v2_features": [
+        "E_91"
+      ],
+      "dropped_features": [],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 0.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 0.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 0.0,
+        "E_91__present": 1.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "Tuberculosis",
+        "confidence_score": 0.1321,
+        "second_condition": "Viral pharyngitis",
+        "second_score": 0.0867,
+        "score_margin": 0.0455,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score",
+          "close_alternative"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.1321491573522832,
+          "model_score_percent": 13.214915735228319
+        },
+        {
+          "rank": 2,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.0866508540063815,
+          "model_score_percent": 8.665085400638151
+        },
+        {
+          "rank": 3,
+          "condition": "Influenza",
+          "model_score": 0.08117756851473985,
+          "model_score_percent": 8.117756851473985
+        },
+        {
+          "rank": 4,
+          "condition": "URTI",
+          "model_score": 0.0780306444464984,
+          "model_score_percent": 7.8030644446498405
+        },
+        {
+          "rank": 5,
+          "condition": "Acute laryngitis",
+          "model_score": 0.06444040844111677,
+          "model_score_percent": 6.444040844111678
+        },
+        {
+          "rank": 6,
+          "condition": "Croup",
+          "model_score": 0.055183142810479265,
+          "model_score_percent": 5.518314281047926
+        },
+        {
+          "rank": 7,
+          "condition": "Pneumonia",
+          "model_score": 0.051915227628727696,
+          "model_score_percent": 5.191522762872769
+        },
+        {
+          "rank": 8,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04633233554388484,
+          "model_score_percent": 4.633233554388484
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchitis",
+          "model_score": 0.04460540753467954,
+          "model_score_percent": 4.460540753467955
+        },
+        {
+          "rank": 10,
+          "condition": "Bronchiectasis",
+          "model_score": 0.04446444376990858,
+          "model_score_percent": 4.446444376990858
+        },
+        {
+          "rank": 11,
+          "condition": "Epiglottitis",
+          "model_score": 0.038123658627168835,
+          "model_score_percent": 3.8123658627168835
+        },
+        {
+          "rank": 12,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.03701583486960454,
+          "model_score_percent": 3.701583486960454
+        },
+        {
+          "rank": 13,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.03542644350867114,
+          "model_score_percent": 3.542644350867114
+        },
+        {
+          "rank": 14,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.029777179031706923,
+          "model_score_percent": 2.977717903170692
+        },
+        {
+          "rank": 15,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.027536968419987536,
+          "model_score_percent": 2.7536968419987535
+        },
+        {
+          "rank": 16,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.02366084464621943,
+          "model_score_percent": 2.366084464621943
+        },
+        {
+          "rank": 17,
+          "condition": "COVID-19",
+          "model_score": 0.023410965805892584,
+          "model_score_percent": 2.3410965805892583
+        },
+        {
+          "rank": 18,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.021999563665075224,
+          "model_score_percent": 2.1999563665075224
+        },
+        {
+          "rank": 19,
+          "condition": "Larygospasm",
+          "model_score": 0.02050581512954273,
+          "model_score_percent": 2.050581512954273
+        },
+        {
+          "rank": 20,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.020438046420681796,
+          "model_score_percent": 2.0438046420681797
+        },
+        {
+          "rank": 21,
+          "condition": "Whooping cough",
+          "model_score": 0.019111077614919862,
+          "model_score_percent": 1.9111077614919862
+        },
+        {
+          "rank": 22,
+          "condition": "Bronchiolitis",
+          "model_score": 0.00959390144170985,
+          "model_score_percent": 0.9593901441709849
+        },
+        {
+          "rank": 23,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0084505107701199,
+          "model_score_percent": 0.84505107701199
+        }
+      ]
+    },
+    {
+      "case_id": "cough_only",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "cough"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "cough",
+          "display_name": "Cough",
+          "features": [
+            "E_201"
+          ],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "cough",
+              "coughing",
+              "i am coughing",
+              "persistent cough",
+              "coff"
+            ],
+            "sw": [
+              "kikohozi",
+              "kukohoa"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [
+        "E_201"
+      ],
+      "retained_v2_features": [
+        "E_201"
+      ],
+      "dropped_features": [],
+      "ground_truth_condition": null,
+      "audit_status": "prediction_recorded",
+      "encoded_features": {
+        "AGE": 22.0,
+        "SEX_M": 0.0,
+        "E_103__present": 0.0,
+        "E_112__present": 0.0,
+        "E_14__present": 0.0,
+        "E_144__present": 0.0,
+        "E_161__present": 0.0,
+        "E_162__present": 0.0,
+        "E_166__present": 0.0,
+        "E_169__present": 0.0,
+        "E_170__present": 0.0,
+        "E_181__present": 0.0,
+        "E_182__present": 0.0,
+        "E_190__present": 0.0,
+        "E_194__present": 0.0,
+        "E_201__present": 1.0,
+        "E_203__present": 0.0,
+        "E_212__present": 0.0,
+        "E_214__present": 0.0,
+        "E_217__present": 0.0,
+        "E_218__present": 0.0,
+        "E_220__present": 0.0,
+        "E_45__present": 0.0,
+        "E_50__present": 0.0,
+        "E_53__present": 0.0,
+        "E_65__present": 0.0,
+        "E_66__present": 0.0,
+        "E_67__present": 0.0,
+        "E_77__present": 0.0,
+        "E_88__present": 0.0,
+        "E_89__present": 0.0,
+        "E_91__present": 0.0,
+        "E_94__present": 0.0,
+        "E_97__present": 0.0,
+        "E_103__absent": 0.0,
+        "E_112__absent": 0.0,
+        "E_14__absent": 0.0,
+        "E_144__absent": 0.0,
+        "E_161__absent": 0.0,
+        "E_162__absent": 0.0,
+        "E_166__absent": 0.0,
+        "E_169__absent": 0.0,
+        "E_170__absent": 0.0,
+        "E_181__absent": 0.0,
+        "E_182__absent": 0.0,
+        "E_190__absent": 0.0,
+        "E_194__absent": 0.0,
+        "E_201__absent": 0.0,
+        "E_203__absent": 0.0,
+        "E_212__absent": 0.0,
+        "E_214__absent": 0.0,
+        "E_217__absent": 0.0,
+        "E_218__absent": 0.0,
+        "E_220__absent": 0.0,
+        "E_45__absent": 0.0,
+        "E_50__absent": 0.0,
+        "E_53__absent": 0.0,
+        "E_65__absent": 0.0,
+        "E_66__absent": 0.0,
+        "E_67__absent": 0.0,
+        "E_77__absent": 0.0,
+        "E_88__absent": 0.0,
+        "E_89__absent": 0.0,
+        "E_91__absent": 0.0,
+        "E_94__absent": 0.0,
+        "E_97__absent": 0.0
+      },
+      "assessment": {
+        "predicted_condition": "Tuberculosis",
+        "confidence_score": 0.1112,
+        "second_condition": "Bronchiectasis",
+        "second_score": 0.0738,
+        "score_margin": 0.0375,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "low_model_score",
+          "close_alternative"
+        ],
+        "message": "The model's prediction is uncertain. The suggested condition should not be treated as a diagnosis. Consider professional medical advice.",
+        "score_note": "This is an uncalibrated model score, not a clinically validated disease probability."
+      },
+      "ranked_conditions": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.11122782820379776,
+          "model_score_percent": 11.122782820379776
+        },
+        {
+          "rank": 2,
+          "condition": "Bronchiectasis",
+          "model_score": 0.07377231833593044,
+          "model_score_percent": 7.377231833593044
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.07199336776194233,
+          "model_score_percent": 7.199336776194233
+        },
+        {
+          "rank": 4,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.07109456890289703,
+          "model_score_percent": 7.109456890289703
+        },
+        {
+          "rank": 5,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.06800997125821653,
+          "model_score_percent": 6.800997125821653
+        },
+        {
+          "rank": 6,
+          "condition": "Influenza",
+          "model_score": 0.06798654283469094,
+          "model_score_percent": 6.7986542834690935
+        },
+        {
+          "rank": 7,
+          "condition": "URTI",
+          "model_score": 0.06152656533457568,
+          "model_score_percent": 6.152656533457568
+        },
+        {
+          "rank": 8,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.05275641735107118,
+          "model_score_percent": 5.275641735107118
+        },
+        {
+          "rank": 9,
+          "condition": "Acute laryngitis",
+          "model_score": 0.05143056520962054,
+          "model_score_percent": 5.1430565209620545
+        },
+        {
+          "rank": 10,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04964777777962821,
+          "model_score_percent": 4.964777777962821
+        },
+        {
+          "rank": 11,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.043211497744879396,
+          "model_score_percent": 4.32114977448794
+        },
+        {
+          "rank": 12,
+          "condition": "Pneumonia",
+          "model_score": 0.04079508212011984,
+          "model_score_percent": 4.079508212011984
+        },
+        {
+          "rank": 13,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.04013545682646632,
+          "model_score_percent": 4.013545682646632
+        },
+        {
+          "rank": 14,
+          "condition": "Bronchitis",
+          "model_score": 0.038363615391859784,
+          "model_score_percent": 3.8363615391859787
+        },
+        {
+          "rank": 15,
+          "condition": "Croup",
+          "model_score": 0.023706958543947623,
+          "model_score_percent": 2.3706958543947625
+        },
+        {
+          "rank": 16,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02361234847035571,
+          "model_score_percent": 2.361234847035571
+        },
+        {
+          "rank": 17,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.02226263198933566,
+          "model_score_percent": 2.226263198933566
+        },
+        {
+          "rank": 18,
+          "condition": "COVID-19",
+          "model_score": 0.01901015954356801,
+          "model_score_percent": 1.9010159543568008
+        },
+        {
+          "rank": 19,
+          "condition": "Whooping cough",
+          "model_score": 0.018535818463181444,
+          "model_score_percent": 1.8535818463181444
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.01796941254892928,
+          "model_score_percent": 1.796941254892928
+        },
+        {
+          "rank": 21,
+          "condition": "Epiglottitis",
+          "model_score": 0.016828136800580783,
+          "model_score_percent": 1.6828136800580782
+        },
+        {
+          "rank": 22,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.011230916151896742,
+          "model_score_percent": 1.1230916151896742
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.004892042432508759,
+          "model_score_percent": 0.4892042432508759
+        }
+      ]
+    },
+    {
+      "case_id": "sneezing_only",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [
+        "sneezing"
+      ],
+      "canonical_symptoms": [
+        {
+          "code": "sneezing",
+          "display_name": "Sneezing",
+          "features": [],
+          "kind": "symptom",
+          "is_red_flag": false,
+          "aliases": {
+            "en": [
+              "sneezing",
+              "sneeze",
+              "frequent sneezing"
+            ],
+            "sw": [
+              "kupiga chafya",
+              "napiga chafya",
+              "chafya"
+            ]
+          }
+        }
+      ],
+      "mapped_features": [],
+      "retained_v2_features": [],
+      "dropped_features": [],
+      "ground_truth_condition": null,
+      "audit_status": "skipped_no_supported_features"
+    },
+    {
+      "case_id": "no_confirmed_symptoms",
+      "age": 22,
+      "sex": "F",
+      "input_mode": "manually_confirmed_canonical_symptoms",
+      "confirmed_codes": [],
+      "canonical_symptoms": [],
+      "mapped_features": [],
+      "retained_v2_features": [],
+      "dropped_features": [],
+      "ground_truth_condition": null,
+      "audit_status": "skipped_no_supported_features"
+    }
+  ]
+}
