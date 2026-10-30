@@ -1,0 +1,2 @@
+# Preserve generated SVG exports; allow trailing spaces in their drawing instructions.
+reports/candidate_model_comparison/figures/*.svg whitespace=-blank-at-eol

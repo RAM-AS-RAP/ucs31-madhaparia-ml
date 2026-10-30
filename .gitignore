@@ -46,3 +46,4 @@ Thumbs.db
 
 # Generated candidate dataset; retain the reproducible build report separately.
 /data/candidate_v1/
+/data/candidate_experiment_v1/

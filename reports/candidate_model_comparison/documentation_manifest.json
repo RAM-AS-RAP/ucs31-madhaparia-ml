@@ -1,0 +1,41 @@
+{
+  "comparison_manifest_sha256": "35ac8011858ee67690887f13fbc1062cf4f6ebcebb0770106bd9b6d1173c392d",
+  "plot_script_sha256": "5c8e2c5142e03291047d4d7b9d43ea98ee579009e745b728f831caa07ae5aeed",
+  "matplotlib_version": "3.11.2",
+  "selected_candidate": "rf_group_weighted",
+  "primary_source_groups": 52844,
+  "output_sha256": {
+    "comparison_manifest.json": "35ac8011858ee67690887f13fbc1062cf4f6ebcebb0770106bd9b6d1173c392d",
+    "comparison_table.md": "153ee109147015a10ce1e232a9858b0cb03b44489b621d5eaa6fc64ae21c74f8",
+    "confusion_counts.csv": "a1fb866af7f81924780bb647ddac837a45cdcf5925b11ded9393dd1d6dadae22",
+    "figures/confusion_frozen_v2_harmonized_full.png": "c87bb42e6a8a4f2375eab60955a60fa1e623250f2b0853b77eab7c0f325b9243",
+    "figures/confusion_frozen_v2_harmonized_full.svg": "3c68fe81288dcda9b0a3552c972b718d2662130df12b7c198e5d56f4c4d7813a",
+    "figures/confusion_frozen_v2_harmonized_up_to_2.png": "ce47ec78a7e15f5f88f8cb4ee69a9e543d3b403d5765b9f7522cae92129bfc5a",
+    "figures/confusion_frozen_v2_harmonized_up_to_2.svg": "a9946b8b038896f70c0a054bfc51b070bd7f32eb4075da1e4ed4af5c374aea15",
+    "figures/confusion_rf_group_weighted_full.png": "82d9815324531a8af40852cc027cd7682d68e28a8cc71bb5ffad53cdef9d48ef",
+    "figures/confusion_rf_group_weighted_full.svg": "25ad5e7e4bb3dfe17f20f23be05bc93d658949a2717c06d20072bdee770e86a0",
+    "figures/confusion_rf_group_weighted_up_to_2.png": "6c5635003a86b1e587c8eacacbb01b3afe55487edbae4baaea52ac4768243d5b",
+    "figures/confusion_rf_group_weighted_up_to_2.svg": "6301ed68897638791ed99761b1cbfc6181615a0c7ac4a03ee57a9e353bfe0870",
+    "figures/per_condition_f1_change.png": "3f91d047532b480e4a7e477db9b50d51412287aeb3271655b9e08c3fe67e065d",
+    "figures/per_condition_f1_change.svg": "086b6a8c7fd4473c7589c8f03272069501199140b5c621ca2a51faa11bb3c839",
+    "figures/per_condition_recall_change.png": "6d5769c17485bd5fc33fe17ce51add54c45dcbc05302fa459272656652bb0f94",
+    "figures/per_condition_recall_change.svg": "19035e11c5f41873067168c660467d8b1c68adf08a67c26930b456e665298b5f",
+    "figures/primary_metrics.png": "a81776caa3059a6faa6860697061464a7548e057eb214242be054227f77fd3b8",
+    "figures/primary_metrics.svg": "701f1bc5a7cb0a3a71b5fd9196d57fdeb764ad614ddffba45cdc085e73d9271e",
+    "inference_times.csv": "44bd32d4afb34bac0fbc361e1d94206633aa30199241a0974ca7b5cbde82b727",
+    "partition_manifest.json": "36516612857efe2d20db527c954e06e292d64f9e96449c392f97eb7733aadc78",
+    "per_condition.csv": "a5e87568e6918e7d0b97dc5b4b7c1f87a2a43804c0f4ef8b29794138cbd52a01",
+    "rf_class_balanced_training_manifest.json": "de611d8f5d311f3901254037bbc42f530bdfaa1050d112ab9c4664fef42bbc4e",
+    "rf_group_weighted_training_manifest.json": "06fab39c6e14aaeacfb0614dcd75be6c5bf94ca7865543cd7b32e19cc25e62af",
+    "selected_vs_v2_per_condition.csv": "27c02717ff30a0521cf3ddf480e1a949feb63ba3d0dfe1095af31cfd0252e13e",
+    "selection.json": "3e13cbc15d585399b46d8c8b2eedcfa3824c30566c533a65095ef57b47b1f9eb",
+    "summary.csv": "d2227f57bdcb23101ea67b5f8290db8420b0555fa7e86e7f6ba59bb9c964e3c4",
+    "view_manifest.json": "37beb938ae16186c3d2ae4a6afc5a63b2df176fd9ac1506ea4ee686cf0af891a"
+  },
+  "notes": [
+    "Charts were generated from saved comparison metrics.",
+    "No models were trained or predictions recomputed.",
+    "Negative per-condition changes are retained in the charts.",
+    "PNG files are exported at 300 dpi; SVG files are scalable."
+  ]
+}
