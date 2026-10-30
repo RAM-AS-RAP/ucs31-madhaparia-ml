@@ -1,0 +1,1346 @@
+{
+  "audit_version": 1,
+  "created_at_utc": "2026-10-29T07:13:28.386463+00:00",
+  "input_sha256": {
+    "nlp/canonical_symptoms.json": "8080a62fab2afe9cd2ebe36aa1424ccb4050f79e7e911583369652e790ae178a",
+    "nlp/english_aliases.json": "7cce9c8fb4de6f0145e490da03a8ba96a6aed8b5da5b6489b6437f49b46ab8cb",
+    "nlp/swahili_aliases.json": "bb3ab45fed3a53e1dc97f790ce6db87369e5bffbf1def6ed0795fc2adc4f3704",
+    "models/v2_feature_schema.json": "cf021c7cb03620a1758e51fc9824f9798608358b86871040e13b5e68204914bc",
+    "data/raw/release_evidences.json": "281c78b044ae60514e28ecc9052d08a8225dd3e2db3f00f8788b99c47b05e0c0"
+  },
+  "canonical_symptom_count": 37,
+  "v2_symptom_feature_count": 32,
+  "coverage_counts": {
+    "full_v2_coverage": 31,
+    "nlp_only": 1,
+    "partial_v2_coverage": 2,
+    "safety_only": 3
+  },
+  "source_issue_count": 0,
+  "identical_v2_input_groups": [
+    {
+      "retained_v2_features": [
+        "E_53"
+      ],
+      "canonical_codes": [
+        "headache",
+        "chest_pain"
+      ]
+    }
+  ],
+  "alias_conflicts": [],
+  "unknown_alias_codes": [],
+  "v2_features_without_canonical_mapping": [],
+  "limitations": [
+    "Full coverage means inclusion in the schema, not correctness.",
+    "All symptom meanings and aliases still require manual review.",
+    "Safety-only and NLP-only entries are not automatically errors.",
+    "Identical vectors describe schema-level information loss.",
+    "No training or model inference is performed."
+  ],
+  "symptoms": [
+    {
+      "code": "fever",
+      "display_name": "Fever",
+      "is_red_flag": false,
+      "english_aliases": [
+        "fever",
+        "high temperature",
+        "temperature",
+        "hot body",
+        "feeling feverish"
+      ],
+      "swahili_aliases": [
+        "homa",
+        "joto mwilini"
+      ],
+      "canonical_features": [
+        "E_91"
+      ],
+      "retained_v2_features": [
+        "E_91"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_91",
+          "base_evidence": "E_91",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have a fever (either felt or measured with a thermometer)?",
+          "source_type": "B",
+          "source_parent_question": "E_91",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "chills",
+      "display_name": "Chills / shivering",
+      "is_red_flag": false,
+      "english_aliases": [
+        "chills",
+        "shivering",
+        "shivers",
+        "feeling cold and shaking"
+      ],
+      "swahili_aliases": [
+        "baridi",
+        "kutetemeka"
+      ],
+      "canonical_features": [
+        "E_94"
+      ],
+      "retained_v2_features": [
+        "E_94"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_94",
+          "base_evidence": "E_94",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you had chills or shivers?",
+          "source_type": "B",
+          "source_parent_question": "E_94",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "cough",
+      "display_name": "Cough",
+      "is_red_flag": false,
+      "english_aliases": [
+        "cough",
+        "coughing",
+        "i am coughing",
+        "persistent cough",
+        "coff"
+      ],
+      "swahili_aliases": [
+        "kikohozi",
+        "kukohoa"
+      ],
+      "canonical_features": [
+        "E_201"
+      ],
+      "retained_v2_features": [
+        "E_201"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_201",
+          "base_evidence": "E_201",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have a cough?",
+          "source_type": "B",
+          "source_parent_question": "E_201",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "intense_coughing_fits",
+      "display_name": "Intense coughing fits",
+      "is_red_flag": false,
+      "english_aliases": [
+        "intense coughing fits",
+        "severe coughing fits",
+        "coughing attacks",
+        "cannot stop coughing"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_203"
+      ],
+      "retained_v2_features": [
+        "E_203"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_203",
+          "base_evidence": "E_203",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have intense coughing fits?",
+          "source_type": "B",
+          "source_parent_question": "E_203",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "vomiting_after_coughing",
+      "display_name": "Vomiting after coughing",
+      "is_red_flag": false,
+      "english_aliases": [
+        "vomiting after coughing",
+        "vomit after coughing",
+        "throwing up after coughing"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_166"
+      ],
+      "retained_v2_features": [
+        "E_166"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_166",
+          "base_evidence": "E_166",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Did you vomit after coughing?",
+          "source_type": "B",
+          "source_parent_question": "E_166",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "productive_cough",
+      "display_name": "Coughing up coloured or more phlegm",
+      "is_red_flag": false,
+      "english_aliases": [
+        "phlegm",
+        "mucus",
+        "productive cough",
+        "wet cough",
+        "coughing up phlegm",
+        "coughing up mucus"
+      ],
+      "swahili_aliases": [
+        "makohozi"
+      ],
+      "canonical_features": [
+        "E_77"
+      ],
+      "retained_v2_features": [
+        "E_77"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_77",
+          "base_evidence": "E_77",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have a cough that produces colored or more abundant sputum than usual?",
+          "source_type": "B",
+          "source_parent_question": "E_77",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "coughing_blood",
+      "display_name": "Coughing up blood",
+      "is_red_flag": true,
+      "english_aliases": [
+        "coughing up blood",
+        "blood in cough",
+        "blood in phlegm",
+        "bloody sputum",
+        "blood in my sputum"
+      ],
+      "swahili_aliases": [
+        "kukohoa damu"
+      ],
+      "canonical_features": [
+        "E_45"
+      ],
+      "retained_v2_features": [
+        "E_45"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_45",
+          "base_evidence": "E_45",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you been coughing up blood?",
+          "source_type": "B",
+          "source_parent_question": "E_45",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "shortness_of_breath",
+      "display_name": "Significant shortness of breath",
+      "is_red_flag": true,
+      "english_aliases": [
+        "shortness of breath",
+        "breathless",
+        "difficulty breathing",
+        "hard to breathe",
+        "cannot breathe",
+        "can't breathe",
+        "struggling to breathe",
+        "can't catch my breath"
+      ],
+      "swahili_aliases": [
+        "kushindwa kupumua",
+        "kupumua kwa shida",
+        "ninashindwa kupumua"
+      ],
+      "canonical_features": [
+        "E_66"
+      ],
+      "retained_v2_features": [
+        "E_66"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_66",
+          "base_evidence": "E_66",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Are you experiencing shortness of breath or difficulty breathing in a significant way?",
+          "source_type": "B",
+          "source_parent_question": "E_66",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "night_breathlessness",
+      "display_name": "Woken at night by choking or breathlessness",
+      "is_red_flag": false,
+      "english_aliases": [
+        "waking up breathless",
+        "breathless at night",
+        "choking at night",
+        "waking up choking"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_67"
+      ],
+      "retained_v2_features": [
+        "E_67"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_67",
+          "base_evidence": "E_67",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have bouts of choking or shortness of breath that wake you up at night?",
+          "source_type": "B",
+          "source_parent_question": "E_67",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "wheezing",
+      "display_name": "Wheezing when breathing out",
+      "is_red_flag": false,
+      "english_aliases": [
+        "wheezing",
+        "wheeze",
+        "tight chest",
+        "whistling when breathing"
+      ],
+      "swahili_aliases": [
+        "kifua kubana"
+      ],
+      "canonical_features": [
+        "E_214"
+      ],
+      "retained_v2_features": [
+        "E_214"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_214",
+          "base_evidence": "E_214",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you noticed a wheezing sound when you exhale?",
+          "source_type": "B",
+          "source_parent_question": "E_214",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "wheeze_after_coughing",
+      "display_name": "Noisy breathing or wheeze after coughing",
+      "is_red_flag": false,
+      "english_aliases": [
+        "wheezing after coughing",
+        "wheeze after coughing",
+        "noisy breathing after coughing"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_112"
+      ],
+      "retained_v2_features": [
+        "E_112"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_112",
+          "base_evidence": "E_112",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you wheeze while inhaling or is your breathing noisy after coughing spells?",
+          "source_type": "B",
+          "source_parent_question": "E_112",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "stridor",
+      "display_name": "High-pitched sound when breathing in",
+      "is_red_flag": true,
+      "english_aliases": [
+        "stridor",
+        "high pitched breathing sound",
+        "high pitched sound when breathing in"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_194"
+      ],
+      "retained_v2_features": [
+        "E_194"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_194",
+          "base_evidence": "E_194",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you noticed a high pitched sound when breathing in?",
+          "source_type": "B",
+          "source_parent_question": "E_194",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "drooling",
+      "display_name": "Drooling or more saliva than usual",
+      "is_red_flag": true,
+      "english_aliases": [
+        "drooling",
+        "too much saliva",
+        "more saliva than usual"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_190"
+      ],
+      "retained_v2_features": [
+        "E_190"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_190",
+          "base_evidence": "E_190",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you noticed that you produce more saliva than usual?",
+          "source_type": "B",
+          "source_parent_question": "E_190",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "difficulty_swallowing",
+      "display_name": "Difficulty swallowing",
+      "is_red_flag": false,
+      "english_aliases": [
+        "difficulty swallowing",
+        "hard to swallow",
+        "trouble swallowing",
+        "cannot swallow"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_65"
+      ],
+      "retained_v2_features": [
+        "E_65"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_65",
+          "base_evidence": "E_65",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have difficulty swallowing, or have a feeling of discomfort/blockage when swallowing?",
+          "source_type": "B",
+          "source_parent_question": "E_65",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "sore_throat",
+      "display_name": "Sore throat",
+      "is_red_flag": false,
+      "english_aliases": [
+        "sore throat",
+        "throat pain",
+        "painful throat",
+        "throat hurts"
+      ],
+      "swahili_aliases": [
+        "koo kuuma",
+        "kidonda cha koo"
+      ],
+      "canonical_features": [
+        "E_97"
+      ],
+      "retained_v2_features": [
+        "E_97"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_97",
+          "base_evidence": "E_97",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have a sore throat?",
+          "source_type": "B",
+          "source_parent_question": "E_97",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "hoarse_voice",
+      "display_name": "Hoarse or changed voice",
+      "is_red_flag": false,
+      "english_aliases": [
+        "hoarse voice",
+        "changed voice",
+        "lost my voice",
+        "rough voice"
+      ],
+      "swahili_aliases": [
+        "sauti imekauka",
+        "sauti imekwaruza"
+      ],
+      "canonical_features": [
+        "E_212"
+      ],
+      "retained_v2_features": [
+        "E_212"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_212",
+          "base_evidence": "E_212",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you noticed that the tone of your voice has become deeper, softer or hoarse?",
+          "source_type": "B",
+          "source_parent_question": "E_212",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "runny_blocked_nose",
+      "display_name": "Runny or blocked nose",
+      "is_red_flag": false,
+      "english_aliases": [
+        "runny nose",
+        "blocked nose",
+        "stuffy nose",
+        "nasal congestion"
+      ],
+      "swahili_aliases": [
+        "mafua",
+        "homa ya mafua"
+      ],
+      "canonical_features": [
+        "E_181"
+      ],
+      "retained_v2_features": [
+        "E_181"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_181",
+          "base_evidence": "E_181",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have nasal congestion or a clear runny nose?",
+          "source_type": "B",
+          "source_parent_question": "E_181",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "nasal_discharge",
+      "display_name": "Green or yellow nasal discharge",
+      "is_red_flag": false,
+      "english_aliases": [
+        "green nasal discharge",
+        "yellow nasal discharge",
+        "green mucus from nose",
+        "yellow mucus from nose"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_182"
+      ],
+      "retained_v2_features": [
+        "E_182"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_182",
+          "base_evidence": "E_182",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have greenish or yellowish nasal discharge?",
+          "source_type": "B",
+          "source_parent_question": "E_182",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "loss_of_smell",
+      "display_name": "Loss of smell",
+      "is_red_flag": false,
+      "english_aliases": [
+        "loss of smell",
+        "cannot smell",
+        "can't smell",
+        "lost sense of smell"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_103"
+      ],
+      "retained_v2_features": [
+        "E_103"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_103",
+          "base_evidence": "E_103",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you lost your sense of smell?",
+          "source_type": "B",
+          "source_parent_question": "E_103",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "itchy_nose_throat",
+      "display_name": "Itchy nose or throat",
+      "is_red_flag": false,
+      "english_aliases": [
+        "itchy nose",
+        "itchy throat",
+        "itchy nose or throat"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_169"
+      ],
+      "retained_v2_features": [
+        "E_169"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_169",
+          "base_evidence": "E_169",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Is your nose or the back of your throat itchy?",
+          "source_type": "B",
+          "source_parent_question": "E_169",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "itchy_eyes",
+      "display_name": "Itchy eyes",
+      "is_red_flag": false,
+      "english_aliases": [
+        "itchy eyes",
+        "eyes are itchy"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_170"
+      ],
+      "retained_v2_features": [
+        "E_170"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_170",
+          "base_evidence": "E_170",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have severe itching in one or both eyes?",
+          "source_type": "B",
+          "source_parent_question": "E_170",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "headache",
+      "display_name": "Headache",
+      "is_red_flag": false,
+      "english_aliases": [
+        "headache",
+        "head pain",
+        "my head hurts"
+      ],
+      "swahili_aliases": [
+        "kichwa kuuma",
+        "kuumwa na kichwa",
+        "maumivu ya kichwa"
+      ],
+      "canonical_features": [
+        "E_53",
+        "E_55_@_V_89"
+      ],
+      "retained_v2_features": [
+        "E_53"
+      ],
+      "excluded_features": [
+        "E_55_@_V_89"
+      ],
+      "coverage": "partial_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_53",
+          "base_evidence": "E_53",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have pain somewhere, related to your reason for consulting?",
+          "source_type": "B",
+          "source_parent_question": "E_53",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        },
+        {
+          "feature": "E_55_@_V_89",
+          "base_evidence": "E_55",
+          "encoded_value": "V_89",
+          "issues": [],
+          "source_question": "Do you feel pain somewhere?",
+          "source_type": "M",
+          "source_parent_question": "E_53",
+          "source_is_antecedent": false,
+          "source_default_value": "V_123",
+          "source_value_meaning": "forehead"
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "chest_pain",
+      "display_name": "Chest pain",
+      "is_red_flag": false,
+      "english_aliases": [
+        "chest pain",
+        "chest hurts",
+        "pain in chest"
+      ],
+      "swahili_aliases": [
+        "kifua kuuma",
+        "maumivu ya kifua"
+      ],
+      "canonical_features": [
+        "E_53",
+        "E_55_@_V_101"
+      ],
+      "retained_v2_features": [
+        "E_53"
+      ],
+      "excluded_features": [
+        "E_55_@_V_101"
+      ],
+      "coverage": "partial_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_53",
+          "base_evidence": "E_53",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have pain somewhere, related to your reason for consulting?",
+          "source_type": "B",
+          "source_parent_question": "E_53",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        },
+        {
+          "feature": "E_55_@_V_101",
+          "base_evidence": "E_55",
+          "encoded_value": "V_101",
+          "issues": [],
+          "source_question": "Do you feel pain somewhere?",
+          "source_type": "M",
+          "source_parent_question": "E_53",
+          "source_is_antecedent": false,
+          "source_default_value": "V_123",
+          "source_value_meaning": "upper chest"
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "chest_pain_at_rest",
+      "display_name": "Chest pain even at rest",
+      "is_red_flag": true,
+      "english_aliases": [
+        "chest pain at rest",
+        "chest hurts while resting",
+        "chest pain even when resting"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_14"
+      ],
+      "retained_v2_features": [
+        "E_14"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_14",
+          "base_evidence": "E_14",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have chest pain even at rest?",
+          "source_type": "B",
+          "source_parent_question": "E_14",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "pain_deep_breath",
+      "display_name": "Pain when breathing in deeply",
+      "is_red_flag": false,
+      "english_aliases": [
+        "pain when breathing deeply",
+        "pain on deep breath",
+        "chest pain when taking a deep breath"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_220"
+      ],
+      "retained_v2_features": [
+        "E_220"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_220",
+          "base_evidence": "E_220",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have pain that is increased when you breathe in deeply?",
+          "source_type": "B",
+          "source_parent_question": "E_220",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "worse_lying_down",
+      "display_name": "Worse lying down, better sitting up",
+      "is_red_flag": false,
+      "english_aliases": [
+        "worse when lying down",
+        "better when sitting up",
+        "breathing worse lying down"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_217"
+      ],
+      "retained_v2_features": [
+        "E_217"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_217",
+          "base_evidence": "E_217",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Are your symptoms worse when lying down and alleviated while sitting up?",
+          "source_type": "B",
+          "source_parent_question": "E_217",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "worse_with_exertion",
+      "display_name": "Worse with exertion, better with rest",
+      "is_red_flag": false,
+      "english_aliases": [
+        "worse with exercise",
+        "worse with exertion",
+        "symptoms worse when active",
+        "better with rest"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_218"
+      ],
+      "retained_v2_features": [
+        "E_218"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_218",
+          "base_evidence": "E_218",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have symptoms that are increased with physical exertion but alleviated with rest?",
+          "source_type": "B",
+          "source_parent_question": "E_218",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "tiredness",
+      "display_name": "Constant tiredness",
+      "is_red_flag": false,
+      "english_aliases": [
+        "tired",
+        "tiredness",
+        "fatigue",
+        "feeling tired",
+        "constant tiredness"
+      ],
+      "swahili_aliases": [
+        "uchovu",
+        "kuchoka"
+      ],
+      "canonical_features": [
+        "E_89"
+      ],
+      "retained_v2_features": [
+        "E_89"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_89",
+          "base_evidence": "E_89",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you constantly feel fatigued or do you have non-restful sleep?",
+          "source_type": "B",
+          "source_parent_question": "E_89",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "activity_fatigue",
+      "display_name": "Too tired for usual activities",
+      "is_red_flag": false,
+      "english_aliases": [
+        "too tired for normal activities",
+        "too tired to do usual activities",
+        "exhausted doing normal activities"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_88"
+      ],
+      "retained_v2_features": [
+        "E_88"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_88",
+          "base_evidence": "E_88",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you feel so tired that you are unable to do your usual activities or are you stuck in your bed all day long?",
+          "source_type": "B",
+          "source_parent_question": "E_88",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "muscle_aches",
+      "display_name": "Muscle aches",
+      "is_red_flag": false,
+      "english_aliases": [
+        "muscle aches",
+        "muscle pain",
+        "aching muscles",
+        "body aches"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [
+        "E_144"
+      ],
+      "retained_v2_features": [
+        "E_144"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_144",
+          "base_evidence": "E_144",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Do you have diffuse (widespread) muscle pain?",
+          "source_type": "B",
+          "source_parent_question": "E_144",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "heavy_sweating",
+      "display_name": "Heavy sweating",
+      "is_red_flag": false,
+      "english_aliases": [
+        "heavy sweating",
+        "sweating a lot",
+        "night sweats",
+        "excessive sweating"
+      ],
+      "swahili_aliases": [
+        "kutokwa jasho",
+        "jasho usiku"
+      ],
+      "canonical_features": [
+        "E_50"
+      ],
+      "retained_v2_features": [
+        "E_50"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_50",
+          "base_evidence": "E_50",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you had significantly increased sweating?",
+          "source_type": "B",
+          "source_parent_question": "E_50",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "loss_of_appetite",
+      "display_name": "Loss of appetite",
+      "is_red_flag": false,
+      "english_aliases": [
+        "loss of appetite",
+        "no appetite",
+        "not hungry",
+        "don't feel like eating"
+      ],
+      "swahili_aliases": [
+        "kukosa hamu ya kula"
+      ],
+      "canonical_features": [
+        "E_161"
+      ],
+      "retained_v2_features": [
+        "E_161"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_161",
+          "base_evidence": "E_161",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you recently had a loss of appetite or do you get full more quickly then usually?",
+          "source_type": "B",
+          "source_parent_question": "E_161",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "weight_loss",
+      "display_name": "Unintended weight loss",
+      "is_red_flag": false,
+      "english_aliases": [
+        "weight loss",
+        "unintended weight loss",
+        "losing weight without trying",
+        "losing weight"
+      ],
+      "swahili_aliases": [
+        "kupungua uzito"
+      ],
+      "canonical_features": [
+        "E_162"
+      ],
+      "retained_v2_features": [
+        "E_162"
+      ],
+      "excluded_features": [],
+      "coverage": "full_v2_coverage",
+      "source_details": [
+        {
+          "feature": "E_162",
+          "base_evidence": "E_162",
+          "encoded_value": null,
+          "issues": [],
+          "source_question": "Have you had an involuntary weight loss over the last 3 months?",
+          "source_type": "B",
+          "source_parent_question": "E_162",
+          "source_is_antecedent": false,
+          "source_default_value": 0,
+          "source_value_meaning": null
+        }
+      ],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "blue_lips",
+      "display_name": "Blue lips or face",
+      "is_red_flag": true,
+      "english_aliases": [
+        "blue lips",
+        "blue face",
+        "lips turning blue",
+        "lips are turning blue"
+      ],
+      "swahili_aliases": [
+        "midomo kuwa bluu"
+      ],
+      "canonical_features": [],
+      "retained_v2_features": [],
+      "excluded_features": [],
+      "coverage": "safety_only",
+      "source_details": [],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "confusion",
+      "display_name": "Confusion",
+      "is_red_flag": true,
+      "english_aliases": [
+        "confusion",
+        "feeling confused",
+        "disoriented"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [],
+      "retained_v2_features": [],
+      "excluded_features": [],
+      "coverage": "safety_only",
+      "source_details": [],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "fainting",
+      "display_name": "Fainting",
+      "is_red_flag": true,
+      "english_aliases": [
+        "fainting",
+        "fainted",
+        "passed out",
+        "passing out"
+      ],
+      "swahili_aliases": [],
+      "canonical_features": [],
+      "retained_v2_features": [],
+      "excluded_features": [],
+      "coverage": "safety_only",
+      "source_details": [],
+      "semantic_review": "pending"
+    },
+    {
+      "code": "sneezing",
+      "display_name": "Sneezing",
+      "is_red_flag": false,
+      "english_aliases": [
+        "sneezing",
+        "sneeze",
+        "frequent sneezing"
+      ],
+      "swahili_aliases": [
+        "kupiga chafya",
+        "napiga chafya",
+        "chafya"
+      ],
+      "canonical_features": [],
+      "retained_v2_features": [],
+      "excluded_features": [],
+      "coverage": "nlp_only",
+      "source_details": [],
+      "semantic_review": "pending"
+    }
+  ]
+}
