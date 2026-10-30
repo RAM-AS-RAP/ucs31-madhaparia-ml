@@ -1,0 +1,409 @@
+{
+  "issue": 47,
+  "schema_id": "respiratory_candidate_v1",
+  "source_sha256": {
+    "data/processed/diseases.json": "f496c297cc30ab0f270bcc96b5076f46f22909ca91e3e7bce401ebc8700c47ec",
+    "docs/candidate_feature_schema_v1.json": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "scripts/candidate_feature_builder.py": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "scripts/audit_candidate_source_records.py": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "data/raw/release_train_patients": "93933e9a9a7a00d618a931deda7767485af299fe4635bf189a7c63b510e8b172",
+    "data/raw/release_validate_patients": "b84733533bff01daa1d47d27a0cd4d684bb54a0fc20d80aaee1250ff8ff989ed"
+  },
+  "splits": {
+    "train": {
+      "totals": {
+        "all_source_rows": 1025602,
+        "in_scope_rows": 443075,
+        "successfully_derived_rows": 443075,
+        "head_region_present": 118067,
+        "eligible_before_duplicate_review": 443067,
+        "outside_scope_rows": 582527,
+        "chest_region_present": 91475,
+        "general_pain_without_selected_region": 111603,
+        "no_supported_positive_concepts": 8
+      },
+      "by_source_condition": {
+        "Acute COPD exacerbation / infection": {
+          "in_scope_rows": 17661,
+          "successfully_derived_rows": 17661,
+          "eligible_before_duplicate_review": 17661
+        },
+        "Acute laryngitis": {
+          "in_scope_rows": 24129,
+          "successfully_derived_rows": 24129,
+          "general_pain_without_selected_region": 24114,
+          "eligible_before_duplicate_review": 24129
+        },
+        "Acute pulmonary edema": {
+          "in_scope_rows": 19018,
+          "successfully_derived_rows": 19018,
+          "chest_region_present": 18800,
+          "eligible_before_duplicate_review": 19018,
+          "general_pain_without_selected_region": 218
+        },
+        "Acute rhinosinusitis": {
+          "in_scope_rows": 13578,
+          "successfully_derived_rows": 13578,
+          "head_region_present": 10401,
+          "eligible_before_duplicate_review": 13578,
+          "general_pain_without_selected_region": 3177
+        },
+        "Allergic sinusitis": {
+          "in_scope_rows": 26203,
+          "successfully_derived_rows": 26203,
+          "eligible_before_duplicate_review": 26203
+        },
+        "Bronchiectasis": {
+          "in_scope_rows": 18795,
+          "successfully_derived_rows": 18795,
+          "eligible_before_duplicate_review": 18795
+        },
+        "Bronchiolitis": {
+          "in_scope_rows": 261,
+          "successfully_derived_rows": 261,
+          "eligible_before_duplicate_review": 261
+        },
+        "Bronchitis": {
+          "in_scope_rows": 26400,
+          "successfully_derived_rows": 26400,
+          "chest_region_present": 25551,
+          "eligible_before_duplicate_review": 26400,
+          "general_pain_without_selected_region": 702
+        },
+        "Bronchospasm / acute asthma exacerbation": {
+          "in_scope_rows": 19875,
+          "successfully_derived_rows": 19875,
+          "eligible_before_duplicate_review": 19875
+        },
+        "Chronic rhinosinusitis": {
+          "in_scope_rows": 20579,
+          "successfully_derived_rows": 20579,
+          "head_region_present": 17820,
+          "eligible_before_duplicate_review": 20579,
+          "general_pain_without_selected_region": 2758
+        },
+        "Croup": {
+          "in_scope_rows": 2852,
+          "successfully_derived_rows": 2852,
+          "eligible_before_duplicate_review": 2844,
+          "no_supported_positive_concepts": 8
+        },
+        "Epiglottitis": {
+          "in_scope_rows": 17209,
+          "successfully_derived_rows": 17209,
+          "general_pain_without_selected_region": 17209,
+          "eligible_before_duplicate_review": 17209
+        },
+        "Influenza": {
+          "in_scope_rows": 26812,
+          "successfully_derived_rows": 26812,
+          "head_region_present": 26777,
+          "eligible_before_duplicate_review": 26812,
+          "general_pain_without_selected_region": 35
+        },
+        "Larygospasm": {
+          "in_scope_rows": 10998,
+          "successfully_derived_rows": 10998,
+          "eligible_before_duplicate_review": 10998
+        },
+        "Pneumonia": {
+          "in_scope_rows": 25761,
+          "successfully_derived_rows": 25761,
+          "chest_region_present": 25066,
+          "eligible_before_duplicate_review": 25761,
+          "general_pain_without_selected_region": 298
+        },
+        "Pulmonary neoplasm": {
+          "in_scope_rows": 14457,
+          "successfully_derived_rows": 14457,
+          "chest_region_present": 12294,
+          "eligible_before_duplicate_review": 14457
+        },
+        "Spontaneous pneumothorax": {
+          "in_scope_rows": 10162,
+          "successfully_derived_rows": 10162,
+          "chest_region_present": 9764,
+          "eligible_before_duplicate_review": 10162,
+          "general_pain_without_selected_region": 398
+        },
+        "Tuberculosis": {
+          "in_scope_rows": 16245,
+          "successfully_derived_rows": 16245,
+          "eligible_before_duplicate_review": 16245
+        },
+        "URTI": {
+          "in_scope_rows": 64368,
+          "successfully_derived_rows": 64368,
+          "head_region_present": 63069,
+          "eligible_before_duplicate_review": 64368,
+          "general_pain_without_selected_region": 1052
+        },
+        "Viral pharyngitis": {
+          "in_scope_rows": 61642,
+          "successfully_derived_rows": 61642,
+          "general_pain_without_selected_region": 61642,
+          "eligible_before_duplicate_review": 61642
+        },
+        "Whooping cough": {
+          "in_scope_rows": 6070,
+          "successfully_derived_rows": 6070,
+          "eligible_before_duplicate_review": 6070
+        }
+      },
+      "positive_feature_counts": {
+        "E_103": 27394,
+        "E_112": 3501,
+        "E_14": 5784,
+        "E_144": 74243,
+        "E_161": 42163,
+        "E_162": 20928,
+        "E_166": 5922,
+        "E_169": 21655,
+        "E_170": 19093,
+        "E_181": 174704,
+        "E_182": 24743,
+        "E_190": 14350,
+        "E_194": 26451,
+        "E_201": 274343,
+        "E_203": 3843,
+        "E_212": 33827,
+        "E_214": 47685,
+        "E_217": 14455,
+        "E_218": 20194,
+        "E_220": 22758,
+        "E_45": 83505,
+        "E_50": 71111,
+        "E_53": 321145,
+        "E_65": 12539,
+        "E_66": 133342,
+        "E_67": 14099,
+        "E_77": 97982,
+        "E_88": 20847,
+        "E_89": 8701,
+        "E_91": 171212,
+        "E_94": 35377,
+        "E_97": 77684,
+        "head_region_pain": 118067,
+        "chest_region_pain": 91475
+      },
+      "positive_feature_count_histogram": {
+        "0": 8,
+        "1": 14838,
+        "2": 44283,
+        "3": 90661,
+        "4": 76226,
+        "5": 53269,
+        "6": 58729,
+        "7": 46241,
+        "8": 30788,
+        "9": 17213,
+        "10": 8061,
+        "11": 2502,
+        "12": 256
+      },
+      "first_25_evidence_issue_examples": []
+    },
+    "validation": {
+      "totals": {
+        "all_source_rows": 132448,
+        "outside_scope_rows": 76640,
+        "in_scope_rows": 55808,
+        "successfully_derived_rows": 55808,
+        "head_region_present": 15842,
+        "eligible_before_duplicate_review": 55808,
+        "general_pain_without_selected_region": 15097,
+        "chest_region_present": 12271
+      },
+      "by_source_condition": {
+        "Acute COPD exacerbation / infection": {
+          "in_scope_rows": 2076,
+          "successfully_derived_rows": 2076,
+          "eligible_before_duplicate_review": 2076
+        },
+        "Acute laryngitis": {
+          "in_scope_rows": 3407,
+          "successfully_derived_rows": 3407,
+          "general_pain_without_selected_region": 3404,
+          "eligible_before_duplicate_review": 3407
+        },
+        "Acute pulmonary edema": {
+          "in_scope_rows": 2500,
+          "successfully_derived_rows": 2500,
+          "chest_region_present": 2462,
+          "eligible_before_duplicate_review": 2500,
+          "general_pain_without_selected_region": 38
+        },
+        "Acute rhinosinusitis": {
+          "in_scope_rows": 1866,
+          "successfully_derived_rows": 1866,
+          "general_pain_without_selected_region": 434,
+          "eligible_before_duplicate_review": 1866,
+          "head_region_present": 1432
+        },
+        "Allergic sinusitis": {
+          "in_scope_rows": 2136,
+          "successfully_derived_rows": 2136,
+          "eligible_before_duplicate_review": 2136
+        },
+        "Bronchiectasis": {
+          "in_scope_rows": 2319,
+          "successfully_derived_rows": 2319,
+          "eligible_before_duplicate_review": 2319
+        },
+        "Bronchiolitis": {
+          "in_scope_rows": 28,
+          "successfully_derived_rows": 28,
+          "eligible_before_duplicate_review": 28
+        },
+        "Bronchitis": {
+          "in_scope_rows": 3543,
+          "successfully_derived_rows": 3543,
+          "chest_region_present": 3421,
+          "eligible_before_duplicate_review": 3543,
+          "general_pain_without_selected_region": 105
+        },
+        "Bronchospasm / acute asthma exacerbation": {
+          "in_scope_rows": 2209,
+          "successfully_derived_rows": 2209,
+          "eligible_before_duplicate_review": 2209
+        },
+        "Chronic rhinosinusitis": {
+          "in_scope_rows": 2717,
+          "successfully_derived_rows": 2717,
+          "head_region_present": 2335,
+          "eligible_before_duplicate_review": 2717,
+          "general_pain_without_selected_region": 382
+        },
+        "Croup": {
+          "in_scope_rows": 267,
+          "successfully_derived_rows": 267,
+          "eligible_before_duplicate_review": 267
+        },
+        "Epiglottitis": {
+          "in_scope_rows": 2248,
+          "successfully_derived_rows": 2248,
+          "general_pain_without_selected_region": 2248,
+          "eligible_before_duplicate_review": 2248
+        },
+        "Influenza": {
+          "in_scope_rows": 3590,
+          "successfully_derived_rows": 3590,
+          "head_region_present": 3585,
+          "eligible_before_duplicate_review": 3590,
+          "general_pain_without_selected_region": 5
+        },
+        "Larygospasm": {
+          "in_scope_rows": 668,
+          "successfully_derived_rows": 668,
+          "eligible_before_duplicate_review": 668
+        },
+        "Pneumonia": {
+          "in_scope_rows": 3484,
+          "successfully_derived_rows": 3484,
+          "chest_region_present": 3389,
+          "eligible_before_duplicate_review": 3484,
+          "general_pain_without_selected_region": 43
+        },
+        "Pulmonary neoplasm": {
+          "in_scope_rows": 1891,
+          "successfully_derived_rows": 1891,
+          "chest_region_present": 1653,
+          "eligible_before_duplicate_review": 1891
+        },
+        "Spontaneous pneumothorax": {
+          "in_scope_rows": 1405,
+          "successfully_derived_rows": 1405,
+          "chest_region_present": 1346,
+          "eligible_before_duplicate_review": 1405,
+          "general_pain_without_selected_region": 59
+        },
+        "Tuberculosis": {
+          "in_scope_rows": 2007,
+          "successfully_derived_rows": 2007,
+          "eligible_before_duplicate_review": 2007
+        },
+        "URTI": {
+          "in_scope_rows": 8656,
+          "successfully_derived_rows": 8656,
+          "head_region_present": 8490,
+          "eligible_before_duplicate_review": 8656,
+          "general_pain_without_selected_region": 133
+        },
+        "Viral pharyngitis": {
+          "in_scope_rows": 8246,
+          "successfully_derived_rows": 8246,
+          "general_pain_without_selected_region": 8246,
+          "eligible_before_duplicate_review": 8246
+        },
+        "Whooping cough": {
+          "in_scope_rows": 545,
+          "successfully_derived_rows": 545,
+          "eligible_before_duplicate_review": 545
+        }
+      },
+      "positive_feature_counts": {
+        "E_103": 3709,
+        "E_112": 300,
+        "E_14": 784,
+        "E_144": 9902,
+        "E_161": 5693,
+        "E_162": 2653,
+        "E_166": 541,
+        "E_169": 1685,
+        "E_170": 1489,
+        "E_181": 22249,
+        "E_182": 3318,
+        "E_190": 1829,
+        "E_194": 2585,
+        "E_201": 34923,
+        "E_203": 323,
+        "E_212": 4646,
+        "E_214": 5697,
+        "E_217": 1918,
+        "E_218": 2722,
+        "E_220": 3111,
+        "E_45": 10888,
+        "E_50": 9480,
+        "E_53": 43210,
+        "E_65": 1655,
+        "E_66": 16627,
+        "E_67": 1888,
+        "E_77": 12805,
+        "E_88": 2762,
+        "E_89": 1143,
+        "E_91": 22889,
+        "E_94": 4763,
+        "E_97": 10408,
+        "head_region_pain": 15842,
+        "chest_region_pain": 12271
+      },
+      "positive_feature_count_histogram": {
+        "1": 1134,
+        "2": 5513,
+        "3": 10787,
+        "4": 9294,
+        "5": 7097,
+        "6": 7911,
+        "7": 6177,
+        "8": 4120,
+        "9": 2327,
+        "10": 1069,
+        "11": 320,
+        "12": 59
+      },
+      "first_25_evidence_issue_examples": []
+    }
+  },
+  "notes": [
+    "Counts retain original source condition labels.",
+    "Demographic and evidence issue counts may overlap.",
+    "Feature coverage counts use successfully derived records.",
+    "Feature counts are not counts of independent reported symptoms.",
+    "General pain may occur outside the selected head/chest regions.",
+    "Missing region evidence is unknown, not confirmed absence.",
+    "Eligibility is provisional until duplicate and leakage review.",
+    "This audit does not validate all source evidence definitions.",
+    "The final test split was not inspected.",
+    "No training dataset or model was changed."
+  ]
+}
