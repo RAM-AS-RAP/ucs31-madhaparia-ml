@@ -1,0 +1,28 @@
+model,case_id,rank,condition,model_score
+frozen_v2_harmonized,tiredness_headache,1,Pulmonary neoplasm,0.3360723563549244
+frozen_v2_harmonized,tiredness_headache,2,COVID-19,0.12105257283829154
+frozen_v2_harmonized,tiredness_headache,3,Viral pharyngitis,0.08806048024128271
+frozen_v2_harmonized,tiredness_chest_pain,1,Pulmonary neoplasm,0.3360723563549244
+frozen_v2_harmonized,tiredness_chest_pain,2,COVID-19,0.12105257283829154
+frozen_v2_harmonized,tiredness_chest_pain,3,Viral pharyngitis,0.08806048024128271
+frozen_v2_harmonized,fever_cough,1,Tuberculosis,0.16454418809169868
+frozen_v2_harmonized,fever_cough,2,Viral pharyngitis,0.09079639005525351
+frozen_v2_harmonized,fever_cough,3,Influenza,0.07478747539832059
+rf_group_weighted,tiredness_headache,1,URTI,0.356217019855043
+rf_group_weighted,tiredness_headache,2,Chronic rhinosinusitis,0.23561251227812074
+rf_group_weighted,tiredness_headache,3,Acute rhinosinusitis,0.12916304701309766
+rf_group_weighted,tiredness_chest_pain,1,Pulmonary neoplasm,0.5496121907937223
+rf_group_weighted,tiredness_chest_pain,2,Bronchitis,0.11612453471817855
+rf_group_weighted,tiredness_chest_pain,3,Spontaneous pneumothorax,0.09939679072205312
+rf_group_weighted,fever_cough,1,Viral pharyngitis,0.2360222212603468
+rf_group_weighted,fever_cough,2,Tuberculosis,0.1427733582495995
+rf_group_weighted,fever_cough,3,URTI,0.11189030980066121
+rf_class_balanced,tiredness_headache,1,Chronic rhinosinusitis,0.2932696635840553
+rf_class_balanced,tiredness_headache,2,Acute rhinosinusitis,0.242031001016354
+rf_class_balanced,tiredness_headache,3,URTI,0.1499953651810242
+rf_class_balanced,tiredness_chest_pain,1,Pulmonary neoplasm,0.5794901082059203
+rf_class_balanced,tiredness_chest_pain,2,Spontaneous pneumothorax,0.13422114664692575
+rf_class_balanced,tiredness_chest_pain,3,Acute pulmonary edema,0.09285978641775282
+rf_class_balanced,fever_cough,1,Tuberculosis,0.2392251484003152
+rf_class_balanced,fever_cough,2,Acute laryngitis,0.09809257793793685
+rf_class_balanced,fever_cough,3,Viral pharyngitis,0.09455125730816738

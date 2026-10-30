@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "summary_rows_recomputed": 45,
+  "prediction_archives_checked": 15,
+  "documentation_files_checked": 26,
+  "comparison_manifest_sha256": "35ac8011858ee67690887f13fbc1062cf4f6ebcebb0770106bd9b6d1173c392d",
+  "verification_script_sha256": "7a5f59d3c22216c5d5d2d6dbc77b0f126e5d01611c68edfee721f0ab12f1b78c",
+  "model_fingerprints_unchanged": true,
+  "notes": [
+    "Summary metrics were recomputed from saved prediction archives.",
+    "Native-to-canonical probability alignment was checked.",
+    "Documentation file fingerprints matched.",
+    "No model predictions were rerun and no model was modified."
+  ]
+}

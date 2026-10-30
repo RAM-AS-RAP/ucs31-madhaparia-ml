@@ -1,0 +1,16 @@
+{
+  "criterion": "mean primary-cohort macro F1 across four sparse views",
+  "mean_sparse_macro_f1": {
+    "frozen_v2_harmonized": 0.6446421038625963,
+    "rf_group_weighted": 0.69781232625503,
+    "rf_class_balanced": 0.6705214247836142
+  },
+  "full_primary_macro_f1": {
+    "frozen_v2_harmonized": 0.8759598473902434,
+    "rf_group_weighted": 0.9259494459971788,
+    "rf_class_balanced": 0.913217203334951
+  },
+  "selected_candidate": "rf_group_weighted",
+  "selected_candidate_exceeds_v2_selection_score": true,
+  "deployment_approved": false
+}

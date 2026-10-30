@@ -1,0 +1,168 @@
+{
+  "issue": 48,
+  "status": "shared_validation_views_prepared_no_predictions",
+  "seed": 42,
+  "input_sha256": {
+    "dataset_manifest": "7eee968072661c365899f74486820c5fc4e429f00ddf431d6c7630601a622acd",
+    "validation_csv": "bbcd6bf7c65b25c57519f39922732a28cca1b6e4e216f41ce8d66235defd3962",
+    "partition_manifest": "36516612857efe2d20db527c954e06e292d64f9e96449c392f97eb7733aadc78",
+    "partitions_csv": "734fedd45b5ecf2930b8bb08f56764ec03d4ef6fcaa6368654200f9f56f63b5f",
+    "protocol": "7fddbcd7971c53fbfd168abff30c1ea941801f16e80fd6eaaff9dc3f7c9bf19d",
+    "candidate_schema": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "feature_builder": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "evaluation_helper": "75ba1b1e48f1f0885e2837c334080cea7644c13d2512e7f7c1b2c32d76793c9b",
+    "view_preparation_script": "7e9d28f63ee0f94b81cfbe03db8f8392f17c02e03c0ab1a986a1b8d60ba8b7e1",
+    "hash_helper": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2"
+  },
+  "cohort_group_counts": {
+    "selection_primary": 52844,
+    "selection_legacy_overlap": 2836
+  },
+  "cohort_condition_support": {
+    "selection_legacy_overlap": {
+      "Acute COPD exacerbation / infection": 375,
+      "Allergic rhinitis": 910,
+      "Bronchiectasis": 179,
+      "Bronchiolitis": 2,
+      "Bronchospasm / acute asthma exacerbation": 389,
+      "Croup": 78,
+      "Larygospasm": 452,
+      "Pulmonary neoplasm": 30,
+      "Tuberculosis": 180,
+      "Viral pharyngitis": 1,
+      "Whooping cough": 240
+    },
+    "selection_primary": {
+      "Acute COPD exacerbation / infection": 1674,
+      "Acute laryngitis": 3407,
+      "Acute pulmonary edema": 2500,
+      "Acute rhinosinusitis": 1866,
+      "Allergic rhinitis": 1194,
+      "Bronchiectasis": 2136,
+      "Bronchiolitis": 26,
+      "Bronchitis": 3543,
+      "Bronchospasm / acute asthma exacerbation": 1801,
+      "Chronic rhinosinusitis": 2717,
+      "Croup": 186,
+      "Epiglottitis": 2248,
+      "Influenza": 3590,
+      "Larygospasm": 199,
+      "Pneumonia": 3484,
+      "Pulmonary neoplasm": 1861,
+      "Spontaneous pneumothorax": 1405,
+      "Tuberculosis": 1815,
+      "URTI": 8656,
+      "Viral pharyngitis": 8245,
+      "Whooping cough": 291
+    }
+  },
+  "views": {
+    "full": {
+      "filename": "full.csv",
+      "sha256": "a9cd7a0a6614fbaaaca8d07eea98b2810ece754b58a061abae4de7037de11588",
+      "rows": 55680,
+      "requested_max_reporting_units": null,
+      "actual_unit_counts_by_cohort": {
+        "selection_legacy_overlap": {
+          "1": 518,
+          "2": 477,
+          "3": 1165,
+          "4": 599,
+          "5": 69,
+          "6": 8
+        },
+        "selection_primary": {
+          "1": 595,
+          "2": 5238,
+          "3": 11834,
+          "4": 10872,
+          "5": 9376,
+          "6": 6679,
+          "7": 4448,
+          "8": 2332,
+          "9": 1089,
+          "10": 322,
+          "11": 59
+        }
+      }
+    },
+    "up_to_1": {
+      "filename": "up_to_1.csv",
+      "sha256": "39a212bd470b98ba86a66e26e355167d6b3114d52412f66dd7fdab4d5490fa4d",
+      "rows": 55680,
+      "requested_max_reporting_units": 1,
+      "actual_unit_counts_by_cohort": {
+        "selection_legacy_overlap": {
+          "1": 2836
+        },
+        "selection_primary": {
+          "1": 52844
+        }
+      }
+    },
+    "up_to_2": {
+      "filename": "up_to_2.csv",
+      "sha256": "36a371505aeb062924274ef92bfcef9159b421587a0497223ad91f3173f4730f",
+      "rows": 55680,
+      "requested_max_reporting_units": 2,
+      "actual_unit_counts_by_cohort": {
+        "selection_legacy_overlap": {
+          "1": 518,
+          "2": 2318
+        },
+        "selection_primary": {
+          "1": 595,
+          "2": 52249
+        }
+      }
+    },
+    "up_to_3": {
+      "filename": "up_to_3.csv",
+      "sha256": "49d2815efe1df23beb5f4facc4f4a76c73663afcb17106dbc84135da246f8296",
+      "rows": 55680,
+      "requested_max_reporting_units": 3,
+      "actual_unit_counts_by_cohort": {
+        "selection_legacy_overlap": {
+          "1": 518,
+          "2": 477,
+          "3": 1841
+        },
+        "selection_primary": {
+          "1": 595,
+          "2": 5238,
+          "3": 47011
+        }
+      }
+    },
+    "up_to_5": {
+      "filename": "up_to_5.csv",
+      "sha256": "2dde39dbc86b51168387bcfa749d0ba5fca2fa5c655ca4ebcf704d6b141f3ff1",
+      "rows": 55680,
+      "requested_max_reporting_units": 5,
+      "actual_unit_counts_by_cohort": {
+        "selection_legacy_overlap": {
+          "1": 518,
+          "2": 477,
+          "3": 1165,
+          "4": 599,
+          "5": 77
+        },
+        "selection_primary": {
+          "1": 595,
+          "2": 5238,
+          "3": 11834,
+          "4": 10872,
+          "5": 24305
+        }
+      }
+    }
+  },
+  "notes": [
+    "Every model must use these same saved observation views.",
+    "Each view contains one observation per validation source group.",
+    "Views are separate evaluation settings, not independent patients.",
+    "V2 receives its supported feature projection of each same view.",
+    "Calibration-reserved and fitting groups are not included.",
+    "No final-test records or model predictions were inspected."
+  ]
+}

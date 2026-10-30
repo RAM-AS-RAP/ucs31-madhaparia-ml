@@ -1,0 +1,991 @@
+model,view,cohort,condition,support,predicted_count,precision,recall,f1,included_in_macro_average
+frozen_v2_harmonized,full,selection_primary,Acute COPD exacerbation / infection,1674,2156,0.6173469387755102,0.7951015531660693,0.6950391644908617,True
+frozen_v2_harmonized,full,selection_primary,Acute laryngitis,3407,2932,0.9986357435197817,0.8594071030231876,0.9238050165641268,True
+frozen_v2_harmonized,full,selection_primary,Acute pulmonary edema,2500,2475,0.9995959595959596,0.9896,0.9945728643216081,True
+frozen_v2_harmonized,full,selection_primary,Acute rhinosinusitis,1866,1733,0.6024235429890363,0.5594855305466238,0.5801611558766324,True
+frozen_v2_harmonized,full,selection_primary,Allergic rhinitis,1194,1183,1.0,0.990787269681742,0.9953723180479596,True
+frozen_v2_harmonized,full,selection_primary,Bronchiectasis,2136,1717,0.9446709376820035,0.7593632958801498,0.8419413444069557,True
+frozen_v2_harmonized,full,selection_primary,Bronchiolitis,26,76,0.3026315789473684,0.8846153846153846,0.45098039215686275,True
+frozen_v2_harmonized,full,selection_primary,Bronchitis,3543,3700,0.8591891891891892,0.8972622071690658,0.877813060886373,True
+frozen_v2_harmonized,full,selection_primary,Bronchospasm / acute asthma exacerbation,1801,1258,0.7670906200317965,0.5358134369794558,0.6309251389342923,True
+frozen_v2_harmonized,full,selection_primary,COVID-19,0,0,,,,False
+frozen_v2_harmonized,full,selection_primary,Chronic rhinosinusitis,2717,2607,0.7230533179900268,0.69377990430622,0.708114199849737,True
+frozen_v2_harmonized,full,selection_primary,Croup,186,199,0.9296482412060302,0.9946236559139785,0.961038961038961,True
+frozen_v2_harmonized,full,selection_primary,Epiglottitis,2248,2274,0.9872471416007036,0.9986654804270463,0.9929234851835471,True
+frozen_v2_harmonized,full,selection_primary,Influenza,3590,3524,0.9946083995459705,0.9763231197771588,0.9853809389935339,True
+frozen_v2_harmonized,full,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+frozen_v2_harmonized,full,selection_primary,Pneumonia,3484,3428,0.9988331388564761,0.9827784156142365,0.9907407407407407,True
+frozen_v2_harmonized,full,selection_primary,Pulmonary neoplasm,1861,1950,0.9435897435897436,0.9887157442235357,0.965625819994752,True
+frozen_v2_harmonized,full,selection_primary,Spontaneous pneumothorax,1405,1432,0.9804469273743017,0.999288256227758,0.9897779344377864,True
+frozen_v2_harmonized,full,selection_primary,Tuberculosis,1815,1825,0.9063013698630137,0.9112947658402204,0.9087912087912088,True
+frozen_v2_harmonized,full,selection_primary,URTI,8656,8683,0.9581941725210181,0.9611829944547134,0.9596862564161717,True
+frozen_v2_harmonized,full,selection_primary,Viral pharyngitis,8245,9201,0.8958808825127703,0.9997574287446938,0.9449730597271581,True
+frozen_v2_harmonized,full,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+frozen_v2_harmonized,full,all_validation,Acute COPD exacerbation / infection,2049,2634,0.618830675778284,0.7955100048804294,0.6961349562246423,True
+frozen_v2_harmonized,full,all_validation,Acute laryngitis,3407,2932,0.9986357435197817,0.8594071030231876,0.9238050165641268,True
+frozen_v2_harmonized,full,all_validation,Acute pulmonary edema,2500,2475,0.9995959595959596,0.9896,0.9945728643216081,True
+frozen_v2_harmonized,full,all_validation,Acute rhinosinusitis,1866,1733,0.6024235429890363,0.5594855305466238,0.5801611558766324,True
+frozen_v2_harmonized,full,all_validation,Allergic rhinitis,2104,2092,1.0,0.9942965779467681,0.9971401334604385,True
+frozen_v2_harmonized,full,all_validation,Bronchiectasis,2315,1853,0.9471127900701565,0.7580993520518359,0.8421305182341651,True
+frozen_v2_harmonized,full,all_validation,Bronchiolitis,28,95,0.2631578947368421,0.8928571428571429,0.4065040650406504,True
+frozen_v2_harmonized,full,all_validation,Bronchitis,3543,3828,0.8304597701149425,0.8972622071690658,0.8625695292361959,True
+frozen_v2_harmonized,full,all_validation,Bronchospasm / acute asthma exacerbation,2190,1431,0.7791754018169113,0.5091324200913242,0.615851974592654,True
+frozen_v2_harmonized,full,all_validation,COVID-19,0,0,,,,False
+frozen_v2_harmonized,full,all_validation,Chronic rhinosinusitis,2717,2607,0.7230533179900268,0.69377990430622,0.708114199849737,True
+frozen_v2_harmonized,full,all_validation,Croup,264,277,0.9458483754512635,0.9924242424242424,0.9685767097966729,True
+frozen_v2_harmonized,full,all_validation,Epiglottitis,2248,2274,0.9872471416007036,0.9986654804270463,0.9929234851835471,True
+frozen_v2_harmonized,full,all_validation,Influenza,3590,3524,0.9946083995459705,0.9763231197771588,0.9853809389935339,True
+frozen_v2_harmonized,full,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+frozen_v2_harmonized,full,all_validation,Pneumonia,3484,3428,0.9988331388564761,0.9827784156142365,0.9907407407407407,True
+frozen_v2_harmonized,full,all_validation,Pulmonary neoplasm,1891,1991,0.9392265193370166,0.9888947646747752,0.9634209170530654,True
+frozen_v2_harmonized,full,all_validation,Spontaneous pneumothorax,1405,1432,0.9804469273743017,0.999288256227758,0.9897779344377864,True
+frozen_v2_harmonized,full,all_validation,Tuberculosis,1995,2005,0.9082294264339152,0.912781954887218,0.9105,True
+frozen_v2_harmonized,full,all_validation,URTI,8656,8683,0.9581941725210181,0.9611829944547134,0.9596862564161717,True
+frozen_v2_harmonized,full,all_validation,Viral pharyngitis,8246,9202,0.8958921973484025,0.9997574581615328,0.9449793672627235,True
+frozen_v2_harmonized,full,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Acute COPD exacerbation / infection,375,478,0.6255230125523012,0.7973333333333333,0.7010550996483002,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Allergic rhinitis,910,909,1.0,0.9989010989010989,0.999450247388675,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Bronchiectasis,179,136,0.9779411764705882,0.7430167597765364,0.8444444444444444,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Bronchiolitis,2,19,0.10526315789473684,1.0,0.19047619047619047,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Bronchitis,0,128,0.0,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,173,0.8670520231213873,0.3856041131105398,0.5338078291814946,True
+frozen_v2_harmonized,full,selection_legacy_overlap,COVID-19,0,0,,,,False
+frozen_v2_harmonized,full,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Croup,78,78,0.9871794871794872,0.9871794871794872,0.9871794871794872,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Influenza,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Pneumonia,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Pulmonary neoplasm,30,41,0.7317073170731707,1.0,0.8450704225352113,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Tuberculosis,180,180,0.9277777777777778,0.9277777777777778,0.9277777777777778,True
+frozen_v2_harmonized,full,selection_legacy_overlap,URTI,0,0,,,,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+frozen_v2_harmonized,full,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_1,selection_primary,Acute COPD exacerbation / infection,1674,199,0.4623115577889447,0.054958183990442055,0.0982381206620395,True
+frozen_v2_harmonized,up_to_1,selection_primary,Acute laryngitis,3407,1164,0.7714776632302406,0.2635749926621661,0.3929118354845767,True
+frozen_v2_harmonized,up_to_1,selection_primary,Acute pulmonary edema,2500,1420,0.8570422535211267,0.4868,0.6209183673469387,True
+frozen_v2_harmonized,up_to_1,selection_primary,Acute rhinosinusitis,1866,860,0.4441860465116279,0.20471596998928188,0.2802641232575202,True
+frozen_v2_harmonized,up_to_1,selection_primary,Allergic rhinitis,1194,4781,0.198703200167329,0.7956448911222781,0.3179916317991632,True
+frozen_v2_harmonized,up_to_1,selection_primary,Bronchiectasis,2136,4879,0.2104939536790326,0.48080524344569286,0.2928011404133999,True
+frozen_v2_harmonized,up_to_1,selection_primary,Bronchiolitis,26,16,0.3125,0.19230769230769232,0.23809523809523808,True
+frozen_v2_harmonized,up_to_1,selection_primary,Bronchitis,3543,1148,0.23780487804878048,0.07705334462320068,0.11639309315710936,True
+frozen_v2_harmonized,up_to_1,selection_primary,Bronchospasm / acute asthma exacerbation,1801,1369,0.18407596785975164,0.1399222654081066,0.1589905362776025,True
+frozen_v2_harmonized,up_to_1,selection_primary,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_1,selection_primary,Chronic rhinosinusitis,2717,989,0.641051567239636,0.2333456017666544,0.34214786832164057,True
+frozen_v2_harmonized,up_to_1,selection_primary,Croup,186,1523,0.09455022980958634,0.7741935483870968,0.16851960210649503,True
+frozen_v2_harmonized,up_to_1,selection_primary,Epiglottitis,2248,760,0.825,0.27891459074733094,0.41688829787234044,True
+frozen_v2_harmonized,up_to_1,selection_primary,Influenza,3590,3615,0.3706777316735823,0.3732590529247911,0.37196391394864675,True
+frozen_v2_harmonized,up_to_1,selection_primary,Larygospasm,199,549,0.36247723132969034,1.0,0.5320855614973262,True
+frozen_v2_harmonized,up_to_1,selection_primary,Pneumonia,3484,6,0.6666666666666666,0.001148105625717566,0.002292263610315186,True
+frozen_v2_harmonized,up_to_1,selection_primary,Pulmonary neoplasm,1861,750,0.652,0.26276195593766793,0.3745691306013022,True
+frozen_v2_harmonized,up_to_1,selection_primary,Spontaneous pneumothorax,1405,805,0.7403726708074534,0.42419928825622777,0.539366515837104,True
+frozen_v2_harmonized,up_to_1,selection_primary,Tuberculosis,1815,14774,0.09198592121294165,0.7487603305785124,0.16384351076014225,True
+frozen_v2_harmonized,up_to_1,selection_primary,URTI,8656,2861,0.6368402656413842,0.2104898336414048,0.3164018407571416,True
+frozen_v2_harmonized,up_to_1,selection_primary,Viral pharyngitis,8245,10085,0.26712940009915714,0.32674348089751365,0.2939443535188216,True
+frozen_v2_harmonized,up_to_1,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_1,all_validation,Acute COPD exacerbation / infection,2049,228,0.4605263157894737,0.05124450951683748,0.0922266139657444,True
+frozen_v2_harmonized,up_to_1,all_validation,Acute laryngitis,3407,1164,0.7714776632302406,0.2635749926621661,0.3929118354845767,True
+frozen_v2_harmonized,up_to_1,all_validation,Acute pulmonary edema,2500,1420,0.8570422535211267,0.4868,0.6209183673469387,True
+frozen_v2_harmonized,up_to_1,all_validation,Acute rhinosinusitis,1866,860,0.4441860465116279,0.20471596998928188,0.2802641232575202,True
+frozen_v2_harmonized,up_to_1,all_validation,Allergic rhinitis,2104,5471,0.2997623834765125,0.779467680608365,0.433003300330033,True
+frozen_v2_harmonized,up_to_1,all_validation,Bronchiectasis,2315,5230,0.21491395793499043,0.48552915766738663,0.2979456593770709,True
+frozen_v2_harmonized,up_to_1,all_validation,Bronchiolitis,28,19,0.2631578947368421,0.17857142857142858,0.2127659574468085,True
+frozen_v2_harmonized,up_to_1,all_validation,Bronchitis,3543,1340,0.20373134328358208,0.07705334462320068,0.11181650624616014,True
+frozen_v2_harmonized,up_to_1,all_validation,Bronchospasm / acute asthma exacerbation,2190,1468,0.20572207084468666,0.13789954337899543,0.1651175505740842,True
+frozen_v2_harmonized,up_to_1,all_validation,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_1,all_validation,Chronic rhinosinusitis,2717,989,0.641051567239636,0.2333456017666544,0.34214786832164057,True
+frozen_v2_harmonized,up_to_1,all_validation,Croup,264,1634,0.12607099143206854,0.7803030303030303,0.21707060063224448,True
+frozen_v2_harmonized,up_to_1,all_validation,Epiglottitis,2248,760,0.825,0.27891459074733094,0.41688829787234044,True
+frozen_v2_harmonized,up_to_1,all_validation,Influenza,3590,3616,0.37057522123893805,0.3732590529247911,0.37191229530946435,True
+frozen_v2_harmonized,up_to_1,all_validation,Larygospasm,651,1017,0.640117994100295,1.0,0.7805755395683454,True
+frozen_v2_harmonized,up_to_1,all_validation,Pneumonia,3484,6,0.6666666666666666,0.001148105625717566,0.002292263610315186,True
+frozen_v2_harmonized,up_to_1,all_validation,Pulmonary neoplasm,1891,781,0.646606914212548,0.26705446853516657,0.37799401197604793,True
+frozen_v2_harmonized,up_to_1,all_validation,Spontaneous pneumothorax,1405,805,0.7403726708074534,0.42419928825622777,0.539366515837104,True
+frozen_v2_harmonized,up_to_1,all_validation,Tuberculosis,1995,15394,0.09685591789008705,0.7473684210526316,0.17148772212318134,True
+frozen_v2_harmonized,up_to_1,all_validation,URTI,8656,2861,0.6368402656413842,0.2104898336414048,0.3164018407571416,True
+frozen_v2_harmonized,up_to_1,all_validation,Viral pharyngitis,8246,10086,0.2672020622645251,0.32682512733446517,0.2940213833733362,True
+frozen_v2_harmonized,up_to_1,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Acute COPD exacerbation / infection,375,29,0.4482758620689655,0.034666666666666665,0.06435643564356436,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Allergic rhinitis,910,690,1.0,0.7582417582417582,0.8625,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Bronchiectasis,179,351,0.27635327635327633,0.5418994413407822,0.3660377358490566,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Bronchiolitis,2,3,0.0,0.0,0.0,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Bronchitis,0,192,0.0,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,99,0.5050505050505051,0.12853470437017994,0.20491803278688525,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Croup,78,111,0.5585585585585585,0.7948717948717948,0.656084656084656,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Influenza,0,1,0.0,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Larygospasm,452,468,0.9658119658119658,1.0,0.9826086956521739,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Pneumonia,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Pulmonary neoplasm,30,31,0.5161290322580645,0.5333333333333333,0.5245901639344263,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Tuberculosis,180,620,0.2129032258064516,0.7333333333333333,0.33,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,URTI,0,0,,,,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_1,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_2,selection_primary,Acute COPD exacerbation / infection,1674,945,0.6052910052910053,0.34169653524492233,0.43680794196258116,True
+frozen_v2_harmonized,up_to_2,selection_primary,Acute laryngitis,3407,2337,0.8943089430894309,0.6134429116524802,0.7277158774373259,True
+frozen_v2_harmonized,up_to_2,selection_primary,Acute pulmonary edema,2500,1902,0.9705573080967402,0.7384,0.8387096774193549,True
+frozen_v2_harmonized,up_to_2,selection_primary,Acute rhinosinusitis,1866,1232,0.4878246753246753,0.3220793140407288,0.3879922530664945,True
+frozen_v2_harmonized,up_to_2,selection_primary,Allergic rhinitis,1194,2652,0.44607843137254904,0.990787269681742,0.6151846073842954,True
+frozen_v2_harmonized,up_to_2,selection_primary,Bronchiectasis,2136,2949,0.5289928789420142,0.7303370786516854,0.6135693215339233,True
+frozen_v2_harmonized,up_to_2,selection_primary,Bronchiolitis,26,21,0.23809523809523808,0.19230769230769232,0.2127659574468085,True
+frozen_v2_harmonized,up_to_2,selection_primary,Bronchitis,3543,1776,0.5777027027027027,0.28958509737510585,0.38578680203045684,True
+frozen_v2_harmonized,up_to_2,selection_primary,Bronchospasm / acute asthma exacerbation,1801,3277,0.4671956057369545,0.8500832870627429,0.6029933044505711,True
+frozen_v2_harmonized,up_to_2,selection_primary,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_2,selection_primary,Chronic rhinosinusitis,2717,1946,0.6485097636176773,0.4644828855355171,0.5412824361998714,True
+frozen_v2_harmonized,up_to_2,selection_primary,Croup,186,547,0.3382084095063985,0.9946236559139785,0.504774897680764,True
+frozen_v2_harmonized,up_to_2,selection_primary,Epiglottitis,2248,1615,0.9962848297213622,0.7157473309608541,0.8330313228061093,True
+frozen_v2_harmonized,up_to_2,selection_primary,Influenza,3590,2889,0.6368985808238145,0.5125348189415042,0.5679888871739466,True
+frozen_v2_harmonized,up_to_2,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+frozen_v2_harmonized,up_to_2,selection_primary,Pneumonia,3484,1038,0.8159922928709056,0.2431113662456946,0.3746130030959752,True
+frozen_v2_harmonized,up_to_2,selection_primary,Pulmonary neoplasm,1861,1418,0.7545839210155149,0.5749596990865127,0.652637999390058,True
+frozen_v2_harmonized,up_to_2,selection_primary,Spontaneous pneumothorax,1405,2487,0.5424205870526739,0.9601423487544484,0.6932168550873586,True
+frozen_v2_harmonized,up_to_2,selection_primary,Tuberculosis,1815,4249,0.32595904918804425,0.7630853994490359,0.4567941952506596,True
+frozen_v2_harmonized,up_to_2,selection_primary,URTI,8656,6795,0.7150846210448859,0.5613447319778189,0.6289560546242962,True
+frozen_v2_harmonized,up_to_2,selection_primary,Viral pharyngitis,8245,12278,0.5184069066623228,0.7719830200121286,0.6202796862057204,True
+frozen_v2_harmonized,up_to_2,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_2,all_validation,Acute COPD exacerbation / infection,2049,1129,0.620903454384411,0.3421181063933626,0.44115796098174953,True
+frozen_v2_harmonized,up_to_2,all_validation,Acute laryngitis,3407,2337,0.8943089430894309,0.6134429116524802,0.7277158774373259,True
+frozen_v2_harmonized,up_to_2,all_validation,Acute pulmonary edema,2500,1902,0.9705573080967402,0.7384,0.8387096774193549,True
+frozen_v2_harmonized,up_to_2,all_validation,Acute rhinosinusitis,1866,1232,0.4878246753246753,0.3220793140407288,0.3879922530664945,True
+frozen_v2_harmonized,up_to_2,all_validation,Allergic rhinitis,2104,3562,0.5873104997192589,0.9942965779467681,0.738439816448994,True
+frozen_v2_harmonized,up_to_2,all_validation,Bronchiectasis,2315,3187,0.5262001882648258,0.7244060475161987,0.6095965103598692,True
+frozen_v2_harmonized,up_to_2,all_validation,Bronchiolitis,28,21,0.23809523809523808,0.17857142857142858,0.20408163265306123,True
+frozen_v2_harmonized,up_to_2,all_validation,Bronchitis,3543,1776,0.5777027027027027,0.28958509737510585,0.38578680203045684,True
+frozen_v2_harmonized,up_to_2,all_validation,Bronchospasm / acute asthma exacerbation,2190,3811,0.4893728680136447,0.8515981735159818,0.6215630728211965,True
+frozen_v2_harmonized,up_to_2,all_validation,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_2,all_validation,Chronic rhinosinusitis,2717,1946,0.6485097636176773,0.4644828855355171,0.5412824361998714,True
+frozen_v2_harmonized,up_to_2,all_validation,Croup,264,628,0.4171974522292994,0.9924242424242424,0.5874439461883408,True
+frozen_v2_harmonized,up_to_2,all_validation,Epiglottitis,2248,1615,0.9962848297213622,0.7157473309608541,0.8330313228061093,True
+frozen_v2_harmonized,up_to_2,all_validation,Influenza,3590,2889,0.6368985808238145,0.5125348189415042,0.5679888871739466,True
+frozen_v2_harmonized,up_to_2,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+frozen_v2_harmonized,up_to_2,all_validation,Pneumonia,3484,1038,0.8159922928709056,0.2431113662456946,0.3746130030959752,True
+frozen_v2_harmonized,up_to_2,all_validation,Pulmonary neoplasm,1891,1444,0.752770083102493,0.5748281332628239,0.6518740629685157,True
+frozen_v2_harmonized,up_to_2,all_validation,Spontaneous pneumothorax,1405,2487,0.5424205870526739,0.9601423487544484,0.6932168550873586,True
+frozen_v2_harmonized,up_to_2,all_validation,Tuberculosis,1995,4418,0.34449977365323675,0.7629072681704261,0.4746608451582723,True
+frozen_v2_harmonized,up_to_2,all_validation,URTI,8656,6795,0.7150846210448859,0.5613447319778189,0.6289560546242962,True
+frozen_v2_harmonized,up_to_2,all_validation,Viral pharyngitis,8246,12279,0.5184461275348156,0.7720106718408926,0.6203166869671133,True
+frozen_v2_harmonized,up_to_2,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Acute COPD exacerbation / infection,375,184,0.7010869565217391,0.344,0.46153846153846156,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Allergic rhinitis,910,910,0.9989010989010989,0.9989010989010989,0.9989010989010989,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Bronchiectasis,179,238,0.49159663865546216,0.6536312849162011,0.5611510791366906,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Bronchiolitis,2,0,,0.0,0.0,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Bronchitis,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,534,0.6254681647940075,0.8586118251928021,0.723726977248104,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Croup,78,81,0.9506172839506173,0.9871794871794872,0.9685534591194969,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Influenza,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Pneumonia,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Pulmonary neoplasm,30,26,0.6538461538461539,0.5666666666666667,0.6071428571428571,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Tuberculosis,180,169,0.8106508875739645,0.7611111111111111,0.7851002865329513,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,URTI,0,0,,,,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_2,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_3,selection_primary,Acute COPD exacerbation / infection,1674,2558,0.5746677091477717,0.8781362007168458,0.6947069943289225,True
+frozen_v2_harmonized,up_to_3,selection_primary,Acute laryngitis,3407,2816,0.9680397727272727,0.8001174053419431,0.8761047726177085,True
+frozen_v2_harmonized,up_to_3,selection_primary,Acute pulmonary edema,2500,2487,0.9806996381182147,0.9756,0.9781431722478444,True
+frozen_v2_harmonized,up_to_3,selection_primary,Acute rhinosinusitis,1866,1562,0.5403329065300896,0.45230439442658094,0.49241540256709454,True
+frozen_v2_harmonized,up_to_3,selection_primary,Allergic rhinitis,1194,1183,1.0,0.990787269681742,0.9953723180479596,True
+frozen_v2_harmonized,up_to_3,selection_primary,Bronchiectasis,2136,1667,0.871625674865027,0.6802434456928839,0.7641335787536155,True
+frozen_v2_harmonized,up_to_3,selection_primary,Bronchiolitis,26,102,0.1568627450980392,0.6153846153846154,0.25,True
+frozen_v2_harmonized,up_to_3,selection_primary,Bronchitis,3543,3683,0.6244909041542221,0.6491673722833756,0.6365900913368392,True
+frozen_v2_harmonized,up_to_3,selection_primary,Bronchospasm / acute asthma exacerbation,1801,1262,0.7646592709984152,0.5358134369794558,0.6301012079660464,True
+frozen_v2_harmonized,up_to_3,selection_primary,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_3,selection_primary,Chronic rhinosinusitis,2717,2483,0.6858638743455497,0.6267942583732058,0.655,True
+frozen_v2_harmonized,up_to_3,selection_primary,Croup,186,334,0.5538922155688623,0.9946236559139785,0.7115384615384616,True
+frozen_v2_harmonized,up_to_3,selection_primary,Epiglottitis,2248,2154,0.9730733519034355,0.9323843416370107,0.9522944116310768,True
+frozen_v2_harmonized,up_to_3,selection_primary,Influenza,3590,3102,0.7849774339136041,0.6782729805013927,0.7277346084877465,True
+frozen_v2_harmonized,up_to_3,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+frozen_v2_harmonized,up_to_3,selection_primary,Pneumonia,3484,2031,0.9064500246184146,0.5284156142365097,0.6676337262012693,True
+frozen_v2_harmonized,up_to_3,selection_primary,Pulmonary neoplasm,1861,1815,0.8661157024793389,0.8447071466953251,0.8552774755168662,True
+frozen_v2_harmonized,up_to_3,selection_primary,Spontaneous pneumothorax,1405,1442,0.9410540915395285,0.9658362989323843,0.9532841587636108,True
+frozen_v2_harmonized,up_to_3,selection_primary,Tuberculosis,1815,2379,0.6923076923076923,0.9074380165289256,0.7854077253218884,True
+frozen_v2_harmonized,up_to_3,selection_primary,URTI,8656,8115,0.7995070856438694,0.7495378927911276,0.7737165344940672,True
+frozen_v2_harmonized,up_to_3,selection_primary,Viral pharyngitis,8245,11178,0.7161388441581679,0.9708914493632504,0.8242804921999691,True
+frozen_v2_harmonized,up_to_3,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_3,all_validation,Acute COPD exacerbation / infection,2049,3103,0.5887850467289719,0.8916544655929722,0.7092391304347826,True
+frozen_v2_harmonized,up_to_3,all_validation,Acute laryngitis,3407,2816,0.9680397727272727,0.8001174053419431,0.8761047726177085,True
+frozen_v2_harmonized,up_to_3,all_validation,Acute pulmonary edema,2500,2487,0.9806996381182147,0.9756,0.9781431722478444,True
+frozen_v2_harmonized,up_to_3,all_validation,Acute rhinosinusitis,1866,1562,0.5403329065300896,0.45230439442658094,0.49241540256709454,True
+frozen_v2_harmonized,up_to_3,all_validation,Allergic rhinitis,2104,2092,1.0,0.9942965779467681,0.9971401334604385,True
+frozen_v2_harmonized,up_to_3,all_validation,Bronchiectasis,2315,1783,0.8777341559169939,0.6760259179265659,0.7637872132747682,True
+frozen_v2_harmonized,up_to_3,all_validation,Bronchiolitis,28,120,0.14166666666666666,0.6071428571428571,0.22972972972972974,True
+frozen_v2_harmonized,up_to_3,all_validation,Bronchitis,3543,3752,0.6130063965884861,0.6491673722833756,0.630568882796436,True
+frozen_v2_harmonized,up_to_3,all_validation,Bronchospasm / acute asthma exacerbation,2190,1435,0.7770034843205574,0.5091324200913242,0.6151724137931035,True
+frozen_v2_harmonized,up_to_3,all_validation,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_3,all_validation,Chronic rhinosinusitis,2717,2483,0.6858638743455497,0.6267942583732058,0.655,True
+frozen_v2_harmonized,up_to_3,all_validation,Croup,264,413,0.6343825665859564,0.9924242424242424,0.7740029542097489,True
+frozen_v2_harmonized,up_to_3,all_validation,Epiglottitis,2248,2154,0.9730733519034355,0.9323843416370107,0.9522944116310768,True
+frozen_v2_harmonized,up_to_3,all_validation,Influenza,3590,3102,0.7849774339136041,0.6782729805013927,0.7277346084877465,True
+frozen_v2_harmonized,up_to_3,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+frozen_v2_harmonized,up_to_3,all_validation,Pneumonia,3484,2031,0.9064500246184146,0.5284156142365097,0.6676337262012693,True
+frozen_v2_harmonized,up_to_3,all_validation,Pulmonary neoplasm,1891,1846,0.8640303358613218,0.8434690639873083,0.8536259031308536,True
+frozen_v2_harmonized,up_to_3,all_validation,Spontaneous pneumothorax,1405,1442,0.9410540915395285,0.9658362989323843,0.9532841587636108,True
+frozen_v2_harmonized,up_to_3,all_validation,Tuberculosis,1995,2581,0.7039907012785742,0.9107769423558897,0.7941433566433567,True
+frozen_v2_harmonized,up_to_3,all_validation,URTI,8656,8115,0.7995070856438694,0.7495378927911276,0.7737165344940672,True
+frozen_v2_harmonized,up_to_3,all_validation,Viral pharyngitis,8246,11179,0.716164236514894,0.9708949793839438,0.8242985842985843,True
+frozen_v2_harmonized,up_to_3,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Acute COPD exacerbation / infection,375,545,0.655045871559633,0.952,0.7760869565217391,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Allergic rhinitis,910,909,1.0,0.9989010989010989,0.999450247388675,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Bronchiectasis,179,116,0.9655172413793104,0.6256983240223464,0.7593220338983051,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Bronchiolitis,2,18,0.05555555555555555,0.5,0.1,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Bronchitis,0,69,0.0,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,173,0.8670520231213873,0.3856041131105398,0.5338078291814946,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Croup,78,79,0.9746835443037974,0.9871794871794872,0.9808917197452229,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Influenza,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Pneumonia,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Pulmonary neoplasm,30,31,0.7419354838709677,0.7666666666666667,0.7540983606557377,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Tuberculosis,180,202,0.8415841584158416,0.9444444444444444,0.8900523560209425,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,URTI,0,0,,,,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_3,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_5,selection_primary,Acute COPD exacerbation / infection,1674,2156,0.6173469387755102,0.7951015531660693,0.6950391644908617,True
+frozen_v2_harmonized,up_to_5,selection_primary,Acute laryngitis,3407,2932,0.9986357435197817,0.8594071030231876,0.9238050165641268,True
+frozen_v2_harmonized,up_to_5,selection_primary,Acute pulmonary edema,2500,2475,0.9995959595959596,0.9896,0.9945728643216081,True
+frozen_v2_harmonized,up_to_5,selection_primary,Acute rhinosinusitis,1866,1733,0.6024235429890363,0.5594855305466238,0.5801611558766324,True
+frozen_v2_harmonized,up_to_5,selection_primary,Allergic rhinitis,1194,1183,1.0,0.990787269681742,0.9953723180479596,True
+frozen_v2_harmonized,up_to_5,selection_primary,Bronchiectasis,2136,1717,0.9446709376820035,0.7593632958801498,0.8419413444069557,True
+frozen_v2_harmonized,up_to_5,selection_primary,Bronchiolitis,26,77,0.2987012987012987,0.8846153846153846,0.44660194174757284,True
+frozen_v2_harmonized,up_to_5,selection_primary,Bronchitis,3543,3851,0.8106985198649701,0.8811741462037821,0.8444684879632134,True
+frozen_v2_harmonized,up_to_5,selection_primary,Bronchospasm / acute asthma exacerbation,1801,1258,0.7670906200317965,0.5358134369794558,0.6309251389342923,True
+frozen_v2_harmonized,up_to_5,selection_primary,COVID-19,0,1,0.0,,,False
+frozen_v2_harmonized,up_to_5,selection_primary,Chronic rhinosinusitis,2717,2607,0.7230533179900268,0.69377990430622,0.708114199849737,True
+frozen_v2_harmonized,up_to_5,selection_primary,Croup,186,199,0.9296482412060302,0.9946236559139785,0.961038961038961,True
+frozen_v2_harmonized,up_to_5,selection_primary,Epiglottitis,2248,2274,0.9872471416007036,0.9986654804270463,0.9929234851835471,True
+frozen_v2_harmonized,up_to_5,selection_primary,Influenza,3590,3397,0.9434795407712687,0.8927576601671309,0.9174180621153571,True
+frozen_v2_harmonized,up_to_5,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+frozen_v2_harmonized,up_to_5,selection_primary,Pneumonia,3484,3191,0.9805703541209652,0.898105625717566,0.9375280898876405,True
+frozen_v2_harmonized,up_to_5,selection_primary,Pulmonary neoplasm,1861,1967,0.9354346720894764,0.9887157442235357,0.9613375130616509,True
+frozen_v2_harmonized,up_to_5,selection_primary,Spontaneous pneumothorax,1405,1432,0.9804469273743017,0.999288256227758,0.9897779344377864,True
+frozen_v2_harmonized,up_to_5,selection_primary,Tuberculosis,1815,1825,0.9063013698630137,0.9112947658402204,0.9087912087912088,True
+frozen_v2_harmonized,up_to_5,selection_primary,URTI,8656,8858,0.9156694513434184,0.9370378927911276,0.9262304442160557,True
+frozen_v2_harmonized,up_to_5,selection_primary,Viral pharyngitis,8245,9220,0.8940347071583514,0.9997574287446938,0.9439450329229888,True
+frozen_v2_harmonized,up_to_5,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_5,all_validation,Acute COPD exacerbation / infection,2049,2634,0.618830675778284,0.7955100048804294,0.6961349562246423,True
+frozen_v2_harmonized,up_to_5,all_validation,Acute laryngitis,3407,2932,0.9986357435197817,0.8594071030231876,0.9238050165641268,True
+frozen_v2_harmonized,up_to_5,all_validation,Acute pulmonary edema,2500,2475,0.9995959595959596,0.9896,0.9945728643216081,True
+frozen_v2_harmonized,up_to_5,all_validation,Acute rhinosinusitis,1866,1733,0.6024235429890363,0.5594855305466238,0.5801611558766324,True
+frozen_v2_harmonized,up_to_5,all_validation,Allergic rhinitis,2104,2092,1.0,0.9942965779467681,0.9971401334604385,True
+frozen_v2_harmonized,up_to_5,all_validation,Bronchiectasis,2315,1853,0.9471127900701565,0.7580993520518359,0.8421305182341651,True
+frozen_v2_harmonized,up_to_5,all_validation,Bronchiolitis,28,96,0.2604166666666667,0.8928571428571429,0.4032258064516129,True
+frozen_v2_harmonized,up_to_5,all_validation,Bronchitis,3543,3979,0.7846192510681076,0.8811741462037821,0.8300983780909332,True
+frozen_v2_harmonized,up_to_5,all_validation,Bronchospasm / acute asthma exacerbation,2190,1431,0.7791754018169113,0.5091324200913242,0.615851974592654,True
+frozen_v2_harmonized,up_to_5,all_validation,COVID-19,0,1,0.0,,,False
+frozen_v2_harmonized,up_to_5,all_validation,Chronic rhinosinusitis,2717,2607,0.7230533179900268,0.69377990430622,0.708114199849737,True
+frozen_v2_harmonized,up_to_5,all_validation,Croup,264,277,0.9458483754512635,0.9924242424242424,0.9685767097966729,True
+frozen_v2_harmonized,up_to_5,all_validation,Epiglottitis,2248,2274,0.9872471416007036,0.9986654804270463,0.9929234851835471,True
+frozen_v2_harmonized,up_to_5,all_validation,Influenza,3590,3397,0.9434795407712687,0.8927576601671309,0.9174180621153571,True
+frozen_v2_harmonized,up_to_5,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+frozen_v2_harmonized,up_to_5,all_validation,Pneumonia,3484,3191,0.9805703541209652,0.898105625717566,0.9375280898876405,True
+frozen_v2_harmonized,up_to_5,all_validation,Pulmonary neoplasm,1891,2008,0.9312749003984063,0.9888947646747752,0.9592203129007438,True
+frozen_v2_harmonized,up_to_5,all_validation,Spontaneous pneumothorax,1405,1432,0.9804469273743017,0.999288256227758,0.9897779344377864,True
+frozen_v2_harmonized,up_to_5,all_validation,Tuberculosis,1995,2005,0.9082294264339152,0.912781954887218,0.9105,True
+frozen_v2_harmonized,up_to_5,all_validation,URTI,8656,8858,0.9156694513434184,0.9370378927911276,0.9262304442160557,True
+frozen_v2_harmonized,up_to_5,all_validation,Viral pharyngitis,8246,9221,0.8940461988938293,0.9997574581615328,0.9439514513081811,True
+frozen_v2_harmonized,up_to_5,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Acute COPD exacerbation / infection,375,478,0.6255230125523012,0.7973333333333333,0.7010550996483002,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Allergic rhinitis,910,909,1.0,0.9989010989010989,0.999450247388675,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Bronchiectasis,179,136,0.9779411764705882,0.7430167597765364,0.8444444444444444,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Bronchiolitis,2,19,0.10526315789473684,1.0,0.19047619047619047,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Bronchitis,0,128,0.0,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,173,0.8670520231213873,0.3856041131105398,0.5338078291814946,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,COVID-19,0,0,,,,False
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Croup,78,78,0.9871794871794872,0.9871794871794872,0.9871794871794872,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Influenza,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Pneumonia,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Pulmonary neoplasm,30,41,0.7317073170731707,1.0,0.8450704225352113,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Tuberculosis,180,180,0.9277777777777778,0.9277777777777778,0.9277777777777778,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,URTI,0,0,,,,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+frozen_v2_harmonized,up_to_5,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_group_weighted,full,selection_primary,Acute COPD exacerbation / infection,1674,1136,0.9419014084507042,0.6391875746714456,0.7615658362989324,True
+rf_group_weighted,full,selection_primary,Acute laryngitis,3407,2936,0.9993188010899182,0.8611681831523335,0.9251142992274949,True
+rf_group_weighted,full,selection_primary,Acute pulmonary edema,2500,2519,0.9920603414053196,0.9996,0.99581589958159,True
+rf_group_weighted,full,selection_primary,Acute rhinosinusitis,1866,904,0.8528761061946902,0.41318327974276525,0.5566787003610109,True
+rf_group_weighted,full,selection_primary,Allergic rhinitis,1194,1117,1.0,0.9355108877721943,0.9666810904370402,True
+rf_group_weighted,full,selection_primary,Bronchiectasis,2136,2327,0.8616244091104426,0.9386704119850188,0.8984987676450817,True
+rf_group_weighted,full,selection_primary,Bronchiolitis,26,23,1.0,0.8846153846153846,0.9387755102040817,True
+rf_group_weighted,full,selection_primary,Bronchitis,3543,3568,0.9899103139013453,0.9968952864803838,0.993390521726902,True
+rf_group_weighted,full,selection_primary,Bronchospasm / acute asthma exacerbation,1801,2325,0.7466666666666667,0.9639089394780678,0.8414929714008725,True
+rf_group_weighted,full,selection_primary,COVID-19,0,0,,,,False
+rf_group_weighted,full,selection_primary,Chronic rhinosinusitis,2717,3633,0.7063033305807872,0.944423997055576,0.8081889763779527,True
+rf_group_weighted,full,selection_primary,Croup,186,170,0.9823529411764705,0.8978494623655914,0.9382022471910112,True
+rf_group_weighted,full,selection_primary,Epiglottitis,2248,2247,0.9995549621717846,0.9991103202846975,0.9993325917686318,True
+rf_group_weighted,full,selection_primary,Influenza,3590,3507,0.9997148560022812,0.9766016713091922,0.9880231083556432,True
+rf_group_weighted,full,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_group_weighted,full,selection_primary,Pneumonia,3484,3450,1.0,0.9902411021814007,0.9950966253244881,True
+rf_group_weighted,full,selection_primary,Pulmonary neoplasm,1861,1826,0.9994523548740416,0.9806555615260613,0.9899647409818281,True
+rf_group_weighted,full,selection_primary,Spontaneous pneumothorax,1405,1387,0.9992790194664743,0.9864768683274021,0.9928366762177651,True
+rf_group_weighted,full,selection_primary,Tuberculosis,1815,1562,0.9827144686299616,0.8457300275482094,0.9090909090909091,True
+rf_group_weighted,full,selection_primary,URTI,8656,8743,0.9860459796408555,0.995956561922366,0.9909764929018909,True
+rf_group_weighted,full,selection_primary,Viral pharyngitis,8245,8973,0.9188677142538727,1.0,0.9577186665117899,True
+rf_group_weighted,full,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_group_weighted,full,all_validation,Acute COPD exacerbation / infection,2049,1413,0.9490445859872612,0.6544655929721815,0.7746967071057193,True
+rf_group_weighted,full,all_validation,Acute laryngitis,3407,2936,0.9993188010899182,0.8611681831523335,0.9251142992274949,True
+rf_group_weighted,full,all_validation,Acute pulmonary edema,2500,2519,0.9920603414053196,0.9996,0.99581589958159,True
+rf_group_weighted,full,all_validation,Acute rhinosinusitis,1866,904,0.8528761061946902,0.41318327974276525,0.5566787003610109,True
+rf_group_weighted,full,all_validation,Allergic rhinitis,2104,2007,1.0,0.9538973384030418,0.9764047676964243,True
+rf_group_weighted,full,all_validation,Bronchiectasis,2315,2523,0.8612762584225129,0.9386609071274298,0.8983050847457628,True
+rf_group_weighted,full,all_validation,Bronchiolitis,28,25,1.0,0.8928571428571429,0.9433962264150944,True
+rf_group_weighted,full,all_validation,Bronchitis,3543,3568,0.9899103139013453,0.9968952864803838,0.993390521726902,True
+rf_group_weighted,full,all_validation,Bronchospasm / acute asthma exacerbation,2190,2808,0.7546296296296297,0.9675799086757991,0.8479391756702681,True
+rf_group_weighted,full,all_validation,COVID-19,0,0,,,,False
+rf_group_weighted,full,all_validation,Chronic rhinosinusitis,2717,3633,0.7063033305807872,0.944423997055576,0.8081889763779527,True
+rf_group_weighted,full,all_validation,Croup,264,244,0.9877049180327869,0.9128787878787878,0.9488188976377953,True
+rf_group_weighted,full,all_validation,Epiglottitis,2248,2247,0.9995549621717846,0.9991103202846975,0.9993325917686318,True
+rf_group_weighted,full,all_validation,Influenza,3590,3507,0.9997148560022812,0.9766016713091922,0.9880231083556432,True
+rf_group_weighted,full,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_group_weighted,full,all_validation,Pneumonia,3484,3450,1.0,0.9902411021814007,0.9950966253244881,True
+rf_group_weighted,full,all_validation,Pulmonary neoplasm,1891,1854,0.9994606256742179,0.9799048122686409,0.9895861148197597,True
+rf_group_weighted,full,all_validation,Spontaneous pneumothorax,1405,1387,0.9992790194664743,0.9864768683274021,0.9928366762177651,True
+rf_group_weighted,full,all_validation,Tuberculosis,1995,1729,0.9820705610179294,0.8511278195488722,0.9119226638023631,True
+rf_group_weighted,full,all_validation,URTI,8656,8743,0.9860459796408555,0.995956561922366,0.9909764929018909,True
+rf_group_weighted,full,all_validation,Viral pharyngitis,8246,8999,0.9163240360040005,1.0,0.956335169614381,True
+rf_group_weighted,full,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_group_weighted,full,selection_legacy_overlap,Acute COPD exacerbation / infection,375,277,0.9783393501805054,0.7226666666666667,0.8312883435582822,True
+rf_group_weighted,full,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Allergic rhinitis,910,890,1.0,0.978021978021978,0.9888888888888889,True
+rf_group_weighted,full,selection_legacy_overlap,Bronchiectasis,179,196,0.8571428571428571,0.9385474860335196,0.896,True
+rf_group_weighted,full,selection_legacy_overlap,Bronchiolitis,2,2,1.0,1.0,1.0,True
+rf_group_weighted,full,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,483,0.7929606625258799,0.9845758354755784,0.8784403669724771,True
+rf_group_weighted,full,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_group_weighted,full,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Croup,78,74,1.0,0.9487179487179487,0.9736842105263158,True
+rf_group_weighted,full,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_group_weighted,full,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Pulmonary neoplasm,30,28,1.0,0.9333333333333333,0.9655172413793104,True
+rf_group_weighted,full,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Tuberculosis,180,167,0.9760479041916168,0.9055555555555556,0.9394812680115274,True
+rf_group_weighted,full,selection_legacy_overlap,URTI,0,0,,,,True
+rf_group_weighted,full,selection_legacy_overlap,Viral pharyngitis,1,26,0.038461538461538464,1.0,0.07407407407407407,True
+rf_group_weighted,full,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_group_weighted,up_to_1,selection_primary,Acute COPD exacerbation / infection,1674,398,0.5276381909547738,0.12544802867383512,0.20270270270270271,True
+rf_group_weighted,up_to_1,selection_primary,Acute laryngitis,3407,1353,0.762010347376201,0.30261226885823306,0.4331932773109244,True
+rf_group_weighted,up_to_1,selection_primary,Acute pulmonary edema,2500,1428,0.8543417366946778,0.488,0.6211812627291242,True
+rf_group_weighted,up_to_1,selection_primary,Acute rhinosinusitis,1866,344,0.47093023255813954,0.08681672025723473,0.14660633484162897,True
+rf_group_weighted,up_to_1,selection_primary,Allergic rhinitis,1194,584,1.0,0.48911222780569513,0.6569178852643419,True
+rf_group_weighted,up_to_1,selection_primary,Bronchiectasis,2136,2557,0.27375831052014077,0.32771535580524347,0.2983166418069465,True
+rf_group_weighted,up_to_1,selection_primary,Bronchiolitis,26,0,,0.0,0.0,True
+rf_group_weighted,up_to_1,selection_primary,Bronchitis,3543,2404,0.2961730449251248,0.200959638724245,0.23944846140911383,True
+rf_group_weighted,up_to_1,selection_primary,Bronchospasm / acute asthma exacerbation,1801,4855,0.22739443872296602,0.6129927817878956,0.3317307692307692,True
+rf_group_weighted,up_to_1,selection_primary,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_1,selection_primary,Chronic rhinosinusitis,2717,1505,0.6179401993355482,0.3422892896577107,0.44054950260540027,True
+rf_group_weighted,up_to_1,selection_primary,Croup,186,82,0.4268292682926829,0.1881720430107527,0.26119402985074625,True
+rf_group_weighted,up_to_1,selection_primary,Epiglottitis,2248,590,0.9898305084745763,0.2597864768683274,0.41155743481324875,True
+rf_group_weighted,up_to_1,selection_primary,Influenza,3590,1494,0.5856760374832664,0.24373259052924792,0.34421715184893786,True
+rf_group_weighted,up_to_1,selection_primary,Larygospasm,199,549,0.36247723132969034,1.0,0.5320855614973262,True
+rf_group_weighted,up_to_1,selection_primary,Pneumonia,3484,141,0.5460992907801419,0.022101033295063147,0.042482758620689655,True
+rf_group_weighted,up_to_1,selection_primary,Pulmonary neoplasm,1861,524,0.700381679389313,0.1972058033315422,0.3077568134171908,True
+rf_group_weighted,up_to_1,selection_primary,Spontaneous pneumothorax,1405,805,0.7428571428571429,0.42562277580071173,0.5411764705882353,True
+rf_group_weighted,up_to_1,selection_primary,Tuberculosis,1815,419,0.5441527446300716,0.1256198347107438,0.20411817367949867,True
+rf_group_weighted,up_to_1,selection_primary,URTI,8656,8082,0.5824053452115813,0.5437846580406654,0.5624327876687776,True
+rf_group_weighted,up_to_1,selection_primary,Viral pharyngitis,8245,24439,0.33728875976922135,0.9997574287446938,0.5044058254803574,True
+rf_group_weighted,up_to_1,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_group_weighted,up_to_1,all_validation,Acute COPD exacerbation / infection,2049,467,0.5524625267665952,0.1259150805270864,0.20508744038155802,True
+rf_group_weighted,up_to_1,all_validation,Acute laryngitis,3407,1353,0.762010347376201,0.30261226885823306,0.4331932773109244,True
+rf_group_weighted,up_to_1,all_validation,Acute pulmonary edema,2500,1428,0.8543417366946778,0.488,0.6211812627291242,True
+rf_group_weighted,up_to_1,all_validation,Acute rhinosinusitis,1866,344,0.47093023255813954,0.08681672025723473,0.14660633484162897,True
+rf_group_weighted,up_to_1,all_validation,Allergic rhinitis,2104,1024,1.0,0.4866920152091255,0.6547314578005116,True
+rf_group_weighted,up_to_1,all_validation,Bronchiectasis,2315,2695,0.2816326530612245,0.3278617710583153,0.3029940119760479,True
+rf_group_weighted,up_to_1,all_validation,Bronchiolitis,28,0,,0.0,0.0,True
+rf_group_weighted,up_to_1,all_validation,Bronchitis,3543,2404,0.2961730449251248,0.200959638724245,0.23944846140911383,True
+rf_group_weighted,up_to_1,all_validation,Bronchospasm / acute asthma exacerbation,2190,5357,0.252193391823782,0.6168949771689498,0.3580230555187492,True
+rf_group_weighted,up_to_1,all_validation,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_1,all_validation,Chronic rhinosinusitis,2717,1505,0.6179401993355482,0.3422892896577107,0.44054950260540027,True
+rf_group_weighted,up_to_1,all_validation,Croup,264,91,0.4835164835164835,0.16666666666666666,0.24788732394366197,True
+rf_group_weighted,up_to_1,all_validation,Epiglottitis,2248,595,0.9815126050420168,0.2597864768683274,0.41083362645093213,True
+rf_group_weighted,up_to_1,all_validation,Influenza,3590,1496,0.5848930481283422,0.24373259052924792,0.3440817931576878,True
+rf_group_weighted,up_to_1,all_validation,Larygospasm,651,1017,0.640117994100295,1.0,0.7805755395683454,True
+rf_group_weighted,up_to_1,all_validation,Pneumonia,3484,141,0.5460992907801419,0.022101033295063147,0.042482758620689655,True
+rf_group_weighted,up_to_1,all_validation,Pulmonary neoplasm,1891,541,0.6950092421441775,0.19883659439450027,0.3092105263157895,True
+rf_group_weighted,up_to_1,all_validation,Spontaneous pneumothorax,1405,805,0.7428571428571429,0.42562277580071173,0.5411764705882353,True
+rf_group_weighted,up_to_1,all_validation,Tuberculosis,1995,450,0.56,0.12631578947368421,0.20613496932515338,True
+rf_group_weighted,up_to_1,all_validation,URTI,8656,8082,0.5824053452115813,0.5437846580406654,0.5624327876687776,True
+rf_group_weighted,up_to_1,all_validation,Viral pharyngitis,8246,25354,0.32515579395756095,0.9997574581615328,0.4907142857142857,True
+rf_group_weighted,up_to_1,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Acute COPD exacerbation / infection,375,69,0.6956521739130435,0.128,0.21621621621621623,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Allergic rhinitis,910,440,1.0,0.4835164835164835,0.6518518518518519,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Bronchiectasis,179,138,0.427536231884058,0.329608938547486,0.3722397476340694,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Bronchiolitis,2,0,,0.0,0.0,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,502,0.49203187250996017,0.6349614395886889,0.5544332210998878,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_1,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Croup,78,9,1.0,0.11538461538461539,0.20689655172413793,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Epiglottitis,0,5,0.0,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Influenza,0,2,0.0,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Larygospasm,452,468,0.9658119658119658,1.0,0.9826086956521739,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Pulmonary neoplasm,30,17,0.5294117647058824,0.3,0.3829787234042553,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Tuberculosis,180,31,0.7741935483870968,0.13333333333333333,0.22748815165876776,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,URTI,0,0,,,,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Viral pharyngitis,1,915,0.001092896174863388,1.0,0.002183406113537118,True
+rf_group_weighted,up_to_1,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_group_weighted,up_to_2,selection_primary,Acute COPD exacerbation / infection,1674,655,0.6870229007633588,0.26881720430107525,0.38643194504079004,True
+rf_group_weighted,up_to_2,selection_primary,Acute laryngitis,3407,2309,0.9016890428757037,0.611094804813619,0.728481455563331,True
+rf_group_weighted,up_to_2,selection_primary,Acute pulmonary edema,2500,3053,0.8021618080576483,0.9796,0.8820457410408789,True
+rf_group_weighted,up_to_2,selection_primary,Acute rhinosinusitis,1866,603,0.5903814262023217,0.1907824222936763,0.288375860672337,True
+rf_group_weighted,up_to_2,selection_primary,Allergic rhinitis,1194,983,1.0,0.8232830820770519,0.9030776297657327,True
+rf_group_weighted,up_to_2,selection_primary,Bronchiectasis,2136,2944,0.5305706521739131,0.7312734082397003,0.6149606299212599,True
+rf_group_weighted,up_to_2,selection_primary,Bronchiolitis,26,2,1.0,0.07692307692307693,0.14285714285714285,True
+rf_group_weighted,up_to_2,selection_primary,Bronchitis,3543,2349,0.7237122179650916,0.47981936212249504,0.5770536320434487,True
+rf_group_weighted,up_to_2,selection_primary,Bronchospasm / acute asthma exacerbation,1801,3571,0.469896387566508,0.9317046085508051,0.6247207743857036,True
+rf_group_weighted,up_to_2,selection_primary,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_2,selection_primary,Chronic rhinosinusitis,2717,3656,0.5352844638949672,0.7202797202797203,0.6141534599089911,True
+rf_group_weighted,up_to_2,selection_primary,Croup,186,243,0.5843621399176955,0.7634408602150538,0.662004662004662,True
+rf_group_weighted,up_to_2,selection_primary,Epiglottitis,2248,1764,0.985827664399093,0.7735765124555161,0.8668993020937188,True
+rf_group_weighted,up_to_2,selection_primary,Influenza,3590,2080,0.8052884615384616,0.46657381615598886,0.5908289241622575,True
+rf_group_weighted,up_to_2,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_group_weighted,up_to_2,selection_primary,Pneumonia,3484,1278,0.92018779342723,0.3375430539609644,0.49391012179756405,True
+rf_group_weighted,up_to_2,selection_primary,Pulmonary neoplasm,1861,1481,0.7879810938555031,0.6270822138635143,0.6983842010771992,True
+rf_group_weighted,up_to_2,selection_primary,Spontaneous pneumothorax,1405,1237,0.872271624898949,0.7679715302491104,0.8168054504163512,True
+rf_group_weighted,up_to_2,selection_primary,Tuberculosis,1815,1392,0.5150862068965517,0.3950413223140496,0.4471468662301216,True
+rf_group_weighted,up_to_2,selection_primary,URTI,8656,9659,0.7218138523656693,0.805452865064695,0.7613431613431614,True
+rf_group_weighted,up_to_2,selection_primary,Viral pharyngitis,8245,13094,0.6140216893233542,0.9751364463311097,0.7535498383241951,True
+rf_group_weighted,up_to_2,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_group_weighted,up_to_2,all_validation,Acute COPD exacerbation / infection,2049,768,0.7200520833333334,0.2698877501220107,0.39261625843095493,True
+rf_group_weighted,up_to_2,all_validation,Acute laryngitis,3407,2309,0.9016890428757037,0.611094804813619,0.728481455563331,True
+rf_group_weighted,up_to_2,all_validation,Acute pulmonary edema,2500,3053,0.8021618080576483,0.9796,0.8820457410408789,True
+rf_group_weighted,up_to_2,all_validation,Acute rhinosinusitis,1866,603,0.5903814262023217,0.1907824222936763,0.288375860672337,True
+rf_group_weighted,up_to_2,all_validation,Allergic rhinitis,2104,1749,1.0,0.8312737642585551,0.9078640020763041,True
+rf_group_weighted,up_to_2,all_validation,Bronchiectasis,2315,3183,0.5274897895067546,0.7252699784017279,0.6107675518370317,True
+rf_group_weighted,up_to_2,all_validation,Bronchiolitis,28,2,1.0,0.07142857142857142,0.13333333333333333,True
+rf_group_weighted,up_to_2,all_validation,Bronchitis,3543,2349,0.7237122179650916,0.47981936212249504,0.5770536320434487,True
+rf_group_weighted,up_to_2,all_validation,Bronchospasm / acute asthma exacerbation,2190,4176,0.49257662835249044,0.9392694063926941,0.6462456801759346,True
+rf_group_weighted,up_to_2,all_validation,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_2,all_validation,Chronic rhinosinusitis,2717,3656,0.5352844638949672,0.7202797202797203,0.6141534599089911,True
+rf_group_weighted,up_to_2,all_validation,Croup,264,306,0.6699346405228758,0.7765151515151515,0.7192982456140351,True
+rf_group_weighted,up_to_2,all_validation,Epiglottitis,2248,1765,0.9852691218130312,0.7735765124555161,0.8666832793421381,True
+rf_group_weighted,up_to_2,all_validation,Influenza,3590,2080,0.8052884615384616,0.46657381615598886,0.5908289241622575,True
+rf_group_weighted,up_to_2,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_group_weighted,up_to_2,all_validation,Pneumonia,3484,1278,0.92018779342723,0.3375430539609644,0.49391012179756405,True
+rf_group_weighted,up_to_2,all_validation,Pulmonary neoplasm,1891,1509,0.7852882703777336,0.6266525647805394,0.6970588235294117,True
+rf_group_weighted,up_to_2,all_validation,Spontaneous pneumothorax,1405,1237,0.872271624898949,0.7679715302491104,0.8168054504163512,True
+rf_group_weighted,up_to_2,all_validation,Tuberculosis,1995,1488,0.5336021505376344,0.3979949874686717,0.45592879701406835,True
+rf_group_weighted,up_to_2,all_validation,URTI,8656,9659,0.7218138523656693,0.805452865064695,0.7613431613431614,True
+rf_group_weighted,up_to_2,all_validation,Viral pharyngitis,8246,13326,0.6034068737805793,0.9751394615571186,0.7455034303727054,True
+rf_group_weighted,up_to_2,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Acute COPD exacerbation / infection,375,113,0.911504424778761,0.27466666666666667,0.42213114754098363,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Allergic rhinitis,910,766,1.0,0.8417582417582418,0.9140811455847255,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Bronchiectasis,179,239,0.4895397489539749,0.6536312849162011,0.5598086124401914,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Bronchiolitis,2,0,,0.0,0.0,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,605,0.6264462809917355,0.974293059125964,0.7625754527162978,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_2,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Croup,78,63,1.0,0.8076923076923077,0.8936170212765957,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Epiglottitis,0,1,0.0,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Pulmonary neoplasm,30,28,0.6428571428571429,0.6,0.6206896551724138,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Tuberculosis,180,96,0.8020833333333334,0.42777777777777776,0.5579710144927537,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,URTI,0,0,,,,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Viral pharyngitis,1,232,0.004310344827586207,1.0,0.008583690987124463,True
+rf_group_weighted,up_to_2,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_group_weighted,up_to_3,selection_primary,Acute COPD exacerbation / infection,1674,989,0.8564206268958544,0.505973715651135,0.6361246714232069,True
+rf_group_weighted,up_to_3,selection_primary,Acute laryngitis,3407,2811,0.9743863393810032,0.8039330789550925,0.8809906722418784,True
+rf_group_weighted,up_to_3,selection_primary,Acute pulmonary edema,2500,2580,0.9682170542635659,0.9992,0.9834645669291339,True
+rf_group_weighted,up_to_3,selection_primary,Acute rhinosinusitis,1866,635,0.7921259842519685,0.2695605573419078,0.4022391043582567,True
+rf_group_weighted,up_to_3,selection_primary,Allergic rhinitis,1194,1117,1.0,0.9355108877721943,0.9666810904370402,True
+rf_group_weighted,up_to_3,selection_primary,Bronchiectasis,2136,2771,0.7235654998195598,0.9386704119850188,0.8171999184837987,True
+rf_group_weighted,up_to_3,selection_primary,Bronchiolitis,26,12,0.8333333333333334,0.38461538461538464,0.5263157894736842,True
+rf_group_weighted,up_to_3,selection_primary,Bronchitis,3543,3520,0.8170454545454545,0.811741462037821,0.8143848223134645,True
+rf_group_weighted,up_to_3,selection_primary,Bronchospasm / acute asthma exacerbation,1801,2494,0.6960705693664796,0.9639089394780678,0.8083818393480792,True
+rf_group_weighted,up_to_3,selection_primary,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_3,selection_primary,Chronic rhinosinusitis,2717,4105,0.6194884287454324,0.9359587780640413,0.7455291703312812,True
+rf_group_weighted,up_to_3,selection_primary,Croup,186,217,0.7695852534562212,0.8978494623655914,0.8287841191066998,True
+rf_group_weighted,up_to_3,selection_primary,Epiglottitis,2248,2143,0.998133457769482,0.9515124555160143,0.9742655431564564,True
+rf_group_weighted,up_to_3,selection_primary,Influenza,3590,2577,0.9161816065192084,0.6576601671309192,0.7656883411707476,True
+rf_group_weighted,up_to_3,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_group_weighted,up_to_3,selection_primary,Pneumonia,3484,2402,0.966278101582015,0.6661882893226176,0.7886510363574584,True
+rf_group_weighted,up_to_3,selection_primary,Pulmonary neoplasm,1861,1757,0.9089356858281161,0.8581407845244492,0.882808181315644,True
+rf_group_weighted,up_to_3,selection_primary,Spontaneous pneumothorax,1405,1348,0.9821958456973294,0.9423487544483986,0.961859789320741,True
+rf_group_weighted,up_to_3,selection_primary,Tuberculosis,1815,1857,0.7533656435110393,0.7707988980716254,0.7619825708061002,True
+rf_group_weighted,up_to_3,selection_primary,URTI,8656,9645,0.8305857957490927,0.925485212569316,0.8754712857220917,True
+rf_group_weighted,up_to_3,selection_primary,Viral pharyngitis,8245,9373,0.8571428571428571,0.974408732565191,0.9120217958905664,True
+rf_group_weighted,up_to_3,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_group_weighted,up_to_3,all_validation,Acute COPD exacerbation / infection,2049,1174,0.8739352640545145,0.5007320644216691,0.6366739062984796,True
+rf_group_weighted,up_to_3,all_validation,Acute laryngitis,3407,2811,0.9743863393810032,0.8039330789550925,0.8809906722418784,True
+rf_group_weighted,up_to_3,all_validation,Acute pulmonary edema,2500,2580,0.9682170542635659,0.9992,0.9834645669291339,True
+rf_group_weighted,up_to_3,all_validation,Acute rhinosinusitis,1866,635,0.7921259842519685,0.2695605573419078,0.4022391043582567,True
+rf_group_weighted,up_to_3,all_validation,Allergic rhinitis,2104,2007,1.0,0.9538973384030418,0.9764047676964243,True
+rf_group_weighted,up_to_3,all_validation,Bronchiectasis,2315,3032,0.716688654353562,0.9386609071274298,0.8127922199364129,True
+rf_group_weighted,up_to_3,all_validation,Bronchiolitis,28,12,0.8333333333333334,0.35714285714285715,0.5,True
+rf_group_weighted,up_to_3,all_validation,Bronchitis,3543,3520,0.8170454545454545,0.811741462037821,0.8143848223134645,True
+rf_group_weighted,up_to_3,all_validation,Bronchospasm / acute asthma exacerbation,2190,3021,0.7014233697451175,0.9675799086757991,0.8132796008443677,True
+rf_group_weighted,up_to_3,all_validation,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_3,all_validation,Chronic rhinosinusitis,2717,4105,0.6194884287454324,0.9359587780640413,0.7455291703312812,True
+rf_group_weighted,up_to_3,all_validation,Croup,264,292,0.8253424657534246,0.9128787878787878,0.8669064748201439,True
+rf_group_weighted,up_to_3,all_validation,Epiglottitis,2248,2143,0.998133457769482,0.9515124555160143,0.9742655431564564,True
+rf_group_weighted,up_to_3,all_validation,Influenza,3590,2577,0.9161816065192084,0.6576601671309192,0.7656883411707476,True
+rf_group_weighted,up_to_3,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_group_weighted,up_to_3,all_validation,Pneumonia,3484,2402,0.966278101582015,0.6661882893226176,0.7886510363574584,True
+rf_group_weighted,up_to_3,all_validation,Pulmonary neoplasm,1891,1783,0.907459338194055,0.8556319407720783,0.8807838867719108,True
+rf_group_weighted,up_to_3,all_validation,Spontaneous pneumothorax,1405,1348,0.9821958456973294,0.9423487544483986,0.961859789320741,True
+rf_group_weighted,up_to_3,all_validation,Tuberculosis,1995,2010,0.7671641791044777,0.7729323308270677,0.7700374531835206,True
+rf_group_weighted,up_to_3,all_validation,URTI,8656,9645,0.8305857957490927,0.925485212569316,0.8754712857220917,True
+rf_group_weighted,up_to_3,all_validation,Viral pharyngitis,8246,9399,0.8548781785296308,0.9744118360417172,0.9107395862850666,True
+rf_group_weighted,up_to_3,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Acute COPD exacerbation / infection,375,185,0.9675675675675676,0.47733333333333333,0.6392857142857142,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Allergic rhinitis,910,890,1.0,0.978021978021978,0.9888888888888889,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Bronchiectasis,179,261,0.6436781609195402,0.9385474860335196,0.7636363636363637,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Bronchiolitis,2,0,,0.0,0.0,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,527,0.7267552182163188,0.9845758354755784,0.8362445414847162,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_3,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Croup,78,75,0.9866666666666667,0.9487179487179487,0.9673202614379085,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Pulmonary neoplasm,30,26,0.8076923076923077,0.7,0.75,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Tuberculosis,180,153,0.934640522875817,0.7944444444444444,0.8588588588588588,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,URTI,0,0,,,,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Viral pharyngitis,1,26,0.038461538461538464,1.0,0.07407407407407407,True
+rf_group_weighted,up_to_3,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_group_weighted,up_to_5,selection_primary,Acute COPD exacerbation / infection,1674,1136,0.9419014084507042,0.6391875746714456,0.7615658362989324,True
+rf_group_weighted,up_to_5,selection_primary,Acute laryngitis,3407,2936,0.9993188010899182,0.8611681831523335,0.9251142992274949,True
+rf_group_weighted,up_to_5,selection_primary,Acute pulmonary edema,2500,2519,0.9920603414053196,0.9996,0.99581589958159,True
+rf_group_weighted,up_to_5,selection_primary,Acute rhinosinusitis,1866,904,0.8528761061946902,0.41318327974276525,0.5566787003610109,True
+rf_group_weighted,up_to_5,selection_primary,Allergic rhinitis,1194,1117,1.0,0.9355108877721943,0.9666810904370402,True
+rf_group_weighted,up_to_5,selection_primary,Bronchiectasis,2136,2327,0.8616244091104426,0.9386704119850188,0.8984987676450817,True
+rf_group_weighted,up_to_5,selection_primary,Bronchiolitis,26,23,1.0,0.8846153846153846,0.9387755102040817,True
+rf_group_weighted,up_to_5,selection_primary,Bronchitis,3543,3615,0.9728907330567081,0.9926615862263618,0.9826767253422743,True
+rf_group_weighted,up_to_5,selection_primary,Bronchospasm / acute asthma exacerbation,1801,2325,0.7466666666666667,0.9639089394780678,0.8414929714008725,True
+rf_group_weighted,up_to_5,selection_primary,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_5,selection_primary,Chronic rhinosinusitis,2717,3633,0.7063033305807872,0.944423997055576,0.8081889763779527,True
+rf_group_weighted,up_to_5,selection_primary,Croup,186,170,0.9823529411764705,0.8978494623655914,0.9382022471910112,True
+rf_group_weighted,up_to_5,selection_primary,Epiglottitis,2248,2247,0.9995549621717846,0.9991103202846975,0.9993325917686318,True
+rf_group_weighted,up_to_5,selection_primary,Influenza,3590,3224,0.9934863523573201,0.8922005571030641,0.9401232756090402,True
+rf_group_weighted,up_to_5,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_group_weighted,up_to_5,selection_primary,Pneumonia,3484,3367,0.997920997920998,0.9644087256027555,0.9808787038388557,True
+rf_group_weighted,up_to_5,selection_primary,Pulmonary neoplasm,1861,1830,0.9972677595628415,0.9806555615260613,0.9888918992143051,True
+rf_group_weighted,up_to_5,selection_primary,Spontaneous pneumothorax,1405,1387,0.9992790194664743,0.9864768683274021,0.9928366762177651,True
+rf_group_weighted,up_to_5,selection_primary,Tuberculosis,1815,1562,0.9827144686299616,0.8457300275482094,0.9090909090909091,True
+rf_group_weighted,up_to_5,selection_primary,URTI,8656,9058,0.9516449547361449,0.9958410351201479,0.9732415038952241,True
+rf_group_weighted,up_to_5,selection_primary,Viral pharyngitis,8245,8973,0.9188677142538727,1.0,0.9577186665117899,True
+rf_group_weighted,up_to_5,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_group_weighted,up_to_5,all_validation,Acute COPD exacerbation / infection,2049,1413,0.9490445859872612,0.6544655929721815,0.7746967071057193,True
+rf_group_weighted,up_to_5,all_validation,Acute laryngitis,3407,2936,0.9993188010899182,0.8611681831523335,0.9251142992274949,True
+rf_group_weighted,up_to_5,all_validation,Acute pulmonary edema,2500,2519,0.9920603414053196,0.9996,0.99581589958159,True
+rf_group_weighted,up_to_5,all_validation,Acute rhinosinusitis,1866,904,0.8528761061946902,0.41318327974276525,0.5566787003610109,True
+rf_group_weighted,up_to_5,all_validation,Allergic rhinitis,2104,2007,1.0,0.9538973384030418,0.9764047676964243,True
+rf_group_weighted,up_to_5,all_validation,Bronchiectasis,2315,2523,0.8612762584225129,0.9386609071274298,0.8983050847457628,True
+rf_group_weighted,up_to_5,all_validation,Bronchiolitis,28,25,1.0,0.8928571428571429,0.9433962264150944,True
+rf_group_weighted,up_to_5,all_validation,Bronchitis,3543,3615,0.9728907330567081,0.9926615862263618,0.9826767253422743,True
+rf_group_weighted,up_to_5,all_validation,Bronchospasm / acute asthma exacerbation,2190,2808,0.7546296296296297,0.9675799086757991,0.8479391756702681,True
+rf_group_weighted,up_to_5,all_validation,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_5,all_validation,Chronic rhinosinusitis,2717,3633,0.7063033305807872,0.944423997055576,0.8081889763779527,True
+rf_group_weighted,up_to_5,all_validation,Croup,264,244,0.9877049180327869,0.9128787878787878,0.9488188976377953,True
+rf_group_weighted,up_to_5,all_validation,Epiglottitis,2248,2247,0.9995549621717846,0.9991103202846975,0.9993325917686318,True
+rf_group_weighted,up_to_5,all_validation,Influenza,3590,3224,0.9934863523573201,0.8922005571030641,0.9401232756090402,True
+rf_group_weighted,up_to_5,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_group_weighted,up_to_5,all_validation,Pneumonia,3484,3367,0.997920997920998,0.9644087256027555,0.9808787038388557,True
+rf_group_weighted,up_to_5,all_validation,Pulmonary neoplasm,1891,1858,0.9973089343379978,0.9799048122686409,0.9885302747399306,True
+rf_group_weighted,up_to_5,all_validation,Spontaneous pneumothorax,1405,1387,0.9992790194664743,0.9864768683274021,0.9928366762177651,True
+rf_group_weighted,up_to_5,all_validation,Tuberculosis,1995,1729,0.9820705610179294,0.8511278195488722,0.9119226638023631,True
+rf_group_weighted,up_to_5,all_validation,URTI,8656,9058,0.9516449547361449,0.9958410351201479,0.9732415038952241,True
+rf_group_weighted,up_to_5,all_validation,Viral pharyngitis,8246,8999,0.9163240360040005,1.0,0.956335169614381,True
+rf_group_weighted,up_to_5,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Acute COPD exacerbation / infection,375,277,0.9783393501805054,0.7226666666666667,0.8312883435582822,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Allergic rhinitis,910,890,1.0,0.978021978021978,0.9888888888888889,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Bronchiectasis,179,196,0.8571428571428571,0.9385474860335196,0.896,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Bronchiolitis,2,2,1.0,1.0,1.0,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,483,0.7929606625258799,0.9845758354755784,0.8784403669724771,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_group_weighted,up_to_5,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Croup,78,74,1.0,0.9487179487179487,0.9736842105263158,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Pulmonary neoplasm,30,28,1.0,0.9333333333333333,0.9655172413793104,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Tuberculosis,180,167,0.9760479041916168,0.9055555555555556,0.9394812680115274,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,URTI,0,0,,,,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Viral pharyngitis,1,26,0.038461538461538464,1.0,0.07407407407407407,True
+rf_group_weighted,up_to_5,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_class_balanced,full,selection_primary,Acute COPD exacerbation / infection,1674,1143,0.9405074365704287,0.6421744324970131,0.7632232871849485,True
+rf_class_balanced,full,selection_primary,Acute laryngitis,3407,3100,0.9896774193548387,0.900498972703258,0.9429844782541879,True
+rf_class_balanced,full,selection_primary,Acute pulmonary edema,2500,2494,0.9987971130713713,0.9964,0.9975971165398478,True
+rf_class_balanced,full,selection_primary,Acute rhinosinusitis,1866,1285,0.7354085603112841,0.5064308681672026,0.5998095842589654,True
+rf_class_balanced,full,selection_primary,Allergic rhinitis,1194,1183,1.0,0.990787269681742,0.9953723180479596,True
+rf_class_balanced,full,selection_primary,Bronchiectasis,2136,2219,0.8760703019378098,0.9101123595505618,0.8927669345579793,True
+rf_class_balanced,full,selection_primary,Bronchiolitis,26,70,0.37142857142857144,1.0,0.5416666666666666,True
+rf_class_balanced,full,selection_primary,Bronchitis,3543,3574,0.9890878567431449,0.9977420265311883,0.9933960938597723,True
+rf_class_balanced,full,selection_primary,Bronchospasm / acute asthma exacerbation,1801,2283,0.7468243539202803,0.9466962798445309,0.8349657198824681,True
+rf_class_balanced,full,selection_primary,COVID-19,0,0,,,,False
+rf_class_balanced,full,selection_primary,Chronic rhinosinusitis,2717,3278,0.7248322147651006,0.8744939271255061,0.7926605504587156,True
+rf_class_balanced,full,selection_primary,Croup,186,189,0.9417989417989417,0.956989247311828,0.9493333333333334,True
+rf_class_balanced,full,selection_primary,Epiglottitis,2248,2246,1.0,0.9991103202846975,0.9995549621717846,True
+rf_class_balanced,full,selection_primary,Influenza,3590,3506,0.9997147746719909,0.9763231197771588,0.987880496054115,True
+rf_class_balanced,full,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_class_balanced,full,selection_primary,Pneumonia,3484,3452,0.9997103128621089,0.9905281285878301,0.9950980392156863,True
+rf_class_balanced,full,selection_primary,Pulmonary neoplasm,1861,1826,0.9994523548740416,0.9806555615260613,0.9899647409818281,True
+rf_class_balanced,full,selection_primary,Spontaneous pneumothorax,1405,1412,0.9936260623229461,0.998576512455516,0.9960951366702165,True
+rf_class_balanced,full,selection_primary,Tuberculosis,1815,1779,0.9516582349634626,0.9327823691460055,0.9421257651641625,True
+rf_class_balanced,full,selection_primary,URTI,8656,8709,0.9874842117349868,0.9935304990757856,0.9904981284192341,True
+rf_class_balanced,full,selection_primary,Viral pharyngitis,8245,8605,0.9546775130737943,0.9963614311704063,0.9750741839762611,True
+rf_class_balanced,full,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_class_balanced,full,all_validation,Acute COPD exacerbation / infection,2049,1420,0.9478873239436619,0.6569058077110785,0.7760161429806861,True
+rf_class_balanced,full,all_validation,Acute laryngitis,3407,3100,0.9896774193548387,0.900498972703258,0.9429844782541879,True
+rf_class_balanced,full,all_validation,Acute pulmonary edema,2500,2494,0.9987971130713713,0.9964,0.9975971165398478,True
+rf_class_balanced,full,all_validation,Acute rhinosinusitis,1866,1285,0.7354085603112841,0.5064308681672026,0.5998095842589654,True
+rf_class_balanced,full,all_validation,Allergic rhinitis,2104,2092,1.0,0.9942965779467681,0.9971401334604385,True
+rf_class_balanced,full,all_validation,Bronchiectasis,2315,2404,0.8760399334442596,0.909719222462203,0.8925619834710744,True
+rf_class_balanced,full,all_validation,Bronchiolitis,28,88,0.3181818181818182,1.0,0.4827586206896552,True
+rf_class_balanced,full,all_validation,Bronchitis,3543,3574,0.9890878567431449,0.9977420265311883,0.9933960938597723,True
+rf_class_balanced,full,all_validation,Bronchospasm / acute asthma exacerbation,2190,2753,0.7537232110424991,0.9474885844748858,0.8395711106615416,True
+rf_class_balanced,full,all_validation,COVID-19,0,0,,,,False
+rf_class_balanced,full,all_validation,Chronic rhinosinusitis,2717,3278,0.7248322147651006,0.8744939271255061,0.7926605504587156,True
+rf_class_balanced,full,all_validation,Croup,264,264,0.9545454545454546,0.9545454545454546,0.9545454545454546,True
+rf_class_balanced,full,all_validation,Epiglottitis,2248,2246,1.0,0.9991103202846975,0.9995549621717846,True
+rf_class_balanced,full,all_validation,Influenza,3590,3506,0.9997147746719909,0.9763231197771588,0.987880496054115,True
+rf_class_balanced,full,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_class_balanced,full,all_validation,Pneumonia,3484,3452,0.9997103128621089,0.9905281285878301,0.9950980392156863,True
+rf_class_balanced,full,all_validation,Pulmonary neoplasm,1891,1854,0.9994606256742179,0.9799048122686409,0.9895861148197597,True
+rf_class_balanced,full,all_validation,Spontaneous pneumothorax,1405,1412,0.9936260623229461,0.998576512455516,0.9960951366702165,True
+rf_class_balanced,full,all_validation,Tuberculosis,1995,1959,0.9520163348647269,0.9348370927318296,0.9433485078401619,True
+rf_class_balanced,full,all_validation,URTI,8656,8709,0.9874842117349868,0.9935304990757856,0.9904981284192341,True
+rf_class_balanced,full,all_validation,Viral pharyngitis,8246,8606,0.9546827794561934,0.996361872422993,0.9750771421789699,True
+rf_class_balanced,full,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_class_balanced,full,selection_legacy_overlap,Acute COPD exacerbation / infection,375,277,0.9783393501805054,0.7226666666666667,0.8312883435582822,True
+rf_class_balanced,full,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Allergic rhinitis,910,909,1.0,0.9989010989010989,0.999450247388675,True
+rf_class_balanced,full,selection_legacy_overlap,Bronchiectasis,179,185,0.8756756756756757,0.9050279329608939,0.8901098901098901,True
+rf_class_balanced,full,selection_legacy_overlap,Bronchiolitis,2,18,0.1111111111111111,1.0,0.2,True
+rf_class_balanced,full,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,470,0.7872340425531915,0.9511568123393316,0.8614668218859138,True
+rf_class_balanced,full,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_class_balanced,full,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Croup,78,75,0.9866666666666667,0.9487179487179487,0.9673202614379085,True
+rf_class_balanced,full,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_class_balanced,full,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Pulmonary neoplasm,30,28,1.0,0.9333333333333333,0.9655172413793104,True
+rf_class_balanced,full,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Tuberculosis,180,180,0.9555555555555556,0.9555555555555556,0.9555555555555556,True
+rf_class_balanced,full,selection_legacy_overlap,URTI,0,0,,,,True
+rf_class_balanced,full,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+rf_class_balanced,full,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_class_balanced,up_to_1,selection_primary,Acute COPD exacerbation / infection,1674,404,0.5272277227722773,0.12724014336917563,0.20500481231953802,True
+rf_class_balanced,up_to_1,selection_primary,Acute laryngitis,3407,1445,0.7480968858131488,0.3172879366011154,0.44558944765045344,True
+rf_class_balanced,up_to_1,selection_primary,Acute pulmonary edema,2500,2460,0.5455284552845528,0.5368,0.5411290322580645,True
+rf_class_balanced,up_to_1,selection_primary,Acute rhinosinusitis,1866,1106,0.37251356238698013,0.2207931404072883,0.2772543741588156,True
+rf_class_balanced,up_to_1,selection_primary,Allergic rhinitis,1194,4781,0.198703200167329,0.7956448911222781,0.3179916317991632,True
+rf_class_balanced,up_to_1,selection_primary,Bronchiectasis,2136,2631,0.26605853287723297,0.32771535580524347,0.2936857562408223,True
+rf_class_balanced,up_to_1,selection_primary,Bronchiolitis,26,638,0.03918495297805643,0.9615384615384616,0.07530120481927711,True
+rf_class_balanced,up_to_1,selection_primary,Bronchitis,3543,93,0.43010752688172044,0.011289867344058707,0.022002200220022004,True
+rf_class_balanced,up_to_1,selection_primary,Bronchospasm / acute asthma exacerbation,1801,12271,0.12769945399722923,0.8700721821210439,0.22271176805002843,True
+rf_class_balanced,up_to_1,selection_primary,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_1,selection_primary,Chronic rhinosinusitis,2717,3765,0.3139442231075697,0.43503864556496136,0.36470225239123727,True
+rf_class_balanced,up_to_1,selection_primary,Croup,186,1616,0.07797029702970297,0.6774193548387096,0.13984461709211987,True
+rf_class_balanced,up_to_1,selection_primary,Epiglottitis,2248,571,1.0,0.2540035587188612,0.4051081943951756,True
+rf_class_balanced,up_to_1,selection_primary,Influenza,3590,1445,0.5910034602076124,0.23788300835654597,0.33922542204568024,True
+rf_class_balanced,up_to_1,selection_primary,Larygospasm,199,549,0.36247723132969034,1.0,0.5320855614973262,True
+rf_class_balanced,up_to_1,selection_primary,Pneumonia,3484,23,0.6521739130434783,0.004305396096440872,0.00855431993156544,True
+rf_class_balanced,up_to_1,selection_primary,Pulmonary neoplasm,1861,969,0.608875128998968,0.31703385276732937,0.4169611307420495,True
+rf_class_balanced,up_to_1,selection_primary,Spontaneous pneumothorax,1405,3390,0.31268436578171094,0.7544483985765125,0.4421272158498436,True
+rf_class_balanced,up_to_1,selection_primary,Tuberculosis,1815,6901,0.12070714389218953,0.45895316804407715,0.1911427260211106,True
+rf_class_balanced,up_to_1,selection_primary,URTI,8656,2998,0.6474316210807205,0.22423752310536044,0.33310451347176934,True
+rf_class_balanced,up_to_1,selection_primary,Viral pharyngitis,8245,4497,0.596842339337336,0.3255306246209824,0.4212839428661121,True
+rf_class_balanced,up_to_1,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_class_balanced,up_to_1,all_validation,Acute COPD exacerbation / infection,2049,472,0.5529661016949152,0.1273792093704246,0.20706069020230067,True
+rf_class_balanced,up_to_1,all_validation,Acute laryngitis,3407,1445,0.7480968858131488,0.3172879366011154,0.44558944765045344,True
+rf_class_balanced,up_to_1,all_validation,Acute pulmonary edema,2500,2460,0.5455284552845528,0.5368,0.5411290322580645,True
+rf_class_balanced,up_to_1,all_validation,Acute rhinosinusitis,1866,1106,0.37251356238698013,0.2207931404072883,0.2772543741588156,True
+rf_class_balanced,up_to_1,all_validation,Allergic rhinitis,2104,5471,0.2997623834765125,0.779467680608365,0.433003300330033,True
+rf_class_balanced,up_to_1,all_validation,Bronchiectasis,2315,2769,0.27410617551462624,0.3278617710583153,0.2985837922895358,True
+rf_class_balanced,up_to_1,all_validation,Bronchiolitis,28,693,0.03896103896103896,0.9642857142857143,0.07489597780859916,True
+rf_class_balanced,up_to_1,all_validation,Bronchitis,3543,93,0.43010752688172044,0.011289867344058707,0.022002200220022004,True
+rf_class_balanced,up_to_1,all_validation,Bronchospasm / acute asthma exacerbation,2190,13217,0.14466217749867594,0.8730593607305936,0.24819887064321414,True
+rf_class_balanced,up_to_1,all_validation,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_1,all_validation,Chronic rhinosinusitis,2717,3765,0.3139442231075697,0.43503864556496136,0.36470225239123727,True
+rf_class_balanced,up_to_1,all_validation,Croup,264,1693,0.10100413467217956,0.6477272727272727,0.17475728155339806,True
+rf_class_balanced,up_to_1,all_validation,Epiglottitis,2248,571,1.0,0.2540035587188612,0.4051081943951756,True
+rf_class_balanced,up_to_1,all_validation,Influenza,3590,1445,0.5910034602076124,0.23788300835654597,0.33922542204568024,True
+rf_class_balanced,up_to_1,all_validation,Larygospasm,651,1017,0.640117994100295,1.0,0.7805755395683454,True
+rf_class_balanced,up_to_1,all_validation,Pneumonia,3484,23,0.6521739130434783,0.004305396096440872,0.00855431993156544,True
+rf_class_balanced,up_to_1,all_validation,Pulmonary neoplasm,1891,999,0.6076076076076076,0.3209941829719725,0.42006920415224913,True
+rf_class_balanced,up_to_1,all_validation,Spontaneous pneumothorax,1405,3390,0.31268436578171094,0.7544483985765125,0.4421272158498436,True
+rf_class_balanced,up_to_1,all_validation,Tuberculosis,1995,7024,0.13083712984054668,0.4606516290726817,0.2037919946779022,True
+rf_class_balanced,up_to_1,all_validation,URTI,8656,2998,0.6474316210807205,0.22423752310536044,0.33310451347176934,True
+rf_class_balanced,up_to_1,all_validation,Viral pharyngitis,8246,4498,0.5969319697643397,0.32561241814212954,0.4213747645951036,True
+rf_class_balanced,up_to_1,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Acute COPD exacerbation / infection,375,68,0.7058823529411765,0.128,0.21670428893905191,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Allergic rhinitis,910,690,1.0,0.7582417582417582,0.8625,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Bronchiectasis,179,138,0.427536231884058,0.329608938547486,0.3722397476340694,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Bronchiolitis,2,55,0.03636363636363636,1.0,0.07017543859649122,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,946,0.36469344608879495,0.8868894601542416,0.5168539325842697,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_1,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Croup,78,77,0.5844155844155844,0.5769230769230769,0.5806451612903226,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Larygospasm,452,468,0.9658119658119658,1.0,0.9826086956521739,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Pulmonary neoplasm,30,30,0.5666666666666667,0.5666666666666667,0.5666666666666667,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Tuberculosis,180,123,0.6991869918699187,0.4777777777777778,0.5676567656765676,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,URTI,0,0,,,,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+rf_class_balanced,up_to_1,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_class_balanced,up_to_2,selection_primary,Acute COPD exacerbation / infection,1674,670,0.682089552238806,0.27299880525686976,0.38993174061433444,True
+rf_class_balanced,up_to_2,selection_primary,Acute laryngitis,3407,3434,0.7315084449621433,0.7373055474024068,0.7343955562052331,True
+rf_class_balanced,up_to_2,selection_primary,Acute pulmonary edema,2500,2311,0.9052358286456079,0.8368,0.869673664518811,True
+rf_class_balanced,up_to_2,selection_primary,Acute rhinosinusitis,1866,1705,0.4158357771260997,0.379957127545552,0.39708765051806216,True
+rf_class_balanced,up_to_2,selection_primary,Allergic rhinitis,1194,2614,0.4506503442999235,0.9865996649916248,0.6186974789915967,True
+rf_class_balanced,up_to_2,selection_primary,Bronchiectasis,2136,2975,0.5250420168067227,0.7312734082397003,0.6112306789278028,True
+rf_class_balanced,up_to_2,selection_primary,Bronchiolitis,26,302,0.076158940397351,0.8846153846153846,0.1402439024390244,True
+rf_class_balanced,up_to_2,selection_primary,Bronchitis,3543,3054,0.6149312377210217,0.5300592718035563,0.569349704411096,True
+rf_class_balanced,up_to_2,selection_primary,Bronchospasm / acute asthma exacerbation,1801,3498,0.4688393367638651,0.9106052193225985,0.6189847140969994,True
+rf_class_balanced,up_to_2,selection_primary,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_2,selection_primary,Chronic rhinosinusitis,2717,3829,0.4528597545050927,0.638203901361796,0.5297891842346472,True
+rf_class_balanced,up_to_2,selection_primary,Croup,186,650,0.2676923076923077,0.9354838709677419,0.41626794258373206,True
+rf_class_balanced,up_to_2,selection_primary,Epiglottitis,2248,1756,0.9886104783599089,0.7722419928825622,0.8671328671328671,True
+rf_class_balanced,up_to_2,selection_primary,Influenza,3590,2473,0.7173473513950667,0.49415041782729807,0.5851888504040904,True
+rf_class_balanced,up_to_2,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_class_balanced,up_to_2,selection_primary,Pneumonia,3484,1339,0.8917102315160568,0.34270952927669346,0.49512751399543853,True
+rf_class_balanced,up_to_2,selection_primary,Pulmonary neoplasm,1861,1586,0.7698612862547288,0.6560988715744224,0.7084421235857267,True
+rf_class_balanced,up_to_2,selection_primary,Spontaneous pneumothorax,1405,2053,0.6327325864588407,0.9245551601423487,0.7513013302486987,True
+rf_class_balanced,up_to_2,selection_primary,Tuberculosis,1815,4161,0.3270848353761115,0.749862258953168,0.45548862115127176,True
+rf_class_balanced,up_to_2,selection_primary,URTI,8656,6734,0.7768042768042768,0.6043207024029574,0.6797920727745289,True
+rf_class_balanced,up_to_2,selection_primary,Viral pharyngitis,8245,7209,0.7988625329449299,0.6984839296543359,0.7453086579526336,True
+rf_class_balanced,up_to_2,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_class_balanced,up_to_2,all_validation,Acute COPD exacerbation / infection,2049,785,0.7133757961783439,0.2733040507564666,0.3952011291460833,True
+rf_class_balanced,up_to_2,all_validation,Acute laryngitis,3407,3434,0.7315084449621433,0.7373055474024068,0.7343955562052331,True
+rf_class_balanced,up_to_2,all_validation,Acute pulmonary edema,2500,2311,0.9052358286456079,0.8368,0.869673664518811,True
+rf_class_balanced,up_to_2,all_validation,Acute rhinosinusitis,1866,1705,0.4158357771260997,0.379957127545552,0.39708765051806216,True
+rf_class_balanced,up_to_2,all_validation,Allergic rhinitis,2104,3516,0.5915813424345847,0.9885931558935361,0.7402135231316725,True
+rf_class_balanced,up_to_2,all_validation,Bronchiectasis,2315,3214,0.5224019912881145,0.7252699784017279,0.6073431000180864,True
+rf_class_balanced,up_to_2,all_validation,Bronchiolitis,28,333,0.07507507507507508,0.8928571428571429,0.13850415512465375,True
+rf_class_balanced,up_to_2,all_validation,Bronchitis,3543,3054,0.6149312377210217,0.5300592718035563,0.569349704411096,True
+rf_class_balanced,up_to_2,all_validation,Bronchospasm / acute asthma exacerbation,2190,4090,0.4904645476772616,0.9159817351598174,0.6388535031847133,True
+rf_class_balanced,up_to_2,all_validation,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_2,all_validation,Chronic rhinosinusitis,2717,3829,0.4528597545050927,0.638203901361796,0.5297891842346472,True
+rf_class_balanced,up_to_2,all_validation,Croup,264,722,0.3379501385041551,0.9242424242424242,0.4949290060851927,True
+rf_class_balanced,up_to_2,all_validation,Epiglottitis,2248,1756,0.9886104783599089,0.7722419928825622,0.8671328671328671,True
+rf_class_balanced,up_to_2,all_validation,Influenza,3590,2473,0.7173473513950667,0.49415041782729807,0.5851888504040904,True
+rf_class_balanced,up_to_2,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_class_balanced,up_to_2,all_validation,Pneumonia,3484,1339,0.8917102315160568,0.34270952927669346,0.49512751399543853,True
+rf_class_balanced,up_to_2,all_validation,Pulmonary neoplasm,1891,1616,0.7667079207920792,0.6552088841882602,0.7065868263473054,True
+rf_class_balanced,up_to_2,all_validation,Spontaneous pneumothorax,1405,2053,0.6327325864588407,0.9245551601423487,0.7513013302486987,True
+rf_class_balanced,up_to_2,all_validation,Tuberculosis,1995,4322,0.34521055067098566,0.7478696741854637,0.4723761279088175,True
+rf_class_balanced,up_to_2,all_validation,URTI,8656,6734,0.7768042768042768,0.6043207024029574,0.6797920727745289,True
+rf_class_balanced,up_to_2,all_validation,Viral pharyngitis,8246,7210,0.7988904299583911,0.6985204947853505,0.7453416149068323,True
+rf_class_balanced,up_to_2,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Acute COPD exacerbation / infection,375,115,0.8956521739130435,0.27466666666666667,0.4204081632653061,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Allergic rhinitis,910,902,1.0,0.9912087912087912,0.9955849889624724,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Bronchiectasis,179,239,0.4895397489539749,0.6536312849162011,0.5598086124401914,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Bronchiolitis,2,31,0.06451612903225806,1.0,0.12121212121212122,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,592,0.6182432432432432,0.9408740359897172,0.746177370030581,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_2,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Croup,78,72,0.9722222222222222,0.8974358974358975,0.9333333333333333,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Pulmonary neoplasm,30,30,0.6,0.6,0.6,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Tuberculosis,180,161,0.8136645962732919,0.7277777777777777,0.7683284457478006,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,URTI,0,0,,,,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+rf_class_balanced,up_to_2,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_class_balanced,up_to_3,selection_primary,Acute COPD exacerbation / infection,1674,996,0.8554216867469879,0.5089605734767025,0.6382022471910113,True
+rf_class_balanced,up_to_3,selection_primary,Acute laryngitis,3407,2988,0.963855421686747,0.8453184619900206,0.9007036747458952,True
+rf_class_balanced,up_to_3,selection_primary,Acute pulmonary edema,2500,2550,0.9749019607843137,0.9944,0.9845544554455445,True
+rf_class_balanced,up_to_3,selection_primary,Acute rhinosinusitis,1866,1478,0.5230040595399188,0.4142550911039657,0.4623205741626794,True
+rf_class_balanced,up_to_3,selection_primary,Allergic rhinitis,1194,1183,1.0,0.990787269681742,0.9953723180479596,True
+rf_class_balanced,up_to_3,selection_primary,Bronchiectasis,2136,2604,0.7319508448540707,0.8923220973782772,0.8042194092827004,True
+rf_class_balanced,up_to_3,selection_primary,Bronchiolitis,26,129,0.1937984496124031,0.9615384615384616,0.3225806451612903,True
+rf_class_balanced,up_to_3,selection_primary,Bronchitis,3543,3936,0.7665142276422764,0.851538244425628,0.8067923519187057,True
+rf_class_balanced,up_to_3,selection_primary,Bronchospasm / acute asthma exacerbation,1801,2449,0.6962025316455697,0.9466962798445309,0.8023529411764706,True
+rf_class_balanced,up_to_3,selection_primary,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_3,selection_primary,Chronic rhinosinusitis,2717,3641,0.6251029936830541,0.8376886271623114,0.7159484114501415,True
+rf_class_balanced,up_to_3,selection_primary,Croup,186,310,0.5741935483870968,0.956989247311828,0.717741935483871,True
+rf_class_balanced,up_to_3,selection_primary,Epiglottitis,2248,2142,0.9985994397759104,0.9515124555160143,0.9744874715261959,True
+rf_class_balanced,up_to_3,selection_primary,Influenza,3590,2662,0.9034560480841473,0.66991643454039,0.7693538067818299,True
+rf_class_balanced,up_to_3,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_class_balanced,up_to_3,selection_primary,Pneumonia,3484,2466,0.9428223844282239,0.6673363949483353,0.7815126050420168,True
+rf_class_balanced,up_to_3,selection_primary,Pulmonary neoplasm,1861,1758,0.909556313993174,0.8592154755507792,0.8836695219673943,True
+rf_class_balanced,up_to_3,selection_primary,Spontaneous pneumothorax,1405,1378,0.9738751814223512,0.9551601423487545,0.9644268774703557,True
+rf_class_balanced,up_to_3,selection_primary,Tuberculosis,1815,2273,0.6964364276286845,0.8721763085399449,0.7744618395303327,True
+rf_class_balanced,up_to_3,selection_primary,URTI,8656,8457,0.8598793898545584,0.8401109057301294,0.8498802080289838,True
+rf_class_balanced,up_to_3,selection_primary,Viral pharyngitis,8245,8953,0.8919915112252876,0.9685870224378411,0.928712641004768,True
+rf_class_balanced,up_to_3,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_class_balanced,up_to_3,all_validation,Acute COPD exacerbation / infection,2049,1181,0.8729889923793396,0.5031722791605662,0.638390092879257,True
+rf_class_balanced,up_to_3,all_validation,Acute laryngitis,3407,2988,0.963855421686747,0.8453184619900206,0.9007036747458952,True
+rf_class_balanced,up_to_3,all_validation,Acute pulmonary edema,2500,2550,0.9749019607843137,0.9944,0.9845544554455445,True
+rf_class_balanced,up_to_3,all_validation,Acute rhinosinusitis,1866,1478,0.5230040595399188,0.4142550911039657,0.4623205741626794,True
+rf_class_balanced,up_to_3,all_validation,Allergic rhinitis,2104,2092,1.0,0.9942965779467681,0.9971401334604385,True
+rf_class_balanced,up_to_3,all_validation,Bronchiectasis,2315,2846,0.725228390723823,0.8915766738660907,0.7998449912807596,True
+rf_class_balanced,up_to_3,all_validation,Bronchiolitis,28,148,0.18243243243243243,0.9642857142857143,0.3068181818181818,True
+rf_class_balanced,up_to_3,all_validation,Bronchitis,3543,3936,0.7665142276422764,0.851538244425628,0.8067923519187057,True
+rf_class_balanced,up_to_3,all_validation,Bronchospasm / acute asthma exacerbation,2190,2963,0.7003037462031725,0.9474885844748858,0.8053561032408306,True
+rf_class_balanced,up_to_3,all_validation,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_3,all_validation,Chronic rhinosinusitis,2717,3641,0.6251029936830541,0.8376886271623114,0.7159484114501415,True
+rf_class_balanced,up_to_3,all_validation,Croup,264,384,0.6536458333333334,0.9507575757575758,0.7746913580246914,True
+rf_class_balanced,up_to_3,all_validation,Epiglottitis,2248,2142,0.9985994397759104,0.9515124555160143,0.9744874715261959,True
+rf_class_balanced,up_to_3,all_validation,Influenza,3590,2662,0.9034560480841473,0.66991643454039,0.7693538067818299,True
+rf_class_balanced,up_to_3,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_class_balanced,up_to_3,all_validation,Pneumonia,3484,2466,0.9428223844282239,0.6673363949483353,0.7815126050420168,True
+rf_class_balanced,up_to_3,all_validation,Pulmonary neoplasm,1891,1784,0.9080717488789237,0.8566895822316235,0.8816326530612245,True
+rf_class_balanced,up_to_3,all_validation,Spontaneous pneumothorax,1405,1378,0.9738751814223512,0.9551601423487545,0.9644268774703557,True
+rf_class_balanced,up_to_3,all_validation,Tuberculosis,1995,2446,0.7109566639411283,0.8716791979949875,0.7831569466336411,True
+rf_class_balanced,up_to_3,all_validation,URTI,8656,8457,0.8598793898545584,0.8401109057301294,0.8498802080289838,True
+rf_class_balanced,up_to_3,all_validation,Viral pharyngitis,8246,8954,0.8920035738217557,0.9685908319185059,0.9287209302325582,True
+rf_class_balanced,up_to_3,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Acute COPD exacerbation / infection,375,185,0.9675675675675676,0.47733333333333333,0.6392857142857142,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Allergic rhinitis,910,909,1.0,0.9989010989010989,0.999450247388675,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Bronchiectasis,179,242,0.6528925619834711,0.88268156424581,0.7505938242280285,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Bronchiolitis,2,19,0.10526315789473684,1.0,0.19047619047619047,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,514,0.7198443579766537,0.9511568123393316,0.8194905869324474,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_3,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Croup,78,74,0.9864864864864865,0.9358974358974359,0.9605263157894737,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Pulmonary neoplasm,30,26,0.8076923076923077,0.7,0.75,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Tuberculosis,180,173,0.9017341040462428,0.8666666666666667,0.8838526912181303,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,URTI,0,0,,,,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+rf_class_balanced,up_to_3,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True
+rf_class_balanced,up_to_5,selection_primary,Acute COPD exacerbation / infection,1674,1143,0.9405074365704287,0.6421744324970131,0.7632232871849485,True
+rf_class_balanced,up_to_5,selection_primary,Acute laryngitis,3407,3100,0.9896774193548387,0.900498972703258,0.9429844782541879,True
+rf_class_balanced,up_to_5,selection_primary,Acute pulmonary edema,2500,2494,0.9987971130713713,0.9964,0.9975971165398478,True
+rf_class_balanced,up_to_5,selection_primary,Acute rhinosinusitis,1866,1285,0.7354085603112841,0.5064308681672026,0.5998095842589654,True
+rf_class_balanced,up_to_5,selection_primary,Allergic rhinitis,1194,1183,1.0,0.990787269681742,0.9953723180479596,True
+rf_class_balanced,up_to_5,selection_primary,Bronchiectasis,2136,2219,0.8760703019378098,0.9101123595505618,0.8927669345579793,True
+rf_class_balanced,up_to_5,selection_primary,Bronchiolitis,26,72,0.3611111111111111,1.0,0.5306122448979592,True
+rf_class_balanced,up_to_5,selection_primary,Bronchitis,3543,3624,0.9710264900662252,0.9932260795935648,0.9820008371703641,True
+rf_class_balanced,up_to_5,selection_primary,Bronchospasm / acute asthma exacerbation,1801,2283,0.7468243539202803,0.9466962798445309,0.8349657198824681,True
+rf_class_balanced,up_to_5,selection_primary,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_5,selection_primary,Chronic rhinosinusitis,2717,3278,0.7248322147651006,0.8744939271255061,0.7926605504587156,True
+rf_class_balanced,up_to_5,selection_primary,Croup,186,189,0.9417989417989417,0.956989247311828,0.9493333333333334,True
+rf_class_balanced,up_to_5,selection_primary,Epiglottitis,2248,2246,1.0,0.9991103202846975,0.9995549621717846,True
+rf_class_balanced,up_to_5,selection_primary,Influenza,3590,3237,0.9910410874266296,0.8935933147632312,0.9397978614325473,True
+rf_class_balanced,up_to_5,selection_primary,Larygospasm,199,200,0.995,1.0,0.9974937343358395,True
+rf_class_balanced,up_to_5,selection_primary,Pneumonia,3484,3358,0.9988088147706968,0.9626865671641791,0.980415083308974,True
+rf_class_balanced,up_to_5,selection_primary,Pulmonary neoplasm,1861,1830,0.9972677595628415,0.9806555615260613,0.9888918992143051,True
+rf_class_balanced,up_to_5,selection_primary,Spontaneous pneumothorax,1405,1412,0.9936260623229461,0.998576512455516,0.9960951366702165,True
+rf_class_balanced,up_to_5,selection_primary,Tuberculosis,1815,1779,0.9516582349634626,0.9327823691460055,0.9421257651641625,True
+rf_class_balanced,up_to_5,selection_primary,URTI,8656,9016,0.9530834072759539,0.9927218114602587,0.9724988682661838,True
+rf_class_balanced,up_to_5,selection_primary,Viral pharyngitis,8245,8605,0.9546775130737943,0.9963614311704063,0.9750741839762611,True
+rf_class_balanced,up_to_5,selection_primary,Whooping cough,291,291,1.0,1.0,1.0,True
+rf_class_balanced,up_to_5,all_validation,Acute COPD exacerbation / infection,2049,1420,0.9478873239436619,0.6569058077110785,0.7760161429806861,True
+rf_class_balanced,up_to_5,all_validation,Acute laryngitis,3407,3100,0.9896774193548387,0.900498972703258,0.9429844782541879,True
+rf_class_balanced,up_to_5,all_validation,Acute pulmonary edema,2500,2494,0.9987971130713713,0.9964,0.9975971165398478,True
+rf_class_balanced,up_to_5,all_validation,Acute rhinosinusitis,1866,1285,0.7354085603112841,0.5064308681672026,0.5998095842589654,True
+rf_class_balanced,up_to_5,all_validation,Allergic rhinitis,2104,2092,1.0,0.9942965779467681,0.9971401334604385,True
+rf_class_balanced,up_to_5,all_validation,Bronchiectasis,2315,2404,0.8760399334442596,0.909719222462203,0.8925619834710744,True
+rf_class_balanced,up_to_5,all_validation,Bronchiolitis,28,90,0.3111111111111111,1.0,0.4745762711864407,True
+rf_class_balanced,up_to_5,all_validation,Bronchitis,3543,3624,0.9710264900662252,0.9932260795935648,0.9820008371703641,True
+rf_class_balanced,up_to_5,all_validation,Bronchospasm / acute asthma exacerbation,2190,2753,0.7537232110424991,0.9474885844748858,0.8395711106615416,True
+rf_class_balanced,up_to_5,all_validation,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_5,all_validation,Chronic rhinosinusitis,2717,3278,0.7248322147651006,0.8744939271255061,0.7926605504587156,True
+rf_class_balanced,up_to_5,all_validation,Croup,264,264,0.9545454545454546,0.9545454545454546,0.9545454545454546,True
+rf_class_balanced,up_to_5,all_validation,Epiglottitis,2248,2246,1.0,0.9991103202846975,0.9995549621717846,True
+rf_class_balanced,up_to_5,all_validation,Influenza,3590,3237,0.9910410874266296,0.8935933147632312,0.9397978614325473,True
+rf_class_balanced,up_to_5,all_validation,Larygospasm,651,653,0.996937212863706,1.0,0.9984662576687117,True
+rf_class_balanced,up_to_5,all_validation,Pneumonia,3484,3358,0.9988088147706968,0.9626865671641791,0.980415083308974,True
+rf_class_balanced,up_to_5,all_validation,Pulmonary neoplasm,1891,1858,0.9973089343379978,0.9799048122686409,0.9885302747399306,True
+rf_class_balanced,up_to_5,all_validation,Spontaneous pneumothorax,1405,1412,0.9936260623229461,0.998576512455516,0.9960951366702165,True
+rf_class_balanced,up_to_5,all_validation,Tuberculosis,1995,1959,0.9520163348647269,0.9348370927318296,0.9433485078401619,True
+rf_class_balanced,up_to_5,all_validation,URTI,8656,9016,0.9530834072759539,0.9927218114602587,0.9724988682661838,True
+rf_class_balanced,up_to_5,all_validation,Viral pharyngitis,8246,8606,0.9546827794561934,0.996361872422993,0.9750771421789699,True
+rf_class_balanced,up_to_5,all_validation,Whooping cough,531,531,1.0,1.0,1.0,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Acute COPD exacerbation / infection,375,277,0.9783393501805054,0.7226666666666667,0.8312883435582822,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Acute laryngitis,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Acute pulmonary edema,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Acute rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Allergic rhinitis,910,909,1.0,0.9989010989010989,0.999450247388675,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Bronchiectasis,179,185,0.8756756756756757,0.9050279329608939,0.8901098901098901,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Bronchiolitis,2,18,0.1111111111111111,1.0,0.2,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Bronchitis,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Bronchospasm / acute asthma exacerbation,389,470,0.7872340425531915,0.9511568123393316,0.8614668218859138,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,COVID-19,0,0,,,,False
+rf_class_balanced,up_to_5,selection_legacy_overlap,Chronic rhinosinusitis,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Croup,78,75,0.9866666666666667,0.9487179487179487,0.9673202614379085,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Epiglottitis,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Influenza,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Larygospasm,452,453,0.9977924944812362,1.0,0.9988950276243094,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Pneumonia,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Pulmonary neoplasm,30,28,1.0,0.9333333333333333,0.9655172413793104,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Spontaneous pneumothorax,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Tuberculosis,180,180,0.9555555555555556,0.9555555555555556,0.9555555555555556,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,URTI,0,0,,,,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Viral pharyngitis,1,1,1.0,1.0,1.0,True
+rf_class_balanced,up_to_5,selection_legacy_overlap,Whooping cough,240,240,1.0,1.0,1.0,True

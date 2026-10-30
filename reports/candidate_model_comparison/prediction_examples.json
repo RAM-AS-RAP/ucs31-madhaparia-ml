@@ -1,0 +1,2808 @@
+{
+  "issue": 48,
+  "status": "unlabelled_regression_probes_completed",
+  "input_sha256": {
+    "candidate_schema": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "dataset_manifest": "7eee968072661c365899f74486820c5fc4e429f00ddf431d6c7630601a622acd",
+    "frozen_v2_schema": "cf021c7cb03620a1758e51fc9824f9798608358b86871040e13b5e68204914bc",
+    "frozen_v2_model": "cab5ef5cd88e704b2dd515e3cddeaa872633b1b20532843aa13174e6549131e8",
+    "evaluation_helper": "75ba1b1e48f1f0885e2837c334080cea7644c13d2512e7f7c1b2c32d76793c9b",
+    "feature_builder": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "comparison_manifest": "35ac8011858ee67690887f13fbc1062cf4f6ebcebb0770106bd9b6d1173c392d",
+    "probe_script": "8c4d22525cacc3fd74edbf2cbd6cb6a37e2697557f8c504010b9cb670c6562c6",
+    "rf_group_weighted_model": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+    "rf_group_weighted_manifest": "06fab39c6e14aaeacfb0614dcd75be6c5bf94ca7865543cd7b32e19cc25e62af",
+    "rf_class_balanced_model": "e1988b217fda24bbd692ba0c83825cbb9d4c525811ed19532a92c32b9c2290e1",
+    "rf_class_balanced_manifest": "de611d8f5d311f3901254037bbc42f530bdfaa1050d112ab9c4664fef42bbc4e"
+  },
+  "results": [
+    {
+      "model": "frozen_v2_harmonized",
+      "case_id": "tiredness_headache",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_53",
+        "E_89",
+        "head_region_pain"
+      ],
+      "reporting_units": [
+        "E_89",
+        "head_region_pain"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 0,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 1,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 1,
+        "E_91__present": 0,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.3360723563549244
+        },
+        {
+          "rank": 2,
+          "condition": "COVID-19",
+          "model_score": 0.12105257283829154
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.08806048024128271
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0662605788859968
+        },
+        {
+          "rank": 5,
+          "condition": "URTI",
+          "model_score": 0.04957218953275583
+        },
+        {
+          "rank": 6,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.04725160728591804
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04462082850020121
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.03697354159698125
+        },
+        {
+          "rank": 9,
+          "condition": "Influenza",
+          "model_score": 0.036792647439208584
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.032415289802800534
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.027420101542855985
+        },
+        {
+          "rank": 12,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02722831222555723
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02583398999285272
+        },
+        {
+          "rank": 14,
+          "condition": "Tuberculosis",
+          "model_score": 0.012782307714478741
+        },
+        {
+          "rank": 15,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.009936359034466248
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.008335322230027965
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.00793721158683723
+        },
+        {
+          "rank": 18,
+          "condition": "Croup",
+          "model_score": 0.007649166364285017
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.004535588814945604
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.0038503173760100237
+        },
+        {
+          "rank": 21,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0022648626308745578
+        },
+        {
+          "rank": 22,
+          "condition": "Larygospasm",
+          "model_score": 0.0018755622502562815
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.001278805758191559
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.3360723563549244
+        },
+        {
+          "rank": 2,
+          "condition": "COVID-19",
+          "model_score": 0.12105257283829154
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.08806048024128271
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0662605788859968
+        },
+        {
+          "rank": 5,
+          "condition": "URTI",
+          "model_score": 0.04957218953275583
+        },
+        {
+          "rank": 6,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.04725160728591804
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04462082850020121
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.03697354159698125
+        },
+        {
+          "rank": 9,
+          "condition": "Influenza",
+          "model_score": 0.036792647439208584
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.032415289802800534
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.027420101542855985
+        },
+        {
+          "rank": 12,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02722831222555723
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02583398999285272
+        },
+        {
+          "rank": 14,
+          "condition": "Tuberculosis",
+          "model_score": 0.012782307714478741
+        },
+        {
+          "rank": 15,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.012201221665340805
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.008335322230027965
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.00793721158683723
+        },
+        {
+          "rank": 18,
+          "condition": "Croup",
+          "model_score": 0.007649166364285017
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.004535588814945604
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.0038503173760100237
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.0018755622502562815
+        },
+        {
+          "rank": 22,
+          "condition": "Bronchiolitis",
+          "model_score": 0.001278805758191559
+        }
+      ]
+    },
+    {
+      "model": "frozen_v2_harmonized",
+      "case_id": "tiredness_chest_pain",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_53",
+        "E_89",
+        "chest_region_pain"
+      ],
+      "reporting_units": [
+        "E_89",
+        "chest_region_pain"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 0,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 1,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 1,
+        "E_91__present": 0,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.3360723563549244
+        },
+        {
+          "rank": 2,
+          "condition": "COVID-19",
+          "model_score": 0.12105257283829154
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.08806048024128271
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0662605788859968
+        },
+        {
+          "rank": 5,
+          "condition": "URTI",
+          "model_score": 0.04957218953275583
+        },
+        {
+          "rank": 6,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.04725160728591804
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04462082850020121
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.03697354159698125
+        },
+        {
+          "rank": 9,
+          "condition": "Influenza",
+          "model_score": 0.036792647439208584
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.032415289802800534
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.027420101542855985
+        },
+        {
+          "rank": 12,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02722831222555723
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02583398999285272
+        },
+        {
+          "rank": 14,
+          "condition": "Tuberculosis",
+          "model_score": 0.012782307714478741
+        },
+        {
+          "rank": 15,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.009936359034466248
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.008335322230027965
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.00793721158683723
+        },
+        {
+          "rank": 18,
+          "condition": "Croup",
+          "model_score": 0.007649166364285017
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.004535588814945604
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.0038503173760100237
+        },
+        {
+          "rank": 21,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0022648626308745578
+        },
+        {
+          "rank": 22,
+          "condition": "Larygospasm",
+          "model_score": 0.0018755622502562815
+        },
+        {
+          "rank": 23,
+          "condition": "Bronchiolitis",
+          "model_score": 0.001278805758191559
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.3360723563549244
+        },
+        {
+          "rank": 2,
+          "condition": "COVID-19",
+          "model_score": 0.12105257283829154
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.08806048024128271
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0662605788859968
+        },
+        {
+          "rank": 5,
+          "condition": "URTI",
+          "model_score": 0.04957218953275583
+        },
+        {
+          "rank": 6,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.04725160728591804
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.04462082850020121
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.03697354159698125
+        },
+        {
+          "rank": 9,
+          "condition": "Influenza",
+          "model_score": 0.036792647439208584
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.032415289802800534
+        },
+        {
+          "rank": 11,
+          "condition": "Pneumonia",
+          "model_score": 0.027420101542855985
+        },
+        {
+          "rank": 12,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.02722831222555723
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02583398999285272
+        },
+        {
+          "rank": 14,
+          "condition": "Tuberculosis",
+          "model_score": 0.012782307714478741
+        },
+        {
+          "rank": 15,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.012201221665340805
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.008335322230027965
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.00793721158683723
+        },
+        {
+          "rank": 18,
+          "condition": "Croup",
+          "model_score": 0.007649166364285017
+        },
+        {
+          "rank": 19,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.004535588814945604
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.0038503173760100237
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.0018755622502562815
+        },
+        {
+          "rank": 22,
+          "condition": "Bronchiolitis",
+          "model_score": 0.001278805758191559
+        }
+      ]
+    },
+    {
+      "model": "frozen_v2_harmonized",
+      "case_id": "fever_cough",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_201",
+        "E_91"
+      ],
+      "reporting_units": [
+        "E_201",
+        "E_91"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 1,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 0,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 0,
+        "E_91__present": 1,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.16454418809169868
+        },
+        {
+          "rank": 2,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.09079639005525351
+        },
+        {
+          "rank": 3,
+          "condition": "Influenza",
+          "model_score": 0.07478747539832059
+        },
+        {
+          "rank": 4,
+          "condition": "URTI",
+          "model_score": 0.07378501464342682
+        },
+        {
+          "rank": 5,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0734770881259611
+        },
+        {
+          "rank": 6,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.05375450027589063
+        },
+        {
+          "rank": 7,
+          "condition": "Bronchiectasis",
+          "model_score": 0.05120797262138302
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.048209643918380084
+        },
+        {
+          "rank": 9,
+          "condition": "Pneumonia",
+          "model_score": 0.04707005643587235
+        },
+        {
+          "rank": 10,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.044969338339592026
+        },
+        {
+          "rank": 11,
+          "condition": "Allergic sinusitis",
+          "model_score": 0.040036357979590265
+        },
+        {
+          "rank": 12,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.036281395823236626
+        },
+        {
+          "rank": 13,
+          "condition": "Croup",
+          "model_score": 0.028718232632536995
+        },
+        {
+          "rank": 14,
+          "condition": "COVID-19",
+          "model_score": 0.027405379633177143
+        },
+        {
+          "rank": 15,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.02737080858415373
+        },
+        {
+          "rank": 16,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.02476128224213386
+        },
+        {
+          "rank": 17,
+          "condition": "Epiglottitis",
+          "model_score": 0.022512600679343724
+        },
+        {
+          "rank": 18,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.018049019012798456
+        },
+        {
+          "rank": 19,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.01588012541490192
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.012225583021531494
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.009589331217471716
+        },
+        {
+          "rank": 22,
+          "condition": "Bronchiolitis",
+          "model_score": 0.007886330097993563
+        },
+        {
+          "rank": 23,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.006681885755351691
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.16454418809169868
+        },
+        {
+          "rank": 2,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.09079639005525351
+        },
+        {
+          "rank": 3,
+          "condition": "Influenza",
+          "model_score": 0.07478747539832059
+        },
+        {
+          "rank": 4,
+          "condition": "URTI",
+          "model_score": 0.07378501464342682
+        },
+        {
+          "rank": 5,
+          "condition": "Acute laryngitis",
+          "model_score": 0.0734770881259611
+        },
+        {
+          "rank": 6,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.05375450027589063
+        },
+        {
+          "rank": 7,
+          "condition": "Bronchiectasis",
+          "model_score": 0.05120797262138302
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchitis",
+          "model_score": 0.048209643918380084
+        },
+        {
+          "rank": 9,
+          "condition": "Pneumonia",
+          "model_score": 0.04707005643587235
+        },
+        {
+          "rank": 10,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.046718243734941954
+        },
+        {
+          "rank": 11,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.044969338339592026
+        },
+        {
+          "rank": 12,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.036281395823236626
+        },
+        {
+          "rank": 13,
+          "condition": "Croup",
+          "model_score": 0.028718232632536995
+        },
+        {
+          "rank": 14,
+          "condition": "COVID-19",
+          "model_score": 0.027405379633177143
+        },
+        {
+          "rank": 15,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.02737080858415373
+        },
+        {
+          "rank": 16,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.02476128224213386
+        },
+        {
+          "rank": 17,
+          "condition": "Epiglottitis",
+          "model_score": 0.022512600679343724
+        },
+        {
+          "rank": 18,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.018049019012798456
+        },
+        {
+          "rank": 19,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.01588012541490192
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.012225583021531494
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.009589331217471716
+        },
+        {
+          "rank": 22,
+          "condition": "Bronchiolitis",
+          "model_score": 0.007886330097993563
+        }
+      ]
+    },
+    {
+      "model": "rf_group_weighted",
+      "case_id": "tiredness_headache",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_53",
+        "E_89",
+        "head_region_pain"
+      ],
+      "reporting_units": [
+        "E_89",
+        "head_region_pain"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 0,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 1,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 1,
+        "E_91__present": 0,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "head_region_pain__present": 1,
+        "chest_region_pain__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0,
+        "head_region_pain__absent": 0,
+        "chest_region_pain__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "URTI",
+          "model_score": 0.356217019855043
+        },
+        {
+          "rank": 2,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.23561251227812074
+        },
+        {
+          "rank": 3,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.12916304701309766
+        },
+        {
+          "rank": 4,
+          "condition": "Influenza",
+          "model_score": 0.09145041944802272
+        },
+        {
+          "rank": 5,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.09025122999444439
+        },
+        {
+          "rank": 6,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.05080677616889754
+        },
+        {
+          "rank": 7,
+          "condition": "Acute laryngitis",
+          "model_score": 0.017572009411409992
+        },
+        {
+          "rank": 8,
+          "condition": "Epiglottitis",
+          "model_score": 0.005937029081174819
+        },
+        {
+          "rank": 9,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0028290929336814326
+        },
+        {
+          "rank": 10,
+          "condition": "Bronchiectasis",
+          "model_score": 0.002759620656121602
+        },
+        {
+          "rank": 11,
+          "condition": "Bronchitis",
+          "model_score": 0.0023810985669590434
+        },
+        {
+          "rank": 12,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.002371168904259224
+        },
+        {
+          "rank": 13,
+          "condition": "Pneumonia",
+          "model_score": 0.002312070912957322
+        },
+        {
+          "rank": 14,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.0022486454083387865
+        },
+        {
+          "rank": 15,
+          "condition": "Tuberculosis",
+          "model_score": 0.0021407503236317974
+        },
+        {
+          "rank": 16,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.002006193706616214
+        },
+        {
+          "rank": 17,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0014085077383235987
+        },
+        {
+          "rank": 18,
+          "condition": "Whooping cough",
+          "model_score": 0.0010808691142347553
+        },
+        {
+          "rank": 19,
+          "condition": "Larygospasm",
+          "model_score": 0.0009174833497153352
+        },
+        {
+          "rank": 20,
+          "condition": "Croup",
+          "model_score": 0.0005074040467574913
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 2.7051088192387626e-05
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "URTI",
+          "model_score": 0.356217019855043
+        },
+        {
+          "rank": 2,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.23561251227812074
+        },
+        {
+          "rank": 3,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.12916304701309766
+        },
+        {
+          "rank": 4,
+          "condition": "Influenza",
+          "model_score": 0.09145041944802272
+        },
+        {
+          "rank": 5,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.09025122999444439
+        },
+        {
+          "rank": 6,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.05080677616889754
+        },
+        {
+          "rank": 7,
+          "condition": "Acute laryngitis",
+          "model_score": 0.017572009411409992
+        },
+        {
+          "rank": 8,
+          "condition": "Epiglottitis",
+          "model_score": 0.005937029081174819
+        },
+        {
+          "rank": 9,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0028290929336814326
+        },
+        {
+          "rank": 10,
+          "condition": "Bronchiectasis",
+          "model_score": 0.002759620656121602
+        },
+        {
+          "rank": 11,
+          "condition": "Bronchitis",
+          "model_score": 0.0023810985669590434
+        },
+        {
+          "rank": 12,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.002371168904259224
+        },
+        {
+          "rank": 13,
+          "condition": "Pneumonia",
+          "model_score": 0.002312070912957322
+        },
+        {
+          "rank": 14,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.0022486454083387865
+        },
+        {
+          "rank": 15,
+          "condition": "Tuberculosis",
+          "model_score": 0.0021407503236317974
+        },
+        {
+          "rank": 16,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.002006193706616214
+        },
+        {
+          "rank": 17,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0014085077383235987
+        },
+        {
+          "rank": 18,
+          "condition": "Whooping cough",
+          "model_score": 0.0010808691142347553
+        },
+        {
+          "rank": 19,
+          "condition": "Larygospasm",
+          "model_score": 0.0009174833497153352
+        },
+        {
+          "rank": 20,
+          "condition": "Croup",
+          "model_score": 0.0005074040467574913
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 2.7051088192387626e-05
+        },
+        {
+          "rank": 22,
+          "condition": "COVID-19",
+          "model_score": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rf_group_weighted",
+      "case_id": "tiredness_chest_pain",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_53",
+        "E_89",
+        "chest_region_pain"
+      ],
+      "reporting_units": [
+        "E_89",
+        "chest_region_pain"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 0,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 1,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 1,
+        "E_91__present": 0,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "head_region_pain__present": 0,
+        "chest_region_pain__present": 1,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0,
+        "head_region_pain__absent": 0,
+        "chest_region_pain__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.5496121907937223
+        },
+        {
+          "rank": 2,
+          "condition": "Bronchitis",
+          "model_score": 0.11612453471817855
+        },
+        {
+          "rank": 3,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.09939679072205312
+        },
+        {
+          "rank": 4,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.09800201848353414
+        },
+        {
+          "rank": 5,
+          "condition": "Pneumonia",
+          "model_score": 0.062138720309770336
+        },
+        {
+          "rank": 6,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.041952114696809505
+        },
+        {
+          "rank": 7,
+          "condition": "Acute laryngitis",
+          "model_score": 0.013808962505539934
+        },
+        {
+          "rank": 8,
+          "condition": "URTI",
+          "model_score": 0.0040771865638514135
+        },
+        {
+          "rank": 9,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.003160058012740485
+        },
+        {
+          "rank": 10,
+          "condition": "Epiglottitis",
+          "model_score": 0.0027067510272160964
+        },
+        {
+          "rank": 11,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.002450138057174679
+        },
+        {
+          "rank": 12,
+          "condition": "Influenza",
+          "model_score": 0.0016399898423486209
+        },
+        {
+          "rank": 13,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0014535479173992166
+        },
+        {
+          "rank": 14,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.0010830270323793428
+        },
+        {
+          "rank": 15,
+          "condition": "Tuberculosis",
+          "model_score": 0.0006593399515504808
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.0006402398149674832
+        },
+        {
+          "rank": 17,
+          "condition": "Whooping cough",
+          "model_score": 0.0005830841304072069
+        },
+        {
+          "rank": 18,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.000390615448533635
+        },
+        {
+          "rank": 19,
+          "condition": "Croup",
+          "model_score": 0.00011597056024277844
+        },
+        {
+          "rank": 20,
+          "condition": "Bronchiolitis",
+          "model_score": 4.719411580676364e-06
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.0
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.5496121907937223
+        },
+        {
+          "rank": 2,
+          "condition": "Bronchitis",
+          "model_score": 0.11612453471817855
+        },
+        {
+          "rank": 3,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.09939679072205312
+        },
+        {
+          "rank": 4,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.09800201848353414
+        },
+        {
+          "rank": 5,
+          "condition": "Pneumonia",
+          "model_score": 0.062138720309770336
+        },
+        {
+          "rank": 6,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.041952114696809505
+        },
+        {
+          "rank": 7,
+          "condition": "Acute laryngitis",
+          "model_score": 0.013808962505539934
+        },
+        {
+          "rank": 8,
+          "condition": "URTI",
+          "model_score": 0.0040771865638514135
+        },
+        {
+          "rank": 9,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.003160058012740485
+        },
+        {
+          "rank": 10,
+          "condition": "Epiglottitis",
+          "model_score": 0.0027067510272160964
+        },
+        {
+          "rank": 11,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.002450138057174679
+        },
+        {
+          "rank": 12,
+          "condition": "Influenza",
+          "model_score": 0.0016399898423486209
+        },
+        {
+          "rank": 13,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0014535479173992166
+        },
+        {
+          "rank": 14,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.0010830270323793428
+        },
+        {
+          "rank": 15,
+          "condition": "Tuberculosis",
+          "model_score": 0.0006593399515504808
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchiectasis",
+          "model_score": 0.0006402398149674832
+        },
+        {
+          "rank": 17,
+          "condition": "Whooping cough",
+          "model_score": 0.0005830841304072069
+        },
+        {
+          "rank": 18,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.000390615448533635
+        },
+        {
+          "rank": 19,
+          "condition": "Croup",
+          "model_score": 0.00011597056024277844
+        },
+        {
+          "rank": 20,
+          "condition": "Bronchiolitis",
+          "model_score": 4.719411580676364e-06
+        },
+        {
+          "rank": 21,
+          "condition": "COVID-19",
+          "model_score": 0.0
+        },
+        {
+          "rank": 22,
+          "condition": "Larygospasm",
+          "model_score": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rf_group_weighted",
+      "case_id": "fever_cough",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_201",
+        "E_91"
+      ],
+      "reporting_units": [
+        "E_201",
+        "E_91"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 1,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 0,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 0,
+        "E_91__present": 1,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "head_region_pain__present": 0,
+        "chest_region_pain__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0,
+        "head_region_pain__absent": 0,
+        "chest_region_pain__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.2360222212603468
+        },
+        {
+          "rank": 2,
+          "condition": "Tuberculosis",
+          "model_score": 0.1427733582495995
+        },
+        {
+          "rank": 3,
+          "condition": "URTI",
+          "model_score": 0.11189030980066121
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.09808475135433914
+        },
+        {
+          "rank": 5,
+          "condition": "Influenza",
+          "model_score": 0.05136655426519343
+        },
+        {
+          "rank": 6,
+          "condition": "Bronchitis",
+          "model_score": 0.04629357256588482
+        },
+        {
+          "rank": 7,
+          "condition": "Pneumonia",
+          "model_score": 0.04227309666101797
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.04087222951406794
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchiectasis",
+          "model_score": 0.0340108706602624
+        },
+        {
+          "rank": 10,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.032371636600289584
+        },
+        {
+          "rank": 11,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.03177094060017204
+        },
+        {
+          "rank": 12,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.02713496015397065
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02348432582666217
+        },
+        {
+          "rank": 14,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.02079533661885755
+        },
+        {
+          "rank": 15,
+          "condition": "Whooping cough",
+          "model_score": 0.013403290067419062
+        },
+        {
+          "rank": 16,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.012657682366097538
+        },
+        {
+          "rank": 17,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.011240923259738338
+        },
+        {
+          "rank": 18,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.010084266810175026
+        },
+        {
+          "rank": 19,
+          "condition": "Croup",
+          "model_score": 0.008401233605596064
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.004029634153631655
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 0.0010388056060172336
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.2360222212603468
+        },
+        {
+          "rank": 2,
+          "condition": "Tuberculosis",
+          "model_score": 0.1427733582495995
+        },
+        {
+          "rank": 3,
+          "condition": "URTI",
+          "model_score": 0.11189030980066121
+        },
+        {
+          "rank": 4,
+          "condition": "Acute laryngitis",
+          "model_score": 0.09808475135433914
+        },
+        {
+          "rank": 5,
+          "condition": "Influenza",
+          "model_score": 0.05136655426519343
+        },
+        {
+          "rank": 6,
+          "condition": "Bronchitis",
+          "model_score": 0.04629357256588482
+        },
+        {
+          "rank": 7,
+          "condition": "Pneumonia",
+          "model_score": 0.04227309666101797
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.04087222951406794
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchiectasis",
+          "model_score": 0.0340108706602624
+        },
+        {
+          "rank": 10,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.032371636600289584
+        },
+        {
+          "rank": 11,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.03177094060017204
+        },
+        {
+          "rank": 12,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.02713496015397065
+        },
+        {
+          "rank": 13,
+          "condition": "Epiglottitis",
+          "model_score": 0.02348432582666217
+        },
+        {
+          "rank": 14,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.02079533661885755
+        },
+        {
+          "rank": 15,
+          "condition": "Whooping cough",
+          "model_score": 0.013403290067419062
+        },
+        {
+          "rank": 16,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.012657682366097538
+        },
+        {
+          "rank": 17,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.011240923259738338
+        },
+        {
+          "rank": 18,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.010084266810175026
+        },
+        {
+          "rank": 19,
+          "condition": "Croup",
+          "model_score": 0.008401233605596064
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.004029634153631655
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 0.0010388056060172336
+        },
+        {
+          "rank": 22,
+          "condition": "COVID-19",
+          "model_score": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rf_class_balanced",
+      "case_id": "tiredness_headache",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_53",
+        "E_89",
+        "head_region_pain"
+      ],
+      "reporting_units": [
+        "E_89",
+        "head_region_pain"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 0,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 1,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 1,
+        "E_91__present": 0,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "head_region_pain__present": 1,
+        "chest_region_pain__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0,
+        "head_region_pain__absent": 0,
+        "chest_region_pain__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.2932696635840553
+        },
+        {
+          "rank": 2,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.242031001016354
+        },
+        {
+          "rank": 3,
+          "condition": "URTI",
+          "model_score": 0.1499953651810242
+        },
+        {
+          "rank": 4,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.11463400573106779
+        },
+        {
+          "rank": 5,
+          "condition": "Influenza",
+          "model_score": 0.09603669659054677
+        },
+        {
+          "rank": 6,
+          "condition": "Acute laryngitis",
+          "model_score": 0.032187140597938445
+        },
+        {
+          "rank": 7,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.03157916565710584
+        },
+        {
+          "rank": 8,
+          "condition": "Epiglottitis",
+          "model_score": 0.009151733713436777
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.003827887387615719
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.003493759310891897
+        },
+        {
+          "rank": 11,
+          "condition": "Bronchiectasis",
+          "model_score": 0.003462417171690121
+        },
+        {
+          "rank": 12,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0032754306014003746
+        },
+        {
+          "rank": 13,
+          "condition": "Tuberculosis",
+          "model_score": 0.0030373759192893145
+        },
+        {
+          "rank": 14,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0027596628492118224
+        },
+        {
+          "rank": 15,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.0027543417872021893
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchitis",
+          "model_score": 0.0022397122064025644
+        },
+        {
+          "rank": 17,
+          "condition": "Croup",
+          "model_score": 0.0017754101160888948
+        },
+        {
+          "rank": 18,
+          "condition": "Pneumonia",
+          "model_score": 0.0017180212175275632
+        },
+        {
+          "rank": 19,
+          "condition": "Whooping cough",
+          "model_score": 0.001336327991949095
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.0013324912046468623
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 0.00010239016455428457
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.2932696635840553
+        },
+        {
+          "rank": 2,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.242031001016354
+        },
+        {
+          "rank": 3,
+          "condition": "URTI",
+          "model_score": 0.1499953651810242
+        },
+        {
+          "rank": 4,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.11463400573106779
+        },
+        {
+          "rank": 5,
+          "condition": "Influenza",
+          "model_score": 0.09603669659054677
+        },
+        {
+          "rank": 6,
+          "condition": "Acute laryngitis",
+          "model_score": 0.032187140597938445
+        },
+        {
+          "rank": 7,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.03157916565710584
+        },
+        {
+          "rank": 8,
+          "condition": "Epiglottitis",
+          "model_score": 0.009151733713436777
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.003827887387615719
+        },
+        {
+          "rank": 10,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.003493759310891897
+        },
+        {
+          "rank": 11,
+          "condition": "Bronchiectasis",
+          "model_score": 0.003462417171690121
+        },
+        {
+          "rank": 12,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.0032754306014003746
+        },
+        {
+          "rank": 13,
+          "condition": "Tuberculosis",
+          "model_score": 0.0030373759192893145
+        },
+        {
+          "rank": 14,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0027596628492118224
+        },
+        {
+          "rank": 15,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.0027543417872021893
+        },
+        {
+          "rank": 16,
+          "condition": "Bronchitis",
+          "model_score": 0.0022397122064025644
+        },
+        {
+          "rank": 17,
+          "condition": "Croup",
+          "model_score": 0.0017754101160888948
+        },
+        {
+          "rank": 18,
+          "condition": "Pneumonia",
+          "model_score": 0.0017180212175275632
+        },
+        {
+          "rank": 19,
+          "condition": "Whooping cough",
+          "model_score": 0.001336327991949095
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.0013324912046468623
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 0.00010239016455428457
+        },
+        {
+          "rank": 22,
+          "condition": "COVID-19",
+          "model_score": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rf_class_balanced",
+      "case_id": "tiredness_chest_pain",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_53",
+        "E_89",
+        "chest_region_pain"
+      ],
+      "reporting_units": [
+        "E_89",
+        "chest_region_pain"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 0,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 1,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 1,
+        "E_91__present": 0,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "head_region_pain__present": 0,
+        "chest_region_pain__present": 1,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0,
+        "head_region_pain__absent": 0,
+        "chest_region_pain__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.5794901082059203
+        },
+        {
+          "rank": 2,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.13422114664692575
+        },
+        {
+          "rank": 3,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.09285978641775282
+        },
+        {
+          "rank": 4,
+          "condition": "Bronchitis",
+          "model_score": 0.07560586240300703
+        },
+        {
+          "rank": 5,
+          "condition": "Pneumonia",
+          "model_score": 0.039826726618969875
+        },
+        {
+          "rank": 6,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.016833837551872653
+        },
+        {
+          "rank": 7,
+          "condition": "Acute laryngitis",
+          "model_score": 0.013408739736100113
+        },
+        {
+          "rank": 8,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.006297558338119812
+        },
+        {
+          "rank": 9,
+          "condition": "Epiglottitis",
+          "model_score": 0.0061433016270790826
+        },
+        {
+          "rank": 10,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.005332614739017297
+        },
+        {
+          "rank": 11,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.004016452689500961
+        },
+        {
+          "rank": 12,
+          "condition": "Bronchiectasis",
+          "model_score": 0.003985962815277891
+        },
+        {
+          "rank": 13,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.003982171671623489
+        },
+        {
+          "rank": 14,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0032280367335409555
+        },
+        {
+          "rank": 15,
+          "condition": "Tuberculosis",
+          "model_score": 0.002804437723579194
+        },
+        {
+          "rank": 16,
+          "condition": "URTI",
+          "model_score": 0.002785497023735687
+        },
+        {
+          "rank": 17,
+          "condition": "Whooping cough",
+          "model_score": 0.0027291847523923346
+        },
+        {
+          "rank": 18,
+          "condition": "Influenza",
+          "model_score": 0.0024602481944934747
+        },
+        {
+          "rank": 19,
+          "condition": "Croup",
+          "model_score": 0.0019517446455600959
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.0014248975400525249
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 0.0006116839254786157
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.5794901082059203
+        },
+        {
+          "rank": 2,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.13422114664692575
+        },
+        {
+          "rank": 3,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.09285978641775282
+        },
+        {
+          "rank": 4,
+          "condition": "Bronchitis",
+          "model_score": 0.07560586240300703
+        },
+        {
+          "rank": 5,
+          "condition": "Pneumonia",
+          "model_score": 0.039826726618969875
+        },
+        {
+          "rank": 6,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.016833837551872653
+        },
+        {
+          "rank": 7,
+          "condition": "Acute laryngitis",
+          "model_score": 0.013408739736100113
+        },
+        {
+          "rank": 8,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.006297558338119812
+        },
+        {
+          "rank": 9,
+          "condition": "Epiglottitis",
+          "model_score": 0.0061433016270790826
+        },
+        {
+          "rank": 10,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.005332614739017297
+        },
+        {
+          "rank": 11,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.004016452689500961
+        },
+        {
+          "rank": 12,
+          "condition": "Bronchiectasis",
+          "model_score": 0.003985962815277891
+        },
+        {
+          "rank": 13,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.003982171671623489
+        },
+        {
+          "rank": 14,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0032280367335409555
+        },
+        {
+          "rank": 15,
+          "condition": "Tuberculosis",
+          "model_score": 0.002804437723579194
+        },
+        {
+          "rank": 16,
+          "condition": "URTI",
+          "model_score": 0.002785497023735687
+        },
+        {
+          "rank": 17,
+          "condition": "Whooping cough",
+          "model_score": 0.0027291847523923346
+        },
+        {
+          "rank": 18,
+          "condition": "Influenza",
+          "model_score": 0.0024602481944934747
+        },
+        {
+          "rank": 19,
+          "condition": "Croup",
+          "model_score": 0.0019517446455600959
+        },
+        {
+          "rank": 20,
+          "condition": "Larygospasm",
+          "model_score": 0.0014248975400525249
+        },
+        {
+          "rank": 21,
+          "condition": "Bronchiolitis",
+          "model_score": 0.0006116839254786157
+        },
+        {
+          "rank": 22,
+          "condition": "COVID-19",
+          "model_score": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rf_class_balanced",
+      "case_id": "fever_cough",
+      "age": 22,
+      "sex": "F",
+      "positive_concepts": [
+        "E_201",
+        "E_91"
+      ],
+      "reporting_units": [
+        "E_201",
+        "E_91"
+      ],
+      "ground_truth": null,
+      "encoded_model_input": {
+        "AGE": 22,
+        "SEX_M": 0,
+        "E_103__present": 0,
+        "E_112__present": 0,
+        "E_14__present": 0,
+        "E_144__present": 0,
+        "E_161__present": 0,
+        "E_162__present": 0,
+        "E_166__present": 0,
+        "E_169__present": 0,
+        "E_170__present": 0,
+        "E_181__present": 0,
+        "E_182__present": 0,
+        "E_190__present": 0,
+        "E_194__present": 0,
+        "E_201__present": 1,
+        "E_203__present": 0,
+        "E_212__present": 0,
+        "E_214__present": 0,
+        "E_217__present": 0,
+        "E_218__present": 0,
+        "E_220__present": 0,
+        "E_45__present": 0,
+        "E_50__present": 0,
+        "E_53__present": 0,
+        "E_65__present": 0,
+        "E_66__present": 0,
+        "E_67__present": 0,
+        "E_77__present": 0,
+        "E_88__present": 0,
+        "E_89__present": 0,
+        "E_91__present": 1,
+        "E_94__present": 0,
+        "E_97__present": 0,
+        "head_region_pain__present": 0,
+        "chest_region_pain__present": 0,
+        "E_103__absent": 0,
+        "E_112__absent": 0,
+        "E_14__absent": 0,
+        "E_144__absent": 0,
+        "E_161__absent": 0,
+        "E_162__absent": 0,
+        "E_166__absent": 0,
+        "E_169__absent": 0,
+        "E_170__absent": 0,
+        "E_181__absent": 0,
+        "E_182__absent": 0,
+        "E_190__absent": 0,
+        "E_194__absent": 0,
+        "E_201__absent": 0,
+        "E_203__absent": 0,
+        "E_212__absent": 0,
+        "E_214__absent": 0,
+        "E_217__absent": 0,
+        "E_218__absent": 0,
+        "E_220__absent": 0,
+        "E_45__absent": 0,
+        "E_50__absent": 0,
+        "E_53__absent": 0,
+        "E_65__absent": 0,
+        "E_66__absent": 0,
+        "E_67__absent": 0,
+        "E_77__absent": 0,
+        "E_88__absent": 0,
+        "E_89__absent": 0,
+        "E_91__absent": 0,
+        "E_94__absent": 0,
+        "E_97__absent": 0,
+        "head_region_pain__absent": 0,
+        "chest_region_pain__absent": 0
+      },
+      "native_ranking": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.2392251484003152
+        },
+        {
+          "rank": 2,
+          "condition": "Acute laryngitis",
+          "model_score": 0.09809257793793685
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.09455125730816738
+        },
+        {
+          "rank": 4,
+          "condition": "Influenza",
+          "model_score": 0.05814436030363558
+        },
+        {
+          "rank": 5,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.05725073115526365
+        },
+        {
+          "rank": 6,
+          "condition": "URTI",
+          "model_score": 0.05580805651443445
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.05142199433534703
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchiectasis",
+          "model_score": 0.04753851127052829
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchitis",
+          "model_score": 0.04678647263857145
+        },
+        {
+          "rank": 10,
+          "condition": "Pneumonia",
+          "model_score": 0.038500834643761736
+        },
+        {
+          "rank": 11,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0323766920705545
+        },
+        {
+          "rank": 12,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.029478077799760985
+        },
+        {
+          "rank": 13,
+          "condition": "Croup",
+          "model_score": 0.0248979556092067
+        },
+        {
+          "rank": 14,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.024447596121572296
+        },
+        {
+          "rank": 15,
+          "condition": "Epiglottitis",
+          "model_score": 0.02190821254542151
+        },
+        {
+          "rank": 16,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.01714696356394647
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchiolitis",
+          "model_score": 0.016573904810465334
+        },
+        {
+          "rank": 18,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.012263933827170684
+        },
+        {
+          "rank": 19,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.01191505580022046
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.011821373007827355
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.009850290335892013
+        }
+      ],
+      "canonical_ranking": [
+        {
+          "rank": 1,
+          "condition": "Tuberculosis",
+          "model_score": 0.2392251484003152
+        },
+        {
+          "rank": 2,
+          "condition": "Acute laryngitis",
+          "model_score": 0.09809257793793685
+        },
+        {
+          "rank": 3,
+          "condition": "Viral pharyngitis",
+          "model_score": 0.09455125730816738
+        },
+        {
+          "rank": 4,
+          "condition": "Influenza",
+          "model_score": 0.05814436030363558
+        },
+        {
+          "rank": 5,
+          "condition": "Bronchospasm / acute asthma exacerbation",
+          "model_score": 0.05725073115526365
+        },
+        {
+          "rank": 6,
+          "condition": "URTI",
+          "model_score": 0.05580805651443445
+        },
+        {
+          "rank": 7,
+          "condition": "Acute rhinosinusitis",
+          "model_score": 0.05142199433534703
+        },
+        {
+          "rank": 8,
+          "condition": "Bronchiectasis",
+          "model_score": 0.04753851127052829
+        },
+        {
+          "rank": 9,
+          "condition": "Bronchitis",
+          "model_score": 0.04678647263857145
+        },
+        {
+          "rank": 10,
+          "condition": "Pneumonia",
+          "model_score": 0.038500834643761736
+        },
+        {
+          "rank": 11,
+          "condition": "Acute COPD exacerbation / infection",
+          "model_score": 0.0323766920705545
+        },
+        {
+          "rank": 12,
+          "condition": "Allergic rhinitis",
+          "model_score": 0.029478077799760985
+        },
+        {
+          "rank": 13,
+          "condition": "Croup",
+          "model_score": 0.0248979556092067
+        },
+        {
+          "rank": 14,
+          "condition": "Chronic rhinosinusitis",
+          "model_score": 0.024447596121572296
+        },
+        {
+          "rank": 15,
+          "condition": "Epiglottitis",
+          "model_score": 0.02190821254542151
+        },
+        {
+          "rank": 16,
+          "condition": "Pulmonary neoplasm",
+          "model_score": 0.01714696356394647
+        },
+        {
+          "rank": 17,
+          "condition": "Bronchiolitis",
+          "model_score": 0.016573904810465334
+        },
+        {
+          "rank": 18,
+          "condition": "Acute pulmonary edema",
+          "model_score": 0.012263933827170684
+        },
+        {
+          "rank": 19,
+          "condition": "Spontaneous pneumothorax",
+          "model_score": 0.01191505580022046
+        },
+        {
+          "rank": 20,
+          "condition": "Whooping cough",
+          "model_score": 0.011821373007827355
+        },
+        {
+          "rank": 21,
+          "condition": "Larygospasm",
+          "model_score": 0.009850290335892013
+        },
+        {
+          "rank": 22,
+          "condition": "COVID-19",
+          "model_score": 0.0
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "These examples have no ground-truth diagnoses.",
+    "No accuracy or clinical correctness is established.",
+    "Inputs assume confirmation of the source-defined concepts.",
+    "Regional pain uses broad confirmed concepts, not invented locations.",
+    "This is a feature-input audit, not an NLP or end-to-end test.",
+    "Native and harmonized rankings are both preserved.",
+    "No model, symptom mapping or deployed application was changed.",
+    "Final uncertainty handling belongs to issue #49."
+  ]
+}

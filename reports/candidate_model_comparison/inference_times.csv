@@ -1,0 +1,16 @@
+model,view,observations,prediction_seconds
+frozen_v2_harmonized,full,55680,1.6726507999992464
+frozen_v2_harmonized,up_to_1,55680,1.6429790999973193
+frozen_v2_harmonized,up_to_2,55680,1.752771200001007
+frozen_v2_harmonized,up_to_3,55680,1.5854244999936782
+frozen_v2_harmonized,up_to_5,55680,1.7269889000017429
+rf_group_weighted,full,55680,2.100048699998297
+rf_group_weighted,up_to_1,55680,1.6511719999980414
+rf_group_weighted,up_to_2,55680,1.852525099995546
+rf_group_weighted,up_to_3,55680,2.078712300004554
+rf_group_weighted,up_to_5,55680,2.0029839999915566
+rf_class_balanced,full,55680,1.9352960999967763
+rf_class_balanced,up_to_1,55680,1.5230516000010539
+rf_class_balanced,up_to_2,55680,1.8197112000052584
+rf_class_balanced,up_to_3,55680,2.1932503999996698
+rf_class_balanced,up_to_5,55680,2.1312756999977864
