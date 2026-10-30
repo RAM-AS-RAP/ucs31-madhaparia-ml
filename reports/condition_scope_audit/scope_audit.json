@@ -1,0 +1,495 @@
+{
+  "issue": 46,
+  "generated_at_utc": "2026-10-30T06:06:08.275434+00:00",
+  "status": "audit_only_candidate_mapping_proposed",
+  "source_sha256": {
+    "data/raw/release_conditions.json": "56edf4682d8e86a4209fc3a33932e50ce03d1cc1fecc326c26d5ef8fa5c24890",
+    "data/processed/diseases.json": "f496c297cc30ab0f270bcc96b5076f46f22909ca91e3e7bce401ebc8700c47ec",
+    "models/rf_v2_23class_prototype_manifest.json": "276ab6722c58794c16cc39c2ad64d0db4722ee746e73b6b0f941685412e1c4e9",
+    "docs/v2_candidate_condition_profiles.json": "fee1479a197a9671a6649c2445b811b418754bb2a198c2ce68aa1c7cc58864e0",
+    "data/raw/release_train_patients": "93933e9a9a7a00d618a931deda7767485af299fe4635bf189a7c63b510e8b172",
+    "data/raw/release_validate_patients": "b84733533bff01daa1d47d27a0cd4d684bb54a0fc20d80aaee1250ff8ff989ed",
+    "scripts/audit_condition_scope.py": "5cb07c00dd7bed825cd9feeef817edf4c4a579aabcab9648aeeb391ed80ac3bc"
+  },
+  "current_v2_class_count": 23,
+  "conditions": [
+    {
+      "source_label": "Acute COPD exacerbation / infection",
+      "proposed_canonical_label": "Acute COPD exacerbation / infection",
+      "source_french_name": "Exacerbation aigue de MPOC et/ou surinfection associée",
+      "source_icd10": "j44.1",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 17661,
+      "raw_validation_count": 2076,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Acute laryngitis",
+      "proposed_canonical_label": "Acute laryngitis",
+      "source_french_name": "Laryngite aigue",
+      "source_icd10": "J04.0",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 24129,
+      "raw_validation_count": 3407,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Acute pulmonary edema",
+      "proposed_canonical_label": "Acute pulmonary edema",
+      "source_french_name": "OAP/Surcharge pulmonaire",
+      "source_icd10": "J81.0",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 19018,
+      "raw_validation_count": 2500,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Acute rhinosinusitis",
+      "proposed_canonical_label": "Acute rhinosinusitis",
+      "source_french_name": "Rhinosinusite aigue",
+      "source_icd10": "j01",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 13578,
+      "raw_validation_count": 1866,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Allergic rhinitis",
+      "proposed_canonical_label": "Allergic rhinitis",
+      "source_french_name": null,
+      "source_icd10": null,
+      "training_source_group": "additional_rule_generated",
+      "raw_train_count": 0,
+      "raw_validation_count": 0,
+      "v2_fitted_count_from_manifest": 400
+    },
+    {
+      "source_label": "Allergic sinusitis",
+      "proposed_canonical_label": "Allergic rhinitis",
+      "source_french_name": "Rhinite allergique",
+      "source_icd10": "J30",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 26203,
+      "raw_validation_count": 2136,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Bronchiectasis",
+      "proposed_canonical_label": "Bronchiectasis",
+      "source_french_name": "Bronchiectasies",
+      "source_icd10": "J47",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 18795,
+      "raw_validation_count": 2319,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Bronchiolitis",
+      "proposed_canonical_label": "Bronchiolitis",
+      "source_french_name": "Bronchiolite",
+      "source_icd10": "j21",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 261,
+      "raw_validation_count": 28,
+      "v2_fitted_count_from_manifest": 261
+    },
+    {
+      "source_label": "Bronchitis",
+      "proposed_canonical_label": "Bronchitis",
+      "source_french_name": "Bronchite",
+      "source_icd10": "j40",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 26400,
+      "raw_validation_count": 3543,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Bronchospasm / acute asthma exacerbation",
+      "proposed_canonical_label": "Bronchospasm / acute asthma exacerbation",
+      "source_french_name": "Asthme exacerbé ou bronchospasme",
+      "source_icd10": "J45",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 19875,
+      "raw_validation_count": 2209,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "COVID-19",
+      "proposed_canonical_label": "COVID-19",
+      "source_french_name": null,
+      "source_icd10": null,
+      "training_source_group": "additional_rule_generated",
+      "raw_train_count": 0,
+      "raw_validation_count": 0,
+      "v2_fitted_count_from_manifest": 400
+    },
+    {
+      "source_label": "Chronic rhinosinusitis",
+      "proposed_canonical_label": "Chronic rhinosinusitis",
+      "source_french_name": "Rhinosinusite chronique",
+      "source_icd10": "j32",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 20579,
+      "raw_validation_count": 2717,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Croup",
+      "proposed_canonical_label": "Croup",
+      "source_french_name": "Laryngo-trachéo-bronchite (Croup)",
+      "source_icd10": "J05.0",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 2852,
+      "raw_validation_count": 267,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Epiglottitis",
+      "proposed_canonical_label": "Epiglottitis",
+      "source_french_name": "Épiglottite",
+      "source_icd10": "J05.1",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 17209,
+      "raw_validation_count": 2248,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Influenza",
+      "proposed_canonical_label": "Influenza",
+      "source_french_name": "Possible influenza ou syndrome virémique typique",
+      "source_icd10": "j11.1",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 26812,
+      "raw_validation_count": 3590,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Larygospasm",
+      "proposed_canonical_label": "Larygospasm",
+      "source_french_name": "Laryngospasme",
+      "source_icd10": "J38.5",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 10998,
+      "raw_validation_count": 668,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Pneumonia",
+      "proposed_canonical_label": "Pneumonia",
+      "source_french_name": "Pneumonie",
+      "source_icd10": "j17, j18",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 25761,
+      "raw_validation_count": 3484,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Pulmonary neoplasm",
+      "proposed_canonical_label": "Pulmonary neoplasm",
+      "source_french_name": "néoplasie pulmonaire",
+      "source_icd10": "c34",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 14457,
+      "raw_validation_count": 1891,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Spontaneous pneumothorax",
+      "proposed_canonical_label": "Spontaneous pneumothorax",
+      "source_french_name": "Pneumothorax spontané",
+      "source_icd10": "J93",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 10162,
+      "raw_validation_count": 1405,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Tuberculosis",
+      "proposed_canonical_label": "Tuberculosis",
+      "source_french_name": "Tuberculose",
+      "source_icd10": "a15",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 16245,
+      "raw_validation_count": 2007,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "URTI",
+      "proposed_canonical_label": "URTI",
+      "source_french_name": "IVRS ou virémie",
+      "source_icd10": "j06.9",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 64368,
+      "raw_validation_count": 8656,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Viral pharyngitis",
+      "proposed_canonical_label": "Viral pharyngitis",
+      "source_french_name": "Pharyngite virale",
+      "source_icd10": "J02.9",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 61642,
+      "raw_validation_count": 8246,
+      "v2_fitted_count_from_manifest": 2000
+    },
+    {
+      "source_label": "Whooping cough",
+      "proposed_canonical_label": "Whooping cough",
+      "source_french_name": "Coqueluche",
+      "source_icd10": "A37",
+      "training_source_group": "ddxplus_simulated",
+      "raw_train_count": 6070,
+      "raw_validation_count": 545,
+      "v2_fitted_count_from_manifest": 2000
+    }
+  ],
+  "raw_split_totals": {
+    "train": 1025602,
+    "validation": 132448
+  },
+  "original_21_split_totals": {
+    "train": 443075,
+    "validation": 55808
+  },
+  "raw_labels_outside_current_v2": [
+    {
+      "source_label": "Acute dystonic reactions",
+      "raw_train_count": 25982,
+      "raw_validation_count": 3281
+    },
+    {
+      "source_label": "Acute otitis media",
+      "raw_train_count": 25917,
+      "raw_validation_count": 3474
+    },
+    {
+      "source_label": "Anaphylaxis",
+      "raw_train_count": 27718,
+      "raw_validation_count": 3754
+    },
+    {
+      "source_label": "Anemia",
+      "raw_train_count": 50665,
+      "raw_validation_count": 6903
+    },
+    {
+      "source_label": "Atrial fibrillation",
+      "raw_train_count": 21036,
+      "raw_validation_count": 2609
+    },
+    {
+      "source_label": "Boerhaave",
+      "raw_train_count": 15080,
+      "raw_validation_count": 2075
+    },
+    {
+      "source_label": "Chagas",
+      "raw_train_count": 9252,
+      "raw_validation_count": 1124
+    },
+    {
+      "source_label": "Cluster headache",
+      "raw_train_count": 20804,
+      "raw_validation_count": 2841
+    },
+    {
+      "source_label": "Ebola",
+      "raw_train_count": 718,
+      "raw_validation_count": 90
+    },
+    {
+      "source_label": "GERD",
+      "raw_train_count": 25979,
+      "raw_validation_count": 3426
+    },
+    {
+      "source_label": "Guillain-Barré syndrome",
+      "raw_train_count": 22867,
+      "raw_validation_count": 2557
+    },
+    {
+      "source_label": "HIV (initial infection)",
+      "raw_train_count": 29013,
+      "raw_validation_count": 3852
+    },
+    {
+      "source_label": "Inguinal hernia",
+      "raw_train_count": 20235,
+      "raw_validation_count": 2632
+    },
+    {
+      "source_label": "Localized edema",
+      "raw_train_count": 27825,
+      "raw_validation_count": 3694
+    },
+    {
+      "source_label": "Myasthenia gravis",
+      "raw_train_count": 18566,
+      "raw_validation_count": 2159
+    },
+    {
+      "source_label": "Myocarditis",
+      "raw_train_count": 11073,
+      "raw_validation_count": 1547
+    },
+    {
+      "source_label": "PSVT",
+      "raw_train_count": 18781,
+      "raw_validation_count": 2376
+    },
+    {
+      "source_label": "Pancreatic neoplasm",
+      "raw_train_count": 18846,
+      "raw_validation_count": 2582
+    },
+    {
+      "source_label": "Panic attack",
+      "raw_train_count": 25019,
+      "raw_validation_count": 3237
+    },
+    {
+      "source_label": "Pericarditis",
+      "raw_train_count": 22785,
+      "raw_validation_count": 3032
+    },
+    {
+      "source_label": "Possible NSTEMI / STEMI",
+      "raw_train_count": 21260,
+      "raw_validation_count": 2943
+    },
+    {
+      "source_label": "Pulmonary embolism",
+      "raw_train_count": 27468,
+      "raw_validation_count": 3725
+    },
+    {
+      "source_label": "SLE",
+      "raw_train_count": 11867,
+      "raw_validation_count": 1579
+    },
+    {
+      "source_label": "Sarcoidosis",
+      "raw_train_count": 21285,
+      "raw_validation_count": 3028
+    },
+    {
+      "source_label": "Scombroid food poisoning",
+      "raw_train_count": 18535,
+      "raw_validation_count": 2250
+    },
+    {
+      "source_label": "Spontaneous rib fracture",
+      "raw_train_count": 5712,
+      "raw_validation_count": 782
+    },
+    {
+      "source_label": "Stable angina",
+      "raw_train_count": 16995,
+      "raw_validation_count": 2340
+    },
+    {
+      "source_label": "Unstable angina",
+      "raw_train_count": 21244,
+      "raw_validation_count": 2748
+    }
+  ],
+  "allergy_label_review": {
+    "source_label": "Allergic sinusitis",
+    "source_french_name": "Rhinite allergique",
+    "source_icd10": "J30",
+    "source_symptom_codes": [
+      "E_169",
+      "E_170",
+      "E_181",
+      "E_201"
+    ],
+    "added_rhinitis_symptom_codes": [
+      "E_169",
+      "E_170",
+      "E_181",
+      "E_201"
+    ],
+    "symptom_code_sets_identical": true,
+    "interpretation": "Suspected label inconsistency based on French name, ICD category and matching symptom definitions. Matching symptom codes alone do not prove equivalence."
+  },
+  "proposed_source_label_mapping": {
+    "Acute COPD exacerbation / infection": "Acute COPD exacerbation / infection",
+    "Acute laryngitis": "Acute laryngitis",
+    "Acute pulmonary edema": "Acute pulmonary edema",
+    "Acute rhinosinusitis": "Acute rhinosinusitis",
+    "Allergic sinusitis": "Allergic rhinitis",
+    "Bronchiectasis": "Bronchiectasis",
+    "Bronchiolitis": "Bronchiolitis",
+    "Bronchitis": "Bronchitis",
+    "Bronchospasm / acute asthma exacerbation": "Bronchospasm / acute asthma exacerbation",
+    "Chronic rhinosinusitis": "Chronic rhinosinusitis",
+    "Croup": "Croup",
+    "Epiglottitis": "Epiglottitis",
+    "Influenza": "Influenza",
+    "Larygospasm": "Larygospasm",
+    "Pneumonia": "Pneumonia",
+    "Pulmonary neoplasm": "Pulmonary neoplasm",
+    "Spontaneous pneumothorax": "Spontaneous pneumothorax",
+    "Tuberculosis": "Tuberculosis",
+    "URTI": "URTI",
+    "Viral pharyngitis": "Viral pharyngitis",
+    "Whooping cough": "Whooping cough"
+  },
+  "proposed_ddxplus_canonical_labels": [
+    "Acute COPD exacerbation / infection",
+    "Acute laryngitis",
+    "Acute pulmonary edema",
+    "Acute rhinosinusitis",
+    "Allergic rhinitis",
+    "Bronchiectasis",
+    "Bronchiolitis",
+    "Bronchitis",
+    "Bronchospasm / acute asthma exacerbation",
+    "Chronic rhinosinusitis",
+    "Croup",
+    "Epiglottitis",
+    "Influenza",
+    "Larygospasm",
+    "Pneumonia",
+    "Pulmonary neoplasm",
+    "Spontaneous pneumothorax",
+    "Tuberculosis",
+    "URTI",
+    "Viral pharyngitis",
+    "Whooping cough"
+  ],
+  "conditional_scope_with_covid": [
+    "Acute COPD exacerbation / infection",
+    "Acute laryngitis",
+    "Acute pulmonary edema",
+    "Acute rhinosinusitis",
+    "Allergic rhinitis",
+    "Bronchiectasis",
+    "Bronchiolitis",
+    "Bronchitis",
+    "Bronchospasm / acute asthma exacerbation",
+    "COVID-19",
+    "Chronic rhinosinusitis",
+    "Croup",
+    "Epiglottitis",
+    "Influenza",
+    "Larygospasm",
+    "Pneumonia",
+    "Pulmonary neoplasm",
+    "Spontaneous pneumothorax",
+    "Tuberculosis",
+    "URTI",
+    "Viral pharyngitis",
+    "Whooping cough"
+  ],
+  "limitations": [
+    "Mapping is proposed and has not been applied to any dataset.",
+    "COVID-19 inclusion requires a separate data decision.",
+    "Original DDXPlus records are simulated patients.",
+    "Manifest counts are recorded counts, not retraining results.",
+    "Raw counts precede symptom filtering and scenario generation.",
+    "No model performance or clinical validity is established.",
+    "Final test split was not inspected."
+  ]
+}

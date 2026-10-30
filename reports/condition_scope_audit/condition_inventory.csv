@@ -1,0 +1,24 @@
+source_label,proposed_canonical_label,source_french_name,source_icd10,training_source_group,raw_train_count,raw_validation_count,v2_fitted_count_from_manifest
+Acute COPD exacerbation / infection,Acute COPD exacerbation / infection,Exacerbation aigue de MPOC et/ou surinfection associée,j44.1,ddxplus_simulated,17661,2076,2000
+Acute laryngitis,Acute laryngitis,Laryngite aigue,J04.0,ddxplus_simulated,24129,3407,2000
+Acute pulmonary edema,Acute pulmonary edema,OAP/Surcharge pulmonaire,J81.0,ddxplus_simulated,19018,2500,2000
+Acute rhinosinusitis,Acute rhinosinusitis,Rhinosinusite aigue,j01,ddxplus_simulated,13578,1866,2000
+Allergic rhinitis,Allergic rhinitis,,,additional_rule_generated,0,0,400
+Allergic sinusitis,Allergic rhinitis,Rhinite allergique,J30,ddxplus_simulated,26203,2136,2000
+Bronchiectasis,Bronchiectasis,Bronchiectasies,J47,ddxplus_simulated,18795,2319,2000
+Bronchiolitis,Bronchiolitis,Bronchiolite,j21,ddxplus_simulated,261,28,261
+Bronchitis,Bronchitis,Bronchite,j40,ddxplus_simulated,26400,3543,2000
+Bronchospasm / acute asthma exacerbation,Bronchospasm / acute asthma exacerbation,Asthme exacerbé ou bronchospasme,J45,ddxplus_simulated,19875,2209,2000
+COVID-19,COVID-19,,,additional_rule_generated,0,0,400
+Chronic rhinosinusitis,Chronic rhinosinusitis,Rhinosinusite chronique,j32,ddxplus_simulated,20579,2717,2000
+Croup,Croup,Laryngo-trachéo-bronchite (Croup),J05.0,ddxplus_simulated,2852,267,2000
+Epiglottitis,Epiglottitis,Épiglottite,J05.1,ddxplus_simulated,17209,2248,2000
+Influenza,Influenza,Possible influenza ou syndrome virémique typique,j11.1,ddxplus_simulated,26812,3590,2000
+Larygospasm,Larygospasm,Laryngospasme,J38.5,ddxplus_simulated,10998,668,2000
+Pneumonia,Pneumonia,Pneumonie,"j17, j18",ddxplus_simulated,25761,3484,2000
+Pulmonary neoplasm,Pulmonary neoplasm,néoplasie pulmonaire,c34,ddxplus_simulated,14457,1891,2000
+Spontaneous pneumothorax,Spontaneous pneumothorax,Pneumothorax spontané,J93,ddxplus_simulated,10162,1405,2000
+Tuberculosis,Tuberculosis,Tuberculose,a15,ddxplus_simulated,16245,2007,2000
+URTI,URTI,IVRS ou virémie,j06.9,ddxplus_simulated,64368,8656,2000
+Viral pharyngitis,Viral pharyngitis,Pharyngite virale,J02.9,ddxplus_simulated,61642,8246,2000
+Whooping cough,Whooping cough,Coqueluche,A37,ddxplus_simulated,6070,545,2000
