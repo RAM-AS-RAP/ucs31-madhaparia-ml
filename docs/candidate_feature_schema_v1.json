@@ -1,0 +1,286 @@
+{
+  "schema_id": "respiratory_candidate_v1",
+  "status": "proposed_not_trained",
+  "related_issue": 45,
+  "compatible_with_existing_v2_model": false,
+  "source_sha256": {
+    "models/v2_feature_schema.json": "cf021c7cb03620a1758e51fc9824f9798608358b86871040e13b5e68204914bc",
+    "data/raw/release_evidences.json": "281c78b044ae60514e28ecc9052d08a8225dd3e2db3f00f8788b99c47b05e0c0"
+  },
+  "base_symptom_features": [
+    "E_103",
+    "E_112",
+    "E_14",
+    "E_144",
+    "E_161",
+    "E_162",
+    "E_166",
+    "E_169",
+    "E_170",
+    "E_181",
+    "E_182",
+    "E_190",
+    "E_194",
+    "E_201",
+    "E_203",
+    "E_212",
+    "E_214",
+    "E_217",
+    "E_218",
+    "E_220",
+    "E_45",
+    "E_50",
+    "E_53",
+    "E_65",
+    "E_66",
+    "E_67",
+    "E_77",
+    "E_88",
+    "E_89",
+    "E_91",
+    "E_94",
+    "E_97"
+  ],
+  "symptom_features": [
+    "E_103",
+    "E_112",
+    "E_14",
+    "E_144",
+    "E_161",
+    "E_162",
+    "E_166",
+    "E_169",
+    "E_170",
+    "E_181",
+    "E_182",
+    "E_190",
+    "E_194",
+    "E_201",
+    "E_203",
+    "E_212",
+    "E_214",
+    "E_217",
+    "E_218",
+    "E_220",
+    "E_45",
+    "E_50",
+    "E_53",
+    "E_65",
+    "E_66",
+    "E_67",
+    "E_77",
+    "E_88",
+    "E_89",
+    "E_91",
+    "E_94",
+    "E_97",
+    "head_region_pain",
+    "chest_region_pain"
+  ],
+  "feature_names": [
+    "AGE",
+    "SEX_M",
+    "E_103__present",
+    "E_112__present",
+    "E_14__present",
+    "E_144__present",
+    "E_161__present",
+    "E_162__present",
+    "E_166__present",
+    "E_169__present",
+    "E_170__present",
+    "E_181__present",
+    "E_182__present",
+    "E_190__present",
+    "E_194__present",
+    "E_201__present",
+    "E_203__present",
+    "E_212__present",
+    "E_214__present",
+    "E_217__present",
+    "E_218__present",
+    "E_220__present",
+    "E_45__present",
+    "E_50__present",
+    "E_53__present",
+    "E_65__present",
+    "E_66__present",
+    "E_67__present",
+    "E_77__present",
+    "E_88__present",
+    "E_89__present",
+    "E_91__present",
+    "E_94__present",
+    "E_97__present",
+    "head_region_pain__present",
+    "chest_region_pain__present",
+    "E_103__absent",
+    "E_112__absent",
+    "E_14__absent",
+    "E_144__absent",
+    "E_161__absent",
+    "E_162__absent",
+    "E_166__absent",
+    "E_169__absent",
+    "E_170__absent",
+    "E_181__absent",
+    "E_182__absent",
+    "E_190__absent",
+    "E_194__absent",
+    "E_201__absent",
+    "E_203__absent",
+    "E_212__absent",
+    "E_214__absent",
+    "E_217__absent",
+    "E_218__absent",
+    "E_220__absent",
+    "E_45__absent",
+    "E_50__absent",
+    "E_53__absent",
+    "E_65__absent",
+    "E_66__absent",
+    "E_67__absent",
+    "E_77__absent",
+    "E_88__absent",
+    "E_89__absent",
+    "E_91__absent",
+    "E_94__absent",
+    "E_97__absent",
+    "head_region_pain__absent",
+    "chest_region_pain__absent"
+  ],
+  "feature_count": 70,
+  "symptom_concept_count": 34,
+  "demographics": {
+    "AGE": {
+      "meaning": "Reported age in years",
+      "minimum": 0,
+      "maximum": 120,
+      "missing_policy": "Do not invent a default age."
+    },
+    "SEX_M": {
+      "encoding": {
+        "M": 1,
+        "F": 0
+      },
+      "missing_policy": "Do not invent a default sex.",
+      "scope": "Retains the current dataset encoding."
+    }
+  },
+  "symptom_state_encoding": {
+    "present": {
+      "present": 1,
+      "absent": 0
+    },
+    "absent": {
+      "present": 0,
+      "absent": 1
+    },
+    "unknown": {
+      "present": 0,
+      "absent": 0
+    },
+    "invalid": {
+      "present": 1,
+      "absent": 1
+    }
+  },
+  "negative_evidence_training_supported": false,
+  "negative_evidence_note": "Explicit absence is representable, but usable negative training evidence has not been established. Do not interpret unreported symptoms as confirmed absent.",
+  "derived_features": {
+    "head_region_pain": {
+      "kind": "proposed_region_aggregation",
+      "source_evidence": "E_55",
+      "parent_present_feature": "E_53",
+      "positive_source_features": [
+        "E_55_@_V_25",
+        "E_55_@_V_62",
+        "E_55_@_V_89",
+        "E_55_@_V_124",
+        "E_55_@_V_166",
+        "E_55_@_V_167"
+      ],
+      "source_value_meanings": {
+        "V_25": "back of head",
+        "V_62": "top of the head",
+        "V_89": "forehead",
+        "V_124": "occiput",
+        "V_166": "temple(R)",
+        "V_167": "temple(L)"
+      },
+      "training_derivation": "Present when at least one listed location is present in the original source record. Derive before masking reported symptom information.",
+      "missing_location_policy": "No listed positive location does not by itself establish explicit absence of regional pain.",
+      "inference_requirement": "Require confirmation of this region. Do not invent an exact source location from a broad region report."
+    },
+    "chest_region_pain": {
+      "kind": "proposed_region_aggregation",
+      "source_evidence": "E_55",
+      "parent_present_feature": "E_53",
+      "positive_source_features": [
+        "E_55_@_V_29",
+        "E_55_@_V_55",
+        "E_55_@_V_56",
+        "E_55_@_V_101",
+        "E_55_@_V_170",
+        "E_55_@_V_171"
+      ],
+      "source_value_meanings": {
+        "V_29": "lower chest",
+        "V_55": "side of the chest(R)",
+        "V_56": "side of the chest(L)",
+        "V_101": "upper chest",
+        "V_170": "posterior chest wall(R)",
+        "V_171": "posterior chest wall(L)"
+      },
+      "training_derivation": "Present when at least one listed location is present in the original source record. Derive before masking reported symptom information.",
+      "missing_location_policy": "No listed positive location does not by itself establish explicit absence of regional pain.",
+      "inference_requirement": "Require confirmation of this region. Do not invent an exact source location from a broad region report."
+    }
+  },
+  "canonical_mapping_overrides": {
+    "headache": {
+      "requires_confirmation_of": "head_region_pain",
+      "present_features": [
+        "E_53",
+        "head_region_pain"
+      ],
+      "exact_location_required": false
+    },
+    "chest_pain": {
+      "requires_confirmation_of": "chest_region_pain",
+      "present_features": [
+        "E_53",
+        "chest_region_pain"
+      ],
+      "exact_location_required": false
+    }
+  },
+  "other_mapping_policy": "Confirm the source-defined concept and its qualifiers before encoding. Existing aliases are not automatically approved by their feature's inclusion in this schema.",
+  "consistency_requirements": [
+    "Present head-region pain requires present E_53.",
+    "Present chest-region pain requires present E_53.",
+    "Both pain regions may be present together.",
+    "A symptom cannot be both present and absent.",
+    "Contradictory reports require clarification.",
+    "Denying one pain region does not deny all pain.",
+    "Training masking must preserve parent-region consistency."
+  ],
+  "safety_only_codes": [
+    "blue_lips",
+    "confusion",
+    "fainting"
+  ],
+  "nlp_only_codes": [
+    "sneezing"
+  ],
+  "duration_policy": "Retain reported duration as contextual information. Duration is not included in this numerical schema.",
+  "limitations": [
+    "This specification is not a trained or validated model.",
+    "Region groupings require source-data coverage evaluation.",
+    "The schema does not fix dataset associations by itself.",
+    "The 32 original concepts remain subject to semantic review.",
+    "Disease scope is decided separately in issue #46.",
+    "Training implementation belongs to issues #47 and #48.",
+    "Safety handling remains independent of model features."
+  ]
+}
