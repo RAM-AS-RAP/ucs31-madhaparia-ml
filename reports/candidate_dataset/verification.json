@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "manifest_sha256": "7eee968072661c365899f74486820c5fc4e429f00ddf431d6c7630601a622acd",
+  "verification_script_sha256": "f4c882e7a128e24fc173d27a510c425238c2861494d6640562b56b3ce5612291",
+  "python_libraries": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6"
+  },
+  "verified": {
+    "train": {
+      "scenario_rows": 827555,
+      "source_groups": 418223,
+      "partial_variants": 409332,
+      "full_candidate_input_collisions": {
+        "records": 418223,
+        "unique_input_groups": 96075,
+        "repeated_input_groups": 50748,
+        "extra_rows_beyond_one_per_input_group": 322148,
+        "groups_with_multiple_condition_labels": 4383,
+        "rows_in_multiple_label_groups": 75719
+      }
+    },
+    "validation": {
+      "scenario_rows": 55680,
+      "source_groups": 55680,
+      "partial_variants": 0,
+      "full_candidate_input_collisions": {
+        "records": 55680,
+        "unique_input_groups": 31176,
+        "repeated_input_groups": 10704,
+        "extra_rows_beyond_one_per_input_group": 24504,
+        "groups_with_multiple_condition_labels": 1300,
+        "rows_in_multiple_label_groups": 5853
+      }
+    }
+  },
+  "full_candidate_input_overlap_after_filtering": {
+    "shared_input_groups": 25420,
+    "training_rows_in_shared_groups": 265189,
+    "validation_rows_matching_training_inputs": 49654,
+    "shared_groups_with_multiple_condition_labels": 3415
+  },
+  "notes": [
+    "Full candidate-input collisions are retained and reported.",
+    "Input-vector matches do not establish shared patient identity.",
+    "Source group IDs are unique across the retained splits.",
+    "Each training group contributes total sample weight 1.",
+    "Verification does not establish predictive performance."
+  ]
+}

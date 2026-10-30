@@ -1,0 +1,218 @@
+{
+  "issue": 47,
+  "source_sha256": {
+    "data/processed/diseases.json": "f496c297cc30ab0f270bcc96b5076f46f22909ca91e3e7bce401ebc8700c47ec",
+    "docs/candidate_feature_schema_v1.json": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "scripts/candidate_feature_builder.py": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "scripts/audit_candidate_source_records.py": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "scripts/audit_candidate_overlap.py": "ee60c9b87df4516fd049679898d04fcd88e988b25ac5f70d62f7a19617ac4b4b",
+    "data/raw/release_train_patients": "93933e9a9a7a00d618a931deda7767485af299fe4635bf189a7c63b510e8b172",
+    "data/raw/release_validate_patients": "b84733533bff01daa1d47d27a0cd4d684bb54a0fc20d80aaee1250ff8ff989ed"
+  },
+  "splits": {
+    "train": {
+      "exclusions": {
+        "outside_scope": 582527,
+        "no_supported_positive_concepts": 8
+      },
+      "eligible_rows_by_source_condition": {
+        "Acute COPD exacerbation / infection": 17661,
+        "Acute laryngitis": 24129,
+        "Acute pulmonary edema": 19018,
+        "Acute rhinosinusitis": 13578,
+        "Allergic sinusitis": 26203,
+        "Bronchiectasis": 18795,
+        "Bronchiolitis": 261,
+        "Bronchitis": 26400,
+        "Bronchospasm / acute asthma exacerbation": 19875,
+        "Chronic rhinosinusitis": 20579,
+        "Croup": 2844,
+        "Epiglottitis": 17209,
+        "Influenza": 26812,
+        "Larygospasm": 10998,
+        "Pneumonia": 25761,
+        "Pulmonary neoplasm": 14457,
+        "Spontaneous pneumothorax": 10162,
+        "Tuberculosis": 16245,
+        "URTI": 64368,
+        "Viral pharyngitis": 61642,
+        "Whooping cough": 6070
+      },
+      "normalized_source_inputs": {
+        "records": 443067,
+        "unique_input_groups": 421059,
+        "repeated_input_groups": 16662,
+        "extra_rows_beyond_one_per_input_group": 22008,
+        "groups_with_multiple_condition_labels": 0,
+        "rows_in_multiple_label_groups": 0
+      },
+      "candidate_inputs_before_masking": {
+        "records": 443067,
+        "unique_input_groups": 96084,
+        "repeated_input_groups": 50824,
+        "extra_rows_beyond_one_per_input_group": 346983,
+        "groups_with_multiple_condition_labels": 4384,
+        "rows_in_multiple_label_groups": 79159
+      }
+    },
+    "validation": {
+      "exclusions": {
+        "outside_scope": 76640
+      },
+      "eligible_rows_by_source_condition": {
+        "Acute COPD exacerbation / infection": 2076,
+        "Acute laryngitis": 3407,
+        "Acute pulmonary edema": 2500,
+        "Acute rhinosinusitis": 1866,
+        "Allergic sinusitis": 2136,
+        "Bronchiectasis": 2319,
+        "Bronchiolitis": 28,
+        "Bronchitis": 3543,
+        "Bronchospasm / acute asthma exacerbation": 2209,
+        "Chronic rhinosinusitis": 2717,
+        "Croup": 267,
+        "Epiglottitis": 2248,
+        "Influenza": 3590,
+        "Larygospasm": 668,
+        "Pneumonia": 3484,
+        "Pulmonary neoplasm": 1891,
+        "Spontaneous pneumothorax": 1405,
+        "Tuberculosis": 2007,
+        "URTI": 8656,
+        "Viral pharyngitis": 8246,
+        "Whooping cough": 545
+      },
+      "normalized_source_inputs": {
+        "records": 55808,
+        "unique_input_groups": 55680,
+        "repeated_input_groups": 128,
+        "extra_rows_beyond_one_per_input_group": 128,
+        "groups_with_multiple_condition_labels": 0,
+        "rows_in_multiple_label_groups": 0
+      },
+      "candidate_inputs_before_masking": {
+        "records": 55808,
+        "unique_input_groups": 31176,
+        "repeated_input_groups": 10720,
+        "extra_rows_beyond_one_per_input_group": 24632,
+        "groups_with_multiple_condition_labels": 1300,
+        "rows_in_multiple_label_groups": 5873
+      },
+      "overlap_by_source_condition": {
+        "Acute COPD exacerbation / infection": {
+          "normalized_source_input_matches": 382,
+          "candidate_input_matches": 2068
+        },
+        "Acute laryngitis": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 3394
+        },
+        "Acute pulmonary edema": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 2383
+        },
+        "Acute rhinosinusitis": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 1768
+        },
+        "Allergic sinusitis": {
+          "normalized_source_input_matches": 924,
+          "candidate_input_matches": 2121
+        },
+        "Bronchiectasis": {
+          "normalized_source_input_matches": 179,
+          "candidate_input_matches": 2294
+        },
+        "Bronchiolitis": {
+          "normalized_source_input_matches": 2,
+          "candidate_input_matches": 28
+        },
+        "Bronchitis": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 2799
+        },
+        "Bronchospasm / acute asthma exacerbation": {
+          "normalized_source_input_matches": 395,
+          "candidate_input_matches": 2206
+        },
+        "Chronic rhinosinusitis": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 2676
+        },
+        "Croup": {
+          "normalized_source_input_matches": 80,
+          "candidate_input_matches": 263
+        },
+        "Epiglottitis": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 2054
+        },
+        "Influenza": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 2060
+        },
+        "Larygospasm": {
+          "normalized_source_input_matches": 466,
+          "candidate_input_matches": 668
+        },
+        "Pneumonia": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 1305
+        },
+        "Pulmonary neoplasm": {
+          "normalized_source_input_matches": 30,
+          "candidate_input_matches": 1622
+        },
+        "Spontaneous pneumothorax": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 1326
+        },
+        "Tuberculosis": {
+          "normalized_source_input_matches": 181,
+          "candidate_input_matches": 1974
+        },
+        "URTI": {
+          "normalized_source_input_matches": 0,
+          "candidate_input_matches": 8031
+        },
+        "Viral pharyngitis": {
+          "normalized_source_input_matches": 1,
+          "candidate_input_matches": 8214
+        },
+        "Whooping cough": {
+          "normalized_source_input_matches": 246,
+          "candidate_input_matches": 535
+        }
+      }
+    }
+  },
+  "train_validation_overlap": {
+    "normalized_source_inputs": {
+      "shared_input_groups": 2836,
+      "training_rows_in_shared_groups": 3780,
+      "validation_rows_matching_training_inputs": 2886,
+      "shared_groups_with_multiple_condition_labels": 0
+    },
+    "candidate_inputs_before_masking": {
+      "shared_input_groups": 25429,
+      "training_rows_in_shared_groups": 287365,
+      "validation_rows_matching_training_inputs": 49789,
+      "shared_groups_with_multiple_condition_labels": 3415
+    }
+  },
+  "signature_definition": {
+    "normalized_source_inputs": "Numeric age, recorded sex, sorted unique original evidence codes; excludes diagnosis and differential.",
+    "candidate_inputs_before_masking": "Numeric age, recorded sex, sorted positive candidate concepts. Other concepts are unknown; none are absent."
+  },
+  "limitations": [
+    "Signatures are input groups, not verified patient identifiers.",
+    "Different patients may have identical inputs.",
+    "Candidate collisions do not prove source-record duplication.",
+    "Multiple labels may reflect ambiguity, not annotation errors.",
+    "Related records with different inputs are not detected.",
+    "Counts retain original source labels.",
+    "Rows with no supported positive concepts are excluded.",
+    "No partial-symptom examples have been generated.",
+    "The final test split was not inspected."
+  ]
+}

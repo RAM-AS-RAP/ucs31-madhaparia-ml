@@ -43,3 +43,6 @@ Thumbs.db
 # Temporary files
 *.log
 *.tmp
+
+# Generated candidate dataset; retain the reproducible build report separately.
+/data/candidate_v1/

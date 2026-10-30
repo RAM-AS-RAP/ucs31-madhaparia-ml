@@ -1,0 +1,546 @@
+{
+  "status": "candidate_dataset_built_not_trained",
+  "seed": 42,
+  "python_version": "3.11.9",
+  "schema": {
+    "schema_id": "respiratory_candidate_v1",
+    "status": "proposed_not_trained",
+    "related_issue": 45,
+    "compatible_with_existing_v2_model": false,
+    "source_sha256": {
+      "models/v2_feature_schema.json": "cf021c7cb03620a1758e51fc9824f9798608358b86871040e13b5e68204914bc",
+      "data/raw/release_evidences.json": "281c78b044ae60514e28ecc9052d08a8225dd3e2db3f00f8788b99c47b05e0c0"
+    },
+    "base_symptom_features": [
+      "E_103",
+      "E_112",
+      "E_14",
+      "E_144",
+      "E_161",
+      "E_162",
+      "E_166",
+      "E_169",
+      "E_170",
+      "E_181",
+      "E_182",
+      "E_190",
+      "E_194",
+      "E_201",
+      "E_203",
+      "E_212",
+      "E_214",
+      "E_217",
+      "E_218",
+      "E_220",
+      "E_45",
+      "E_50",
+      "E_53",
+      "E_65",
+      "E_66",
+      "E_67",
+      "E_77",
+      "E_88",
+      "E_89",
+      "E_91",
+      "E_94",
+      "E_97"
+    ],
+    "symptom_features": [
+      "E_103",
+      "E_112",
+      "E_14",
+      "E_144",
+      "E_161",
+      "E_162",
+      "E_166",
+      "E_169",
+      "E_170",
+      "E_181",
+      "E_182",
+      "E_190",
+      "E_194",
+      "E_201",
+      "E_203",
+      "E_212",
+      "E_214",
+      "E_217",
+      "E_218",
+      "E_220",
+      "E_45",
+      "E_50",
+      "E_53",
+      "E_65",
+      "E_66",
+      "E_67",
+      "E_77",
+      "E_88",
+      "E_89",
+      "E_91",
+      "E_94",
+      "E_97",
+      "head_region_pain",
+      "chest_region_pain"
+    ],
+    "feature_names": [
+      "AGE",
+      "SEX_M",
+      "E_103__present",
+      "E_112__present",
+      "E_14__present",
+      "E_144__present",
+      "E_161__present",
+      "E_162__present",
+      "E_166__present",
+      "E_169__present",
+      "E_170__present",
+      "E_181__present",
+      "E_182__present",
+      "E_190__present",
+      "E_194__present",
+      "E_201__present",
+      "E_203__present",
+      "E_212__present",
+      "E_214__present",
+      "E_217__present",
+      "E_218__present",
+      "E_220__present",
+      "E_45__present",
+      "E_50__present",
+      "E_53__present",
+      "E_65__present",
+      "E_66__present",
+      "E_67__present",
+      "E_77__present",
+      "E_88__present",
+      "E_89__present",
+      "E_91__present",
+      "E_94__present",
+      "E_97__present",
+      "head_region_pain__present",
+      "chest_region_pain__present",
+      "E_103__absent",
+      "E_112__absent",
+      "E_14__absent",
+      "E_144__absent",
+      "E_161__absent",
+      "E_162__absent",
+      "E_166__absent",
+      "E_169__absent",
+      "E_170__absent",
+      "E_181__absent",
+      "E_182__absent",
+      "E_190__absent",
+      "E_194__absent",
+      "E_201__absent",
+      "E_203__absent",
+      "E_212__absent",
+      "E_214__absent",
+      "E_217__absent",
+      "E_218__absent",
+      "E_220__absent",
+      "E_45__absent",
+      "E_50__absent",
+      "E_53__absent",
+      "E_65__absent",
+      "E_66__absent",
+      "E_67__absent",
+      "E_77__absent",
+      "E_88__absent",
+      "E_89__absent",
+      "E_91__absent",
+      "E_94__absent",
+      "E_97__absent",
+      "head_region_pain__absent",
+      "chest_region_pain__absent"
+    ],
+    "feature_count": 70,
+    "symptom_concept_count": 34,
+    "demographics": {
+      "AGE": {
+        "meaning": "Reported age in years",
+        "minimum": 0,
+        "maximum": 120,
+        "missing_policy": "Do not invent a default age."
+      },
+      "SEX_M": {
+        "encoding": {
+          "M": 1,
+          "F": 0
+        },
+        "missing_policy": "Do not invent a default sex.",
+        "scope": "Retains the current dataset encoding."
+      }
+    },
+    "symptom_state_encoding": {
+      "present": {
+        "present": 1,
+        "absent": 0
+      },
+      "absent": {
+        "present": 0,
+        "absent": 1
+      },
+      "unknown": {
+        "present": 0,
+        "absent": 0
+      },
+      "invalid": {
+        "present": 1,
+        "absent": 1
+      }
+    },
+    "negative_evidence_training_supported": false,
+    "negative_evidence_note": "Explicit absence is representable, but usable negative training evidence has not been established. Do not interpret unreported symptoms as confirmed absent.",
+    "derived_features": {
+      "head_region_pain": {
+        "kind": "proposed_region_aggregation",
+        "source_evidence": "E_55",
+        "parent_present_feature": "E_53",
+        "positive_source_features": [
+          "E_55_@_V_25",
+          "E_55_@_V_62",
+          "E_55_@_V_89",
+          "E_55_@_V_124",
+          "E_55_@_V_166",
+          "E_55_@_V_167"
+        ],
+        "source_value_meanings": {
+          "V_25": "back of head",
+          "V_62": "top of the head",
+          "V_89": "forehead",
+          "V_124": "occiput",
+          "V_166": "temple(R)",
+          "V_167": "temple(L)"
+        },
+        "training_derivation": "Present when at least one listed location is present in the original source record. Derive before masking reported symptom information.",
+        "missing_location_policy": "No listed positive location does not by itself establish explicit absence of regional pain.",
+        "inference_requirement": "Require confirmation of this region. Do not invent an exact source location from a broad region report."
+      },
+      "chest_region_pain": {
+        "kind": "proposed_region_aggregation",
+        "source_evidence": "E_55",
+        "parent_present_feature": "E_53",
+        "positive_source_features": [
+          "E_55_@_V_29",
+          "E_55_@_V_55",
+          "E_55_@_V_56",
+          "E_55_@_V_101",
+          "E_55_@_V_170",
+          "E_55_@_V_171"
+        ],
+        "source_value_meanings": {
+          "V_29": "lower chest",
+          "V_55": "side of the chest(R)",
+          "V_56": "side of the chest(L)",
+          "V_101": "upper chest",
+          "V_170": "posterior chest wall(R)",
+          "V_171": "posterior chest wall(L)"
+        },
+        "training_derivation": "Present when at least one listed location is present in the original source record. Derive before masking reported symptom information.",
+        "missing_location_policy": "No listed positive location does not by itself establish explicit absence of regional pain.",
+        "inference_requirement": "Require confirmation of this region. Do not invent an exact source location from a broad region report."
+      }
+    },
+    "canonical_mapping_overrides": {
+      "headache": {
+        "requires_confirmation_of": "head_region_pain",
+        "present_features": [
+          "E_53",
+          "head_region_pain"
+        ],
+        "exact_location_required": false
+      },
+      "chest_pain": {
+        "requires_confirmation_of": "chest_region_pain",
+        "present_features": [
+          "E_53",
+          "chest_region_pain"
+        ],
+        "exact_location_required": false
+      }
+    },
+    "other_mapping_policy": "Confirm the source-defined concept and its qualifiers before encoding. Existing aliases are not automatically approved by their feature's inclusion in this schema.",
+    "consistency_requirements": [
+      "Present head-region pain requires present E_53.",
+      "Present chest-region pain requires present E_53.",
+      "Both pain regions may be present together.",
+      "A symptom cannot be both present and absent.",
+      "Contradictory reports require clarification.",
+      "Denying one pain region does not deny all pain.",
+      "Training masking must preserve parent-region consistency."
+    ],
+    "safety_only_codes": [
+      "blue_lips",
+      "confusion",
+      "fainting"
+    ],
+    "nlp_only_codes": [
+      "sneezing"
+    ],
+    "duration_policy": "Retain reported duration as contextual information. Duration is not included in this numerical schema.",
+    "limitations": [
+      "This specification is not a trained or validated model.",
+      "Region groupings require source-data coverage evaluation.",
+      "The schema does not fix dataset associations by itself.",
+      "The 32 original concepts remain subject to semantic review.",
+      "Disease scope is decided separately in issue #46.",
+      "Training implementation belongs to issues #47 and #48.",
+      "Safety handling remains independent of model features."
+    ]
+  },
+  "label_mapping": {
+    "Acute COPD exacerbation / infection": "Acute COPD exacerbation / infection",
+    "Acute laryngitis": "Acute laryngitis",
+    "Acute pulmonary edema": "Acute pulmonary edema",
+    "Acute rhinosinusitis": "Acute rhinosinusitis",
+    "Allergic sinusitis": "Allergic rhinitis",
+    "Bronchiectasis": "Bronchiectasis",
+    "Bronchiolitis": "Bronchiolitis",
+    "Bronchitis": "Bronchitis",
+    "Bronchospasm / acute asthma exacerbation": "Bronchospasm / acute asthma exacerbation",
+    "Chronic rhinosinusitis": "Chronic rhinosinusitis",
+    "Croup": "Croup",
+    "Epiglottitis": "Epiglottitis",
+    "Influenza": "Influenza",
+    "Larygospasm": "Larygospasm",
+    "Pneumonia": "Pneumonia",
+    "Pulmonary neoplasm": "Pulmonary neoplasm",
+    "Spontaneous pneumothorax": "Spontaneous pneumothorax",
+    "Tuberculosis": "Tuberculosis",
+    "URTI": "URTI",
+    "Viral pharyngitis": "Viral pharyngitis",
+    "Whooping cough": "Whooping cough"
+  },
+  "source_filenames": {
+    "train": "release_train_patients",
+    "validation": "release_validate_patients"
+  },
+  "input_sha256": {
+    "train_source": "93933e9a9a7a00d618a931deda7767485af299fe4635bf189a7c63b510e8b172",
+    "validation_source": "b84733533bff01daa1d47d27a0cd4d684bb54a0fc20d80aaee1250ff8ff989ed",
+    "candidate_feature_builder": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "source_audit_helpers": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "overlap_audit_helpers": "ee60c9b87df4516fd049679898d04fcd88e988b25ac5f70d62f7a19617ac4b4b",
+    "dataset_builder": "04109b4d832db56075ce694722dfa298344c018f3440cc2b7cc777e38be6f95c"
+  },
+  "source_scan_counts": {
+    "train": {
+      "in_scope_rows": 443075,
+      "eligible_rows": 443067,
+      "no_supported_positive_concepts": 8,
+      "unique_eligible_groups": 421059
+    },
+    "validation": {
+      "in_scope_rows": 55808,
+      "eligible_rows": 55808,
+      "unique_eligible_groups": 55680
+    }
+  },
+  "shared_source_groups_removed_from_training": 2836,
+  "retained_train_validation_source_overlap": 0,
+  "splits": {
+    "train": {
+      "totals": {
+        "scenario_rows": 827555,
+        "retained_source_groups": 418223,
+        "excluded_rows:source_group_reserved_for_validation": 3780,
+        "excluded_rows:repeated_source_input": 21064,
+        "excluded_rows:no_supported_positive_concepts": 8
+      },
+      "groups_by_canonical_label": {
+        "Acute COPD exacerbation / infection": 15093,
+        "Acute laryngitis": 24128,
+        "Acute pulmonary edema": 19018,
+        "Acute rhinosinusitis": 13578,
+        "Allergic rhinitis": 17065,
+        "Bronchiectasis": 17704,
+        "Bronchiolitis": 242,
+        "Bronchitis": 26400,
+        "Bronchospasm / acute asthma exacerbation": 16962,
+        "Chronic rhinosinusitis": 20579,
+        "Croup": 2254,
+        "Epiglottitis": 17209,
+        "Influenza": 26812,
+        "Larygospasm": 5371,
+        "Pneumonia": 25761,
+        "Pulmonary neoplasm": 14303,
+        "Spontaneous pneumothorax": 10162,
+        "Tuberculosis": 15317,
+        "URTI": 64368,
+        "Viral pharyngitis": 61635,
+        "Whooping cough": 4262
+      },
+      "scenarios_by_canonical_label": {
+        "Acute COPD exacerbation / infection": 30186,
+        "Acute laryngitis": 48221,
+        "Acute pulmonary edema": 38036,
+        "Acute rhinosinusitis": 27156,
+        "Allergic rhinitis": 33385,
+        "Bronchiectasis": 34672,
+        "Bronchiolitis": 484,
+        "Bronchitis": 52799,
+        "Bronchospasm / acute asthma exacerbation": 33924,
+        "Chronic rhinosinusitis": 41156,
+        "Croup": 4382,
+        "Epiglottitis": 34418,
+        "Influenza": 53624,
+        "Larygospasm": 5371,
+        "Pneumonia": 51522,
+        "Pulmonary neoplasm": 28603,
+        "Spontaneous pneumothorax": 20323,
+        "Tuberculosis": 30634,
+        "URTI": 128736,
+        "Viral pharyngitis": 122113,
+        "Whooping cough": 7810
+      },
+      "variants_by_type": {
+        "full": 418223,
+        "partial": 409332
+      },
+      "reporting_unit_count_histogram": {
+        "1": 169460,
+        "2": 161321,
+        "3": 167036,
+        "4": 126103,
+        "5": 91790,
+        "6": 50317,
+        "7": 33277,
+        "8": 17349,
+        "9": 8114,
+        "10": 2530,
+        "11": 258
+      },
+      "weight_by_canonical_label": {
+        "Acute COPD exacerbation / infection": 15093.0,
+        "Acute laryngitis": 24128.0,
+        "Acute pulmonary edema": 19018.0,
+        "Acute rhinosinusitis": 13578.0,
+        "Allergic rhinitis": 17065.0,
+        "Bronchiectasis": 17704.0,
+        "Bronchiolitis": 242.0,
+        "Bronchitis": 26400.0,
+        "Bronchospasm / acute asthma exacerbation": 16962.0,
+        "Chronic rhinosinusitis": 20579.0,
+        "Croup": 2254.0,
+        "Epiglottitis": 17209.0,
+        "Influenza": 26812.0,
+        "Larygospasm": 5371.0,
+        "Pneumonia": 25761.0,
+        "Pulmonary neoplasm": 14303.0,
+        "Spontaneous pneumothorax": 10162.0,
+        "Tuberculosis": 15317.0,
+        "URTI": 64368.0,
+        "Viral pharyngitis": 61635.0,
+        "Whooping cough": 4262.0
+      }
+    },
+    "validation": {
+      "totals": {
+        "scenario_rows": 55680,
+        "retained_source_groups": 55680,
+        "excluded_rows:repeated_source_input": 128
+      },
+      "groups_by_canonical_label": {
+        "Acute COPD exacerbation / infection": 2049,
+        "Acute laryngitis": 3407,
+        "Acute pulmonary edema": 2500,
+        "Acute rhinosinusitis": 1866,
+        "Allergic rhinitis": 2104,
+        "Bronchiectasis": 2315,
+        "Bronchiolitis": 28,
+        "Bronchitis": 3543,
+        "Bronchospasm / acute asthma exacerbation": 2190,
+        "Chronic rhinosinusitis": 2717,
+        "Croup": 264,
+        "Epiglottitis": 2248,
+        "Influenza": 3590,
+        "Larygospasm": 651,
+        "Pneumonia": 3484,
+        "Pulmonary neoplasm": 1891,
+        "Spontaneous pneumothorax": 1405,
+        "Tuberculosis": 1995,
+        "URTI": 8656,
+        "Viral pharyngitis": 8246,
+        "Whooping cough": 531
+      },
+      "scenarios_by_canonical_label": {
+        "Acute COPD exacerbation / infection": 2049,
+        "Acute laryngitis": 3407,
+        "Acute pulmonary edema": 2500,
+        "Acute rhinosinusitis": 1866,
+        "Allergic rhinitis": 2104,
+        "Bronchiectasis": 2315,
+        "Bronchiolitis": 28,
+        "Bronchitis": 3543,
+        "Bronchospasm / acute asthma exacerbation": 2190,
+        "Chronic rhinosinusitis": 2717,
+        "Croup": 264,
+        "Epiglottitis": 2248,
+        "Influenza": 3590,
+        "Larygospasm": 651,
+        "Pneumonia": 3484,
+        "Pulmonary neoplasm": 1891,
+        "Spontaneous pneumothorax": 1405,
+        "Tuberculosis": 1995,
+        "URTI": 8656,
+        "Viral pharyngitis": 8246,
+        "Whooping cough": 531
+      },
+      "variants_by_type": {
+        "full": 55680
+      },
+      "reporting_unit_count_histogram": {
+        "1": 1113,
+        "2": 5715,
+        "3": 12999,
+        "4": 11471,
+        "5": 9445,
+        "6": 6687,
+        "7": 4448,
+        "8": 2332,
+        "9": 1089,
+        "10": 322,
+        "11": 59
+      },
+      "weight_by_canonical_label": {
+        "Acute COPD exacerbation / infection": 2049.0,
+        "Acute laryngitis": 3407.0,
+        "Acute pulmonary edema": 2500.0,
+        "Acute rhinosinusitis": 1866.0,
+        "Allergic rhinitis": 2104.0,
+        "Bronchiectasis": 2315.0,
+        "Bronchiolitis": 28.0,
+        "Bronchitis": 3543.0,
+        "Bronchospasm / acute asthma exacerbation": 2190.0,
+        "Chronic rhinosinusitis": 2717.0,
+        "Croup": 264.0,
+        "Epiglottitis": 2248.0,
+        "Influenza": 3590.0,
+        "Larygospasm": 651.0,
+        "Pneumonia": 3484.0,
+        "Pulmonary neoplasm": 1891.0,
+        "Spontaneous pneumothorax": 1405.0,
+        "Tuberculosis": 1995.0,
+        "URTI": 8656.0,
+        "Viral pharyngitis": 8246.0,
+        "Whooping cough": 531.0
+      }
+    }
+  },
+  "output_sha256": {
+    "train.csv": "9031fe1b44dda8539622a54a0184b4032839c1cb9549313e19e3bc0e251dac51",
+    "validation.csv": "bbcd6bf7c65b25c57519f39922732a28cca1b6e4e216f41ce8d66235defd3962",
+    "source_groups.csv": "f66b3a344a26fc1b650bf1a3ccce115af9664d6faa9d6f674afec3cf281f1e9d",
+    "excluded_rows.csv": "58fc2d7b426fc93a79f6aaefdd2d4530e1d81a867f007a8f5c3e93f65aaf5bea"
+  },
+  "limitations": [
+    "DDXPlus is simulated data; Kenyan performance is unverified.",
+    "Input groups are not verified patient identifiers.",
+    "Candidate-feature collisions are retained.",
+    "Only positive evidence is used; hidden concepts remain unknown.",
+    "COVID-19 is not included in this initial dataset.",
+    "The final test split was not inspected.",
+    "Training must select schema.feature_names as model inputs.",
+    "Training must consume source_group_weight as sample weight."
+  ]
+}
