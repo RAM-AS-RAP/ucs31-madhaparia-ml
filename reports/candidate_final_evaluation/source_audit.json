@@ -1,0 +1,886 @@
+{
+  "issue": 50,
+  "status": "source_audit_completed_no_predictions",
+  "source_sha256": {
+    "train_source": "93933e9a9a7a00d618a931deda7767485af299fe4635bf189a7c63b510e8b172",
+    "validation_source": "b84733533bff01daa1d47d27a0cd4d684bb54a0fc20d80aaee1250ff8ff989ed",
+    "test_source": "f7ac3eae934c85780fc9b109a6cac5771540619a02690bee6fc0ab402baec186",
+    "dataset_manifest": "7eee968072661c365899f74486820c5fc4e429f00ddf431d6c7630601a622acd",
+    "candidate_schema": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "protocol": "786f509a898e8afd5a338cc1f836fd7147ac1f534fa68836b2307b2099eb399d",
+    "candidate_feature_builder": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "source_audit_helpers": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "overlap_audit_helpers": "ee60c9b87df4516fd049679898d04fcd88e988b25ac5f70d62f7a19617ac4b4b",
+    "policy": "98ffcb2c1afca112a0974c246a519de8e525305f82c23a3c91235df009cec4eb",
+    "model": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+    "audit_script": "d4bd458ddb538aa3c5719a170f2950bfa30d9369523f1c742da2b1a121ccb8b2"
+  },
+  "label_mapping": {
+    "Acute COPD exacerbation / infection": "Acute COPD exacerbation / infection",
+    "Acute laryngitis": "Acute laryngitis",
+    "Acute pulmonary edema": "Acute pulmonary edema",
+    "Acute rhinosinusitis": "Acute rhinosinusitis",
+    "Allergic sinusitis": "Allergic rhinitis",
+    "Bronchiectasis": "Bronchiectasis",
+    "Bronchiolitis": "Bronchiolitis",
+    "Bronchitis": "Bronchitis",
+    "Bronchospasm / acute asthma exacerbation": "Bronchospasm / acute asthma exacerbation",
+    "Chronic rhinosinusitis": "Chronic rhinosinusitis",
+    "Croup": "Croup",
+    "Epiglottitis": "Epiglottitis",
+    "Influenza": "Influenza",
+    "Larygospasm": "Larygospasm",
+    "Pneumonia": "Pneumonia",
+    "Pulmonary neoplasm": "Pulmonary neoplasm",
+    "Spontaneous pneumothorax": "Spontaneous pneumothorax",
+    "Tuberculosis": "Tuberculosis",
+    "URTI": "URTI",
+    "Viral pharyngitis": "Viral pharyngitis",
+    "Whooping cough": "Whooping cough"
+  },
+  "splits": {
+    "train": {
+      "counts": {
+        "all_source_rows": 1025602,
+        "outside_scope_rows": 582527,
+        "in_scope_rows": 443075,
+        "no_supported_positive_rows": 8,
+        "eligible_rows": 443067,
+        "unique_in_scope_groups": 421066,
+        "unique_eligible_groups": 421059,
+        "unique_zero_supported_groups": 7,
+        "repeated_in_scope_groups": 16663,
+        "extra_in_scope_rows_beyond_one_per_group": 22009
+      },
+      "outside_scope_rows_by_source_label": {
+        "Acute dystonic reactions": 25982,
+        "Acute otitis media": 25917,
+        "Anaphylaxis": 27718,
+        "Anemia": 50665,
+        "Atrial fibrillation": 21036,
+        "Boerhaave": 15080,
+        "Chagas": 9252,
+        "Cluster headache": 20804,
+        "Ebola": 718,
+        "GERD": 25979,
+        "Guillain-Barré syndrome": 22867,
+        "HIV (initial infection)": 29013,
+        "Inguinal hernia": 20235,
+        "Localized edema": 27825,
+        "Myasthenia gravis": 18566,
+        "Myocarditis": 11073,
+        "PSVT": 18781,
+        "Pancreatic neoplasm": 18846,
+        "Panic attack": 25019,
+        "Pericarditis": 22785,
+        "Possible NSTEMI / STEMI": 21260,
+        "Pulmonary embolism": 27468,
+        "SLE": 11867,
+        "Sarcoidosis": 21285,
+        "Scombroid food poisoning": 18535,
+        "Spontaneous rib fracture": 5712,
+        "Stable angina": 16995,
+        "Unstable angina": 21244
+      },
+      "by_canonical_condition": {
+        "Acute COPD exacerbation / infection": {
+          "in_scope_rows": 17661,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 17661,
+          "unique_eligible_groups": 15468,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute laryngitis": {
+          "in_scope_rows": 24129,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 24129,
+          "unique_eligible_groups": 24128,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute pulmonary edema": {
+          "in_scope_rows": 19018,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 19018,
+          "unique_eligible_groups": 19018,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute rhinosinusitis": {
+          "in_scope_rows": 13578,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 13578,
+          "unique_eligible_groups": 13578,
+          "unique_zero_supported_groups": 0
+        },
+        "Allergic rhinitis": {
+          "in_scope_rows": 26203,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 26203,
+          "unique_eligible_groups": 17975,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchiectasis": {
+          "in_scope_rows": 18795,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 18795,
+          "unique_eligible_groups": 17883,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchiolitis": {
+          "in_scope_rows": 261,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 261,
+          "unique_eligible_groups": 244,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchitis": {
+          "in_scope_rows": 26400,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 26400,
+          "unique_eligible_groups": 26400,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchospasm / acute asthma exacerbation": {
+          "in_scope_rows": 19875,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 19875,
+          "unique_eligible_groups": 17351,
+          "unique_zero_supported_groups": 0
+        },
+        "Chronic rhinosinusitis": {
+          "in_scope_rows": 20579,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 20579,
+          "unique_eligible_groups": 20579,
+          "unique_zero_supported_groups": 0
+        },
+        "Croup": {
+          "in_scope_rows": 2852,
+          "no_supported_positive_rows": 8,
+          "eligible_rows": 2844,
+          "unique_eligible_groups": 2332,
+          "unique_zero_supported_groups": 7
+        },
+        "Epiglottitis": {
+          "in_scope_rows": 17209,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 17209,
+          "unique_eligible_groups": 17209,
+          "unique_zero_supported_groups": 0
+        },
+        "Influenza": {
+          "in_scope_rows": 26812,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 26812,
+          "unique_eligible_groups": 26812,
+          "unique_zero_supported_groups": 0
+        },
+        "Larygospasm": {
+          "in_scope_rows": 10998,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 10998,
+          "unique_eligible_groups": 5823,
+          "unique_zero_supported_groups": 0
+        },
+        "Pneumonia": {
+          "in_scope_rows": 25761,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 25761,
+          "unique_eligible_groups": 25761,
+          "unique_zero_supported_groups": 0
+        },
+        "Pulmonary neoplasm": {
+          "in_scope_rows": 14457,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 14457,
+          "unique_eligible_groups": 14333,
+          "unique_zero_supported_groups": 0
+        },
+        "Spontaneous pneumothorax": {
+          "in_scope_rows": 10162,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 10162,
+          "unique_eligible_groups": 10162,
+          "unique_zero_supported_groups": 0
+        },
+        "Tuberculosis": {
+          "in_scope_rows": 16245,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 16245,
+          "unique_eligible_groups": 15497,
+          "unique_zero_supported_groups": 0
+        },
+        "URTI": {
+          "in_scope_rows": 64368,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 64368,
+          "unique_eligible_groups": 64368,
+          "unique_zero_supported_groups": 0
+        },
+        "Viral pharyngitis": {
+          "in_scope_rows": 61642,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 61642,
+          "unique_eligible_groups": 61636,
+          "unique_zero_supported_groups": 0
+        },
+        "Whooping cough": {
+          "in_scope_rows": 6070,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 6070,
+          "unique_eligible_groups": 4502,
+          "unique_zero_supported_groups": 0
+        }
+      },
+      "eligible_groups_after_source_deduplication": {
+        "source_groups": 421059,
+        "original_source_rows_represented": 443067,
+        "per_condition_support": {
+          "Acute COPD exacerbation / infection": 15468,
+          "Acute laryngitis": 24128,
+          "Acute pulmonary edema": 19018,
+          "Acute rhinosinusitis": 13578,
+          "Allergic rhinitis": 17975,
+          "Bronchiectasis": 17883,
+          "Bronchiolitis": 244,
+          "Bronchitis": 26400,
+          "Bronchospasm / acute asthma exacerbation": 17351,
+          "Chronic rhinosinusitis": 20579,
+          "Croup": 2332,
+          "Epiglottitis": 17209,
+          "Influenza": 26812,
+          "Larygospasm": 5823,
+          "Pneumonia": 25761,
+          "Pulmonary neoplasm": 14333,
+          "Spontaneous pneumothorax": 10162,
+          "Tuberculosis": 15497,
+          "URTI": 64368,
+          "Viral pharyngitis": 61636,
+          "Whooping cough": 4502
+        },
+        "actual_reporting_unit_counts": {
+          "1": 9409,
+          "2": 43255,
+          "3": 99683,
+          "4": 87103,
+          "5": 69756,
+          "6": 50325,
+          "7": 33277,
+          "8": 17349,
+          "9": 8114,
+          "10": 2530,
+          "11": 258
+        },
+        "candidate_inputs_after_source_deduplication": {
+          "records": 421059,
+          "unique_input_groups": 96084,
+          "repeated_input_groups": 50771,
+          "extra_rows_beyond_one_per_input_group": 324975,
+          "groups_with_multiple_condition_labels": 4384,
+          "rows_in_multiple_label_groups": 76198
+        }
+      }
+    },
+    "validation": {
+      "counts": {
+        "all_source_rows": 132448,
+        "outside_scope_rows": 76640,
+        "in_scope_rows": 55808,
+        "no_supported_positive_rows": 0,
+        "eligible_rows": 55808,
+        "unique_in_scope_groups": 55680,
+        "unique_eligible_groups": 55680,
+        "unique_zero_supported_groups": 0,
+        "repeated_in_scope_groups": 128,
+        "extra_in_scope_rows_beyond_one_per_group": 128
+      },
+      "outside_scope_rows_by_source_label": {
+        "Acute dystonic reactions": 3281,
+        "Acute otitis media": 3474,
+        "Anaphylaxis": 3754,
+        "Anemia": 6903,
+        "Atrial fibrillation": 2609,
+        "Boerhaave": 2075,
+        "Chagas": 1124,
+        "Cluster headache": 2841,
+        "Ebola": 90,
+        "GERD": 3426,
+        "Guillain-Barré syndrome": 2557,
+        "HIV (initial infection)": 3852,
+        "Inguinal hernia": 2632,
+        "Localized edema": 3694,
+        "Myasthenia gravis": 2159,
+        "Myocarditis": 1547,
+        "PSVT": 2376,
+        "Pancreatic neoplasm": 2582,
+        "Panic attack": 3237,
+        "Pericarditis": 3032,
+        "Possible NSTEMI / STEMI": 2943,
+        "Pulmonary embolism": 3725,
+        "SLE": 1579,
+        "Sarcoidosis": 3028,
+        "Scombroid food poisoning": 2250,
+        "Spontaneous rib fracture": 782,
+        "Stable angina": 2340,
+        "Unstable angina": 2748
+      },
+      "by_canonical_condition": {
+        "Acute COPD exacerbation / infection": {
+          "in_scope_rows": 2076,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2076,
+          "unique_eligible_groups": 2049,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute laryngitis": {
+          "in_scope_rows": 3407,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3407,
+          "unique_eligible_groups": 3407,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute pulmonary edema": {
+          "in_scope_rows": 2500,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2500,
+          "unique_eligible_groups": 2500,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute rhinosinusitis": {
+          "in_scope_rows": 1866,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 1866,
+          "unique_eligible_groups": 1866,
+          "unique_zero_supported_groups": 0
+        },
+        "Allergic rhinitis": {
+          "in_scope_rows": 2136,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2136,
+          "unique_eligible_groups": 2104,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchiectasis": {
+          "in_scope_rows": 2319,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2319,
+          "unique_eligible_groups": 2315,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchiolitis": {
+          "in_scope_rows": 28,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 28,
+          "unique_eligible_groups": 28,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchitis": {
+          "in_scope_rows": 3543,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3543,
+          "unique_eligible_groups": 3543,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchospasm / acute asthma exacerbation": {
+          "in_scope_rows": 2209,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2209,
+          "unique_eligible_groups": 2190,
+          "unique_zero_supported_groups": 0
+        },
+        "Chronic rhinosinusitis": {
+          "in_scope_rows": 2717,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2717,
+          "unique_eligible_groups": 2717,
+          "unique_zero_supported_groups": 0
+        },
+        "Croup": {
+          "in_scope_rows": 267,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 267,
+          "unique_eligible_groups": 264,
+          "unique_zero_supported_groups": 0
+        },
+        "Epiglottitis": {
+          "in_scope_rows": 2248,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2248,
+          "unique_eligible_groups": 2248,
+          "unique_zero_supported_groups": 0
+        },
+        "Influenza": {
+          "in_scope_rows": 3590,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3590,
+          "unique_eligible_groups": 3590,
+          "unique_zero_supported_groups": 0
+        },
+        "Larygospasm": {
+          "in_scope_rows": 668,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 668,
+          "unique_eligible_groups": 651,
+          "unique_zero_supported_groups": 0
+        },
+        "Pneumonia": {
+          "in_scope_rows": 3484,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3484,
+          "unique_eligible_groups": 3484,
+          "unique_zero_supported_groups": 0
+        },
+        "Pulmonary neoplasm": {
+          "in_scope_rows": 1891,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 1891,
+          "unique_eligible_groups": 1891,
+          "unique_zero_supported_groups": 0
+        },
+        "Spontaneous pneumothorax": {
+          "in_scope_rows": 1405,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 1405,
+          "unique_eligible_groups": 1405,
+          "unique_zero_supported_groups": 0
+        },
+        "Tuberculosis": {
+          "in_scope_rows": 2007,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2007,
+          "unique_eligible_groups": 1995,
+          "unique_zero_supported_groups": 0
+        },
+        "URTI": {
+          "in_scope_rows": 8656,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 8656,
+          "unique_eligible_groups": 8656,
+          "unique_zero_supported_groups": 0
+        },
+        "Viral pharyngitis": {
+          "in_scope_rows": 8246,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 8246,
+          "unique_eligible_groups": 8246,
+          "unique_zero_supported_groups": 0
+        },
+        "Whooping cough": {
+          "in_scope_rows": 545,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 545,
+          "unique_eligible_groups": 531,
+          "unique_zero_supported_groups": 0
+        }
+      },
+      "eligible_groups_after_source_deduplication": {
+        "source_groups": 55680,
+        "original_source_rows_represented": 55808,
+        "per_condition_support": {
+          "Acute COPD exacerbation / infection": 2049,
+          "Acute laryngitis": 3407,
+          "Acute pulmonary edema": 2500,
+          "Acute rhinosinusitis": 1866,
+          "Allergic rhinitis": 2104,
+          "Bronchiectasis": 2315,
+          "Bronchiolitis": 28,
+          "Bronchitis": 3543,
+          "Bronchospasm / acute asthma exacerbation": 2190,
+          "Chronic rhinosinusitis": 2717,
+          "Croup": 264,
+          "Epiglottitis": 2248,
+          "Influenza": 3590,
+          "Larygospasm": 651,
+          "Pneumonia": 3484,
+          "Pulmonary neoplasm": 1891,
+          "Spontaneous pneumothorax": 1405,
+          "Tuberculosis": 1995,
+          "URTI": 8656,
+          "Viral pharyngitis": 8246,
+          "Whooping cough": 531
+        },
+        "actual_reporting_unit_counts": {
+          "1": 1113,
+          "2": 5715,
+          "3": 12999,
+          "4": 11471,
+          "5": 9445,
+          "6": 6687,
+          "7": 4448,
+          "8": 2332,
+          "9": 1089,
+          "10": 322,
+          "11": 59
+        },
+        "candidate_inputs_after_source_deduplication": {
+          "records": 55680,
+          "unique_input_groups": 31176,
+          "repeated_input_groups": 10704,
+          "extra_rows_beyond_one_per_input_group": 24504,
+          "groups_with_multiple_condition_labels": 1300,
+          "rows_in_multiple_label_groups": 5853
+        }
+      }
+    },
+    "test": {
+      "counts": {
+        "all_source_rows": 134529,
+        "outside_scope_rows": 77712,
+        "in_scope_rows": 56817,
+        "no_supported_positive_rows": 1,
+        "eligible_rows": 56816,
+        "unique_in_scope_groups": 56633,
+        "unique_eligible_groups": 56632,
+        "unique_zero_supported_groups": 1,
+        "repeated_in_scope_groups": 183,
+        "extra_in_scope_rows_beyond_one_per_group": 184
+      },
+      "outside_scope_rows_by_source_label": {
+        "Acute dystonic reactions": 3302,
+        "Acute otitis media": 3516,
+        "Anaphylaxis": 3799,
+        "Anemia": 6842,
+        "Atrial fibrillation": 2831,
+        "Boerhaave": 2083,
+        "Chagas": 1077,
+        "Cluster headache": 2825,
+        "Ebola": 100,
+        "GERD": 3543,
+        "Guillain-Barré syndrome": 2601,
+        "HIV (initial infection)": 3919,
+        "Inguinal hernia": 2751,
+        "Localized edema": 3734,
+        "Myasthenia gravis": 2215,
+        "Myocarditis": 1478,
+        "PSVT": 2443,
+        "Pancreatic neoplasm": 2585,
+        "Panic attack": 3387,
+        "Pericarditis": 3095,
+        "Possible NSTEMI / STEMI": 2911,
+        "Pulmonary embolism": 3679,
+        "SLE": 1564,
+        "Sarcoidosis": 2902,
+        "Scombroid food poisoning": 2486,
+        "Spontaneous rib fracture": 778,
+        "Stable angina": 2386,
+        "Unstable angina": 2880
+      },
+      "by_canonical_condition": {
+        "Acute COPD exacerbation / infection": {
+          "in_scope_rows": 2153,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2153,
+          "unique_eligible_groups": 2130,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute laryngitis": {
+          "in_scope_rows": 3217,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3217,
+          "unique_eligible_groups": 3217,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute pulmonary edema": {
+          "in_scope_rows": 2598,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2598,
+          "unique_eligible_groups": 2598,
+          "unique_zero_supported_groups": 0
+        },
+        "Acute rhinosinusitis": {
+          "in_scope_rows": 1829,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 1829,
+          "unique_eligible_groups": 1829,
+          "unique_zero_supported_groups": 0
+        },
+        "Allergic rhinitis": {
+          "in_scope_rows": 2411,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2411,
+          "unique_eligible_groups": 2349,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchiectasis": {
+          "in_scope_rows": 2454,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2454,
+          "unique_eligible_groups": 2446,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchiolitis": {
+          "in_scope_rows": 36,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 36,
+          "unique_eligible_groups": 36,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchitis": {
+          "in_scope_rows": 3594,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3594,
+          "unique_eligible_groups": 3594,
+          "unique_zero_supported_groups": 0
+        },
+        "Bronchospasm / acute asthma exacerbation": {
+          "in_scope_rows": 2222,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2222,
+          "unique_eligible_groups": 2190,
+          "unique_zero_supported_groups": 0
+        },
+        "Chronic rhinosinusitis": {
+          "in_scope_rows": 2747,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2747,
+          "unique_eligible_groups": 2747,
+          "unique_zero_supported_groups": 0
+        },
+        "Croup": {
+          "in_scope_rows": 344,
+          "no_supported_positive_rows": 1,
+          "eligible_rows": 343,
+          "unique_eligible_groups": 336,
+          "unique_zero_supported_groups": 1
+        },
+        "Epiglottitis": {
+          "in_scope_rows": 2364,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2364,
+          "unique_eligible_groups": 2364,
+          "unique_zero_supported_groups": 0
+        },
+        "Influenza": {
+          "in_scope_rows": 3554,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3554,
+          "unique_eligible_groups": 3554,
+          "unique_zero_supported_groups": 0
+        },
+        "Larygospasm": {
+          "in_scope_rows": 785,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 785,
+          "unique_eligible_groups": 758,
+          "unique_zero_supported_groups": 0
+        },
+        "Pneumonia": {
+          "in_scope_rows": 3542,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 3542,
+          "unique_eligible_groups": 3542,
+          "unique_zero_supported_groups": 0
+        },
+        "Pulmonary neoplasm": {
+          "in_scope_rows": 1918,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 1918,
+          "unique_eligible_groups": 1917,
+          "unique_zero_supported_groups": 0
+        },
+        "Spontaneous pneumothorax": {
+          "in_scope_rows": 1343,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 1343,
+          "unique_eligible_groups": 1343,
+          "unique_zero_supported_groups": 0
+        },
+        "Tuberculosis": {
+          "in_scope_rows": 2080,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 2080,
+          "unique_eligible_groups": 2075,
+          "unique_zero_supported_groups": 0
+        },
+        "URTI": {
+          "in_scope_rows": 8743,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 8743,
+          "unique_eligible_groups": 8743,
+          "unique_zero_supported_groups": 0
+        },
+        "Viral pharyngitis": {
+          "in_scope_rows": 8334,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 8334,
+          "unique_eligible_groups": 8334,
+          "unique_zero_supported_groups": 0
+        },
+        "Whooping cough": {
+          "in_scope_rows": 549,
+          "no_supported_positive_rows": 0,
+          "eligible_rows": 549,
+          "unique_eligible_groups": 530,
+          "unique_zero_supported_groups": 0
+        }
+      }
+    }
+  },
+  "eligible_test_overlap": {
+    "training_matches": 3157,
+    "validation_matches": 314,
+    "matches_both": 111,
+    "training_only_matches": 3046,
+    "validation_only_matches": 203
+  },
+  "test_cohorts": {
+    "primary": {
+      "source_groups": 53272,
+      "original_source_rows_represented": 53386,
+      "per_condition_support": {
+        "Acute COPD exacerbation / infection": 1711,
+        "Acute laryngitis": 3217,
+        "Acute pulmonary edema": 2598,
+        "Acute rhinosinusitis": 1829,
+        "Allergic rhinitis": 1264,
+        "Bronchiectasis": 2216,
+        "Bronchiolitis": 34,
+        "Bronchitis": 3594,
+        "Bronchospasm / acute asthma exacerbation": 1737,
+        "Chronic rhinosinusitis": 2747,
+        "Croup": 233,
+        "Epiglottitis": 2364,
+        "Influenza": 3554,
+        "Larygospasm": 186,
+        "Pneumonia": 3542,
+        "Pulmonary neoplasm": 1893,
+        "Spontaneous pneumothorax": 1343,
+        "Tuberculosis": 1861,
+        "URTI": 8743,
+        "Viral pharyngitis": 8330,
+        "Whooping cough": 276
+      },
+      "actual_reporting_unit_counts": {
+        "1": 601,
+        "2": 5170,
+        "3": 11874,
+        "4": 11139,
+        "5": 9215,
+        "6": 6953,
+        "7": 4504,
+        "8": 2341,
+        "9": 1116,
+        "10": 319,
+        "11": 40
+      },
+      "candidate_inputs_after_source_deduplication": {
+        "records": 53272,
+        "unique_input_groups": 30905,
+        "repeated_input_groups": 10146,
+        "extra_rows_beyond_one_per_input_group": 22367,
+        "groups_with_multiple_condition_labels": 1262,
+        "rows_in_multiple_label_groups": 5444
+      },
+      "source_groups_matching_earlier_candidate_inputs": 47677
+    },
+    "complete_eligible": {
+      "source_groups": 56632,
+      "original_source_rows_represented": 56816,
+      "per_condition_support": {
+        "Acute COPD exacerbation / infection": 2130,
+        "Acute laryngitis": 3217,
+        "Acute pulmonary edema": 2598,
+        "Acute rhinosinusitis": 1829,
+        "Allergic rhinitis": 2349,
+        "Bronchiectasis": 2446,
+        "Bronchiolitis": 36,
+        "Bronchitis": 3594,
+        "Bronchospasm / acute asthma exacerbation": 2190,
+        "Chronic rhinosinusitis": 2747,
+        "Croup": 336,
+        "Epiglottitis": 2364,
+        "Influenza": 3554,
+        "Larygospasm": 758,
+        "Pneumonia": 3542,
+        "Pulmonary neoplasm": 1917,
+        "Spontaneous pneumothorax": 1343,
+        "Tuberculosis": 2075,
+        "URTI": 8743,
+        "Viral pharyngitis": 8334,
+        "Whooping cough": 530
+      },
+      "actual_reporting_unit_counts": {
+        "1": 1234,
+        "2": 5712,
+        "3": 13217,
+        "4": 11890,
+        "5": 9297,
+        "6": 6962,
+        "7": 4504,
+        "8": 2341,
+        "9": 1116,
+        "10": 319,
+        "11": 40
+      },
+      "candidate_inputs_after_source_deduplication": {
+        "records": 56632,
+        "unique_input_groups": 31557,
+        "repeated_input_groups": 10893,
+        "extra_rows_beyond_one_per_input_group": 25075,
+        "groups_with_multiple_condition_labels": 1301,
+        "rows_in_multiple_label_groups": 5920
+      },
+      "source_groups_matching_earlier_candidate_inputs": 51037
+    },
+    "overlap": {
+      "source_groups": 3360,
+      "original_source_rows_represented": 3430,
+      "per_condition_support": {
+        "Acute COPD exacerbation / infection": 419,
+        "Acute laryngitis": 0,
+        "Acute pulmonary edema": 0,
+        "Acute rhinosinusitis": 0,
+        "Allergic rhinitis": 1085,
+        "Bronchiectasis": 230,
+        "Bronchiolitis": 2,
+        "Bronchitis": 0,
+        "Bronchospasm / acute asthma exacerbation": 453,
+        "Chronic rhinosinusitis": 0,
+        "Croup": 103,
+        "Epiglottitis": 0,
+        "Influenza": 0,
+        "Larygospasm": 572,
+        "Pneumonia": 0,
+        "Pulmonary neoplasm": 24,
+        "Spontaneous pneumothorax": 0,
+        "Tuberculosis": 214,
+        "URTI": 0,
+        "Viral pharyngitis": 4,
+        "Whooping cough": 254
+      },
+      "actual_reporting_unit_counts": {
+        "1": 633,
+        "2": 542,
+        "3": 1343,
+        "4": 751,
+        "5": 82,
+        "6": 9
+      },
+      "candidate_inputs_after_source_deduplication": {
+        "records": 3360,
+        "unique_input_groups": 2025,
+        "repeated_input_groups": 737,
+        "extra_rows_beyond_one_per_input_group": 1335,
+        "groups_with_multiple_condition_labels": 54,
+        "rows_in_multiple_label_groups": 181
+      },
+      "source_groups_matching_earlier_candidate_inputs": 3360
+    }
+  },
+  "validation": {
+    "in_scope_demographics_valid": true,
+    "in_scope_evidence_derivation_succeeded": true,
+    "source_group_labels_consistent_within_and_across_splits": true
+  },
+  "notes": [
+    "The official test source was inspected; no predictions were calculated.",
+    "Original in-scope training and validation pools define overlap.",
+    "Earlier source indexes include zero-supported inputs.",
+    "Eligible test cohorts require supported positive concepts.",
+    "One representative per source group: first eligible source row.",
+    "Candidate-input collisions are retained, including conflicting labels.",
+    "Signature grouping does not establish patient identity.",
+    "Source-pool overlap does not prove use in model fitting.",
+    "Prior project-level test exposure is documented in the protocol.",
+    "No source datasets, models, calibration parameters or policies changed."
+  ]
+}

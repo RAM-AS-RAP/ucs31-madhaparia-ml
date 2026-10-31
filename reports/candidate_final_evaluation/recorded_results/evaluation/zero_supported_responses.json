@@ -1,0 +1,33 @@
+{
+  "groups": 1,
+  "cases": [
+    {
+      "source_group_id": "e82fe6a93c54236708f3f927909364f382bca5636f99d85adac873f44cb63d00",
+      "source_row": 24990,
+      "canonical_label": "Croup",
+      "public_response": {
+        "model_version": "candidate_v1_research",
+        "policy_id": "candidate_v1_research_uncertainty_v1",
+        "status": "insufficient_information",
+        "predicted_condition": null,
+        "model_score": null,
+        "uncertain": true,
+        "uncertainty_reasons": [
+          "too_few_supported_reporting_units"
+        ],
+        "reported_unit_count": 0,
+        "probability_representation": "temperature_scaled",
+        "message": "There is insufficient information to return a leading condition.",
+        "prediction_performed": false,
+        "safety_flags": [],
+        "safety_review_required": false,
+        "unsupported_symptoms": [],
+        "unsupported_absent_concepts": []
+      }
+    }
+  ],
+  "notes": [
+    "These groups are outside eligible classifier metric denominators.",
+    "This checks direct-feature handling, not full application safety."
+  ]
+}

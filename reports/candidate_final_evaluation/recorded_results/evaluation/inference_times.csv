@@ -1,0 +1,11 @@
+model,view,observations,batch_size,prediction_seconds
+frozen_v2_harmonized,full,56632,5000,1.8695119000039995
+rf_group_weighted,full,56632,5000,2.500869999988936
+frozen_v2_harmonized,up_to_1,56632,5000,1.5756217000016477
+rf_group_weighted,up_to_1,56632,5000,1.6836147000140045
+frozen_v2_harmonized,up_to_2,56632,5000,1.507780999992974
+rf_group_weighted,up_to_2,56632,5000,1.680256499996176
+frozen_v2_harmonized,up_to_3,56632,5000,1.7272518000099808
+rf_group_weighted,up_to_3,56632,5000,2.0776691999926697
+frozen_v2_harmonized,up_to_5,56632,5000,1.4871095000125933
+rf_group_weighted,up_to_5,56632,5000,2.023926299996674
