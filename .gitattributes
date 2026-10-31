@@ -1,2 +1,5 @@
 # Preserve generated SVG exports; allow trailing spaces in their drawing instructions.
 reports/candidate_model_comparison/figures/*.svg whitespace=-blank-at-eol
+
+# Preserve exact bytes of fingerprinted calibration reports.
+reports/candidate_calibration/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

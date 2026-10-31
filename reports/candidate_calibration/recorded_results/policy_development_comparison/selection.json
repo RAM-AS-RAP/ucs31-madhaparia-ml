@@ -1,0 +1,17 @@
+{
+  "selected_representation": "temperature_scaled",
+  "criterion": "Temperature scaling must improve mean policy-development log loss across five views by more than 1e-6",
+  "original_mean_log_loss": 0.7355442519593111,
+  "temperature_scaled_mean_log_loss": 0.6464327004940461,
+  "log_loss_improvement": 0.08911155146526495,
+  "required_improvement_exclusive": 1e-06,
+  "deployment_approved": false,
+  "candidate_name": "rf_group_weighted",
+  "selection_partition": "policy_development",
+  "fitted_temperature": 0.6408387217626598,
+  "selected_temperature": 0.6408387217626598,
+  "temperature_fit_sha256": "ad2d35f1cd73d7c3006f8a2d83f00551759476361196d759dfcbd3029ec6318c",
+  "model_sha256": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+  "protocol_sha256": "c41808498a4b27240eaf5e42b739bcb3bb5b43b37d00dcc65c0dc735fe9571c5",
+  "status": "representation_selected_uncertainty_policy_pending"
+}

@@ -1,0 +1,57 @@
+{
+  "issue": 49,
+  "status": "policy_development_calibration_comparison_completed",
+  "partition": "policy_development",
+  "source_groups": 16720,
+  "settings": [
+    "full",
+    "up_to_1",
+    "up_to_2",
+    "up_to_3",
+    "up_to_5"
+  ],
+  "input_sha256": {
+    "temperature_fit": "ad2d35f1cd73d7c3006f8a2d83f00551759476361196d759dfcbd3029ec6318c",
+    "model": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+    "training_manifest": "06fab39c6e14aaeacfb0614dcd75be6c5bf94ca7865543cd7b32e19cc25e62af",
+    "view_manifest": "8ae3b5284bd0e728b942c3d9181edfc3b3aec3f42c59419fc6a06304df31141b",
+    "calibration_manifest": "66234c0d400a5cde556e31076ef1d5a14f615fb140fdfad3bc6a852f7da367ac",
+    "calibration_partitions": "c414f236cb34d5438278418a7940dfc22377148de5de30307a5109c813d24716",
+    "candidate_schema": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "protocol": "c41808498a4b27240eaf5e42b739bcb3bb5b43b37d00dcc65c0dc735fe9571c5",
+    "calibration_helper": "648b342ae1931feb8ee348079f8dc67f91118bbc01999767e1e72442f0c6c724",
+    "calibration_data_helper": "133c277a4d4333099dd8a5fc1bb73e36e85f13e0158820ab3bcbea7f4776291f",
+    "fitting_script": "57c1be1e24e53b2ab6b1b3f2defbd018ec1c81b203c24092abe81e6b6ba2dd9e",
+    "metrics_helper": "e956c562cadaf475c84648119c9b4b8ea63c101e108da9427c83735ed67870e3",
+    "classification_metrics_helper": "299b7f291e02b9099f0bf724c5fffa44eb8fcb152979689be7467ccca48cf38f",
+    "hash_helper": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "comparison_script": "88517dbc631e9e8924b7b719df412825ff63e20c7f7ae92e8959e2196394098c",
+    "development_view_full": "24b898ae4599b9d78c912865695d8872e94e2c6f038a631c64f0e51e0cbd96f6",
+    "development_view_up_to_1": "5c541f7e4343a335fa7507b049e567bc36c823947bd209f164db4b9efb53474f",
+    "development_view_up_to_2": "fa10f56806cebf07ef09b29e7f146c1701ad36d7e676d7be9f3dd4ec4b999550",
+    "development_view_up_to_3": "7b9189483aa4208366147fadd36ff8d2145793f72faac716b4d56daf2c2602e6",
+    "development_view_up_to_5": "d48f77155b720868d405cd90fb953f77dd2efbb181c8bcfd2d00fb570dfb2a36"
+  },
+  "output_sha256": {
+    "predictions/full.npz": "af1ca08bcd6876d8eda34eb68da45c4f1c33fd0b644aba2627d85ce2e41cbfb3",
+    "predictions/up_to_1.npz": "b422623a2990b9070c4abeba442d3bbd6be8537c3d3b7917ee9331a05c20c501",
+    "predictions/up_to_2.npz": "3f0bc62454b83d09949887642f9c083c2b7559104df0af12fa90ad7752709797",
+    "predictions/up_to_3.npz": "a2dba9a04013ef2a260c2a24e3b2ed5b6ffd2c601cd3ac01253918f2a1b35cff",
+    "predictions/up_to_5.npz": "980e7fd1758fa6595e8aaa1129ccc5f9612edcd8277166abb400d2b791b0c086",
+    "summary.csv": "a29003a0c5013d29ac6766fe911501a9e77e397e9a2f1788c7a617f88645f276",
+    "per_condition.csv": "be09ea1e0b5fe623ff2af9bcaebfec1ab0855757b27304483073b0b14a83520c",
+    "reliability_bins.csv": "6aa1465e4ab6ce046d319ba7c74c20e8f28c8f213d8d17459e0dbc5cbd85ae35",
+    "per_view_metrics.json": "badf3169238e3de14f5497004f16724928881832a040e73cd39f8636033d36bb",
+    "selection.json": "36b68c2606247d9c9da5d4eacb4b0f0829bb71711ecccf833fac55e38190c5f3"
+  },
+  "notes": [
+    "The fitted temperature was not refitted on development data.",
+    "Representation selection used the prespecified mean log loss.",
+    "Classification results are unchanged by temperature scaling.",
+    "Per-view calibration results may differ.",
+    "Uncertainty thresholds have not yet been selected.",
+    "Uncertainty-evaluation predictions were not calculated.",
+    "The final test split was not inspected.",
+    "No deployed model or application was changed."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "issue": 49,
+  "status": "documentation_figures_and_tables_exported",
+  "partition": "uncertainty_evaluation",
+  "groups_per_view": 16741,
+  "input_sha256": {
+    "reports/candidate_calibration/results_export_manifest.json": "65eeb2887edb202e4bbf207696eef796c84027e05ab0d851d8ab515fc24cd0da",
+    "reports/candidate_calibration/recorded_results/partition_manifest.json": "66234c0d400a5cde556e31076ef1d5a14f615fb140fdfad3bc6a852f7da367ac",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/comparison_manifest.json": "947b5b9f076a4014862fe44560b907dcfacc1be941365876b06114d3abc55ceb",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/per_condition.csv": "be09ea1e0b5fe623ff2af9bcaebfec1ab0855757b27304483073b0b14a83520c",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/per_view_metrics.json": "badf3169238e3de14f5497004f16724928881832a040e73cd39f8636033d36bb",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/reliability_bins.csv": "6aa1465e4ab6ce046d319ba7c74c20e8f28c8f213d8d17459e0dbc5cbd85ae35",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/selection.json": "36b68c2606247d9c9da5d4eacb4b0f0829bb71711ecccf833fac55e38190c5f3",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/summary.csv": "a29003a0c5013d29ac6766fe911501a9e77e397e9a2f1788c7a617f88645f276",
+    "reports/candidate_calibration/recorded_results/temperature_fit/temperature_fit.json": "ad2d35f1cd73d7c3006f8a2d83f00551759476361196d759dfcbd3029ec6318c",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/by_reporting_units.csv": "2c5fab9bca3dcae30237fcaeb91aa3672e47570d466b4954254deb68488782b6",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/evaluation_decision.json": "ddadf7999ad537d41d63cd711d5240b38a1aac00c1a65779c965b75cc860651d",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/evaluation_manifest.json": "09219c4e0c5d3b80d8b2022cff5c00075890c835e808d3803b9f67fc6065006d",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/per_condition.csv": "cf1319af2cf729a660b2163395589be49cdcf8e8d9f3c43d22b76b62b392c653",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/per_view_results.json": "e1a49229a0405f89d07b105fef40bb4fdfebf4d6a0ac76147229a9e1aee1c409",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/policy_summary.csv": "1846a863b132a2ffc27a0aff6068edc328cf9972839bd989cccb8a82a2eb6476",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/probability_per_condition.csv": "73a260b0c9433fc0264d7566f2de699a5d6c6c314cbc6526109f90aad3906bee",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/probability_summary.csv": "e0fce801c420ce02fc416fd35137d8af6b9ce9d888a8215e5591528c7a997873",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/reliability_bins.csv": "7e470773ce4e1c589745a65a1aeed540ce8ffdd92764ff34ef155c74c2da917a",
+    "reports/candidate_calibration/recorded_results/uncertainty_policy/development_summary.csv": "613cf661a8a21f701fc636c7095a762d17affdc939ea1750a63dc388bc496c74",
+    "reports/candidate_calibration/recorded_results/uncertainty_policy/policy.json": "98ffcb2c1afca112a0974c246a519de8e525305f82c23a3c91235df009cec4eb",
+    "reports/candidate_calibration/recorded_results/uncertainty_policy/search_manifest.json": "0bcb78d98321ea747a83494d5be8a4ee1aa699bfe4d7bd303537aca27d182238",
+    "reports/candidate_calibration/recorded_results/uncertainty_policy/threshold_grid.csv": "daed247183ae4636317fd116b70042faca9ebeb9ab7827b1805260db1cf7c9dd",
+    "reports/candidate_calibration/recorded_results/uncertainty_policy/threshold_grid_by_view.csv": "4b2ec71a8db7061c99b7f28ac688307a306ab7b29289bff8f259e38637af7af6",
+    "reports/candidate_calibration/recorded_results/views/view_manifest.json": "8ae3b5284bd0e728b942c3d9181edfc3b3aec3f42c59419fc6a06304df31141b",
+    "scripts/plot_candidate_calibration.py": "d8fd8a1babe701fbf0f4ca7ef8269fdc25e691fb028e5473ee95e8fd83618a03"
+  },
+  "output_sha256": {
+    "figures/calibration_metrics.png": "0ee259077761ab8ad850dfd08bc0ca5b397d6c6dca4ddaf7252675bdf9b960fd",
+    "figures/calibration_metrics.svg": "5855798d7efdd93ed78f0e4eb3faed95cf1e93cd8473a2def297d5b5bc2f1033",
+    "figures/coverage_and_accuracy.png": "220f5221e1e7aeec087c4d880d88425728ea848a747660a9a2346847140e8c3b",
+    "figures/coverage_and_accuracy.svg": "32010f30ce87321efdabf03229196748549cbd640169020dfee6af1c08c6f430",
+    "figures/reliability_diagrams.png": "fd327080cc3d92e7562d7789eb5fd27dc0429d98626d3a89ff176fca5cc1a757",
+    "figures/reliability_diagrams.svg": "1cab3d3ff928e78f85d13b80aafbbf499531c3031feff24102ba66ccc9b818de",
+    "figures/per_condition_recall.png": "3d8fd4578652041575b66c89ab11a7db2a99eebbf877101a772b3aa692d08761",
+    "figures/per_condition_recall.svg": "6c5156d2e17a49e75e044f40a732c92698b8849984755fa0d103ae2201ae4b38",
+    "evaluation_tables.md": "c4e9bf38d1e2eb3bc26bb2ad56a85f0ead16987c59c9925f168dc75a0136ef16"
+  },
+  "matplotlib_version": "3.11.2",
+  "notes": [
+    "Figures and tables use previously exported metrics.",
+    "No predictions were calculated and no policy was changed.",
+    "Undefined accepted accuracy is not plotted as zero.",
+    "SVG trailing whitespace was removed before fingerprinting."
+  ]
+}

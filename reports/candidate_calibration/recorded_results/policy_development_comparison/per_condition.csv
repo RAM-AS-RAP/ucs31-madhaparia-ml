@@ -1,0 +1,211 @@
+partition,view,representation,condition,support,predicted_count,precision,recall,f1,included_in_macro_average
+policy_development,full,original,Acute COPD exacerbation / infection,603,407,0.9459459459459459,0.6384742951907131,0.7623762376237624,True
+policy_development,full,original,Acute laryngitis,965,836,0.9976076555023924,0.8642487046632125,0.926152137701277,True
+policy_development,full,original,Acute pulmonary edema,760,763,0.9960681520314548,1.0,0.9980302035456337,True
+policy_development,full,original,Acute rhinosinusitis,543,262,0.8625954198473282,0.4162062615101289,0.5614906832298137,True
+policy_development,full,original,Allergic rhinitis,682,654,1.0,0.9589442815249267,0.9790419161676647,True
+policy_development,full,original,Bronchiectasis,708,770,0.8597402597402597,0.9350282485875706,0.8958051420838972,True
+policy_development,full,original,Bronchiolitis,9,7,1.0,0.7777777777777778,0.875,True
+policy_development,full,original,Bronchitis,1056,1057,0.9952696310312205,0.9962121212121212,0.995740653099858,True
+policy_development,full,original,Bronchospasm / acute asthma exacerbation,678,871,0.7531572904707233,0.967551622418879,0.8469980632666236,True
+policy_development,full,original,Chronic rhinosinusitis,823,1090,0.7165137614678899,0.9489671931956257,0.8165185572399373,True
+policy_development,full,original,Croup,90,81,0.9753086419753086,0.8777777777777778,0.9239766081871345,True
+policy_development,full,original,Epiglottitis,688,688,0.997093023255814,0.997093023255814,0.997093023255814,True
+policy_development,full,original,Influenza,1072,1044,1.0,0.9738805970149254,0.9867674858223062,True
+policy_development,full,original,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,full,original,Pneumonia,1030,1025,1.0,0.9951456310679612,0.9975669099756691,True
+policy_development,full,original,Pulmonary neoplasm,572,563,1.0,0.9842657342657343,0.9920704845814978,True
+policy_development,full,original,Spontaneous pneumothorax,406,403,1.0,0.9926108374384236,0.9962917181705809,True
+policy_development,full,original,Tuberculosis,612,533,0.9849906191369606,0.8578431372549019,0.9170305676855895,True
+policy_development,full,original,URTI,2574,2612,0.9839203675344563,0.9984459984459985,0.9911299652911685,True
+policy_development,full,original,Viral pharyngitis,2465,2670,0.9232209737827716,1.0,0.9600778967867576,True
+policy_development,full,original,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,full,temperature_scaled,Acute COPD exacerbation / infection,603,407,0.9459459459459459,0.6384742951907131,0.7623762376237624,True
+policy_development,full,temperature_scaled,Acute laryngitis,965,836,0.9976076555023924,0.8642487046632125,0.926152137701277,True
+policy_development,full,temperature_scaled,Acute pulmonary edema,760,763,0.9960681520314548,1.0,0.9980302035456337,True
+policy_development,full,temperature_scaled,Acute rhinosinusitis,543,262,0.8625954198473282,0.4162062615101289,0.5614906832298137,True
+policy_development,full,temperature_scaled,Allergic rhinitis,682,654,1.0,0.9589442815249267,0.9790419161676647,True
+policy_development,full,temperature_scaled,Bronchiectasis,708,770,0.8597402597402597,0.9350282485875706,0.8958051420838972,True
+policy_development,full,temperature_scaled,Bronchiolitis,9,7,1.0,0.7777777777777778,0.875,True
+policy_development,full,temperature_scaled,Bronchitis,1056,1057,0.9952696310312205,0.9962121212121212,0.995740653099858,True
+policy_development,full,temperature_scaled,Bronchospasm / acute asthma exacerbation,678,871,0.7531572904707233,0.967551622418879,0.8469980632666236,True
+policy_development,full,temperature_scaled,Chronic rhinosinusitis,823,1090,0.7165137614678899,0.9489671931956257,0.8165185572399373,True
+policy_development,full,temperature_scaled,Croup,90,81,0.9753086419753086,0.8777777777777778,0.9239766081871345,True
+policy_development,full,temperature_scaled,Epiglottitis,688,688,0.997093023255814,0.997093023255814,0.997093023255814,True
+policy_development,full,temperature_scaled,Influenza,1072,1044,1.0,0.9738805970149254,0.9867674858223062,True
+policy_development,full,temperature_scaled,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,full,temperature_scaled,Pneumonia,1030,1025,1.0,0.9951456310679612,0.9975669099756691,True
+policy_development,full,temperature_scaled,Pulmonary neoplasm,572,563,1.0,0.9842657342657343,0.9920704845814978,True
+policy_development,full,temperature_scaled,Spontaneous pneumothorax,406,403,1.0,0.9926108374384236,0.9962917181705809,True
+policy_development,full,temperature_scaled,Tuberculosis,612,533,0.9849906191369606,0.8578431372549019,0.9170305676855895,True
+policy_development,full,temperature_scaled,URTI,2574,2612,0.9839203675344563,0.9984459984459985,0.9911299652911685,True
+policy_development,full,temperature_scaled,Viral pharyngitis,2465,2670,0.9232209737827716,1.0,0.9600778967867576,True
+policy_development,full,temperature_scaled,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_1,original,Acute COPD exacerbation / infection,603,149,0.5302013422818792,0.1310116086235489,0.21010638297872342,True
+policy_development,up_to_1,original,Acute laryngitis,965,392,0.75,0.30466321243523314,0.4333087693441415,True
+policy_development,up_to_1,original,Acute pulmonary edema,760,419,0.8591885441527446,0.47368421052631576,0.6106870229007634,True
+policy_development,up_to_1,original,Acute rhinosinusitis,543,95,0.45263157894736844,0.07918968692449356,0.13479623824451412,True
+policy_development,up_to_1,original,Allergic rhinitis,682,336,1.0,0.49266862170087977,0.6601178781925344,True
+policy_development,up_to_1,original,Bronchiectasis,708,801,0.3021223470661673,0.3418079096045198,0.32074221338634856,True
+policy_development,up_to_1,original,Bronchiolitis,9,0,,0.0,0.0,True
+policy_development,up_to_1,original,Bronchitis,1056,731,0.25991792065663477,0.17992424242424243,0.21264689423614996,True
+policy_development,up_to_1,original,Bronchospasm / acute asthma exacerbation,678,1638,0.25824175824175827,0.6238938053097345,0.36528497409326427,True
+policy_development,up_to_1,original,Chronic rhinosinusitis,823,462,0.6298701298701299,0.353584447144593,0.4529182879377432,True
+policy_development,up_to_1,original,Croup,90,24,0.3333333333333333,0.08888888888888889,0.14035087719298245,True
+policy_development,up_to_1,original,Epiglottitis,688,186,0.9838709677419355,0.26598837209302323,0.41876430205949655,True
+policy_development,up_to_1,original,Influenza,1072,438,0.5776255707762558,0.23600746268656717,0.3350993377483444,True
+policy_development,up_to_1,original,Larygospasm,214,328,0.6524390243902439,1.0,0.7896678966789668,True
+policy_development,up_to_1,original,Pneumonia,1030,51,0.6078431372549019,0.030097087378640777,0.05735430157261795,True
+policy_development,up_to_1,original,Pulmonary neoplasm,572,176,0.6988636363636364,0.21503496503496503,0.32887700534759357,True
+policy_development,up_to_1,original,Spontaneous pneumothorax,406,225,0.7022222222222222,0.3891625615763547,0.5007923930269413,True
+policy_development,up_to_1,original,Tuberculosis,612,149,0.5637583892617449,0.13725490196078433,0.22076215505913271,True
+policy_development,up_to_1,original,URTI,2574,2380,0.5735294117647058,0.5303030303030303,0.5510698425514735,True
+policy_development,up_to_1,original,Viral pharyngitis,2465,7570,0.32562747688243066,1.0,0.49128051818634777,True
+policy_development,up_to_1,original,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_1,temperature_scaled,Acute COPD exacerbation / infection,603,149,0.5302013422818792,0.1310116086235489,0.21010638297872342,True
+policy_development,up_to_1,temperature_scaled,Acute laryngitis,965,392,0.75,0.30466321243523314,0.4333087693441415,True
+policy_development,up_to_1,temperature_scaled,Acute pulmonary edema,760,419,0.8591885441527446,0.47368421052631576,0.6106870229007634,True
+policy_development,up_to_1,temperature_scaled,Acute rhinosinusitis,543,95,0.45263157894736844,0.07918968692449356,0.13479623824451412,True
+policy_development,up_to_1,temperature_scaled,Allergic rhinitis,682,336,1.0,0.49266862170087977,0.6601178781925344,True
+policy_development,up_to_1,temperature_scaled,Bronchiectasis,708,801,0.3021223470661673,0.3418079096045198,0.32074221338634856,True
+policy_development,up_to_1,temperature_scaled,Bronchiolitis,9,0,,0.0,0.0,True
+policy_development,up_to_1,temperature_scaled,Bronchitis,1056,731,0.25991792065663477,0.17992424242424243,0.21264689423614996,True
+policy_development,up_to_1,temperature_scaled,Bronchospasm / acute asthma exacerbation,678,1638,0.25824175824175827,0.6238938053097345,0.36528497409326427,True
+policy_development,up_to_1,temperature_scaled,Chronic rhinosinusitis,823,462,0.6298701298701299,0.353584447144593,0.4529182879377432,True
+policy_development,up_to_1,temperature_scaled,Croup,90,24,0.3333333333333333,0.08888888888888889,0.14035087719298245,True
+policy_development,up_to_1,temperature_scaled,Epiglottitis,688,186,0.9838709677419355,0.26598837209302323,0.41876430205949655,True
+policy_development,up_to_1,temperature_scaled,Influenza,1072,438,0.5776255707762558,0.23600746268656717,0.3350993377483444,True
+policy_development,up_to_1,temperature_scaled,Larygospasm,214,328,0.6524390243902439,1.0,0.7896678966789668,True
+policy_development,up_to_1,temperature_scaled,Pneumonia,1030,51,0.6078431372549019,0.030097087378640777,0.05735430157261795,True
+policy_development,up_to_1,temperature_scaled,Pulmonary neoplasm,572,176,0.6988636363636364,0.21503496503496503,0.32887700534759357,True
+policy_development,up_to_1,temperature_scaled,Spontaneous pneumothorax,406,225,0.7022222222222222,0.3891625615763547,0.5007923930269413,True
+policy_development,up_to_1,temperature_scaled,Tuberculosis,612,149,0.5637583892617449,0.13725490196078433,0.22076215505913271,True
+policy_development,up_to_1,temperature_scaled,URTI,2574,2380,0.5735294117647058,0.5303030303030303,0.5510698425514735,True
+policy_development,up_to_1,temperature_scaled,Viral pharyngitis,2465,7570,0.32562747688243066,1.0,0.49128051818634777,True
+policy_development,up_to_1,temperature_scaled,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_2,original,Acute COPD exacerbation / infection,603,241,0.6929460580912863,0.2769485903814262,0.3957345971563981,True
+policy_development,up_to_2,original,Acute laryngitis,965,670,0.8820895522388059,0.6124352331606218,0.7229357798165138,True
+policy_development,up_to_2,original,Acute pulmonary edema,760,927,0.8036677454153183,0.9802631578947368,0.8832246591582691,True
+policy_development,up_to_2,original,Acute rhinosinusitis,543,158,0.6772151898734177,0.19705340699815838,0.30527817403708984,True
+policy_development,up_to_2,original,Allergic rhinitis,682,590,1.0,0.8651026392961877,0.9276729559748428,True
+policy_development,up_to_2,original,Bronchiectasis,708,945,0.5428571428571428,0.7245762711864406,0.6206896551724138,True
+policy_development,up_to_2,original,Bronchiolitis,9,0,,0.0,0.0,True
+policy_development,up_to_2,original,Bronchitis,1056,654,0.7385321100917431,0.45738636363636365,0.5649122807017544,True
+policy_development,up_to_2,original,Bronchospasm / acute asthma exacerbation,678,1287,0.49106449106449107,0.9321533923303835,0.6432569974554707,True
+policy_development,up_to_2,original,Chronic rhinosinusitis,823,1102,0.5662431941923775,0.7582017010935601,0.6483116883116883,True
+policy_development,up_to_2,original,Croup,90,102,0.6470588235294118,0.7333333333333333,0.6875,True
+policy_development,up_to_2,original,Epiglottitis,688,535,0.9850467289719627,0.7659883720930233,0.8618152085036794,True
+policy_development,up_to_2,original,Influenza,1072,648,0.7839506172839507,0.47388059701492535,0.5906976744186047,True
+policy_development,up_to_2,original,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,up_to_2,original,Pneumonia,1030,387,0.9043927648578811,0.33980582524271846,0.4940014114326041,True
+policy_development,up_to_2,original,Pulmonary neoplasm,572,442,0.8167420814479638,0.6311188811188811,0.7120315581854043,True
+policy_development,up_to_2,original,Spontaneous pneumothorax,406,342,0.8888888888888888,0.7487684729064039,0.8128342245989305,True
+policy_development,up_to_2,original,Tuberculosis,612,465,0.5720430107526882,0.434640522875817,0.49396471680594245,True
+policy_development,up_to_2,original,URTI,2574,2916,0.7194787379972565,0.815073815073815,0.7642987249544626,True
+policy_development,up_to_2,original,Viral pharyngitis,2465,3925,0.6173248407643313,0.9829614604462474,0.7583724569640062,True
+policy_development,up_to_2,original,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_2,temperature_scaled,Acute COPD exacerbation / infection,603,241,0.6929460580912863,0.2769485903814262,0.3957345971563981,True
+policy_development,up_to_2,temperature_scaled,Acute laryngitis,965,670,0.8820895522388059,0.6124352331606218,0.7229357798165138,True
+policy_development,up_to_2,temperature_scaled,Acute pulmonary edema,760,927,0.8036677454153183,0.9802631578947368,0.8832246591582691,True
+policy_development,up_to_2,temperature_scaled,Acute rhinosinusitis,543,158,0.6772151898734177,0.19705340699815838,0.30527817403708984,True
+policy_development,up_to_2,temperature_scaled,Allergic rhinitis,682,590,1.0,0.8651026392961877,0.9276729559748428,True
+policy_development,up_to_2,temperature_scaled,Bronchiectasis,708,945,0.5428571428571428,0.7245762711864406,0.6206896551724138,True
+policy_development,up_to_2,temperature_scaled,Bronchiolitis,9,0,,0.0,0.0,True
+policy_development,up_to_2,temperature_scaled,Bronchitis,1056,654,0.7385321100917431,0.45738636363636365,0.5649122807017544,True
+policy_development,up_to_2,temperature_scaled,Bronchospasm / acute asthma exacerbation,678,1287,0.49106449106449107,0.9321533923303835,0.6432569974554707,True
+policy_development,up_to_2,temperature_scaled,Chronic rhinosinusitis,823,1102,0.5662431941923775,0.7582017010935601,0.6483116883116883,True
+policy_development,up_to_2,temperature_scaled,Croup,90,102,0.6470588235294118,0.7333333333333333,0.6875,True
+policy_development,up_to_2,temperature_scaled,Epiglottitis,688,535,0.9850467289719627,0.7659883720930233,0.8618152085036794,True
+policy_development,up_to_2,temperature_scaled,Influenza,1072,648,0.7839506172839507,0.47388059701492535,0.5906976744186047,True
+policy_development,up_to_2,temperature_scaled,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,up_to_2,temperature_scaled,Pneumonia,1030,387,0.9043927648578811,0.33980582524271846,0.4940014114326041,True
+policy_development,up_to_2,temperature_scaled,Pulmonary neoplasm,572,442,0.8167420814479638,0.6311188811188811,0.7120315581854043,True
+policy_development,up_to_2,temperature_scaled,Spontaneous pneumothorax,406,342,0.8888888888888888,0.7487684729064039,0.8128342245989305,True
+policy_development,up_to_2,temperature_scaled,Tuberculosis,612,465,0.5720430107526882,0.434640522875817,0.49396471680594245,True
+policy_development,up_to_2,temperature_scaled,URTI,2574,2916,0.7194787379972565,0.815073815073815,0.7642987249544626,True
+policy_development,up_to_2,temperature_scaled,Viral pharyngitis,2465,3925,0.6173248407643313,0.9829614604462474,0.7583724569640062,True
+policy_development,up_to_2,temperature_scaled,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_3,original,Acute COPD exacerbation / infection,603,334,0.8802395209580839,0.48756218905472637,0.6275346851654215,True
+policy_development,up_to_3,original,Acute laryngitis,965,803,0.962640099626401,0.8010362694300518,0.8744343891402715,True
+policy_development,up_to_3,original,Acute pulmonary edema,760,777,0.9781209781209781,1.0,0.988939492517892,True
+policy_development,up_to_3,original,Acute rhinosinusitis,543,188,0.7872340425531915,0.27255985267034993,0.4049247606019152,True
+policy_development,up_to_3,original,Allergic rhinitis,682,654,1.0,0.9589442815249267,0.9790419161676647,True
+policy_development,up_to_3,original,Bronchiectasis,708,934,0.708779443254818,0.9350282485875706,0.8063337393422655,True
+policy_development,up_to_3,original,Bronchiolitis,9,3,0.6666666666666666,0.2222222222222222,0.3333333333333333,True
+policy_development,up_to_3,original,Bronchitis,1056,1042,0.8339731285988484,0.8229166666666666,0.8284080076263107,True
+policy_development,up_to_3,original,Bronchospasm / acute asthma exacerbation,678,929,0.7061356297093649,0.967551622418879,0.8164281269446173,True
+policy_development,up_to_3,original,Chronic rhinosinusitis,823,1233,0.6212489862124899,0.9307411907654921,0.745136186770428,True
+policy_development,up_to_3,original,Croup,90,96,0.8229166666666666,0.8777777777777778,0.8494623655913979,True
+policy_development,up_to_3,original,Epiglottitis,688,651,0.9969278033794163,0.9433139534883721,0.9693801344286781,True
+policy_development,up_to_3,original,Influenza,1072,766,0.9242819843342036,0.6604477611940298,0.7704026115342764,True
+policy_development,up_to_3,original,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,up_to_3,original,Pneumonia,1030,725,0.9558620689655173,0.6728155339805825,0.7897435897435897,True
+policy_development,up_to_3,original,Pulmonary neoplasm,572,539,0.9072356215213359,0.8548951048951049,0.8802880288028803,True
+policy_development,up_to_3,original,Spontaneous pneumothorax,406,392,0.9923469387755102,0.958128078817734,0.974937343358396,True
+policy_development,up_to_3,original,Tuberculosis,612,609,0.7684729064039408,0.7647058823529411,0.7665847665847666,True
+policy_development,up_to_3,original,URTI,2574,2888,0.8296398891966759,0.9308469308469308,0.8773343097766386,True
+policy_development,up_to_3,original,Viral pharyngitis,2465,2773,0.8658492607284529,0.9740365111561866,0.91676212294769,True
+policy_development,up_to_3,original,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_3,temperature_scaled,Acute COPD exacerbation / infection,603,334,0.8802395209580839,0.48756218905472637,0.6275346851654215,True
+policy_development,up_to_3,temperature_scaled,Acute laryngitis,965,803,0.962640099626401,0.8010362694300518,0.8744343891402715,True
+policy_development,up_to_3,temperature_scaled,Acute pulmonary edema,760,777,0.9781209781209781,1.0,0.988939492517892,True
+policy_development,up_to_3,temperature_scaled,Acute rhinosinusitis,543,188,0.7872340425531915,0.27255985267034993,0.4049247606019152,True
+policy_development,up_to_3,temperature_scaled,Allergic rhinitis,682,654,1.0,0.9589442815249267,0.9790419161676647,True
+policy_development,up_to_3,temperature_scaled,Bronchiectasis,708,934,0.708779443254818,0.9350282485875706,0.8063337393422655,True
+policy_development,up_to_3,temperature_scaled,Bronchiolitis,9,3,0.6666666666666666,0.2222222222222222,0.3333333333333333,True
+policy_development,up_to_3,temperature_scaled,Bronchitis,1056,1042,0.8339731285988484,0.8229166666666666,0.8284080076263107,True
+policy_development,up_to_3,temperature_scaled,Bronchospasm / acute asthma exacerbation,678,929,0.7061356297093649,0.967551622418879,0.8164281269446173,True
+policy_development,up_to_3,temperature_scaled,Chronic rhinosinusitis,823,1233,0.6212489862124899,0.9307411907654921,0.745136186770428,True
+policy_development,up_to_3,temperature_scaled,Croup,90,96,0.8229166666666666,0.8777777777777778,0.8494623655913979,True
+policy_development,up_to_3,temperature_scaled,Epiglottitis,688,651,0.9969278033794163,0.9433139534883721,0.9693801344286781,True
+policy_development,up_to_3,temperature_scaled,Influenza,1072,766,0.9242819843342036,0.6604477611940298,0.7704026115342764,True
+policy_development,up_to_3,temperature_scaled,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,up_to_3,temperature_scaled,Pneumonia,1030,725,0.9558620689655173,0.6728155339805825,0.7897435897435897,True
+policy_development,up_to_3,temperature_scaled,Pulmonary neoplasm,572,539,0.9072356215213359,0.8548951048951049,0.8802880288028803,True
+policy_development,up_to_3,temperature_scaled,Spontaneous pneumothorax,406,392,0.9923469387755102,0.958128078817734,0.974937343358396,True
+policy_development,up_to_3,temperature_scaled,Tuberculosis,612,609,0.7684729064039408,0.7647058823529411,0.7665847665847666,True
+policy_development,up_to_3,temperature_scaled,URTI,2574,2888,0.8296398891966759,0.9308469308469308,0.8773343097766386,True
+policy_development,up_to_3,temperature_scaled,Viral pharyngitis,2465,2773,0.8658492607284529,0.9740365111561866,0.91676212294769,True
+policy_development,up_to_3,temperature_scaled,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_5,original,Acute COPD exacerbation / infection,603,407,0.9459459459459459,0.6384742951907131,0.7623762376237624,True
+policy_development,up_to_5,original,Acute laryngitis,965,836,0.9976076555023924,0.8642487046632125,0.926152137701277,True
+policy_development,up_to_5,original,Acute pulmonary edema,760,763,0.9960681520314548,1.0,0.9980302035456337,True
+policy_development,up_to_5,original,Acute rhinosinusitis,543,262,0.8625954198473282,0.4162062615101289,0.5614906832298137,True
+policy_development,up_to_5,original,Allergic rhinitis,682,654,1.0,0.9589442815249267,0.9790419161676647,True
+policy_development,up_to_5,original,Bronchiectasis,708,770,0.8597402597402597,0.9350282485875706,0.8958051420838972,True
+policy_development,up_to_5,original,Bronchiolitis,9,7,1.0,0.7777777777777778,0.875,True
+policy_development,up_to_5,original,Bronchitis,1056,1074,0.9748603351955307,0.9914772727272727,0.9830985915492958,True
+policy_development,up_to_5,original,Bronchospasm / acute asthma exacerbation,678,871,0.7531572904707233,0.967551622418879,0.8469980632666236,True
+policy_development,up_to_5,original,Chronic rhinosinusitis,823,1090,0.7165137614678899,0.9489671931956257,0.8165185572399373,True
+policy_development,up_to_5,original,Croup,90,81,0.9753086419753086,0.8777777777777778,0.9239766081871345,True
+policy_development,up_to_5,original,Epiglottitis,688,688,0.997093023255814,0.997093023255814,0.997093023255814,True
+policy_development,up_to_5,original,Influenza,1072,945,0.9957671957671957,0.8777985074626866,0.933068914229053,True
+policy_development,up_to_5,original,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,up_to_5,original,Pneumonia,1030,1002,0.9950099800399201,0.9679611650485437,0.9812992125984252,True
+policy_development,up_to_5,original,Pulmonary neoplasm,572,566,0.9946996466431095,0.9842657342657343,0.9894551845342706,True
+policy_development,up_to_5,original,Spontaneous pneumothorax,406,403,1.0,0.9926108374384236,0.9962917181705809,True
+policy_development,up_to_5,original,Tuberculosis,612,533,0.9849906191369606,0.8578431372549019,0.9170305676855895,True
+policy_development,up_to_5,original,URTI,2574,2714,0.9465733235077377,0.9980574980574981,0.9716338880484114,True
+policy_development,up_to_5,original,Viral pharyngitis,2465,2670,0.9232209737827716,1.0,0.9600778967867576,True
+policy_development,up_to_5,original,Whooping cough,170,170,1.0,1.0,1.0,True
+policy_development,up_to_5,temperature_scaled,Acute COPD exacerbation / infection,603,407,0.9459459459459459,0.6384742951907131,0.7623762376237624,True
+policy_development,up_to_5,temperature_scaled,Acute laryngitis,965,836,0.9976076555023924,0.8642487046632125,0.926152137701277,True
+policy_development,up_to_5,temperature_scaled,Acute pulmonary edema,760,763,0.9960681520314548,1.0,0.9980302035456337,True
+policy_development,up_to_5,temperature_scaled,Acute rhinosinusitis,543,262,0.8625954198473282,0.4162062615101289,0.5614906832298137,True
+policy_development,up_to_5,temperature_scaled,Allergic rhinitis,682,654,1.0,0.9589442815249267,0.9790419161676647,True
+policy_development,up_to_5,temperature_scaled,Bronchiectasis,708,770,0.8597402597402597,0.9350282485875706,0.8958051420838972,True
+policy_development,up_to_5,temperature_scaled,Bronchiolitis,9,7,1.0,0.7777777777777778,0.875,True
+policy_development,up_to_5,temperature_scaled,Bronchitis,1056,1074,0.9748603351955307,0.9914772727272727,0.9830985915492958,True
+policy_development,up_to_5,temperature_scaled,Bronchospasm / acute asthma exacerbation,678,871,0.7531572904707233,0.967551622418879,0.8469980632666236,True
+policy_development,up_to_5,temperature_scaled,Chronic rhinosinusitis,823,1090,0.7165137614678899,0.9489671931956257,0.8165185572399373,True
+policy_development,up_to_5,temperature_scaled,Croup,90,81,0.9753086419753086,0.8777777777777778,0.9239766081871345,True
+policy_development,up_to_5,temperature_scaled,Epiglottitis,688,688,0.997093023255814,0.997093023255814,0.997093023255814,True
+policy_development,up_to_5,temperature_scaled,Influenza,1072,945,0.9957671957671957,0.8777985074626866,0.933068914229053,True
+policy_development,up_to_5,temperature_scaled,Larygospasm,214,214,1.0,1.0,1.0,True
+policy_development,up_to_5,temperature_scaled,Pneumonia,1030,1002,0.9950099800399201,0.9679611650485437,0.9812992125984252,True
+policy_development,up_to_5,temperature_scaled,Pulmonary neoplasm,572,566,0.9946996466431095,0.9842657342657343,0.9894551845342706,True
+policy_development,up_to_5,temperature_scaled,Spontaneous pneumothorax,406,403,1.0,0.9926108374384236,0.9962917181705809,True
+policy_development,up_to_5,temperature_scaled,Tuberculosis,612,533,0.9849906191369606,0.8578431372549019,0.9170305676855895,True
+policy_development,up_to_5,temperature_scaled,URTI,2574,2714,0.9465733235077377,0.9980574980574981,0.9716338880484114,True
+policy_development,up_to_5,temperature_scaled,Viral pharyngitis,2465,2670,0.9232209737827716,1.0,0.9600778967867576,True
+policy_development,up_to_5,temperature_scaled,Whooping cough,170,170,1.0,1.0,1.0,True
