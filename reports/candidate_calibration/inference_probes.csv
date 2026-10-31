@@ -1,0 +1,14 @@
+case_id,status,reported_unit_count,predicted_condition,public_model_score,prediction_performed,safety_flags,research_diagnostic_leader,research_diagnostic_score,validation_error
+tiredness_headache,insufficient_information,2,,,True,,URTI,0.49271806776759086,
+tiredness_chest_pain,prediction_available,2,Pulmonary neoplasm,0.7801629519255993,True,,Pulmonary neoplasm,0.7801629519255994,
+fever_cough,insufficient_information,2,,,True,,Viral pharyngitis,0.38556477842244374,
+tiredness_only,insufficient_information,1,,,False,,,,
+headache_only,insufficient_information,1,,,False,,,,
+no_confirmed_symptoms,insufficient_information,0,,,False,,,,
+unsupported_only,unsupported_input,0,,,False,,,,
+supported_plus_unsupported,unsupported_input,2,,,False,,,,
+safety_only_symptom,safety_review_required,0,,,False,blue_lips,,,
+supplied_safety_flag,safety_review_required,2,,,False,confusion,,,
+explicit_negative_evidence,unsupported_input,2,,,False,,,,
+contradictory_symptom,rejected_invalid_input,,,,False,,,,Conflicting present and absent symptom states
+region_without_parent,rejected_invalid_input,,,,False,,,,head_region_pain requires present parent E_53

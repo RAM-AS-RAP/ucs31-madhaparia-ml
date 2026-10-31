@@ -1,0 +1,17 @@
+{
+  "evaluation_partition": "uncertainty_evaluation",
+  "source_groups": 16741,
+  "policy_sha256": "98ffcb2c1afca112a0974c246a519de8e525305f82c23a3c91235df009cec4eb",
+  "required_views": [
+    "full",
+    "up_to_2",
+    "up_to_3",
+    "up_to_5"
+  ],
+  "failed_required_views": [],
+  "research_targets_met_on_all_required_views": true,
+  "thresholds_changed": false,
+  "temperature_refitted": false,
+  "deployment_approved": false,
+  "interpretation": "These are research targets on held-out simulated-data groups. Per-condition support, recall and withheld cases must also be reviewed. This result does not establish clinical safety."
+}

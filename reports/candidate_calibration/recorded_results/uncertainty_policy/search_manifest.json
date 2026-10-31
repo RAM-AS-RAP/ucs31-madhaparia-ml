@@ -1,0 +1,46 @@
+{
+  "issue": 49,
+  "status": "research_policy_frozen_before_evaluation",
+  "selection_partition": "policy_development",
+  "source_groups": 16720,
+  "input_sha256": {
+    "comparison_manifest": "947b5b9f076a4014862fe44560b907dcfacc1be941365876b06114d3abc55ceb",
+    "calibration_selection": "36b68c2606247d9c9da5d4eacb4b0f0829bb71711ecccf833fac55e38190c5f3",
+    "temperature_fit": "ad2d35f1cd73d7c3006f8a2d83f00551759476361196d759dfcbd3029ec6318c",
+    "model": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+    "candidate_schema": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "protocol": "c41808498a4b27240eaf5e42b739bcb3bb5b43b37d00dcc65c0dc735fe9571c5",
+    "calibration_manifest": "66234c0d400a5cde556e31076ef1d5a14f615fb140fdfad3bc6a852f7da367ac",
+    "calibration_partitions": "c414f236cb34d5438278418a7940dfc22377148de5de30307a5109c813d24716",
+    "calibration_helper": "648b342ae1931feb8ee348079f8dc67f91118bbc01999767e1e72442f0c6c724",
+    "calibration_data_helper": "133c277a4d4333099dd8a5fc1bb73e36e85f13e0158820ab3bcbea7f4776291f",
+    "metrics_helper": "e956c562cadaf475c84648119c9b4b8ea63c101e108da9427c83735ed67870e3",
+    "classification_metrics_helper": "299b7f291e02b9099f0bf724c5fffa44eb8fcb152979689be7467ccca48cf38f",
+    "comparison_script": "88517dbc631e9e8924b7b719df412825ff63e20c7f7ae92e8959e2196394098c",
+    "hash_helper": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "uncertainty_helper": "306b04cbb6c47a147aa0be1aa1542e34c7dda9bc8ac2c768761225356a621373",
+    "search_helper": "162554ab13bc71cf4aa9f96dd519ae71f74f1f90411c6840bdf122dbfbabd311",
+    "selection_script": "e74d59d2bf52ae6911717d4a9f89adb622b4c19014c5d83346fe0f07ccc25f7e",
+    "predictions_full": "af1ca08bcd6876d8eda34eb68da45c4f1c33fd0b644aba2627d85ce2e41cbfb3",
+    "predictions_up_to_1": "b422623a2990b9070c4abeba442d3bbd6be8537c3d3b7917ee9331a05c20c501",
+    "predictions_up_to_2": "3f0bc62454b83d09949887642f9c083c2b7559104df0af12fa90ad7752709797",
+    "predictions_up_to_3": "a2dba9a04013ef2a260c2a24e3b2ed5b6ffd2c601cd3ac01253918f2a1b35cff",
+    "predictions_up_to_5": "980e7fd1758fa6595e8aaa1129ccc5f9612edcd8277166abb400d2b791b0c086"
+  },
+  "output_sha256": {
+    "threshold_grid.csv": "daed247183ae4636317fd116b70042faca9ebeb9ab7827b1805260db1cf7c9dd",
+    "threshold_grid_by_view.csv": "4b2ec71a8db7061c99b7f28ac688307a306ab7b29289bff8f259e38637af7af6",
+    "development_summary.csv": "613cf661a8a21f701fc636c7095a762d17affdc939ea1750a63dc388bc496c74",
+    "policy.json": "98ffcb2c1afca112a0974c246a519de8e525305f82c23a3c91235df009cec4eb"
+  },
+  "notes": [
+    "Only policy-development predictions entered threshold search.",
+    "All 250 prespecified threshold pairs were evaluated.",
+    "Every required view must satisfy the development criteria.",
+    "Development intervals are descriptive after selection.",
+    "The model and fitted temperature were not changed.",
+    "Uncertainty-evaluation predictions were not inspected.",
+    "The final test split was not inspected.",
+    "The saved policy does not authorize deployment."
+  ]
+}

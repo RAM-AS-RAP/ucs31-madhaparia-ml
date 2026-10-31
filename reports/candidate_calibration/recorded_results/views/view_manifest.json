@@ -1,0 +1,304 @@
+{
+  "issue": 49,
+  "status": "reserved_views_prepared_no_predictions",
+  "seed": 42,
+  "input_sha256": {
+    "dataset_manifest": "7eee968072661c365899f74486820c5fc4e429f00ddf431d6c7630601a622acd",
+    "training_csv": "9031fe1b44dda8539622a54a0184b4032839c1cb9549313e19e3bc0e251dac51",
+    "parent_manifest": "36516612857efe2d20db527c954e06e292d64f9e96449c392f97eb7733aadc78",
+    "parent_partitions": "734fedd45b5ecf2930b8bb08f56764ec03d4ef6fcaa6368654200f9f56f63b5f",
+    "calibration_manifest": "66234c0d400a5cde556e31076ef1d5a14f615fb140fdfad3bc6a852f7da367ac",
+    "calibration_partitions": "c414f236cb34d5438278418a7940dfc22377148de5de30307a5109c813d24716",
+    "protocol": "c41808498a4b27240eaf5e42b739bcb3bb5b43b37d00dcc65c0dc735fe9571c5",
+    "candidate_schema": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "feature_builder": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "evaluation_helper": "75ba1b1e48f1f0885e2837c334080cea7644c13d2512e7f7c1b2c32d76793c9b",
+    "calibration_data_helper": "133c277a4d4333099dd8a5fc1bb73e36e85f13e0158820ab3bcbea7f4776291f",
+    "partition_script": "8c7ed142b246b218de23fb05d2e43f36dfc37667d9b4ed21d4a51984153895ae",
+    "previous_view_manifest": "37beb938ae16186c3d2ae4a6afc5a63b2df176fd9ac1506ea4ee686cf0af891a",
+    "view_preparation_script": "dfbfbc442070e279714b2a01f896c4fca1180959040e658c0321d65889375241",
+    "hash_helper": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2"
+  },
+  "partition_group_counts": {
+    "calibration_fit": 50174,
+    "policy_development": 16720,
+    "uncertainty_evaluation": 16741
+  },
+  "condition_support": {
+    "calibration_fit": {
+      "Acute COPD exacerbation / infection": 1810,
+      "Acute laryngitis": 2895,
+      "Acute pulmonary edema": 2281,
+      "Acute rhinosinusitis": 1629,
+      "Allergic rhinitis": 2047,
+      "Bronchiectasis": 2124,
+      "Bronchiolitis": 28,
+      "Bronchitis": 3168,
+      "Bronchospasm / acute asthma exacerbation": 2035,
+      "Chronic rhinosinusitis": 2469,
+      "Croup": 270,
+      "Epiglottitis": 2064,
+      "Influenza": 3217,
+      "Larygospasm": 644,
+      "Pneumonia": 3091,
+      "Pulmonary neoplasm": 1716,
+      "Spontaneous pneumothorax": 1219,
+      "Tuberculosis": 1837,
+      "URTI": 7723,
+      "Viral pharyngitis": 7396,
+      "Whooping cough": 511
+    },
+    "policy_development": {
+      "Acute COPD exacerbation / infection": 603,
+      "Acute laryngitis": 965,
+      "Acute pulmonary edema": 760,
+      "Acute rhinosinusitis": 543,
+      "Allergic rhinitis": 682,
+      "Bronchiectasis": 708,
+      "Bronchiolitis": 9,
+      "Bronchitis": 1056,
+      "Bronchospasm / acute asthma exacerbation": 678,
+      "Chronic rhinosinusitis": 823,
+      "Croup": 90,
+      "Epiglottitis": 688,
+      "Influenza": 1072,
+      "Larygospasm": 214,
+      "Pneumonia": 1030,
+      "Pulmonary neoplasm": 572,
+      "Spontaneous pneumothorax": 406,
+      "Tuberculosis": 612,
+      "URTI": 2574,
+      "Viral pharyngitis": 2465,
+      "Whooping cough": 170
+    },
+    "uncertainty_evaluation": {
+      "Acute COPD exacerbation / infection": 605,
+      "Acute laryngitis": 965,
+      "Acute pulmonary edema": 762,
+      "Acute rhinosinusitis": 543,
+      "Allergic rhinitis": 684,
+      "Bronchiectasis": 708,
+      "Bronchiolitis": 11,
+      "Bronchitis": 1056,
+      "Bronchospasm / acute asthma exacerbation": 679,
+      "Chronic rhinosinusitis": 823,
+      "Croup": 90,
+      "Epiglottitis": 689,
+      "Influenza": 1073,
+      "Larygospasm": 216,
+      "Pneumonia": 1031,
+      "Pulmonary neoplasm": 572,
+      "Spontaneous pneumothorax": 407,
+      "Tuberculosis": 614,
+      "URTI": 2576,
+      "Viral pharyngitis": 2466,
+      "Whooping cough": 171
+    }
+  },
+  "calibration_fit_weight_per_group_per_view": 0.2,
+  "views": {
+    "calibration_fit": {
+      "full": {
+        "filename": "calibration_fit/full.csv",
+        "sha256": "82ca0fb72a52928f5239135e54bc42e59260aad34858484b95590f5c18bb52dc",
+        "rows": 50174,
+        "requested_max_reporting_units": null,
+        "actual_reporting_unit_counts": {
+          "1": 1060,
+          "2": 5154,
+          "3": 11721,
+          "4": 10475,
+          "5": 8385,
+          "6": 5984,
+          "7": 3983,
+          "8": 2086,
+          "9": 992,
+          "10": 308,
+          "11": 26
+        }
+      },
+      "up_to_1": {
+        "filename": "calibration_fit/up_to_1.csv",
+        "sha256": "9ded5237b73d9d471ac7b5a158f2a8f426b9e610cdd0d2349fce5d806959de4a",
+        "rows": 50174,
+        "requested_max_reporting_units": 1,
+        "actual_reporting_unit_counts": {
+          "1": 50174
+        }
+      },
+      "up_to_2": {
+        "filename": "calibration_fit/up_to_2.csv",
+        "sha256": "322b5d8e77b0853ac7469b3e9748f03a76020362fced8987d1632c1e852ac1ca",
+        "rows": 50174,
+        "requested_max_reporting_units": 2,
+        "actual_reporting_unit_counts": {
+          "1": 1060,
+          "2": 49114
+        }
+      },
+      "up_to_3": {
+        "filename": "calibration_fit/up_to_3.csv",
+        "sha256": "0fee16f84355a3ec6108c119a6ba2f659036f2e041df409c4b43606de899aad0",
+        "rows": 50174,
+        "requested_max_reporting_units": 3,
+        "actual_reporting_unit_counts": {
+          "1": 1060,
+          "2": 5154,
+          "3": 43960
+        }
+      },
+      "up_to_5": {
+        "filename": "calibration_fit/up_to_5.csv",
+        "sha256": "052b77291bbef395a2c8e9e6850cdd210d0360a9820cc959d4093e3af4681279",
+        "rows": 50174,
+        "requested_max_reporting_units": 5,
+        "actual_reporting_unit_counts": {
+          "1": 1060,
+          "2": 5154,
+          "3": 11721,
+          "4": 10475,
+          "5": 21764
+        }
+      }
+    },
+    "policy_development": {
+      "full": {
+        "filename": "policy_development/full.csv",
+        "sha256": "24b898ae4599b9d78c912865695d8872e94e2c6f038a631c64f0e51e0cbd96f6",
+        "rows": 16720,
+        "requested_max_reporting_units": null,
+        "actual_reporting_unit_counts": {
+          "1": 346,
+          "2": 1741,
+          "3": 3915,
+          "4": 3385,
+          "5": 2838,
+          "6": 2041,
+          "7": 1325,
+          "8": 687,
+          "9": 317,
+          "10": 112,
+          "11": 13
+        }
+      },
+      "up_to_1": {
+        "filename": "policy_development/up_to_1.csv",
+        "sha256": "5c541f7e4343a335fa7507b049e567bc36c823947bd209f164db4b9efb53474f",
+        "rows": 16720,
+        "requested_max_reporting_units": 1,
+        "actual_reporting_unit_counts": {
+          "1": 16720
+        }
+      },
+      "up_to_2": {
+        "filename": "policy_development/up_to_2.csv",
+        "sha256": "fa10f56806cebf07ef09b29e7f146c1701ad36d7e676d7be9f3dd4ec4b999550",
+        "rows": 16720,
+        "requested_max_reporting_units": 2,
+        "actual_reporting_unit_counts": {
+          "1": 346,
+          "2": 16374
+        }
+      },
+      "up_to_3": {
+        "filename": "policy_development/up_to_3.csv",
+        "sha256": "7b9189483aa4208366147fadd36ff8d2145793f72faac716b4d56daf2c2602e6",
+        "rows": 16720,
+        "requested_max_reporting_units": 3,
+        "actual_reporting_unit_counts": {
+          "1": 346,
+          "2": 1741,
+          "3": 14633
+        }
+      },
+      "up_to_5": {
+        "filename": "policy_development/up_to_5.csv",
+        "sha256": "d48f77155b720868d405cd90fb953f77dd2efbb181c8bcfd2d00fb570dfb2a36",
+        "rows": 16720,
+        "requested_max_reporting_units": 5,
+        "actual_reporting_unit_counts": {
+          "1": 346,
+          "2": 1741,
+          "3": 3915,
+          "4": 3385,
+          "5": 7333
+        }
+      }
+    },
+    "uncertainty_evaluation": {
+      "full": {
+        "filename": "uncertainty_evaluation/full.csv",
+        "sha256": "cf2795c761b75798ba9ab2f8248096a2439f5ed8f4e032cf507127a3e3b339b6",
+        "rows": 16741,
+        "requested_max_reporting_units": null,
+        "actual_reporting_unit_counts": {
+          "1": 345,
+          "2": 1784,
+          "3": 3871,
+          "4": 3506,
+          "5": 2799,
+          "6": 1968,
+          "7": 1367,
+          "8": 652,
+          "9": 330,
+          "10": 109,
+          "11": 10
+        }
+      },
+      "up_to_1": {
+        "filename": "uncertainty_evaluation/up_to_1.csv",
+        "sha256": "9d55ce37ce8afb78beacb43c33d151a02b36015a8c06d4faa01a360201077727",
+        "rows": 16741,
+        "requested_max_reporting_units": 1,
+        "actual_reporting_unit_counts": {
+          "1": 16741
+        }
+      },
+      "up_to_2": {
+        "filename": "uncertainty_evaluation/up_to_2.csv",
+        "sha256": "61b69d5741c5693be54aa43de454932a42764f044ca51e39a020e5574b79e084",
+        "rows": 16741,
+        "requested_max_reporting_units": 2,
+        "actual_reporting_unit_counts": {
+          "1": 345,
+          "2": 16396
+        }
+      },
+      "up_to_3": {
+        "filename": "uncertainty_evaluation/up_to_3.csv",
+        "sha256": "59aa1d03293d732a34f3c8d52204903108bb20917abbdc58fd05b24789e25335",
+        "rows": 16741,
+        "requested_max_reporting_units": 3,
+        "actual_reporting_unit_counts": {
+          "1": 345,
+          "2": 1784,
+          "3": 14612
+        }
+      },
+      "up_to_5": {
+        "filename": "uncertainty_evaluation/up_to_5.csv",
+        "sha256": "84055c5519790b72aeb93240cabf2f6a5ca4f67db3a89c279add300106cbe206",
+        "rows": 16741,
+        "requested_max_reporting_units": 5,
+        "actual_reporting_unit_counts": {
+          "1": 345,
+          "2": 1784,
+          "3": 3871,
+          "4": 3506,
+          "5": 7235
+        }
+      }
+    }
+  },
+  "notes": [
+    "Each view contains one observation per source group.",
+    "Each group remains in its assigned partition across all views.",
+    "Training sample weights were not carried into these views.",
+    "Calibration fitting must assign weight 1/5 per group per view.",
+    "Report each evaluation view separately.",
+    "Repeated views are not independent patients.",
+    "No model or prediction archive was loaded.",
+    "Evaluation predictions must wait until the policy is frozen.",
+    "The final test split was not inspected."
+  ]
+}
