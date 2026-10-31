@@ -1,0 +1,20 @@
+{
+  "issue": 50,
+  "assessment_cohort": "primary",
+  "required_views": [
+    "full",
+    "up_to_2",
+    "up_to_3",
+    "up_to_5"
+  ],
+  "research_target_assessment": "met",
+  "research_targets_met_on_all_required_views": true,
+  "failed_required_views": [],
+  "not_assessable_required_views": [],
+  "model_retrained": false,
+  "temperature_refitted": false,
+  "thresholds_changed": false,
+  "candidate_reselected": false,
+  "deployment_approved": false,
+  "interpretation": "Official-test-split research evaluation with documented earlier project-level test exposure. Aggregate targets do not establish condition-specific adequacy or clinical performance for Kenyan users."
+}

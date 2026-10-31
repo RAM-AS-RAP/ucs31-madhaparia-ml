@@ -1,0 +1,16 @@
+view,cohort,status,observations,required_for_research_target
+full,primary,evaluated,53272,True
+full,complete_eligible,evaluated,56632,False
+full,overlap,evaluated,3360,False
+up_to_1,primary,evaluated,53272,False
+up_to_1,complete_eligible,evaluated,56632,False
+up_to_1,overlap,evaluated,3360,False
+up_to_2,primary,evaluated,53272,True
+up_to_2,complete_eligible,evaluated,56632,False
+up_to_2,overlap,evaluated,3360,False
+up_to_3,primary,evaluated,53272,True
+up_to_3,complete_eligible,evaluated,56632,False
+up_to_3,overlap,evaluated,3360,False
+up_to_5,primary,evaluated,53272,True
+up_to_5,complete_eligible,evaluated,56632,False
+up_to_5,overlap,evaluated,3360,False
