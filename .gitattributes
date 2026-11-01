@@ -6,3 +6,6 @@ reports/candidate_calibration/** -text whitespace=blank-at-eol,blank-at-eof,spac
 
 # Preserve exact bytes of fingerprinted final-evaluation reports.
 reports/candidate_final_evaluation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve exact bytes of runtime release records.
+reports/candidate_runtime_bundle/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

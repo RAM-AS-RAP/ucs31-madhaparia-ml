@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "respiratory-candidate-runtime"
+version = "0.1.0"
+description = "Portable inference for the evaluated respiratory research candidate"
+requires-python = "==3.11.9"
+dependencies = [
+    "numpy==2.4.6",
+    "pandas==3.0.6",
+    "scipy==1.17.1",
+    "scikit-learn==1.9.1",
+    "joblib==1.6.0",
+]
+
+[tool.setuptools]
+packages = ["respiratory_candidate_runtime"]
+include-package-data = false

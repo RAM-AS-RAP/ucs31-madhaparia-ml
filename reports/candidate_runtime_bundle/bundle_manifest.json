@@ -1,0 +1,138 @@
+{
+  "bundle_format_version": 1,
+  "bundle_id": "respiratory_candidate_v1-runtime-0.1.0",
+  "runtime_version": "0.1.0",
+  "model_version": "candidate_v1_research",
+  "schema_id": "respiratory_candidate_v1",
+  "policy_id": "candidate_v1_research_uncertainty_v1",
+  "environment": {
+    "python": "3.11.9",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "files": {
+    "classes.json": {
+      "sha256": "68fad0e925f4146b754396710c808dd5c5d541ae5d2fa9467a3582a4a5c3f604",
+      "size_bytes": 472
+    },
+    "feature_schema.json": {
+      "sha256": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+      "size_bytes": 7893
+    },
+    "model.joblib": {
+      "sha256": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+      "size_bytes": 36327661
+    },
+    "policy.json": {
+      "sha256": "98ffcb2c1afca112a0974c246a519de8e525305f82c23a3c91235df009cec4eb",
+      "size_bytes": 3543
+    },
+    "provenance/calibration_selection.json": {
+      "sha256": "36b68c2606247d9c9da5d4eacb4b0f0829bb71711ecccf833fac55e38190c5f3",
+      "size_bytes": 934
+    },
+    "provenance/final_decision.json": {
+      "sha256": "b0929c694ad538f7dd099ad759b56cadf51e44aeb39629f5bad2a8bbc7f9c0f7",
+      "size_bytes": 696
+    },
+    "provenance/final_evaluation.json": {
+      "sha256": "be87c6280876735cfae51097dfb1a5f1fa391dfb083431acec7699f72fd5c447",
+      "size_bytes": 10806
+    },
+    "provenance/final_verification.json": {
+      "sha256": "7f13be552350ee7d8417dc98966cb51ac85be8274c12a6e0921fff5577c6d88f",
+      "size_bytes": 10040
+    },
+    "provenance/model_comparison.json": {
+      "sha256": "35ac8011858ee67690887f13fbc1062cf4f6ebcebb0770106bd9b6d1173c392d",
+      "size_bytes": 7671
+    },
+    "provenance/model_selection.json": {
+      "sha256": "3e13cbc15d585399b46d8c8b2eedcfa3824c30566c533a65095ef57b47b1f9eb",
+      "size_bytes": 563
+    },
+    "provenance/policy_search.json": {
+      "sha256": "0bcb78d98321ea747a83494d5be8a4ee1aa699bfe4d7bd303537aca27d182238",
+      "size_bytes": 3169
+    },
+    "provenance/temperature_fit.json": {
+      "sha256": "ad2d35f1cd73d7c3006f8a2d83f00551759476361196d759dfcbd3029ec6318c",
+      "size_bytes": 6909
+    },
+    "provenance/training_manifest.json": {
+      "sha256": "06fab39c6e14aaeacfb0614dcd75be6c5bf94ca7865543cd7b32e19cc25e62af",
+      "size_bytes": 7835
+    },
+    "provenance/uncertainty_decision.json": {
+      "sha256": "ddadf7999ad537d41d63cd711d5240b38a1aac00c1a65779c965b75cc860651d",
+      "size_bytes": 654
+    },
+    "provenance/uncertainty_evaluation.json": {
+      "sha256": "09219c4e0c5d3b80d8b2022cff5c00075890c835e808d3803b9f67fc6065006d",
+      "size_bytes": 4441
+    },
+    "reference_cases.json": {
+      "sha256": "2831c130fcb7eb16bf6d5f79fb4b69bf5058dd550c97c722e24f9284e97181b3",
+      "size_bytes": 57220
+    }
+  },
+  "source_sha256": {
+    "data/candidate_experiment_v1/models/rf_group_weighted/model.joblib": "7edc3dc42570c79c67bf14f6f8c7d651d0f61324161e3836341d20f49a6f3759",
+    "docs/candidate_feature_schema_v1.json": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+    "data/candidate_experiment_v1/calibration/uncertainty_policy/policy.json": "98ffcb2c1afca112a0974c246a519de8e525305f82c23a3c91235df009cec4eb",
+    "reports/candidate_calibration/inference_probes.json": "2831c130fcb7eb16bf6d5f79fb4b69bf5058dd550c97c722e24f9284e97181b3",
+    "reports/candidate_model_comparison/rf_group_weighted_training_manifest.json": "06fab39c6e14aaeacfb0614dcd75be6c5bf94ca7865543cd7b32e19cc25e62af",
+    "reports/candidate_model_comparison/selection.json": "3e13cbc15d585399b46d8c8b2eedcfa3824c30566c533a65095ef57b47b1f9eb",
+    "reports/candidate_model_comparison/comparison_manifest.json": "35ac8011858ee67690887f13fbc1062cf4f6ebcebb0770106bd9b6d1173c392d",
+    "reports/candidate_calibration/recorded_results/temperature_fit/temperature_fit.json": "ad2d35f1cd73d7c3006f8a2d83f00551759476361196d759dfcbd3029ec6318c",
+    "reports/candidate_calibration/recorded_results/policy_development_comparison/selection.json": "36b68c2606247d9c9da5d4eacb4b0f0829bb71711ecccf833fac55e38190c5f3",
+    "reports/candidate_calibration/recorded_results/uncertainty_policy/search_manifest.json": "0bcb78d98321ea747a83494d5be8a4ee1aa699bfe4d7bd303537aca27d182238",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/evaluation_manifest.json": "09219c4e0c5d3b80d8b2022cff5c00075890c835e808d3803b9f67fc6065006d",
+    "reports/candidate_calibration/recorded_results/uncertainty_evaluation/evaluation_decision.json": "ddadf7999ad537d41d63cd711d5240b38a1aac00c1a65779c965b75cc860651d",
+    "reports/candidate_final_evaluation/recorded_results/evaluation/evaluation_manifest.json": "be87c6280876735cfae51097dfb1a5f1fa391dfb083431acec7699f72fd5c447",
+    "reports/candidate_final_evaluation/recorded_results/evaluation/evaluation_decision.json": "b0929c694ad538f7dd099ad759b56cadf51e44aeb39629f5bad2a8bbc7f9c0f7",
+    "reports/candidate_final_evaluation/metrics_verification.json": "7f13be552350ee7d8417dc98966cb51ac85be8274c12a6e0921fff5577c6d88f",
+    "scripts/candidate_feature_builder.py": "057419cd467195514f62c0fa141e5f393bbababc34de0395b6b51cfb9af10fab",
+    "scripts/audit_candidate_source_records.py": "effb3c7ca66f863f0babf311b7d566424f6174427d2a4d4bdecc314afa3d00b2",
+    "scripts/audit_candidate_overlap.py": "ee60c9b87df4516fd049679898d04fcd88e988b25ac5f70d62f7a19617ac4b4b",
+    "scripts/audit_candidate_final_source.py": "d4bd458ddb538aa3c5719a170f2950bfa30d9369523f1c742da2b1a121ccb8b2",
+    "scripts/build_candidate_dataset.py": "04109b4d832db56075ce694722dfa298344c018f3440cc2b7cc777e38be6f95c",
+    "scripts/candidate_evaluation.py": "75ba1b1e48f1f0885e2837c334080cea7644c13d2512e7f7c1b2c32d76793c9b",
+    "scripts/prepare_candidate_final_views.py": "e5a22a7e6d3a4f75764b0c66587a7f3f77b39ed3f2ebe97d5b6193c3c63d6b71",
+    "scripts/candidate_calibration_metrics.py": "e956c562cadaf475c84648119c9b4b8ea63c101e108da9427c83735ed67870e3",
+    "scripts/candidate_comparison_metrics.py": "299b7f291e02b9099f0bf724c5fffa44eb8fcb152979689be7467ccca48cf38f",
+    "scripts/candidate_probability_calibration.py": "648b342ae1931feb8ee348079f8dc67f91118bbc01999767e1e72442f0c6c724",
+    "scripts/candidate_uncertainty_policy.py": "306b04cbb6c47a147aa0be1aa1542e34c7dda9bc8ac2c768761225356a621373",
+    "scripts/candidate_selective_evaluation.py": "dd32b901241ca0c6e335a3fcb11f79e9cb09aeaee5261e0cd060a416ce4866c6",
+    "inference/candidate_predictor.py": "14fd558a46d969b0ee00926ca29cf271e41498f60b1b08351490244ab20ccdf0",
+    "inference/candidate_assessment.py": "caf33d43a778ead06103717856871dd9376a2109f1157f1c7ec6184cb8be611b",
+    "scripts/candidate_final_metrics.py": "aa8787a046795a3771b5bafc38b8c1ade67e0cc8aa041594cde382e82ed721ae",
+    "scripts/candidate_final_inputs.py": "fdb8cbe020f00efc806fd590c05e43e51edbc207cdac22742daea38451a4dee0",
+    "scripts/evaluate_candidate_final_test.py": "10de70f219fc2ff5842e15e91355c5f08d08f3484ccbd4f9c443ea36a105ad21",
+    "respiratory_candidate_runtime/__init__.py": "1affbaf84cbf82c12fcedd3836ae04791f5419ac27158926bcb40d25bf652e6b",
+    "respiratory_candidate_runtime/assessment.py": "714ffb3349151e63ce92bc02afbdd2d9393ba9e7eaa562f3d3a8914f90a1e3d7",
+    "respiratory_candidate_runtime/errors.py": "b5d9df0d55fee73d37c2f2297a5e063fd5d7c808344269a2517fdc31744afec5",
+    "respiratory_candidate_runtime/features.py": "006dd5712b621248f68d0f87ad6e086e1d6c9c1c258c6cedbcccc8b1e6bd6fd4",
+    "respiratory_candidate_runtime/integrity.py": "b83e19400dfaad7568fb75520200630bde6bcb783958da3e913c21da927af2a0",
+    "respiratory_candidate_runtime/loader.py": "368ea172ad23b611a18e456ec99acc4583186fd2b54668a9f4b8e5f8e65aecdf",
+    "respiratory_candidate_runtime/metadata.py": "ac1040ae253fdfc9c6bd6a204256e8c8a67d590816768682f6fa63eb6b539d3e",
+    "respiratory_candidate_runtime/policy.py": "500e648555ae4146c1990e91a1b8bd001a85bcee18363c45a07fea65596d764d",
+    "respiratory_candidate_runtime/predictor.py": "ff09189f7f3fb5e323db4ac8255c450930aaa04c0120933238642515d949e7aa",
+    "respiratory_candidate_runtime/probability.py": "6d856212d1fd47e06e1b24120fb24c5f9a56e6f61cf8a9ad8a581ebda6d55ddb",
+    "scripts/export_candidate_runtime_bundle.py": "f1e427f99e9dacd596b2d8c48422e6ff9fd1d22ff812134912efb30164116e9a"
+  },
+  "research_target_assessment": "met",
+  "deployment_approved": false,
+  "limitations": [
+    "Evaluated on simulated respiratory-condition data.",
+    "Scores are not validated individual clinical risks.",
+    "Historical test exposure cannot be ruled out.",
+    "This export does not activate any application.",
+    "Wheel packaging and isolated installation remain pending."
+  ]
+}

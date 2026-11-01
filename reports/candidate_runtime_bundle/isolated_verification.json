@@ -1,0 +1,116 @@
+{
+  "issue": 58,
+  "status": "isolated_installed_runtime_verified",
+  "manifest_sha256": "52ee494aedd887210a0c4ca991d94321321af0e3766ee7b63f0742867730858b",
+  "wheel_sha256": "08d31afb8934fe8ed37a573a7af032fd4f8156753f274e9cf17df7b48371d05e",
+  "export_record_sha256": "aa80ddda39539da6a4d492e52c7a170873f8089ba8436f8c7aaddc469d66d6f2",
+  "wheel_verification_sha256": "a8ecd78cd93333915c8bfe2d0083e271ff5f48da6c45f2a1388c0737badb279a",
+  "verification_script_sha256": "bad39290c585983614d91ef5dccba6e618d208e725467a3833c2cce90f59fba2",
+  "runtime_version": "0.1.0",
+  "environment": {
+    "python": "3.11.9",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "installed_distributions": {
+    "cloudpickle": "3.1.2",
+    "joblib": "1.6.0",
+    "narwhals": "2.28.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "pip": "24.0",
+    "python-dateutil": "4.0.0",
+    "respiratory-candidate-runtime": "0.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "setuptools": "65.5.0",
+    "threadpoolctl": "3.7.0",
+    "tzdata": "2026.6"
+  },
+  "python_isolated_mode": true,
+  "runtime_loaded_from_separate_environment": true,
+  "research_imports_blocked": [
+    "inference",
+    "nlp",
+    "scripts"
+  ],
+  "runtime_modules_verified": 10,
+  "cases_verified": 13,
+  "calls_verified": 26,
+  "absolute_float_tolerance": 1e-12,
+  "relative_float_tolerance": 0,
+  "decisions_compared_exactly": true,
+  "cases": [
+    {
+      "case_id": "tiredness_headache",
+      "expected_status": "insufficient_information",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "tiredness_chest_pain",
+      "expected_status": "prediction_available",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "fever_cough",
+      "expected_status": "insufficient_information",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "tiredness_only",
+      "expected_status": "insufficient_information",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "headache_only",
+      "expected_status": "insufficient_information",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "no_confirmed_symptoms",
+      "expected_status": "insufficient_information",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "unsupported_only",
+      "expected_status": "unsupported_input",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "supported_plus_unsupported",
+      "expected_status": "unsupported_input",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "safety_only_symptom",
+      "expected_status": "safety_review_required",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "supplied_safety_flag",
+      "expected_status": "safety_review_required",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "explicit_negative_evidence",
+      "expected_status": "unsupported_input",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "contradictory_symptom",
+      "expected_status": "rejected_invalid_input",
+      "public_and_diagnostic_calls_verified": true
+    },
+    {
+      "case_id": "region_without_parent",
+      "expected_status": "rejected_invalid_input",
+      "public_and_diagnostic_calls_verified": true
+    }
+  ],
+  "deployment_approved": false
+}
