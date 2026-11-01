@@ -1,0 +1,36 @@
+{
+  "issue": 58,
+  "status": "wheel_verified_isolated_installation_pending",
+  "wheel_filename": "respiratory_candidate_runtime-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "08d31afb8934fe8ed37a573a7af032fd4f8156753f274e9cf17df7b48371d05e",
+  "wheel_size_bytes": 15323,
+  "bundle_manifest_sha256": "52ee494aedd887210a0c4ca991d94321321af0e3766ee7b63f0742867730858b",
+  "export_record_sha256": "aa80ddda39539da6a4d492e52c7a170873f8089ba8436f8c7aaddc469d66d6f2",
+  "pyproject_sha256": "3b5aaa2d2bda0b9261b2fe28918964c0de1aff730782513af4257fe75f875de1",
+  "runtime_version": "0.1.0",
+  "environment": {
+    "python": "3.11.9",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "runtime_modules_verified": 10,
+  "runtime_source_sha256": {
+    "respiratory_candidate_runtime/__init__.py": "1affbaf84cbf82c12fcedd3836ae04791f5419ac27158926bcb40d25bf652e6b",
+    "respiratory_candidate_runtime/assessment.py": "714ffb3349151e63ce92bc02afbdd2d9393ba9e7eaa562f3d3a8914f90a1e3d7",
+    "respiratory_candidate_runtime/errors.py": "b5d9df0d55fee73d37c2f2297a5e063fd5d7c808344269a2517fdc31744afec5",
+    "respiratory_candidate_runtime/features.py": "006dd5712b621248f68d0f87ad6e086e1d6c9c1c258c6cedbcccc8b1e6bd6fd4",
+    "respiratory_candidate_runtime/integrity.py": "b83e19400dfaad7568fb75520200630bde6bcb783958da3e913c21da927af2a0",
+    "respiratory_candidate_runtime/loader.py": "368ea172ad23b611a18e456ec99acc4583186fd2b54668a9f4b8e5f8e65aecdf",
+    "respiratory_candidate_runtime/metadata.py": "ac1040ae253fdfc9c6bd6a204256e8c8a67d590816768682f6fa63eb6b539d3e",
+    "respiratory_candidate_runtime/policy.py": "500e648555ae4146c1990e91a1b8bd001a85bcee18363c45a07fea65596d764d",
+    "respiratory_candidate_runtime/predictor.py": "ff09189f7f3fb5e323db4ac8255c450930aaa04c0120933238642515d949e7aa",
+    "respiratory_candidate_runtime/probability.py": "6d856212d1fd47e06e1b24120fb24c5f9a56e6f61cf8a9ad8a581ebda6d55ddb"
+  },
+  "wheel_record_verified": true,
+  "deployment_approved": false
+}

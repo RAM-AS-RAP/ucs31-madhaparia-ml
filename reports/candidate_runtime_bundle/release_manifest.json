@@ -1,0 +1,40 @@
+{
+  "issue": 58,
+  "status": "portable_runtime_verified",
+  "runtime_version": "0.1.0",
+  "bundle_id": "respiratory_candidate_v1-runtime-0.1.0",
+  "bundle_manifest_sha256": "52ee494aedd887210a0c4ca991d94321321af0e3766ee7b63f0742867730858b",
+  "wheel_filename": "respiratory_candidate_runtime-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "08d31afb8934fe8ed37a573a7af032fd4f8156753f274e9cf17df7b48371d05e",
+  "wheel_size_bytes": 15323,
+  "environment": {
+    "python": "3.11.9",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "reference_cases_verified": 13,
+  "installed_runtime_calls_verified": 26,
+  "source_fingerprints_unchanged": true,
+  "model_retrained": false,
+  "temperature_refitted": false,
+  "thresholds_changed": false,
+  "deployment_approved": false,
+  "report_sha256": {
+    "bundle_manifest.json": "52ee494aedd887210a0c4ca991d94321321af0e3766ee7b63f0742867730858b",
+    "export_record.json": "aa80ddda39539da6a4d492e52c7a170873f8089ba8436f8c7aaddc469d66d6f2",
+    "isolated_verification.json": "e12c7f36821cdc8849fe8c2af8a5007f3b9fcf48484e295bd8ed271db9c9c41f",
+    "runtime_constraints.txt": "d5f00a63e5389a9c77256ff92f02eba5045129ac9c98bd6a828bae67e0c04e3f",
+    "wheel_verification.json": "a8ecd78cd93333915c8bfe2d0083e271ff5f48da6c45f2a1388c0737badb279a"
+  },
+  "notes": [
+    "Earlier export records retain their historical pending statuses.",
+    "This record links the subsequent successful wheel and isolated checks.",
+    "Generated bundle and wheel are delivered separately from Git.",
+    "Backend integration and activation remain separate work."
+  ]
+}
