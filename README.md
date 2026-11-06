@@ -1,5 +1,7 @@
 # IS Project 2 - Respiratory Health Awareness and Prediction System
 
+> **Merged release:** the local webapp serves the verified V3 partial-evidence artifact from the sibling backend. This folder retains original research plus matched evaluation and a separate **offline-only** COVID experiment. See [merged ML setup and limitations](MERGED_RELEASE.md). Installing the old optional runtime described elsewhere is not required for V3 inference.
+
 ## Machine Learning Component
 
 This repository contains the machine learning and NLP components of the IS Project 2 Respiratory Health Awareness and Prediction System.

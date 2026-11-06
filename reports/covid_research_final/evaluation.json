@@ -1,0 +1,306 @@
+{
+  "training_script_sha256": "b788eb8c2553ebaf601f373d8c8d873069934ae9e09f7a80337bd197d81c9726",
+  "scope": "Offline reported-lab COVID-positive vs COVID-negative among recent respiratory illness respondents; not COVID vs confirmed influenza/TB",
+  "source": {
+    "repository": "https://github.com/GCCR/GCCR002",
+    "commit": "d717674e3b86c3c7c314af05ea44497abc88a622",
+    "sha256": {
+      "LICENSE": "ddfe2c0614831a899d3223f3c781d9c77585a94e203f428e9c68a3da602fff4d",
+      "README.md": "a646444d4d4c51e6947db40c30a08adb1f3c28fde617827ff4ead16c775c886b",
+      "data/processed/data-clean.csv": "c31933b68b7d61fdab4f5bd0992f47a9bded3bb495800dd4e3a6d5fd637f5412",
+      "data/processed/targets.json": "4a877d5df864fb653062ede1167159960d213f04d809ef393f1abca31a26ab8f",
+      "data/processed/data-types.json": "d7acdd4ebbd18e3596eafb71ed02ea7dfebf2b810f05f13c8b78dae3a62141aa"
+    }
+  },
+  "cohort": {
+    "source_reported_lab_positive": 4148,
+    "source_reported_lab_negative": 546,
+    "complete_valid_cohort": 4694,
+    "excluded_incomplete_or_invalid": 0,
+    "excluded_missing_values": 0
+  },
+  "seed": 20261104,
+  "environment": {
+    "python": "3.13.2",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6"
+  },
+  "partitions": {
+    "train": {
+      "rows": 2816,
+      "reported_positive": 2488,
+      "unique_predictor_groups": 2816,
+      "participant_set_sha256": "dd4c8119498389f495ae581d7e0f3ab7aa7a9a7e31927a9ddd3eb7053cb1b12f"
+    },
+    "validation": {
+      "rows": 939,
+      "reported_positive": 832,
+      "unique_predictor_groups": 939,
+      "participant_set_sha256": "abb20b2143b55028478d8c8639d6670d9726908689c0c07c1505d463e02dfe44"
+    },
+    "test": {
+      "rows": 939,
+      "reported_positive": 828,
+      "unique_predictor_groups": 939,
+      "participant_set_sha256": "7318a1b3abc56afb7d71192570ea8cb0b8f7e6159f29a4a6586c5d15eb5458bf"
+    }
+  },
+  "validation": {
+    "symptoms": {
+      "rows": 939,
+      "reported_positive": 832,
+      "roc_auc": 0.6310433141624732,
+      "average_precision": 0.9186850551054118,
+      "log_loss": 0.3401751600796638,
+      "brier": 0.09677533820307063,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          0,
+          107
+        ],
+        [
+          0,
+          832
+        ]
+      ]
+    },
+    "symptoms_duration": {
+      "rows": 939,
+      "reported_positive": 832,
+      "roc_auc": 0.6448036484543495,
+      "average_precision": 0.9246456668745662,
+      "log_loss": 0.3361987632347967,
+      "brier": 0.09575040488908307,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          0,
+          107
+        ],
+        [
+          0,
+          832
+        ]
+      ]
+    },
+    "symptoms_sensory": {
+      "rows": 939,
+      "reported_positive": 832,
+      "roc_auc": 0.6838268332135156,
+      "average_precision": 0.9280791169615994,
+      "log_loss": 0.3254509245933366,
+      "brier": 0.09271159227777714,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          12,
+          95
+        ],
+        [
+          9,
+          823
+        ]
+      ]
+    },
+    "all": {
+      "rows": 939,
+      "reported_positive": 832,
+      "roc_auc": 0.6992608734723221,
+      "average_precision": 0.9353565364571917,
+      "log_loss": 0.32043073564162705,
+      "brier": 0.09135852818813851,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          12,
+          95
+        ],
+        [
+          6,
+          826
+        ]
+      ]
+    }
+  },
+  "test": {
+    "symptoms": {
+      "rows": 939,
+      "reported_positive": 828,
+      "roc_auc": 0.6228511119815467,
+      "average_precision": 0.9159623604652485,
+      "log_loss": 0.3542601488504385,
+      "brier": 0.10222388905511863,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          0,
+          111
+        ],
+        [
+          0,
+          828
+        ]
+      ]
+    },
+    "symptoms_duration": {
+      "rows": 939,
+      "reported_positive": 828,
+      "roc_auc": 0.6217630674152413,
+      "average_precision": 0.9142385754137234,
+      "log_loss": 0.3546467276915405,
+      "brier": 0.10223053257603672,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          0,
+          111
+        ],
+        [
+          0,
+          828
+        ]
+      ]
+    },
+    "symptoms_sensory": {
+      "rows": 939,
+      "reported_positive": 828,
+      "roc_auc": 0.7380641511076294,
+      "average_precision": 0.947710475454676,
+      "log_loss": 0.32203766704634545,
+      "brier": 0.09358522409739702,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          10,
+          101
+        ],
+        [
+          7,
+          821
+        ]
+      ]
+    },
+    "all": {
+      "rows": 939,
+      "reported_positive": 828,
+      "roc_auc": 0.7407080994037516,
+      "average_precision": 0.9489465401347437,
+      "log_loss": 0.3214983344645676,
+      "brier": 0.0935599659550479,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          10,
+          101
+        ],
+        [
+          8,
+          820
+        ]
+      ]
+    },
+    "constant_training_prevalence_baseline": {
+      "rows": 939,
+      "reported_positive": 828,
+      "roc_auc": 0.5,
+      "average_precision": 0.8817891373801917,
+      "log_loss": 0.36335957742069125,
+      "brier": 0.1042400599124046,
+      "confusion_at_0_5_descriptive_only": [
+        [
+          0,
+          111
+        ],
+        [
+          0,
+          828
+        ]
+      ]
+    }
+  },
+  "clinical_validation": false,
+  "activated_in_application": false,
+  "limitations": [
+    "2020 crowdsourced study; laboratory outcomes are respondent reports, not independently linked assays.",
+    "Chemosensory selection/ascertainment bias, class imbalance and temporal/geographic transportability limits.",
+    "COVID-negative does not mean influenza, URTI, healthy, or TB-negative. No 22-class differential or co-infection inference.",
+    "Days_since_onset is overall time since respiratory illness onset, not per-symptom cough duration.",
+    "Only complete structured numeric observations supported. Vague text, sparse inputs and missing ratings are not imputed.",
+    "Source processed data follows the upstream study cleaning; not independently raw-clinical adjudicated data.",
+    "No patient use, score threshold, clinical sign-off or diagnostic claim is approved by this experiment."
+  ],
+  "selected_by_validation_log_loss": "all",
+  "test_uncertainty": {
+    "method": "300 paired complete-predictor-profile cluster resamples; percentile 95% intervals",
+    "source_cohort_only": true,
+    "intervals": {
+      "symptoms": {
+        "roc_auc": [
+          0.5733483472917202,
+          0.6806936235656901
+        ],
+        "log_loss": [
+          0.3158633697258911,
+          0.3910584446106848
+        ]
+      },
+      "symptoms_duration": {
+        "roc_auc": [
+          0.5729742971133134,
+          0.6786454200017272
+        ],
+        "log_loss": [
+          0.3141686405358912,
+          0.3931757520351783
+        ]
+      },
+      "symptoms_sensory": {
+        "roc_auc": [
+          0.6937316555327881,
+          0.7907840968750304
+        ],
+        "log_loss": [
+          0.28312011354141947,
+          0.3574860813347819
+        ]
+      },
+      "all": {
+        "roc_auc": [
+          0.6964007879056767,
+          0.7880345170313809
+        ],
+        "log_loss": [
+          0.28248415333917853,
+          0.35733444155040844
+        ]
+      }
+    },
+    "ablation_difference_intervals": {
+      "symptoms_duration_minus_symptoms": {
+        "roc_auc": [
+          -0.014750430515422738,
+          0.013353059894939638
+        ],
+        "log_loss": [
+          -0.0026233482671715437,
+          0.0031186555966773613
+        ]
+      },
+      "symptoms_sensory_minus_symptoms": {
+        "roc_auc": [
+          0.07307442500734908,
+          0.16284107533938347
+        ],
+        "log_loss": [
+          -0.049050198634725026,
+          -0.017174505412559247
+        ]
+      },
+      "all_minus_symptoms": {
+        "roc_auc": [
+          0.07565835107946794,
+          0.16393988894582648
+        ],
+        "log_loss": [
+          -0.04972538994727422,
+          -0.019016300312360745
+        ]
+      }
+    }
+  },
+  "portable_prediction_parity_rows": 939,
+  "artifact_sha256": "e6478cb5a1c06e34636cb5c8b95de2ac6f7825a78a8be8625803f8a2c8b53c0f"
+}

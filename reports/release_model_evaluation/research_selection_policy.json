@@ -1,0 +1,64 @@
+{
+  "policy_id": "ddxplus_selective_research_v1",
+  "dataset": "DDXPlus-synthetic",
+  "model_sha256": "ae709ef5ddf6dd7a101fe426b610c3e83ef58aa93cb895ca13e7500220dc889c",
+  "mode": "selective_research",
+  "clinical_validation": false,
+  "min_score": 0.75,
+  "min_margin": 0.3,
+  "minimum_positive_features": 2,
+  "exclude_reported_warning_features": true,
+  "criterion": "At least 100 accepted complete-profile groups and Wilson 95% lower bound >=0.90 in each declared view, validation then test. Engineering research criterion, not clinical approval.",
+  "validation": {
+    "up_to_3": {
+      "accepted_rows": 13939,
+      "row_coverage": 0.26338762707380675,
+      "accepted_row_accuracy": 0.9454049788363584,
+      "accepted_profile_groups": 13916,
+      "all_accepted_group_cases_correct": 13155,
+      "group_accuracy_wilson_lower_95": 0.9414127158821012
+    },
+    "up_to_3_plus_3_negative": {
+      "accepted_rows": 16320,
+      "row_coverage": 0.30837836816446845,
+      "accepted_row_accuracy": 0.9278186274509804,
+      "accepted_profile_groups": 16296,
+      "all_accepted_group_cases_correct": 15118,
+      "group_accuracy_wilson_lower_95": 0.9236346350657453
+    },
+    "full_supported": {
+      "accepted_rows": 26224,
+      "row_coverage": 0.49552171119761157,
+      "accepted_row_accuracy": 0.9548886516168396,
+      "accepted_profile_groups": 26197,
+      "all_accepted_group_cases_correct": 25014,
+      "group_accuracy_wilson_lower_95": 0.952260204171301
+    }
+  },
+  "test": {
+    "up_to_3": {
+      "accepted_rows": 13911,
+      "row_coverage": 0.2605739332409246,
+      "accepted_row_accuracy": 0.9506865070807274,
+      "accepted_profile_groups": 13874,
+      "all_accepted_group_cases_correct": 13188,
+      "group_accuracy_wilson_lower_95": 0.9468211287292347
+    },
+    "up_to_3_plus_3_negative": {
+      "accepted_rows": 16400,
+      "row_coverage": 0.3071966433147267,
+      "accepted_row_accuracy": 0.9289634146341463,
+      "accepted_profile_groups": 16362,
+      "all_accepted_group_cases_correct": 15197,
+      "group_accuracy_wilson_lower_95": 0.9247565314909326
+    },
+    "full_supported": {
+      "accepted_rows": 26178,
+      "row_coverage": 0.49035327613981194,
+      "accepted_row_accuracy": 0.956642982657193,
+      "accepted_profile_groups": 26131,
+      "all_accepted_group_cases_correct": 24996,
+      "group_accuracy_wilson_lower_95": 0.9540256895416773
+    }
+  }
+}

@@ -51,3 +51,6 @@ Thumbs.db
 # Generated runtime packaging files
 /build/
 /respiratory_candidate_runtime.egg-info/
+
+# External respondent-level research data; retain provenance and aggregate reports.
+/data/external/

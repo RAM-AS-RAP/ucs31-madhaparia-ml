@@ -1,0 +1,25 @@
+{
+  "purpose": "Restore official DDXPlus sources and exact recorded JSON byte identities.\n\nNever changes a trusted digest, invents a source record, retrains a model,\nor activates the optional candidate. Downloads are synthetic CC-BY research data.\n",
+  "official_source": "https://figshare.com/articles/dataset/DDXPlus_Dataset_English_/22687585",
+  "licence": "CC BY 4.0; attribution to the DDXPlus authors is required",
+  "restored_json": {
+    "models\\v2_feature_schema.json": {
+      "before": "e656ad16a9c67326607376f7bdc487fc36704f416f8b3b7f071a0f557ea0d760",
+      "recorded_and_restored": "cf021c7cb03620a1758e51fc9824f9798608358b86871040e13b5e68204914bc",
+      "json_values_changed": false
+    },
+    "docs\\candidate_feature_schema_v1.json": {
+      "before": "1c90a4b0305115d86b6a0d89e4303c4222f6b413917cd76a7b16572e53cbed3b",
+      "recorded_and_restored": "1b8164ea98967070af7250c72985fb5cb5c97dfe63e80f29e13fd0fcca012c66",
+      "json_values_changed": false
+    }
+  },
+  "evidence_sha256": "281c78b044ae60514e28ecc9052d08a8225dd3e2db3f00f8788b99c47b05e0c0",
+  "training_source": {
+    "archive_md5": "f75a78420ccb061951daa4db2d62139b",
+    "archive_member": "release_train_patients",
+    "uncompressed_bytes": 670584506,
+    "full_archive_extracted": true,
+    "sha256": "93933e9a9a7a00d618a931deda7767485af299fe4635bf189a7c63b510e8b172"
+  }
+}
